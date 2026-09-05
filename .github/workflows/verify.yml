@@ -1,0 +1,29 @@
+name: verify
+
+# 問題データの整合性と、生成物（index.html / docs/quiz-bank.md）が
+# data/questions.json と同期しているかを検査する。
+# 手で片方だけ直すと内容がずれるため、CI で必ず突き合わせる。
+
+on:
+  pull_request:
+  push:
+    branches: [main]
+  workflow_dispatch:
+
+jobs:
+  verify:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.11'
+
+      - name: 問題データを検査する
+        run: python3 scripts/verify_quiz.py
+
+      - name: 問題一覧が questions.json と同期しているか
+        run: python3 scripts/render_quiz.py --check
+
+      - name: index.html が再ビルド済みか
+        run: python3 scripts/build_app.py --check
