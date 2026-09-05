@@ -89,6 +89,27 @@ python3 scripts/verify_quiz.py
 | [`index.html`](./index.html) | **ビルド成果物**。GitHub Pages が配信するアプリ本体 |
 | [`data/questions.json`](./data/questions.json) | **正本**。全458問の機械可読データ |
 | [`src/template.html`](./src/template.html) | アプリのソース（問題データは差し込み） |
+
+### 問題の編集にはパスワードが必要です
+
+「問題を編集」タブはパスワードで保護してあります（タブに 🔒 が付いているときはロック中）。
+一度解除するとこのブラウザでは記憶され、ツールバーの「ロックする」で再びロックできます。
+
+> ⚠️ **これは簡易的な制限です。**
+> サーバを持たない静的サイトなので、判定はブラウザ内で完結します。
+> パスワードは平文ではなく SHA-256 のハッシュだけを埋め込んでいますが、
+> 本気で調べる人を止められるものではありません。
+>
+> ただし**実害はほぼありません**。編集内容は各自の `localStorage` に保存されるだけで、
+> 公開サイトの問題データは書き換わりません。問題を実際に変更できるのは、
+> このリポジトリに push できる人だけです。
+
+パスワードを変えるときは、新しい文字列の SHA-256 を求めて
+`src/template.html` の `EDIT_PASS_SHA256` を差し替え、`python3 scripts/build_app.py` で再ビルドします。
+
+```bash
+python3 -c "import hashlib,sys;print(hashlib.sha256(sys.argv[1].encode()).hexdigest())" '新しいパスワード'
+```
 | [`docs/`](./docs/) | 調査資料・問題一覧・出題禁止リスト（[方針は `docs/README.md`](./docs/README.md)） |
 | `scripts/` | ビルド・生成・検査スクリプト |
 
