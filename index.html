@@ -210,6 +210,14 @@ textarea{resize:vertical;min-height:86px;line-height:1.7}
   font-size:12.5px;line-height:1.9;color:var(--ink-3);display:flex;flex-direction:column;gap:9px}
 .disclaimer strong{color:var(--ink-2);font-weight:700}
 .disclaimer .repo{padding-top:4px}
+.opt-note{font-weight:400;color:var(--ink-3);font-size:12px;margin-left:5px}
+.codeinput{max-width:190px;font-family:var(--mono);letter-spacing:.16em;
+  text-transform:uppercase;font-size:15px}
+.sharebar{display:flex;align-items:center;gap:12px;flex-wrap:wrap;
+  margin:24px 0 -8px;font-family:var(--mono);font-size:11.5px;color:var(--ink-3)}
+.sharebar b{color:var(--ink);letter-spacing:.16em;font-size:13px}
+.rs-share{margin-top:16px}
+.rs-share b{font-family:var(--mono);letter-spacing:.16em;color:var(--accent)}
 dialog{margin:auto;border:1px solid var(--rule);border-radius:var(--radius);padding:0;
   background:var(--surface);color:var(--ink);box-shadow:var(--shadow);
   max-width:min(420px,calc(100vw - 32px))}
@@ -280,6 +288,17 @@ dialog h2{font-size:18px}
         <span>時点によって答えが変わる問題も含める<br>
           <span class="hint">興行収入ランキングなど。問題文に基準日が入ります。</span></span>
       </label>
+      <div class="opt">
+        <span>共有コード<span class="opt-note">（任意）</span></span>
+        <p class="hint">同じコードと同じ設定なら、誰が挑戦しても<strong>まったく同じ問題・同じ選択肢の並び</strong>になります。
+          空欄のままなら毎回ランダムです。</p>
+        <div class="row">
+          <input type="text" id="pick-code" placeholder="例：K7M4PQ" maxlength="12"
+                 autocapitalize="characters" spellcheck="false" class="codeinput">
+          <button class="btn ghost sm" type="button" id="code-new">新しく作る</button>
+          <button class="btn ghost sm" type="button" id="code-clear">クリア</button>
+        </div>
+      </div>
       <div class="countbar" id="poolinfo"></div>
       <div class="row" style="margin-top:18px">
         <button class="btn" id="start">出題を開始</button>
@@ -291,6 +310,10 @@ dialog h2{font-size:18px}
         <span id="qcount"></span>
         <span class="bar"><i id="qbar" style="width:0%"></i></span>
         <span id="qscore"></span>
+      </div>
+      <div class="sharebar" id="sharebar">
+        <span>共有コード <b id="share-code"></b></span>
+        <button class="btn ghost sm" type="button" id="share-copy">リンクをコピー</button>
       </div>
       <div class="card qcard">
         <div class="qmeta" id="qmeta"></div>
@@ -316,6 +339,8 @@ dialog h2{font-size:18px}
         <h2 id="rs-title"></h2>
         <p class="hint" id="rs-sub"></p>
         <dl class="breakdown" id="rs-breakdown"></dl>
+        <p class="hint rs-share">このセットの共有コードは <b id="rs-code"></b> です。
+          同じコードと設定で、他の人も同じ問題に挑戦できます。</p>
       </div>
       <div class="missed" id="rs-missed"></div>
       <div class="row" style="margin-top:24px">
@@ -413,6 +438,55 @@ const shuffle = arr => { const a = [...arr];
   for (let i = a.length - 1; i > 0; i--) { const j = Math.floor(Math.random() * (i + 1));
     [a[i], a[j]] = [a[j], a[i]]; } return a; };
 
+/* ---------- 共有コード（同じ問題を複数人で解くための種）---------- */
+/* マインクラフトのシード値と同じ考え方。コードから擬似乱数の初期値を決めるので、
+   同じコード・同じ設定・同じ問題データなら、出題も選択肢の並びも完全に一致する。 */
+
+/** 文字列から32bitの整数を作る（cyrb53 の簡略版）。 */
+function hashSeed(str) {
+  let h = 2166136261 >>> 0;
+  for (let i = 0; i < str.length; i++) {
+    h ^= str.charCodeAt(i);
+    h = Math.imul(h, 16777619) >>> 0;
+  }
+  return h >>> 0;
+}
+
+/** mulberry32：短くて質の良い擬似乱数。同じ種なら必ず同じ列を返す。 */
+function makeRng(seed) {
+  let a = seed >>> 0;
+  return function () {
+    a = (a + 0x6D2B79F5) >>> 0;
+    let t = Math.imul(a ^ (a >>> 15), 1 | a);
+    t = (t + Math.imul(t ^ (t >>> 7), 61 | t)) ^ t;
+    return ((t ^ (t >>> 14)) >>> 0) / 4294967296;
+  };
+}
+
+/** 指定の乱数でシャッフルする（Fisher-Yates）。 */
+function shuffleWith(arr, rnd) {
+  const a = [...arr];
+  for (let i = a.length - 1; i > 0; i--) {
+    const j = Math.floor(rnd() * (i + 1));
+    [a[i], a[j]] = [a[j], a[i]];
+  }
+  return a;
+}
+
+/** 人が読み書きしやすい6文字のコードを作る（紛らわしい文字は除く）。 */
+const CODE_CHARS = "ABCDEFGHJKLMNPQRSTUVWXYZ23456789"; // I/O/0/1 を除外
+function newCode() {
+  const buf = new Uint32Array(6);
+  (window.crypto || {}).getRandomValues
+    ? crypto.getRandomValues(buf)
+    : buf.forEach((_, i) => { buf[i] = Math.floor(Math.random() * 4294967296); });
+  return [...buf].map(n => CODE_CHARS[n % CODE_CHARS.length]).join("");
+}
+
+function normalizeCode(text) {
+  return (text || "").toUpperCase().replace(/[^A-Z2-9]/g, "").slice(0, 12);
+}
+
 /** 出題を止めるレベルの不備。ここが空でない問題は出題プールから外れる。 */
 function validate(q) {
   const errs = [];
@@ -464,7 +538,8 @@ function chipRow(host, items, key, onPick) {
 }
 
 function pool() {
-  return questions.filter(q =>
+  // 共有コードで同じ問題を再現するため、並びを id で固定してから抽出する
+  return [...questions].sort((a, b) => a.id.localeCompare(b.id)).filter(q =>
     !disabled.has(q.id) &&
     (sel.difficulty === "all" || q.difficulty === sel.difficulty) &&
     (sel.category === "all" || q.category === sel.category) &&
@@ -478,7 +553,7 @@ function renderSetup() {
   chipRow($("pick-category"),
     [{ key: "all", label: "すべて" }, ...CATS], "category", renderSetup);
   chipRow($("pick-count"),
-    [5, 10, 20, 30].map(n => ({ key: n, label: `${n}問` })), "count", renderSetup);
+    [5, 10, 20, 30, 50].map(n => ({ key: n, label: `${n}問` })), "count", renderSetup);
   $("pick-volatile").checked = sel.volatile;
   const n = pool().length;
   $("poolinfo").textContent =
@@ -491,11 +566,19 @@ function renderSetup() {
 let run = null;
 
 function startQuiz() {
-  const picked = shuffle(pool()).slice(0, sel.count).map(q => {
-    const choices = shuffle(q.choices);
+  const code = normalizeCode($("pick-code").value) || newCode();
+  $("pick-code").value = code;
+  // 設定もシードに混ぜる。設定が違えば同じコードでも別の問題セットになる
+  const rnd = makeRng(hashSeed(
+    [code, sel.difficulty, sel.category, sel.count, sel.volatile ? "v" : ""].join("|")));
+
+  const picked = shuffleWith(pool(), rnd).slice(0, sel.count).map(q => {
+    const choices = shuffleWith(q.choices, rnd);
     return { ...q, choices, answerIndex: choices.indexOf(q.answer) };
   });
-  run = { list: picked, i: 0, correct: 0, missed: [] };
+  run = { list: picked, i: 0, correct: 0, missed: [], code };
+  $("share-code").textContent = code;
+  $("share-copy").textContent = "リンクをコピー";
   $("setup").hidden = true; $("result").hidden = true; $("quiz").hidden = false;
   renderQuestion();
 }
@@ -573,6 +656,7 @@ function showResult() {
     pct >= 80 ? "名探偵級。" :
     pct >= 50 ? "少年探偵団級。もう一歩。" : "まだ捜査中。";
   $("rs-sub").textContent = `正答率 ${pct}%`;
+  $("rs-code").textContent = run.code;
 
   const bd = $("rs-breakdown"); bd.innerHTML = "";
   DIFFS.forEach(d => {
@@ -837,6 +921,47 @@ function resetAll() {
   renderList(); renderForm(); renderMeta(); renderSetup();
 }
 
+/* ---------- 共有リンク ---------- */
+function shareUrl() {
+  const u = new URL(location.href);
+  u.hash = "";
+  u.search = new URLSearchParams({
+    code: run ? run.code : normalizeCode($("pick-code").value),
+    d: sel.difficulty, c: sel.category, n: String(sel.count),
+    ...(sel.volatile ? { v: "1" } : {}),
+  }).toString();
+  return u.toString();
+}
+
+async function copyShareUrl() {
+  const btn = $("share-copy");
+  const url = shareUrl();
+  try {
+    await navigator.clipboard.writeText(url);
+    btn.textContent = "コピーしました";
+  } catch (e) {
+    // クリップボードが使えない場合は選択できる形で見せる
+    window.prompt("このリンクを共有してください", url);
+    btn.textContent = "リンクをコピー";
+    return;
+  }
+  setTimeout(() => { btn.textContent = "リンクをコピー"; }, 2500);
+}
+
+/** ?code=... 付きで開かれたら、その設定を復元する。 */
+function applyUrlParams() {
+  const p = new URLSearchParams(location.search);
+  const code = normalizeCode(p.get("code"));
+  if (!code) return false;
+  $("pick-code").value = code;
+  const d = p.get("d"), c = p.get("c"), n = parseInt(p.get("n"), 10);
+  if (d && (d === "all" || DIFFS.some(x => x.key === d))) sel.difficulty = d;
+  if (c && (c === "all" || CATS.some(x => x.key === c))) sel.category = c;
+  if ([5, 10, 20, 30, 50].includes(n)) sel.count = n;
+  sel.volatile = p.get("v") === "1";
+  return true;
+}
+
 /* ---------- 編集タブのロック ---------- */
 /* パスワードは平文では持たず、SHA-256 のハッシュだけを埋め込む。
    ただしこれは静的サイトなので、判定はブラウザ内で完結する。
@@ -920,6 +1045,10 @@ $("lock-cancel").onclick = () => $("lock-dialog").close();
 $("relock").onclick = () => { setUnlocked(false); showTab("play"); };
 $("pick-volatile").onchange = e => { sel.volatile = e.target.checked; renderSetup(); };
 $("start").onclick = startQuiz;
+$("share-copy").onclick = copyShareUrl;
+$("code-new").onclick = () => { $("pick-code").value = newCode(); };
+$("code-clear").onclick = () => { $("pick-code").value = ""; };
+$("pick-code").oninput = e => { e.target.value = normalizeCode(e.target.value); };
 $("next").onclick = nextQuestion;
 $("abort").onclick = backToSetup;
 $("again").onclick = backToSetup;
@@ -931,10 +1060,18 @@ $("f-diff").onchange = renderList;
 $("f-cat").onchange = renderList;
 
 markTabLock();
+const fromUrl = applyUrlParams();
 fillSelect($("f-diff"), DIFFS, "すべての難易度");
 fillSelect($("f-cat"), CATS, "すべてのカテゴリ");
 renderMeta();
 renderSetup();
+if (fromUrl) {
+  // リンクから開かれたときは、設定が復元されたことが分かるように知らせる
+  const note = el("p", "hint");
+  note.style.color = "var(--accent)";
+  note.textContent = "共有リンクの設定を読み込みました。「出題を開始」で同じ問題に挑戦できます。";
+  $("poolinfo").after(note);
+}
 </script>
 
 </body>
