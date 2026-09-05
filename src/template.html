@@ -1,0 +1,824 @@
+<title>コナン捜査ファイル</title>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Shippori+Mincho+B1:wght@600;700&family=Zen+Kaku+Gothic+New:wght@400;500;700&display=swap">
+<style>
+:root{
+  --paper:#eef1f6; --surface:#ffffff; --surface-2:#e6ebf3;
+  --ink:#151a24; --ink-2:#4a5568; --ink-3:#77839a;
+  --rule:#c9d3e2; --rule-soft:#dde4ee;
+  --accent:#2d4a8a; --accent-soft:#dbe4f6; --accent-ink:#ffffff;
+  --correct:#136d54; --correct-soft:#d4ece3;
+  --wrong:#a32f3e; --wrong-soft:#f6dcdf;
+  --shadow:0 1px 2px rgba(21,26,36,.06),0 8px 24px rgba(21,26,36,.07);
+  --mono:"SFMono-Regular",Consolas,"Liberation Mono",Menlo,monospace;
+  --display:"Shippori Mincho B1","Hiragino Mincho ProN","Yu Mincho",serif;
+  --body:"Zen Kaku Gothic New","Hiragino Sans","Yu Gothic",sans-serif;
+  --radius:3px;
+}
+@media (prefers-color-scheme:dark){
+  :root:not([data-theme="light"]){
+    --paper:#0e1219; --surface:#161d29; --surface-2:#1e2735;
+    --ink:#e6ebf4; --ink-2:#a5b1c6; --ink-3:#7a879e;
+    --rule:#2c3747; --rule-soft:#232d3b;
+    --accent:#7ea3e2; --accent-soft:#1d2a42; --accent-ink:#0e1219;
+    --correct:#4dbf99; --correct-soft:#12312a;
+    --wrong:#e8848f; --wrong-soft:#3a1f25;
+    --shadow:0 1px 2px rgba(0,0,0,.4),0 8px 24px rgba(0,0,0,.35);
+  }
+}
+:root[data-theme="dark"]{
+  --paper:#0e1219; --surface:#161d29; --surface-2:#1e2735;
+  --ink:#e6ebf4; --ink-2:#a5b1c6; --ink-3:#7a879e;
+  --rule:#2c3747; --rule-soft:#232d3b;
+  --accent:#7ea3e2; --accent-soft:#1d2a42; --accent-ink:#0e1219;
+  --correct:#4dbf99; --correct-soft:#12312a;
+  --wrong:#e8848f; --wrong-soft:#3a1f25;
+  --shadow:0 1px 2px rgba(0,0,0,.4),0 8px 24px rgba(0,0,0,.35);
+}
+*{box-sizing:border-box}
+body{background:var(--paper);color:var(--ink);font-family:var(--body);
+  font-size:15px;line-height:1.75;-webkit-font-smoothing:antialiased}
+h1,h2,h3{font-family:var(--display);font-weight:700;text-wrap:balance;margin:0;line-height:1.4}
+p{margin:0}
+button{font:inherit;color:inherit;cursor:pointer}
+a{color:var(--accent)}
+:focus-visible{outline:2px solid var(--accent);outline-offset:2px}
+.wrap{max-width:760px;margin:0 auto;padding:0 20px 72px}
+
+/* ---- file header ---- */
+.filehead{border-bottom:2px solid var(--ink);background:var(--surface)}
+.filehead .wrap{padding-top:18px;padding-bottom:0}
+.crest{display:flex;align-items:baseline;gap:12px;flex-wrap:wrap}
+.crest h1{font-size:26px;letter-spacing:.06em}
+.eyebrow{font-family:var(--mono);font-size:10.5px;letter-spacing:.18em;
+  text-transform:uppercase;color:var(--ink-3)}
+.filemeta{display:flex;gap:0;flex-wrap:wrap;margin-top:14px;
+  border-top:1px solid var(--rule-soft);font-family:var(--mono);font-size:11px}
+.filemeta div{padding:7px 16px 7px 0;color:var(--ink-3);white-space:nowrap}
+.filemeta b{color:var(--ink-2);font-weight:500;font-variant-numeric:tabular-nums}
+.tabs{display:flex;gap:2px;margin-top:10px}
+.tabs button{background:none;border:0;border-bottom:2px solid transparent;
+  padding:9px 14px;font-size:14px;font-weight:500;color:var(--ink-3);margin-bottom:-2px}
+.tabs button[aria-selected="true"]{color:var(--ink);border-bottom-color:var(--accent)}
+
+/* ---- generic bits ---- */
+.card{background:var(--surface);border:1px solid var(--rule);
+  border-radius:var(--radius);box-shadow:var(--shadow)}
+.stack{display:flex;flex-direction:column;gap:16px}
+.row{display:flex;gap:10px;flex-wrap:wrap;align-items:center}
+.btn{background:var(--accent);color:var(--accent-ink);border:1px solid var(--accent);
+  border-radius:var(--radius);padding:10px 22px;font-weight:700;font-size:14px}
+.btn:hover{filter:brightness(1.08)}
+.btn[disabled]{opacity:.45;cursor:not-allowed;filter:none}
+.btn.ghost{background:none;color:var(--ink-2);border-color:var(--rule)}
+.btn.ghost:hover{background:var(--surface-2);filter:none}
+.btn.sm{padding:6px 13px;font-size:13px;font-weight:500}
+.chips{display:flex;gap:7px;flex-wrap:wrap}
+.chip{border:1px solid var(--rule);background:var(--surface);border-radius:999px;
+  padding:6px 15px;font-size:13.5px;color:var(--ink-2)}
+.chip[aria-pressed="true"]{background:var(--accent);border-color:var(--accent);
+  color:var(--accent-ink);font-weight:500}
+.tag{font-family:var(--mono);font-size:10.5px;letter-spacing:.08em;
+  border:1px solid var(--rule);border-radius:2px;padding:2px 7px;color:var(--ink-3)}
+.field{display:flex;flex-direction:column;gap:6px}
+.field label{font-size:12.5px;font-weight:500;color:var(--ink-2)}
+input[type=text],textarea,select{width:100%;background:var(--surface);color:var(--ink);
+  border:1px solid var(--rule);border-radius:var(--radius);padding:9px 11px;
+  font:inherit;font-size:14px}
+textarea{resize:vertical;min-height:86px;line-height:1.7}
+.hint{font-size:12.5px;color:var(--ink-3);line-height:1.65}
+.section-label{font-family:var(--mono);font-size:10.5px;letter-spacing:.18em;
+  text-transform:uppercase;color:var(--ink-3);
+  display:flex;align-items:center;gap:10px}
+.section-label::after{content:"";flex:1;height:1px;background:var(--rule-soft)}
+
+/* ---- setup ---- */
+.setup{padding:26px 28px;margin-top:26px}
+.setup h2{font-size:19px;margin-bottom:4px}
+.lede{color:var(--ink-2);font-size:14px;margin-bottom:22px}
+.opt{display:flex;flex-direction:column;gap:9px;margin-bottom:22px}
+.opt>span{font-size:13px;font-weight:700;color:var(--ink)}
+.toggle{display:flex;gap:9px;align-items:flex-start;font-size:13.5px;color:var(--ink-2)}
+.toggle input{margin-top:5px;accent-color:var(--accent)}
+.countbar{font-family:var(--mono);font-size:12px;color:var(--ink-3);
+  border-top:1px solid var(--rule-soft);padding-top:14px;margin-top:4px;
+  font-variant-numeric:tabular-nums}
+
+/* ---- quiz ---- */
+.progress{display:flex;align-items:center;gap:14px;margin:24px 0 12px;
+  font-family:var(--mono);font-size:11.5px;color:var(--ink-3);
+  font-variant-numeric:tabular-nums}
+.bar{flex:1;height:3px;background:var(--rule-soft);border-radius:2px;overflow:hidden}
+.bar i{display:block;height:100%;background:var(--accent);transition:width .3s ease}
+.qcard{padding:26px 28px}
+.qmeta{display:flex;gap:8px;align-items:center;flex-wrap:wrap;margin-bottom:14px}
+.qtext{font-family:var(--display);font-size:21px;line-height:1.6;margin-bottom:22px}
+.choices{display:flex;flex-direction:column;gap:9px}
+.choice{display:flex;gap:13px;align-items:flex-start;width:100%;text-align:left;
+  background:var(--surface);border:1px solid var(--rule);border-radius:var(--radius);
+  padding:13px 16px;font-size:15px;line-height:1.6;transition:border-color .15s,background .15s}
+.choice:hover:not([disabled]){border-color:var(--accent);background:var(--accent-soft)}
+.choice[disabled]{cursor:default}
+.choice .num{font-family:var(--mono);font-size:12px;color:var(--ink-3);
+  border:1px solid var(--rule);border-radius:2px;min-width:22px;height:22px;
+  display:grid;place-items:center;flex:none;margin-top:2px}
+.choice.is-correct{border-color:var(--correct);background:var(--correct-soft)}
+.choice.is-correct .num{border-color:var(--correct);color:var(--correct)}
+.choice.is-wrong{border-color:var(--wrong);background:var(--wrong-soft)}
+.choice.is-wrong .num{border-color:var(--wrong);color:var(--wrong)}
+.verdict{display:flex;align-items:center;gap:11px;margin-top:22px;
+  font-family:var(--display);font-size:17px;font-weight:700}
+.stamp{font-family:var(--mono);font-size:11px;letter-spacing:.14em;padding:3px 10px;
+  border:2px solid currentColor;border-radius:2px;transform:rotate(-2.5deg)}
+.verdict.ok{color:var(--correct)}
+.verdict.ng{color:var(--wrong)}
+.truth{margin-top:16px;padding:16px 18px;background:var(--surface-2);
+  border-left:3px solid var(--accent);border-radius:0 var(--radius) var(--radius) 0}
+.truth p{font-size:14px;color:var(--ink-2)}
+.srcs{margin-top:11px;display:flex;gap:14px;flex-wrap:wrap;
+  font-family:var(--mono);font-size:11px}
+
+/* ---- result ---- */
+.score{padding:30px 28px;margin-top:26px;text-align:center}
+.score .big{font-family:var(--display);font-size:52px;line-height:1;
+  font-variant-numeric:tabular-nums;color:var(--accent)}
+.score .big small{font-size:20px;color:var(--ink-3);font-weight:600}
+.score h2{font-size:18px;margin-top:14px}
+.breakdown{display:grid;grid-template-columns:repeat(auto-fit,minmax(130px,1fr));
+  gap:1px;background:var(--rule-soft);border:1px solid var(--rule-soft);
+  border-radius:var(--radius);margin-top:22px;overflow:hidden}
+.breakdown div{background:var(--surface);padding:13px 8px}
+.breakdown dt{font-size:11.5px;color:var(--ink-3);font-family:var(--mono);letter-spacing:.1em}
+.breakdown dd{margin:4px 0 0;font-family:var(--display);font-size:20px;font-weight:700;
+  font-variant-numeric:tabular-nums}
+.missed{margin-top:26px}
+.missed li{padding:12px 0;border-top:1px solid var(--rule-soft);font-size:14px;line-height:1.65}
+.missed li:first-child{border-top:0}
+.missed .ans{color:var(--correct);font-weight:700}
+.missed ul{list-style:none;padding:0;margin:0}
+
+/* ---- editor ---- */
+.editor{margin-top:26px;display:grid;grid-template-columns:minmax(0,1fr) minmax(0,1.15fr);gap:18px;align-items:start}
+@media (max-width:820px){.editor{grid-template-columns:1fr}}
+.filters{padding:16px 18px;display:flex;flex-direction:column;gap:11px}
+.qlist{max-height:560px;overflow-y:auto;border-top:1px solid var(--rule-soft)}
+.qrow{display:flex;gap:11px;align-items:flex-start;width:100%;text-align:left;
+  background:none;border:0;border-bottom:1px solid var(--rule-soft);padding:11px 18px;
+  font-size:13.5px;line-height:1.55}
+.qrow:hover{background:var(--surface-2)}
+.qrow[aria-current="true"]{background:var(--accent-soft)}
+.qrow .id{font-family:var(--mono);font-size:10.5px;color:var(--ink-3);flex:none;margin-top:2px}
+.qrow.off{opacity:.42}
+.qrow .warn{color:var(--wrong);font-weight:700;flex:none}
+.qrow .adv{color:var(--ink-3);flex:none;font-size:11px}
+.form{padding:20px 22px;display:flex;flex-direction:column;gap:15px}
+.form h3{font-size:16px}
+.grid2{display:grid;grid-template-columns:1fr 1fr;gap:12px}
+.choice-edit{display:flex;gap:9px;align-items:center}
+.choice-edit input[type=radio]{accent-color:var(--correct);flex:none;width:17px;height:17px}
+.errbox{background:var(--wrong-soft);border:1px solid var(--wrong);color:var(--wrong);
+  border-radius:var(--radius);padding:11px 14px;font-size:13px;line-height:1.7}
+.errbox ul{margin:6px 0 0;padding-left:18px}
+.advbox{background:var(--surface-2);border:1px solid var(--rule);color:var(--ink-2);
+  border-radius:var(--radius);padding:11px 14px;font-size:12.5px;line-height:1.7}
+.advbox ul{margin:0;padding-left:18px}
+.okbox{background:var(--correct-soft);border:1px solid var(--correct);color:var(--correct);
+  border-radius:var(--radius);padding:11px 14px;font-size:13px}
+.toolbar{display:flex;gap:9px;flex-wrap:wrap;align-items:center;
+  padding:14px 18px;border-top:1px solid var(--rule-soft)}
+.notice{margin-top:26px;padding:16px 18px;font-size:13.5px;line-height:1.75;color:var(--ink-2)}
+.notice code{font-family:var(--mono);font-size:12.5px;background:var(--surface-2);
+  padding:1px 5px;border-radius:2px}
+.notice ol{margin:9px 0 0;padding-left:20px}
+.disclaimer{margin-top:56px;padding-top:22px;border-top:1px solid var(--rule-soft);
+  font-size:12.5px;line-height:1.9;color:var(--ink-3);display:flex;flex-direction:column;gap:9px}
+.disclaimer strong{color:var(--ink-2);font-weight:700}
+.disclaimer .repo{padding-top:4px}
+[hidden]{display:none!important}
+@media (prefers-reduced-motion:reduce){*{transition:none!important;animation:none!important}}
+</style>
+
+<header class="filehead">
+  <div class="wrap">
+    <div class="crest">
+      <h1>コナン捜査ファイル</h1>
+      <span class="eyebrow">Case File / Quiz</span>
+    </div>
+    <div class="filemeta" id="filemeta"></div>
+    <nav class="tabs" role="tablist">
+      <button role="tab" id="tab-play" aria-selected="true" aria-controls="view-play">出題</button>
+      <button role="tab" id="tab-edit" aria-selected="false" aria-controls="view-edit">問題を編集</button>
+    </nav>
+  </div>
+</header>
+
+<main class="wrap">
+  <!-- ============ 出題 ============ -->
+  <div id="view-play" role="tabpanel" aria-labelledby="tab-play">
+
+    <section class="card setup" id="setup">
+      <h2>出題の設定</h2>
+      <p class="lede">すべての問題は2系統以上の情報源で照合済みです。解答後に出典リンクを表示します。</p>
+
+      <div class="opt">
+        <span>難易度</span>
+        <div class="chips" id="pick-difficulty"></div>
+      </div>
+      <div class="opt">
+        <span>カテゴリ</span>
+        <div class="chips" id="pick-category"></div>
+      </div>
+      <div class="opt">
+        <span>出題数</span>
+        <div class="chips" id="pick-count"></div>
+      </div>
+      <label class="toggle">
+        <input type="checkbox" id="pick-volatile">
+        <span>時点によって答えが変わる問題も含める<br>
+          <span class="hint">興行収入ランキングなど。問題文に基準日が入ります。</span></span>
+      </label>
+      <div class="countbar" id="poolinfo"></div>
+      <div class="row" style="margin-top:18px">
+        <button class="btn" id="start">出題を開始</button>
+      </div>
+    </section>
+
+    <section id="quiz" hidden>
+      <div class="progress">
+        <span id="qcount"></span>
+        <span class="bar"><i id="qbar" style="width:0%"></i></span>
+        <span id="qscore"></span>
+      </div>
+      <div class="card qcard">
+        <div class="qmeta" id="qmeta"></div>
+        <h2 class="qtext" id="qtext"></h2>
+        <div class="choices" id="qchoices"></div>
+        <div id="qresult" hidden>
+          <div class="verdict" id="qverdict"></div>
+          <div class="truth">
+            <p id="qexpl"></p>
+            <div class="srcs" id="qsrcs"></div>
+          </div>
+          <div class="row" style="margin-top:20px">
+            <button class="btn" id="next">次の問題へ</button>
+            <button class="btn ghost sm" id="abort">中断してやり直す</button>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="result" hidden>
+      <div class="card score">
+        <div class="big"><span id="rs-correct">0</span><small> / <span id="rs-total">0</span></small></div>
+        <h2 id="rs-title"></h2>
+        <p class="hint" id="rs-sub"></p>
+        <dl class="breakdown" id="rs-breakdown"></dl>
+      </div>
+      <div class="missed" id="rs-missed"></div>
+      <div class="row" style="margin-top:24px">
+        <button class="btn" id="again">もう一度</button>
+      </div>
+    </section>
+  </div>
+
+  <!-- ============ 編集 ============ -->
+  <div id="view-edit" role="tabpanel" aria-labelledby="tab-edit" hidden>
+    <div class="editor">
+      <div class="card">
+        <div class="filters">
+          <div class="field">
+            <label for="f-search">問題文で絞り込む</label>
+            <input type="text" id="f-search" placeholder="例：劇場版">
+          </div>
+          <div class="grid2">
+            <div class="field">
+              <label for="f-diff">難易度</label>
+              <select id="f-diff"></select>
+            </div>
+            <div class="field">
+              <label for="f-cat">カテゴリ</label>
+              <select id="f-cat"></select>
+            </div>
+          </div>
+        </div>
+        <div class="qlist" id="qlist"></div>
+        <div class="toolbar">
+          <button class="btn sm" id="add">＋ 問題を追加</button>
+          <button class="btn ghost sm" id="export">JSONを書き出す</button>
+          <button class="btn ghost sm" id="reset">初期状態に戻す</button>
+        </div>
+      </div>
+
+      <div class="card form" id="form">
+        <p class="hint">左のリストから問題を選ぶと、ここで編集できます。</p>
+      </div>
+    </div>
+
+    <div class="card notice">
+      <p><strong>編集内容はこのブラウザにのみ保存されます。</strong>
+        リポジトリの <code>questions.json</code> に反映するには、次の手順を踏んでください。</p>
+      <ol>
+        <li>「JSONを書き出す」で <code>questions.json</code> をダウンロード</li>
+        <li>リポジトリの <code>data/questions.json</code> を差し替える</li>
+        <li><code>python3 scripts/render_quiz.py</code> で問題集を再生成</li>
+        <li><code>python3 scripts/verify_quiz.py</code> で整合性を検査</li>
+        <li><code>python3 scripts/build_app.py</code> でこのアプリを再ビルド（push すると自動で公開されます）</li>
+      </ol>
+      <p class="hint" style="margin-top:10px">新しい問題を足すときは、必ず2系統以上の独立した情報源で裏を取り、
+        出典URLを両方入れてください。1系統しか見つからない事実は <code>UNVERIFIED.md</code> 行きです。</p>
+    </div>
+  </div>
+  <footer class="disclaimer">
+    <p><strong>このサイトは、有志が作成した非公式のファンサイトです。</strong>
+      株式会社小学館、読売テレビ、トムス・エンタテインメント、
+      および『名探偵コナン』の権利者とは一切関係がありません。</p>
+    <p>出題内容は公開されている情報をもとに作成し、各問題に出典を明記しています。
+      作品名・人物名などの権利は、それぞれの権利者に帰属します。</p>
+    <p class="repo">問題データと出典の一覧は
+      <a href="https://github.com/an-dot-su4/ConanQuiz" target="_blank" rel="noopener noreferrer">GitHub リポジトリ</a>
+      で公開しています。誤りを見つけたら Issue でお知らせください。</p>
+  </footer>
+</main>
+
+<script>
+"use strict";
+const DATA = __QUESTIONS_JSON__;
+const LS_KEY = "conan-quiz-draft-v1";
+const LS_OFF = "conan-quiz-disabled-v1";
+
+/* ---------- storage (best effort) ---------- */
+const store = {
+  get(k, fb) { try { const v = localStorage.getItem(k); return v ? JSON.parse(v) : fb; }
+               catch (e) { return fb; } },
+  set(k, v)  { try { localStorage.setItem(k, JSON.stringify(v)); } catch (e) {} },
+  del(k)     { try { localStorage.removeItem(k); } catch (e) {} },
+};
+
+const DIFFS = DATA.meta.difficulties;
+const CATS  = DATA.meta.categories;
+const labelOf = (list, key) => (list.find(x => x.key === key) || {}).label || key;
+
+let questions = store.get(LS_KEY, null) || DATA.questions.map(q => ({ ...q }));
+let disabled  = new Set(store.get(LS_OFF, []));
+
+/* ---------- helpers ---------- */
+const $ = id => document.getElementById(id);
+const el = (tag, cls, text) => { const n = document.createElement(tag);
+  if (cls) n.className = cls; if (text != null) n.textContent = text; return n; };
+const shuffle = arr => { const a = [...arr];
+  for (let i = a.length - 1; i > 0; i--) { const j = Math.floor(Math.random() * (i + 1));
+    [a[i], a[j]] = [a[j], a[i]]; } return a; };
+
+/** 出題を止めるレベルの不備。ここが空でない問題は出題プールから外れる。 */
+function validate(q) {
+  const errs = [];
+  if (!q.question || !q.question.trim()) errs.push("問題文が空です。");
+  if (!q.explanation || !q.explanation.trim()) errs.push("解説が空です。");
+  const ch = q.choices || [];
+  if (ch.length !== 4) errs.push("選択肢は4つ必要です。");
+  if (ch.some(c => !c || !c.trim())) errs.push("空の選択肢があります。");
+  if (new Set(ch).size !== ch.length) errs.push("選択肢が重複しています。");
+  if (!ch.includes(q.answer)) errs.push("正解が選択肢の中にありません。");
+  if (!["A", "B"].includes(q.confidence))
+    errs.push("信頼度は A か B のみです（C以下は UNVERIFIED.md へ）。");
+  if (!(q.sources || []).some(s => /^https?:\/\//.test(s)))
+    errs.push("出典URLが1件もありません。");
+  return errs;
+}
+
+/** 出題は止めないが、直せるとよい点。 */
+function advisories(q) {
+  const notes = [];
+  const src = (q.sources || []).filter(s => /^https?:\/\//.test(s));
+  if (src.length === 1)
+    notes.push("出典URLが1件です。読み手が裏を取れるよう、2件目を足せると理想的です。");
+  return notes;
+}
+
+/* ---------- file header ---------- */
+function renderMeta() {
+  const byDiff = DIFFS.map(d =>
+    `${d.label} <b>${questions.filter(q => q.difficulty === d.key).length}</b>`);
+  $("filemeta").innerHTML =
+    `<div>収録 <b>${questions.length}</b> 問</div>` +
+    byDiff.map(t => `<div>${t}</div>`).join("") +
+    `<div>更新 <b>${DATA.meta.updated}</b></div>`;
+}
+
+/* ---------- setup ---------- */
+const sel = { difficulty: "all", category: "all", count: 10, volatile: false };
+
+function chipRow(host, items, key, onPick) {
+  host.innerHTML = "";
+  items.forEach(it => {
+    const b = el("button", "chip", it.label);
+    b.type = "button";
+    b.setAttribute("aria-pressed", String(sel[key] === it.key));
+    b.onclick = () => { sel[key] = it.key; onPick(); };
+    host.appendChild(b);
+  });
+}
+
+function pool() {
+  return questions.filter(q =>
+    !disabled.has(q.id) &&
+    (sel.difficulty === "all" || q.difficulty === sel.difficulty) &&
+    (sel.category === "all" || q.category === sel.category) &&
+    (sel.volatile || !q.volatile) &&
+    validate(q).length === 0);
+}
+
+function renderSetup() {
+  chipRow($("pick-difficulty"),
+    [{ key: "all", label: "すべて" }, ...DIFFS], "difficulty", renderSetup);
+  chipRow($("pick-category"),
+    [{ key: "all", label: "すべて" }, ...CATS], "category", renderSetup);
+  chipRow($("pick-count"),
+    [5, 10, 20, 30].map(n => ({ key: n, label: `${n}問` })), "count", renderSetup);
+  $("pick-volatile").checked = sel.volatile;
+  const n = pool().length;
+  $("poolinfo").textContent =
+    `条件に合う問題：${n}問${n < sel.count ? `（${n}問すべて出題します）` : ""}`;
+  $("start").disabled = n === 0;
+  renderMeta();
+}
+
+/* ---------- quiz ---------- */
+let run = null;
+
+function startQuiz() {
+  const picked = shuffle(pool()).slice(0, sel.count).map(q => {
+    const choices = shuffle(q.choices);
+    return { ...q, choices, answerIndex: choices.indexOf(q.answer) };
+  });
+  run = { list: picked, i: 0, correct: 0, missed: [] };
+  $("setup").hidden = true; $("result").hidden = true; $("quiz").hidden = false;
+  renderQuestion();
+}
+
+function renderQuestion() {
+  const q = run.list[run.i];
+  $("qcount").textContent = `第 ${run.i + 1} 問 / 全 ${run.list.length} 問`;
+  $("qscore").textContent = `正解 ${run.correct}`;
+  $("qbar").style.width = `${(run.i / run.list.length) * 100}%`;
+
+  const meta = $("qmeta"); meta.innerHTML = "";
+  meta.append(
+    el("span", "tag", q.difficultyLabel),
+    el("span", "tag", q.categoryLabel),
+    el("span", "tag", `信頼度 ${q.confidence}`));
+  if (q.volatile) meta.append(el("span", "tag", `${q.asOf} 時点`));
+
+  $("qtext").textContent = q.question;
+  $("qresult").hidden = true;
+
+  const host = $("qchoices"); host.innerHTML = "";
+  q.choices.forEach((c, i) => {
+    const b = el("button", "choice"); b.type = "button";
+    b.append(el("span", "num", String(i + 1)), el("span", null, c));
+    b.onclick = () => answer(i);
+    host.appendChild(b);
+  });
+}
+
+function answer(picked) {
+  const q = run.list[run.i];
+  const ok = picked === q.answerIndex;
+  if (ok) run.correct++; else run.missed.push(q);
+
+  [...$("qchoices").children].forEach((b, i) => {
+    b.disabled = true;
+    if (i === q.answerIndex) b.classList.add("is-correct");
+    else if (i === picked) b.classList.add("is-wrong");
+  });
+
+  const v = $("qverdict");
+  v.className = "verdict " + (ok ? "ok" : "ng");
+  v.innerHTML = "";
+  v.append(el("span", "stamp", ok ? "正解" : "不正解"),
+           el("span", null, ok ? "お見事。" : `正解は「${q.answer}」`));
+
+  $("qexpl").textContent = q.explanation;
+  const s = $("qsrcs"); s.innerHTML = "";
+  q.sources.forEach((url, i) => {
+    const a = el("a", null, `出典${i + 1}`);
+    a.href = url; a.target = "_blank"; a.rel = "noopener noreferrer";
+    s.appendChild(a);
+  });
+
+  $("next").textContent = run.i === run.list.length - 1 ? "結果を見る" : "次の問題へ";
+  $("qresult").hidden = false;
+  $("qscore").textContent = `正解 ${run.correct}`;
+  $("qbar").style.width = `${((run.i + 1) / run.list.length) * 100}%`;
+}
+
+function nextQuestion() {
+  if (run.i === run.list.length - 1) return showResult();
+  run.i++; renderQuestion();
+  $("quiz").scrollIntoView({ behavior: "smooth", block: "start" });
+}
+
+function showResult() {
+  $("quiz").hidden = true; $("result").hidden = false;
+  const total = run.list.length, c = run.correct;
+  const pct = Math.round((c / total) * 100);
+  $("rs-correct").textContent = c;
+  $("rs-total").textContent = total;
+  $("rs-title").textContent =
+    pct === 100 ? "全問正解。真実はいつもひとつ。" :
+    pct >= 80 ? "名探偵級。" :
+    pct >= 50 ? "少年探偵団級。もう一歩。" : "まだ捜査中。";
+  $("rs-sub").textContent = `正答率 ${pct}%`;
+
+  const bd = $("rs-breakdown"); bd.innerHTML = "";
+  DIFFS.forEach(d => {
+    const rows = run.list.filter(q => q.difficulty === d.key);
+    if (!rows.length) return;
+    const hit = rows.filter(q => !run.missed.includes(q)).length;
+    const box = el("div");
+    box.append(el("dt", null, d.label), el("dd", null, `${hit} / ${rows.length}`));
+    bd.appendChild(box);
+  });
+
+  const m = $("rs-missed"); m.innerHTML = "";
+  if (run.missed.length) {
+    m.append(el("p", "section-label", "間違えた問題"));
+    const ul = el("ul");
+    run.missed.forEach(q => {
+      const li = el("li");
+      li.append(el("div", null, q.question));
+      const a = el("div"); a.innerHTML =
+        `正解：<span class="ans"></span>`;
+      a.querySelector(".ans").textContent = q.answer;
+      li.append(a, el("div", "hint", q.explanation));
+      ul.appendChild(li);
+    });
+    m.appendChild(ul);
+  }
+  $("result").scrollIntoView({ behavior: "smooth", block: "start" });
+}
+
+function backToSetup() {
+  $("quiz").hidden = true; $("result").hidden = true; $("setup").hidden = false;
+  renderSetup();
+}
+
+/* ---------- editor ---------- */
+let editing = null;
+
+function fillSelect(node, items, allLabel) {
+  node.innerHTML = "";
+  [{ key: "all", label: allLabel }, ...items].forEach(it => {
+    const o = el("option", null, it.label); o.value = it.key; node.appendChild(o);
+  });
+}
+
+function renderList() {
+  const term = $("f-search").value.trim();
+  const d = $("f-diff").value, c = $("f-cat").value;
+  const host = $("qlist"); host.innerHTML = "";
+  const rows = questions.filter(q =>
+    (d === "all" || q.difficulty === d) &&
+    (c === "all" || q.category === c) &&
+    (!term || q.question.includes(term)));
+
+  if (!rows.length) {
+    const p = el("p", "hint"); p.style.padding = "16px 18px";
+    p.textContent = "条件に合う問題がありません。";
+    host.appendChild(p); return;
+  }
+  rows.forEach(q => {
+    const b = el("button", "qrow" + (disabled.has(q.id) ? " off" : ""));
+    b.type = "button";
+    if (editing && editing.id === q.id) b.setAttribute("aria-current", "true");
+    b.append(el("span", "id", q.id.replace("conan-", "")));
+    b.append(el("span", null, q.question));
+    if (validate(q).length) b.append(el("span", "warn", "!"));
+    else if (advisories(q).length) b.append(el("span", "adv", "△"));
+    b.onclick = () => { editing = { ...q, choices: [...q.choices], sources: [...q.sources] };
+                        renderList(); renderForm(); };
+    host.appendChild(b);
+  });
+}
+
+function renderForm() {
+  const f = $("form"); f.innerHTML = "";
+  if (!editing) {
+    f.append(el("p", "hint", "左のリストから問題を選ぶと、ここで編集できます。"));
+    return;
+  }
+  const q = editing;
+  const head = el("div", "row");
+  head.append(el("h3", null, `問題 ${q.id}`));
+  f.append(head);
+
+  const errs = validate(q);
+  if (errs.length) {
+    const box = el("div", "errbox");
+    box.append(el("strong", null, "このままでは出題されません"));
+    const ul = el("ul"); errs.forEach(e => ul.append(el("li", null, e)));
+    box.append(ul); f.append(box);
+  }
+  const notes = advisories(q);
+  if (notes.length) {
+    const box = el("div", "advbox");
+    const ul = el("ul"); notes.forEach(e => ul.append(el("li", null, e)));
+    box.append(ul); f.append(box);
+  }
+
+  const mkField = (labelText, value, onInput, multiline) => {
+    const w = el("div", "field");
+    const id = "fld-" + Math.random().toString(36).slice(2, 8);
+    const l = el("label", null, labelText); l.htmlFor = id;
+    const inp = multiline ? el("textarea") : document.createElement("input");
+    if (!multiline) inp.type = "text";
+    inp.id = id; inp.value = value;
+    inp.oninput = () => { onInput(inp.value); };
+    w.append(l, inp); return w;
+  };
+
+  f.append(mkField("問題文", q.question, v => { q.question = v; }, true));
+
+  const cw = el("div", "field");
+  cw.append(el("label", null, "選択肢（ラジオボタンが正解）"));
+  q.choices.forEach((c, i) => {
+    const line = el("div", "choice-edit");
+    const r = document.createElement("input");
+    r.type = "radio"; r.name = "correct"; r.checked = q.answer === c;
+    r.setAttribute("aria-label", `選択肢${i + 1}を正解にする`);
+    r.onchange = () => { q.answer = q.choices[i]; renderForm(); };
+    const t = document.createElement("input");
+    t.type = "text"; t.value = c;
+    t.oninput = () => { const wasAnswer = q.answer === q.choices[i];
+      q.choices[i] = t.value; if (wasAnswer) q.answer = t.value; };
+    line.append(r, t); cw.append(line);
+  });
+  f.append(cw);
+
+  f.append(mkField("解説", q.explanation, v => { q.explanation = v; }, true));
+  f.append(mkField("出典URL（改行区切り／2件以上が理想）", q.sources.join("\n"),
+    v => { q.sources = v.split("\n").map(s => s.trim()).filter(Boolean); }, true));
+
+  const g = el("div", "grid2");
+  const mkSelect = (labelText, items, cur, onPick) => {
+    const w = el("div", "field");
+    const id = "sel-" + Math.random().toString(36).slice(2, 8);
+    const l = el("label", null, labelText); l.htmlFor = id;
+    const s = document.createElement("select"); s.id = id;
+    items.forEach(it => { const o = el("option", null, it.label); o.value = it.key;
+      if (it.key === cur) o.selected = true; s.appendChild(o); });
+    s.onchange = () => onPick(s.value);
+    w.append(l, s); return w;
+  };
+  g.append(mkSelect("難易度", DIFFS, q.difficulty, v => { q.difficulty = v; }));
+  g.append(mkSelect("カテゴリ", CATS, q.category, v => { q.category = v; }));
+  f.append(g);
+
+  const g2 = el("div", "grid2");
+  g2.append(mkSelect("信頼度", [{ key: "A", label: "A（公式で確認）" },
+                                { key: "B", label: "B（2系統で一致）" }],
+    q.confidence, v => { q.confidence = v; renderForm(); }));
+  const tw = el("div", "field");
+  tw.append(el("label", null, "この端末での出題"));
+  const t = el("label", "toggle");
+  const cb = document.createElement("input"); cb.type = "checkbox";
+  cb.checked = !disabled.has(q.id);
+  cb.onchange = () => { if (cb.checked) disabled.delete(q.id); else disabled.add(q.id);
+    store.set(LS_OFF, [...disabled]); renderList(); };
+  t.append(cb, el("span", null, "出題する"));
+  tw.append(t); g2.append(tw);
+  f.append(g2);
+
+  const actions = el("div", "row");
+  const save = el("button", "btn sm", "保存"); save.type = "button";
+  save.onclick = () => {
+    const e2 = validate(q);
+    if (e2.length) { renderForm(); f.scrollIntoView({ block: "nearest" }); return; }
+    q.answerIndex = q.choices.indexOf(q.answer);
+    q.difficultyLabel = labelOf(DIFFS, q.difficulty);
+    q.categoryLabel = labelOf(CATS, q.category);
+    const idx = questions.findIndex(x => x.id === q.id);
+    if (idx >= 0) questions[idx] = { ...q }; else questions.push({ ...q });
+    store.set(LS_KEY, questions);
+    renderList(); renderMeta(); renderSetup();
+    const ok = el("div", "okbox", "保存しました（このブラウザに保存されています）");
+    f.append(ok);
+  };
+  const del = el("button", "btn ghost sm", "この問題を削除"); del.type = "button";
+  del.onclick = () => {
+    questions = questions.filter(x => x.id !== q.id);
+    store.set(LS_KEY, questions);
+    editing = null; renderList(); renderForm(); renderMeta(); renderSetup();
+  };
+  actions.append(save, del);
+  f.append(actions);
+}
+
+function addQuestion() {
+  const nums = questions.map(q => parseInt(q.id.replace("conan-", ""), 10))
+                        .filter(n => !isNaN(n));
+  const id = "conan-" + String(Math.max(0, ...nums) + 1).padStart(3, "0");
+  editing = {
+    id, difficulty: "beginner", difficultyLabel: labelOf(DIFFS, "beginner"),
+    category: "basics", categoryLabel: labelOf(CATS, "basics"),
+    question: "", choices: ["", "", "", ""], answerIndex: 0, answer: "",
+    explanation: "", confidence: "B", sources: [],
+  };
+  questions.push({ ...editing });
+  store.set(LS_KEY, questions);
+  renderList(); renderForm();
+  $("form").scrollIntoView({ behavior: "smooth", block: "nearest" });
+}
+
+function buildExport() {
+  const clean = questions.map(q => {
+    const o = {
+      id: q.id, difficulty: q.difficulty,
+      difficultyLabel: labelOf(DIFFS, q.difficulty),
+      category: q.category, categoryLabel: labelOf(CATS, q.category),
+      question: q.question, choices: q.choices,
+      answerIndex: q.choices.indexOf(q.answer), answer: q.answer,
+      explanation: q.explanation, confidence: q.confidence, sources: q.sources,
+    };
+    if (q.volatile) { o.volatile = true; o.asOf = q.asOf; }
+    return o;
+  });
+  const count = (key) => clean.reduce((a, q) => {
+    a[q[key]] = (a[q[key]] || 0) + 1; return a; }, {});
+  return JSON.stringify({
+    meta: { ...DATA.meta, total: clean.length,
+            countsByDifficulty: count("difficulty"),
+            countsByCategory: count("category") },
+    questions: clean,
+  }, null, 2) + "\n";
+}
+
+async function exportJson() {
+  const btn = $("export");
+  const invalid = questions.filter(q => validate(q).length);
+  if (invalid.length &&
+      !confirm(`出題できない不備のある問題が${invalid.length}件あります。このまま書き出しますか？`)) return;
+  const json = buildExport();
+  const dl = await window.claude?.use?.("downloads");
+  if (dl) {
+    // Claude のアーティファクト上では、ページからの直接ダウンロードが塞がれている
+    try {
+      await dl.save({ filename: "questions.json", data: json });
+      btn.textContent = "書き出しました";
+    } catch (e) {
+      btn.textContent = e && e.code === "declined" ? "キャンセルしました" : "書き出せませんでした";
+    }
+  } else {
+    // 通常のウェブサイト／ローカルファイルとして開かれた場合
+    try {
+      const url = URL.createObjectURL(new Blob([json], { type: "application/json" }));
+      const a = document.createElement("a");
+      a.href = url; a.download = "questions.json";
+      document.body.appendChild(a); a.click(); a.remove();
+      setTimeout(() => URL.revokeObjectURL(url), 1000);
+      btn.textContent = "書き出しました";
+    } catch (e) {
+      btn.textContent = "書き出せませんでした";
+    }
+  }
+  setTimeout(() => { btn.textContent = "JSONを書き出す"; }, 3000);
+}
+
+function resetAll() {
+  if (!confirm("編集内容をすべて破棄して、公開時の状態に戻します。よろしいですか？")) return;
+  store.del(LS_KEY); store.del(LS_OFF);
+  questions = DATA.questions.map(q => ({ ...q }));
+  disabled = new Set();
+  editing = null;
+  renderList(); renderForm(); renderMeta(); renderSetup();
+}
+
+/* ---------- tabs ---------- */
+function showTab(which) {
+  const play = which === "play";
+  $("tab-play").setAttribute("aria-selected", String(play));
+  $("tab-edit").setAttribute("aria-selected", String(!play));
+  $("view-play").hidden = !play;
+  $("view-edit").hidden = play;
+  if (!play) { renderList(); renderForm(); }
+}
+
+/* ---------- wire up ---------- */
+$("tab-play").onclick = () => showTab("play");
+$("tab-edit").onclick = () => showTab("edit");
+$("pick-volatile").onchange = e => { sel.volatile = e.target.checked; renderSetup(); };
+$("start").onclick = startQuiz;
+$("next").onclick = nextQuestion;
+$("abort").onclick = backToSetup;
+$("again").onclick = backToSetup;
+$("add").onclick = addQuestion;
+$("export").onclick = exportJson;
+$("reset").onclick = resetAll;
+$("f-search").oninput = renderList;
+$("f-diff").onchange = renderList;
+$("f-cat").onchange = renderList;
+
+fillSelect($("f-diff"), DIFFS, "すべての難易度");
+fillSelect($("f-cat"), CATS, "すべてのカテゴリ");
+renderMeta();
+renderSetup();
+</script>
