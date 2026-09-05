@@ -58,7 +58,13 @@
 初期に作った55問は照合はしたもののURLを1件しか記録できておらず、
 検査が警告として一覧に出すため、追記のバックログとして使えます。
 
-### 4. 機械的に検査する
+### 4. 出題を避けるべきものを決めておく
+
+「動く数字（巻数・話数・興行収入）は時点を明記する」「公式設定が存在しない誕生日などは出題しない」
+「『最多』のような最上級表現は範囲を限定できるときだけ使う」といった編集方針を
+[`docs/README.md`](./docs/README.md) にまとめてあります。問題を追加する前にご一読ください。
+
+### 5. 機械的に検査する
 
 ```bash
 python3 scripts/verify_quiz.py
@@ -83,7 +89,7 @@ python3 scripts/verify_quiz.py
 | [`index.html`](./index.html) | **ビルド成果物**。GitHub Pages が配信するアプリ本体 |
 | [`data/questions.json`](./data/questions.json) | **正本**。全458問の機械可読データ |
 | [`src/template.html`](./src/template.html) | アプリのソース（問題データは差し込み） |
-| [`docs/`](./docs/) | 調査資料・問題一覧・出題禁止リスト |
+| [`docs/`](./docs/) | 調査資料・問題一覧・出題禁止リスト（[方針は `docs/README.md`](./docs/README.md)） |
 | `scripts/` | ビルド・生成・検査スクリプト |
 
 `data/questions.json` が唯一の正本で、`index.html` と `docs/quiz-bank.md` はそこから生成されます。
