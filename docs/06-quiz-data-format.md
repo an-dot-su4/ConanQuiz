@@ -37,6 +37,8 @@
 | `difficultyLabel` | string | 表示用の日本語（`初級` など） |
 | `category` | string | `basics` / `characters` / `anime` / `movies` / `music` / `organization` / `gadgets` / `trivia` |
 | `categoryLabel` | string | 表示用の日本語（`登場人物` など） |
+| `knowledge` | string | **`story`（作中の知識）／ `production`（制作の知識）** |
+| `knowledgeLabel` | string | 表示用の日本語（`作中` / `制作`） |
 | `question` | string | 問題文 |
 | `choices` | string[] | 選択肢。**必ず4つ**、重複なし |
 | `answerIndex` | number | `choices` 内の正解の位置（0始まり） |
@@ -46,6 +48,17 @@
 | `sources` | string[] | 出典URL（**conan-121 以降は2件以上が必須**。現在458問中403問が2件以上） |
 | `volatile` | boolean? | `true` なら時間経過で答えが変わりうる問題 |
 | `asOf` | string? | `volatile` が `true` のときの基準日 |
+
+### `knowledge` の判定基準
+
+| 値 | 意味 | 例 |
+|---|---|---|
+| `story` | 作品を**観る・読むことで答えられる** | 登場人物の設定・関係、事件、道具、組織、作品タイトル、サブタイトルの読み、決め台詞、作中で語られる名前の由来 |
+| `production` | 作品の**外側の知識** | 声優、監督、脚本、主題歌のアーティスト、公開日・放送日・放送局、興行収入、巻数・話数、作者の経歴、作者による命名の元ネタ |
+
+迷ったときの目安は「**その情報は作品の中で描かれているか**」です。
+たとえば「灰原哀を命名したのは誰？」は作中で阿笠博士が名付ける場面があるので `story`、
+「『灰原』の由来となったP・D・ジェイムズ作品の探偵は？」は作者側の事情なので `production` です。
 
 ### 難易度の目安
 

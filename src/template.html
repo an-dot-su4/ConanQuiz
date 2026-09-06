@@ -86,6 +86,7 @@ a{color:var(--accent)}
   display:inline-flex;align-items:center;gap:6px}
 .chip[aria-pressed="true"]{background:var(--accent);border-color:var(--accent);
   color:var(--accent-ink);font-weight:500}
+.chip-empty{opacity:.45}
 .tag{font-family:var(--mono);font-size:10.5px;letter-spacing:.08em;
   border:1px solid var(--rule);border-radius:2px;padding:2px 7px;color:var(--ink-3)}
 .field{display:flex;flex-direction:column;gap:6px}
@@ -306,6 +307,12 @@ dialog h2{font-size:18px}
       <div class="opt">
         <span>難易度</span>
         <div class="chips" id="pick-difficulty"></div>
+      </div>
+      <div class="opt">
+        <span>問題のタイプ</span>
+        <p class="hint">「作中」は作品を観る・読むことで答えられる問題（登場人物、事件、道具、組織など）。
+          「制作」は作品の外側の問題（声優、監督、脚本、主題歌のアーティスト、公開日、興行収入など）。</p>
+        <div class="chips" id="pick-knowledge"></div>
       </div>
       <div class="opt">
         <span>カテゴリ</span>
@@ -568,6 +575,8 @@ function validate(q) {
   if (!ch.includes(q.answer)) errs.push("正解が選択肢の中にありません。");
   if (!["A", "B"].includes(q.confidence))
     errs.push("信頼度は A か B のみです（C以下は UNVERIFIED.md へ）。");
+  if (!["story", "production"].includes(q.knowledge))
+    errs.push("問題のタイプ（作中／制作）を選んでください。");
   if (!(q.sources || []).some(s => /^https?:\/\//.test(s)))
     errs.push("出典URLが1件もありません。");
   return errs;
@@ -597,6 +606,7 @@ const sel = {
   difficulty: "all",
   categories: new Set(CATS.map(c => c.key)), // 既定は全カテゴリ
   count: 10,
+  knowledge: "all", // all / story（作中の知識）/ production（制作の知識）
   volatile: false,
   balanced: true, // 既定でカテゴリから均等に出題する
 };
@@ -616,7 +626,17 @@ function chipRow(host, items, key, onPick) {
 function categoryChips(onPick) {
   const host = $("pick-category");
   host.innerHTML = "";
-  const counts = DATA.meta.countsByCategory || {};
+  // カテゴリ以外の絞り込み（難易度・タイプ・時点依存）を反映した実数を出す。
+  // 総数のままだと「作中」を選んだのに劇場版147と出てしまい実態と合わない。
+  const counts = {};
+  for (const q of questions) {
+    if (disabled.has(q.id)) continue;
+    if (sel.difficulty !== "all" && q.difficulty !== sel.difficulty) continue;
+    if (sel.knowledge !== "all" && q.knowledge !== sel.knowledge) continue;
+    if (!sel.volatile && q.volatile) continue;
+    if (validate(q).length) continue;
+    counts[q.category] = (counts[q.category] || 0) + 1;
+  }
   const all = CATS.every(c => sel.categories.has(c.key));
 
   const allBtn = el("button", "chip", "すべて");
@@ -633,9 +653,10 @@ function categoryChips(onPick) {
     const b = el("button", "chip");
     b.type = "button";
     if (CAT_ICON[c.key]) b.append(icon(CAT_ICON[c.key]));
-    b.append(document.createTextNode(c.label),
-             el("span", "chip-n", String(counts[c.key] ?? 0)));
+    const n = counts[c.key] ?? 0;
+    b.append(document.createTextNode(c.label), el("span", "chip-n", String(n)));
     b.setAttribute("aria-pressed", String(sel.categories.has(c.key)));
+    if (n === 0) b.classList.add("chip-empty");
     b.onclick = () => {
       sel.categories.has(c.key) ? sel.categories.delete(c.key) : sel.categories.add(c.key);
       onPick();
@@ -650,6 +671,7 @@ function pool() {
     !disabled.has(q.id) &&
     (sel.difficulty === "all" || q.difficulty === sel.difficulty) &&
     sel.categories.has(q.category) &&
+    (sel.knowledge === "all" || q.knowledge === sel.knowledge) &&
     (sel.volatile || !q.volatile) &&
     validate(q).length === 0);
 }
@@ -657,6 +679,10 @@ function pool() {
 function renderSetup() {
   chipRow($("pick-difficulty"),
     [{ key: "all", label: "すべて" }, ...DIFFS], "difficulty", renderSetup);
+  chipRow($("pick-knowledge"),
+    [{ key: "all", label: "すべて" },
+     { key: "story", label: "作中" },
+     { key: "production", label: "制作" }], "knowledge", renderSetup);
   categoryChips(renderSetup);
   chipRow($("pick-count"),
     [5, 10, 20, 30, 50].map(n => ({ key: n, label: `${n}問` })), "count", renderSetup);
@@ -710,7 +736,7 @@ function startQuiz() {
   $("pick-code").value = code;
   // 設定もシードに混ぜる。設定が違えば同じコードでも別の問題セットになる
   const cats = [...sel.categories].sort().join(",");
-  const rnd = makeRng(hashSeed([codeKey(code), sel.difficulty, cats, sel.count,
+  const rnd = makeRng(hashSeed([codeKey(code), sel.difficulty, cats, sel.knowledge, sel.count,
     sel.volatile ? "v" : "", sel.balanced ? "b" : ""].join("|")));
 
   const rows = pool();
@@ -740,6 +766,7 @@ function renderQuestion() {
   catTag.append(document.createTextNode(q.categoryLabel));
   meta.append(
     el("span", "tag", q.difficultyLabel),
+    el("span", "tag", q.knowledgeLabel || ""),
     catTag,
     el("span", "tag", `信頼度 ${q.confidence}`));
   if (q.volatile) meta.append(el("span", "tag", `${q.asOf} 時点`));
@@ -952,6 +979,13 @@ function renderForm() {
   g.append(mkSelect("カテゴリ", CATS, q.category, v => { q.category = v; }));
   f.append(g);
 
+  const g3 = el("div", "grid2");
+  g3.append(mkSelect("問題のタイプ",
+    [{ key: "story", label: "作中（観れば分かる）" },
+     { key: "production", label: "制作（作品の外側）" }],
+    q.knowledge || "story", v => { q.knowledge = v; }));
+  f.append(g3);
+
   const g2 = el("div", "grid2");
   g2.append(mkSelect("信頼度", [{ key: "A", label: "A（公式で確認）" },
                                 { key: "B", label: "B（2系統で一致）" }],
@@ -975,6 +1009,8 @@ function renderForm() {
     q.answerIndex = q.choices.indexOf(q.answer);
     q.difficultyLabel = labelOf(DIFFS, q.difficulty);
     q.categoryLabel = labelOf(CATS, q.category);
+    q.knowledge = q.knowledge || "story";
+    q.knowledgeLabel = q.knowledge === "production" ? "制作" : "作中";
     const idx = questions.findIndex(x => x.id === q.id);
     if (idx >= 0) questions[idx] = { ...q }; else questions.push({ ...q });
     store.set(LS_KEY, questions);
@@ -999,6 +1035,7 @@ function addQuestion() {
   editing = {
     id, difficulty: "beginner", difficultyLabel: labelOf(DIFFS, "beginner"),
     category: "basics", categoryLabel: labelOf(CATS, "basics"),
+    knowledge: "story", knowledgeLabel: "作中",
     question: "", choices: ["", "", "", ""], answerIndex: 0, answer: "",
     explanation: "", confidence: "B", sources: [],
   };
@@ -1014,6 +1051,8 @@ function buildExport() {
       id: q.id, difficulty: q.difficulty,
       difficultyLabel: labelOf(DIFFS, q.difficulty),
       category: q.category, categoryLabel: labelOf(CATS, q.category),
+      knowledge: q.knowledge,
+      knowledgeLabel: q.knowledge === "production" ? "制作" : "作中",
       question: q.question, choices: q.choices,
       answerIndex: q.choices.indexOf(q.answer), answer: q.answer,
       explanation: q.explanation, confidence: q.confidence, sources: q.sources,
@@ -1081,6 +1120,7 @@ function shareUrl() {
     c: CATS.every(c => sel.categories.has(c.key))
       ? "all" : [...sel.categories].sort().join(","),
     n: String(sel.count),
+    ...(sel.knowledge === "all" ? {} : { k: sel.knowledge }),
     ...(sel.volatile ? { v: "1" } : {}),
     ...(sel.balanced ? {} : { b: "0" }),
   }).toString();
@@ -1123,6 +1163,8 @@ function applyUrlParams() {
     if (keys.length) sel.categories = new Set(keys);
   }
   if ([5, 10, 20, 30, 50].includes(n)) sel.count = n;
+  const k = p.get("k");
+  if (["story", "production"].includes(k)) sel.knowledge = k;
   sel.volatile = p.get("v") === "1";
   sel.balanced = p.get("b") !== "0";
   return true;

@@ -136,6 +136,12 @@ def check_question(q: dict, idx: int, diffs: set[str], cats: set[str],
                 issues.append(Issue("WARN", qid, "choices/overlap",
                                     f"正解 {answer!r} と誤答 {c!r} が包含関係にあります。"))
 
+    kn = q.get("knowledge")
+    if kn not in ("story", "production"):
+        issues.append(Issue("ERROR", qid, "knowledge",
+                            f"knowledge は 'story'（作中）か 'production'（制作）です"
+                            f"（現在 {kn!r}）。"))
+
     conf = q.get("confidence")
     if conf not in ALLOWED_CONFIDENCE:
         issues.append(Issue("ERROR", qid, "confidence",
