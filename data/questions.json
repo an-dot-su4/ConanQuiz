@@ -1,20 +1,20 @@
 {
   "meta": {
     "title": "名探偵コナン クイズ問題データ",
-    "version": "2.2.0",
+    "version": "2.4.0",
     "updated": "2026-09-04",
-    "total": 458,
+    "total": 480,
     "countsByDifficulty": {
       "beginner": 76,
-      "intermediate": 131,
+      "intermediate": 153,
       "advanced": 251
     },
     "countsByCategory": {
       "basics": 11,
-      "characters": 107,
-      "gadgets": 6,
+      "characters": 117,
+      "gadgets": 16,
       "anime": 8,
-      "movies": 147,
+      "movies": 149,
       "organization": 14,
       "music": 158,
       "trivia": 7
@@ -75,7 +75,7 @@
     ],
     "countsByKnowledge": {
       "production": 280,
-      "story": 178
+      "story": 200
     }
   },
   "questions": [
@@ -11029,6 +11029,534 @@
       ],
       "knowledge": "story",
       "knowledgeLabel": "作中"
+    },
+    {
+      "id": "conan-459",
+      "difficulty": "intermediate",
+      "difficultyLabel": "中級",
+      "category": "gadgets",
+      "categoryLabel": "道具・発明品",
+      "knowledge": "story",
+      "knowledgeLabel": "作中",
+      "question": "少年探偵団が連絡を取り合うために持っている、阿笠博士の発明品は？",
+      "choices": [
+        "犯人追跡メガネ",
+        "ボタン型スピーカー",
+        "伸縮サスペンダー",
+        "探偵バッジ"
+      ],
+      "answerIndex": 3,
+      "answer": "探偵バッジ",
+      "explanation": "超小型のトランシーバーを内蔵したバッジ。少年探偵団の連絡手段になっている。",
+      "confidence": "B",
+      "sources": [
+        "https://www.animatetimes.com/news/details.php?id=1745319240",
+        "https://conanmania.hatenablog.com/entry/hatumeihin"
+      ]
+    },
+    {
+      "id": "conan-460",
+      "difficulty": "intermediate",
+      "difficultyLabel": "中級",
+      "category": "gadgets",
+      "categoryLabel": "道具・発明品",
+      "knowledge": "story",
+      "knowledgeLabel": "作中",
+      "question": "重いものを動かすときにも使える、コナンのズボンを支えている発明品は？",
+      "choices": [
+        "伸縮サスペンダー",
+        "キック力増強シューズ",
+        "探偵バッジ",
+        "腕時計型ライト"
+      ],
+      "answerIndex": 0,
+      "answer": "伸縮サスペンダー",
+      "explanation": "特殊な形状記憶素材でできており、伸縮して重いものを動かすこともできる。",
+      "confidence": "B",
+      "sources": [
+        "https://www.animatetimes.com/news/details.php?id=1745319240",
+        "https://conanmania.hatenablog.com/entry/hatumeihin"
+      ]
+    },
+    {
+      "id": "conan-461",
+      "difficulty": "intermediate",
+      "difficultyLabel": "中級",
+      "category": "gadgets",
+      "categoryLabel": "道具・発明品",
+      "knowledge": "story",
+      "knowledgeLabel": "作中",
+      "question": "蝶ネクタイ型変声機で作った声を、離れた場所から出すための発明品は？",
+      "choices": [
+        "ボイスレコチェンジャー",
+        "ボタン型スピーカー",
+        "イヤリング型携帯電話",
+        "マスク型変声機"
+      ],
+      "answerIndex": 1,
+      "answer": "ボタン型スピーカー",
+      "explanation": "変声機の音声を飛ばすスピーカー。眠りの小五郎の推理を披露するときに使われる。",
+      "confidence": "B",
+      "sources": [
+        "https://www.animatetimes.com/news/details.php?id=1745319240",
+        "https://conanmania.hatenablog.com/entry/hatumeihin"
+      ]
+    },
+    {
+      "id": "conan-462",
+      "difficulty": "intermediate",
+      "difficultyLabel": "中級",
+      "category": "gadgets",
+      "categoryLabel": "道具・発明品",
+      "knowledge": "story",
+      "knowledgeLabel": "作中",
+      "question": "暗い場所を照らすための、腕に着ける阿笠博士の発明品は？",
+      "choices": [
+        "時計型麻酔銃",
+        "犯人追跡メガネ",
+        "腕時計型ライト",
+        "探偵バッジ"
+      ],
+      "answerIndex": 2,
+      "answer": "腕時計型ライト",
+      "explanation": "腕時計型のLEDライト。少年探偵団も使っている。",
+      "confidence": "B",
+      "sources": [
+        "https://www.animatetimes.com/news/details.php?id=1745319240",
+        "https://conanmania.hatenablog.com/entry/hatumeihin"
+      ]
+    },
+    {
+      "id": "conan-463",
+      "difficulty": "intermediate",
+      "difficultyLabel": "中級",
+      "category": "gadgets",
+      "categoryLabel": "道具・発明品",
+      "knowledge": "story",
+      "knowledgeLabel": "作中",
+      "question": "お弁当箱の形をした、阿笠博士の通信用の発明品は？",
+      "choices": [
+        "イヤリング型携帯電話",
+        "ボタン型スピーカー",
+        "探偵バッジ",
+        "弁当型携帯FAX"
+      ],
+      "answerIndex": 3,
+      "answer": "弁当型携帯FAX",
+      "explanation": "弁当箱に見せかけた携帯FAX。登場回数の少ないレアな発明品。",
+      "confidence": "B",
+      "sources": [
+        "https://www.animatetimes.com/news/details.php?id=1745319240",
+        "https://conanmania.hatenablog.com/entry/hatumeihin"
+      ]
+    },
+    {
+      "id": "conan-464",
+      "difficulty": "intermediate",
+      "difficultyLabel": "中級",
+      "category": "gadgets",
+      "categoryLabel": "道具・発明品",
+      "knowledge": "story",
+      "knowledgeLabel": "作中",
+      "question": "耳飾りの形をした、阿笠博士が作った連絡用の道具は？",
+      "choices": [
+        "イヤリング型携帯電話",
+        "ボタン型スピーカー",
+        "チョーカー型変声機",
+        "腕時計型ライト"
+      ],
+      "answerIndex": 0,
+      "answer": "イヤリング型携帯電話",
+      "explanation": "イヤリングに見せかけた小型の携帯電話。",
+      "confidence": "B",
+      "sources": [
+        "https://www.animatetimes.com/news/details.php?id=1745319240",
+        "https://conanmania.hatenablog.com/entry/hatumeihin"
+      ]
+    },
+    {
+      "id": "conan-465",
+      "difficulty": "intermediate",
+      "difficultyLabel": "中級",
+      "category": "gadgets",
+      "categoryLabel": "道具・発明品",
+      "knowledge": "story",
+      "knowledgeLabel": "作中",
+      "question": "声を録音して別の声に変換できる、阿笠博士の発明品は？",
+      "choices": [
+        "蝶ネクタイ型変声機",
+        "ボイスレコチェンジャー",
+        "ボタン型スピーカー",
+        "マスク型変声機"
+      ],
+      "answerIndex": 1,
+      "answer": "ボイスレコチェンジャー",
+      "explanation": "声を録音し、変換して再生できる装置。",
+      "confidence": "B",
+      "sources": [
+        "https://www.animatetimes.com/news/details.php?id=1745319240",
+        "https://conanmania.hatenablog.com/entry/hatumeihin"
+      ]
+    },
+    {
+      "id": "conan-466",
+      "difficulty": "intermediate",
+      "difficultyLabel": "中級",
+      "category": "gadgets",
+      "categoryLabel": "道具・発明品",
+      "knowledge": "story",
+      "knowledgeLabel": "作中",
+      "question": "顔に着けて声を変えるタイプの、阿笠博士の変声アイテムは？",
+      "choices": [
+        "蝶ネクタイ型変声機",
+        "ボイスレコチェンジャー",
+        "マスク型変声機",
+        "ボタン型スピーカー"
+      ],
+      "answerIndex": 2,
+      "answer": "マスク型変声機",
+      "explanation": "マスクの形をした変声機。蝶ネクタイ型とは別のバリエーション。",
+      "confidence": "B",
+      "sources": [
+        "https://www.animatetimes.com/news/details.php?id=1745319240",
+        "https://conanmania.hatenablog.com/entry/hatumeihin"
+      ]
+    },
+    {
+      "id": "conan-467",
+      "difficulty": "intermediate",
+      "difficultyLabel": "中級",
+      "category": "gadgets",
+      "categoryLabel": "道具・発明品",
+      "knowledge": "story",
+      "knowledgeLabel": "作中",
+      "question": "高いところから落ちるときに使う、背負う形の発明品は？",
+      "choices": [
+        "ターボエンジン付きスケートボード",
+        "伸縮サスペンダー",
+        "小型酸素ボンベ",
+        "リュックサック式パラグライダー"
+      ],
+      "answerIndex": 3,
+      "answer": "リュックサック式パラグライダー",
+      "explanation": "リュックサックに見せかけたパラグライダー。空中からの落下時に開く。",
+      "confidence": "B",
+      "sources": [
+        "https://www.animatetimes.com/news/details.php?id=1745319240",
+        "https://conanmania.hatenablog.com/entry/hatumeihin"
+      ]
+    },
+    {
+      "id": "conan-468",
+      "difficulty": "intermediate",
+      "difficultyLabel": "中級",
+      "category": "gadgets",
+      "categoryLabel": "道具・発明品",
+      "knowledge": "story",
+      "knowledgeLabel": "作中",
+      "question": "犯人追跡メガネが発信機を探知できる範囲は？",
+      "choices": [
+        "半径20km以内",
+        "半径200m以内",
+        "半径2km以内",
+        "半径200km以内"
+      ],
+      "answerIndex": 0,
+      "answer": "半径20km以内",
+      "explanation": "半径20km以内にある発信機の位置を特定できる。盗聴機能も備えている。",
+      "confidence": "B",
+      "sources": [
+        "https://www.animatetimes.com/news/details.php?id=1745319240",
+        "https://conanmania.hatenablog.com/entry/hatumeihin"
+      ]
+    },
+    {
+      "id": "conan-469",
+      "difficulty": "intermediate",
+      "difficultyLabel": "中級",
+      "category": "characters",
+      "categoryLabel": "登場人物",
+      "knowledge": "story",
+      "knowledgeLabel": "作中",
+      "question": "帝丹小学校1年B組の担任の先生は？",
+      "choices": [
+        "若狭留美",
+        "小林澄子",
+        "妃英理",
+        "工藤有希子"
+      ],
+      "answerIndex": 1,
+      "answer": "小林澄子",
+      "explanation": "少年探偵団のクラスの担任。江戸川乱歩の大ファンでもある。",
+      "confidence": "B",
+      "sources": [
+        "https://ja.wikipedia.org/wiki/名探偵コナンの登場人物",
+        "https://conan-guide.com/characters"
+      ]
+    },
+    {
+      "id": "conan-470",
+      "difficulty": "intermediate",
+      "difficultyLabel": "中級",
+      "category": "characters",
+      "categoryLabel": "登場人物",
+      "knowledge": "story",
+      "knowledgeLabel": "作中",
+      "question": "帝丹小学校の副担任として赴任してきた先生は？",
+      "choices": [
+        "小林澄子",
+        "宮本由美",
+        "若狭留美",
+        "水無怜奈"
+      ],
+      "answerIndex": 2,
+      "answer": "若狭留美",
+      "explanation": "謎の多い新任教師。料理が得意。",
+      "confidence": "B",
+      "sources": [
+        "https://ja.wikipedia.org/wiki/名探偵コナンの登場人物",
+        "https://conan-guide.com/characters"
+      ]
+    },
+    {
+      "id": "conan-471",
+      "difficulty": "intermediate",
+      "difficultyLabel": "中級",
+      "category": "characters",
+      "categoryLabel": "登場人物",
+      "knowledge": "story",
+      "knowledgeLabel": "作中",
+      "question": "帝丹高校の校医は？",
+      "choices": [
+        "阿笠博士",
+        "工藤優作",
+        "服部平蔵",
+        "新出智明"
+      ],
+      "answerIndex": 3,
+      "answer": "新出智明",
+      "explanation": "帝丹高校の校医で、医師。",
+      "confidence": "B",
+      "sources": [
+        "https://ja.wikipedia.org/wiki/名探偵コナンの登場人物",
+        "https://conan-guide.com/characters"
+      ]
+    },
+    {
+      "id": "conan-472",
+      "difficulty": "intermediate",
+      "difficultyLabel": "中級",
+      "category": "characters",
+      "categoryLabel": "登場人物",
+      "knowledge": "story",
+      "knowledgeLabel": "作中",
+      "question": "鈴木財閥の相談役で、怪盗キッドと何度も対決している人物は？",
+      "choices": [
+        "鈴木次郎吉",
+        "鈴木史郎",
+        "大岡紅葉",
+        "工藤優作"
+      ],
+      "answerIndex": 0,
+      "answer": "鈴木次郎吉",
+      "explanation": "鈴木財閥の相談役。怪盗キッドへの挑戦を繰り返している。",
+      "confidence": "B",
+      "sources": [
+        "https://ja.wikipedia.org/wiki/名探偵コナンの登場人物",
+        "https://conan-guide.com/characters"
+      ]
+    },
+    {
+      "id": "conan-473",
+      "difficulty": "intermediate",
+      "difficultyLabel": "中級",
+      "category": "characters",
+      "categoryLabel": "登場人物",
+      "knowledge": "story",
+      "knowledgeLabel": "作中",
+      "question": "京都泉心高校に通う、剣道の使い手の高校生は？",
+      "choices": [
+        "京極真",
+        "沖田総司",
+        "服部平次",
+        "白馬探"
+      ],
+      "answerIndex": 1,
+      "answer": "沖田総司",
+      "explanation": "剣道部に所属する高校生剣士。服部平次のライバル。",
+      "confidence": "B",
+      "sources": [
+        "https://ja.wikipedia.org/wiki/名探偵コナンの登場人物",
+        "https://conan-guide.com/characters"
+      ]
+    },
+    {
+      "id": "conan-474",
+      "difficulty": "intermediate",
+      "difficultyLabel": "中級",
+      "category": "characters",
+      "categoryLabel": "登場人物",
+      "knowledge": "story",
+      "knowledgeLabel": "作中",
+      "question": "鈴木園子の恋人・京極真が極めている武道は？",
+      "choices": [
+        "剣道",
+        "合気道",
+        "空手",
+        "柔道"
+      ],
+      "answerIndex": 2,
+      "answer": "空手",
+      "explanation": "空手の達人。公式戦で無敗を誇る。",
+      "confidence": "B",
+      "sources": [
+        "https://ja.wikipedia.org/wiki/名探偵コナンの登場人物",
+        "https://conan-guide.com/characters"
+      ]
+    },
+    {
+      "id": "conan-475",
+      "difficulty": "intermediate",
+      "difficultyLabel": "中級",
+      "category": "characters",
+      "categoryLabel": "登場人物",
+      "knowledge": "story",
+      "knowledgeLabel": "作中",
+      "question": "将棋で七冠を保持している、赤井秀一の弟は？",
+      "choices": [
+        "沖矢昴",
+        "諸伏高明",
+        "本堂瑛祐",
+        "羽田秀吉"
+      ],
+      "answerIndex": 3,
+      "answer": "羽田秀吉",
+      "explanation": "将棋のタイトル七冠を持つ棋士。赤井家の次男。",
+      "confidence": "B",
+      "sources": [
+        "https://ja.wikipedia.org/wiki/名探偵コナンの登場人物",
+        "https://conan-guide.com/characters"
+      ]
+    },
+    {
+      "id": "conan-476",
+      "difficulty": "intermediate",
+      "difficultyLabel": "中級",
+      "category": "characters",
+      "categoryLabel": "登場人物",
+      "knowledge": "story",
+      "knowledgeLabel": "作中",
+      "question": "鈴木財閥の会長で、鈴木園子の父は？",
+      "choices": [
+        "鈴木史郎",
+        "鈴木次郎吉",
+        "鈴木朋子",
+        "大岡紅葉"
+      ],
+      "answerIndex": 0,
+      "answer": "鈴木史郎",
+      "explanation": "鈴木財閥の会長。園子と綾子の父。",
+      "confidence": "B",
+      "sources": [
+        "https://ja.wikipedia.org/wiki/名探偵コナンの登場人物",
+        "https://conan-guide.com/characters"
+      ]
+    },
+    {
+      "id": "conan-477",
+      "difficulty": "intermediate",
+      "difficultyLabel": "中級",
+      "category": "characters",
+      "categoryLabel": "登場人物",
+      "knowledge": "story",
+      "knowledgeLabel": "作中",
+      "question": "鈴木園子の姉の名前は？",
+      "choices": [
+        "鈴木朋子",
+        "鈴木綾子",
+        "遠山和葉",
+        "世良真純"
+      ],
+      "answerIndex": 1,
+      "answer": "鈴木綾子",
+      "explanation": "園子の姉。",
+      "confidence": "B",
+      "sources": [
+        "https://ja.wikipedia.org/wiki/名探偵コナンの登場人物",
+        "https://conan-guide.com/characters"
+      ]
+    },
+    {
+      "id": "conan-478",
+      "difficulty": "intermediate",
+      "difficultyLabel": "中級",
+      "category": "characters",
+      "categoryLabel": "登場人物",
+      "knowledge": "story",
+      "knowledgeLabel": "作中",
+      "question": "服部平次の幼馴染・遠山和葉が習っている武道は？",
+      "choices": [
+        "空手",
+        "剣道",
+        "合気道",
+        "柔道"
+      ],
+      "answerIndex": 2,
+      "answer": "合気道",
+      "explanation": "合気道部に所属している。幼馴染の服部平次は剣道。",
+      "confidence": "B",
+      "sources": [
+        "https://ja.wikipedia.org/wiki/名探偵コナンの登場人物",
+        "https://conan-guide.com/characters"
+      ]
+    },
+    {
+      "id": "conan-479",
+      "difficulty": "intermediate",
+      "difficultyLabel": "中級",
+      "category": "movies",
+      "categoryLabel": "劇場版",
+      "knowledge": "story",
+      "knowledgeLabel": "作中",
+      "question": "劇場版第26作『黒鉄の魚影』の主な舞台となった場所は？",
+      "choices": [
+        "函館",
+        "箱根",
+        "京都",
+        "八丈島とその近海"
+      ],
+      "answerIndex": 3,
+      "answer": "八丈島とその近海",
+      "explanation": "八丈島の近海に浮かぶ、インターポールの海洋施設「パシフィック・ブイ」が舞台。",
+      "confidence": "B",
+      "sources": [
+        "https://ja.wikipedia.org/wiki/名探偵コナン_黒鉄の魚影",
+        "https://dengekionline.com/articles/184458/"
+      ]
+    },
+    {
+      "id": "conan-480",
+      "difficulty": "intermediate",
+      "difficultyLabel": "中級",
+      "category": "movies",
+      "categoryLabel": "劇場版",
+      "knowledge": "story",
+      "knowledgeLabel": "作中",
+      "question": "劇場版第29作『ハイウェイの堕天使』の主な舞台となった都県は？",
+      "choices": [
+        "神奈川県",
+        "北海道",
+        "大阪府",
+        "沖縄県"
+      ],
+      "answerIndex": 0,
+      "answer": "神奈川県",
+      "explanation": "箱根・横浜など神奈川県が主な舞台。",
+      "confidence": "B",
+      "sources": [
+        "https://ja.wikipedia.org/wiki/名探偵コナン_ハイウェイの堕天使",
+        "https://eiga.com/news/20260413/16/"
+      ]
     }
   ]
 }

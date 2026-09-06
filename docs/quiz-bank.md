@@ -1,4 +1,4 @@
-# 名探偵コナン クイズ問題集（全458問）
+# 名探偵コナン クイズ問題集（全480問）
 
 > ⚠️ **このファイルは自動生成です。直接編集しないでください。**
 > 正本は [`questions.json`](../data/questions.json) です。編集後は
@@ -7,7 +7,7 @@
 掲載しているのはすべて **2系統以上の独立した情報源で照合済み**（信頼度 A / B）の問題です。
 情報源が食い違ったものは [`UNVERIFIED.md`](./UNVERIFIED.md) に隔離してあり、ここには含まれません。
 
-- **総数：458問**（初級 76問／中級 131問／上級 251問）
+- **総数：480問**（初級 76問／中級 153問／上級 251問）
 - 最終更新：2026-09-04
 
 ---
@@ -1465,7 +1465,7 @@ APTX4869（アポトキシン4869）。黒ずくめの組織が開発した毒�
 
 </details>
 
-## 【中級】131問
+## 【中級】153問
 
 ### conan-041　原作漫画の第1話のタイトルは？
 
@@ -3953,6 +3953,424 @@ King Gnuの「TWILIGHT!!!」（2025年）。
 『業火の向日葵』は「ひまわり」。他の3作は「プライベート・アイ」「スナイパー」「クォーター」と読む。
 
 [出典1](https://ja.wikipedia.org/wiki/劇場版名探偵コナン)　[出典2](https://conanmania.hatenablog.com/entry/gekijouban)　[出典3](https://hisapom.club/movie/conan-movie/how-to-read/)
+
+</details>
+
+### conan-459　少年探偵団が連絡を取り合うために持っている、阿笠博士の発明品は？
+
+`道具・発明品`　信頼度 **B**
+
+1. 犯人追跡メガネ
+2. ボタン型スピーカー
+3. 伸縮サスペンダー
+4. 探偵バッジ
+
+<details><summary>答えを見る</summary>
+
+**正解：4. 探偵バッジ**
+
+超小型のトランシーバーを内蔵したバッジ。少年探偵団の連絡手段になっている。
+
+[出典1](https://www.animatetimes.com/news/details.php?id=1745319240)　[出典2](https://conanmania.hatenablog.com/entry/hatumeihin)
+
+</details>
+
+### conan-460　重いものを動かすときにも使える、コナンのズボンを支えている発明品は？
+
+`道具・発明品`　信頼度 **B**
+
+1. 伸縮サスペンダー
+2. キック力増強シューズ
+3. 探偵バッジ
+4. 腕時計型ライト
+
+<details><summary>答えを見る</summary>
+
+**正解：1. 伸縮サスペンダー**
+
+特殊な形状記憶素材でできており、伸縮して重いものを動かすこともできる。
+
+[出典1](https://www.animatetimes.com/news/details.php?id=1745319240)　[出典2](https://conanmania.hatenablog.com/entry/hatumeihin)
+
+</details>
+
+### conan-461　蝶ネクタイ型変声機で作った声を、離れた場所から出すための発明品は？
+
+`道具・発明品`　信頼度 **B**
+
+1. ボイスレコチェンジャー
+2. ボタン型スピーカー
+3. イヤリング型携帯電話
+4. マスク型変声機
+
+<details><summary>答えを見る</summary>
+
+**正解：2. ボタン型スピーカー**
+
+変声機の音声を飛ばすスピーカー。眠りの小五郎の推理を披露するときに使われる。
+
+[出典1](https://www.animatetimes.com/news/details.php?id=1745319240)　[出典2](https://conanmania.hatenablog.com/entry/hatumeihin)
+
+</details>
+
+### conan-462　暗い場所を照らすための、腕に着ける阿笠博士の発明品は？
+
+`道具・発明品`　信頼度 **B**
+
+1. 時計型麻酔銃
+2. 犯人追跡メガネ
+3. 腕時計型ライト
+4. 探偵バッジ
+
+<details><summary>答えを見る</summary>
+
+**正解：3. 腕時計型ライト**
+
+腕時計型のLEDライト。少年探偵団も使っている。
+
+[出典1](https://www.animatetimes.com/news/details.php?id=1745319240)　[出典2](https://conanmania.hatenablog.com/entry/hatumeihin)
+
+</details>
+
+### conan-463　お弁当箱の形をした、阿笠博士の通信用の発明品は？
+
+`道具・発明品`　信頼度 **B**
+
+1. イヤリング型携帯電話
+2. ボタン型スピーカー
+3. 探偵バッジ
+4. 弁当型携帯FAX
+
+<details><summary>答えを見る</summary>
+
+**正解：4. 弁当型携帯FAX**
+
+弁当箱に見せかけた携帯FAX。登場回数の少ないレアな発明品。
+
+[出典1](https://www.animatetimes.com/news/details.php?id=1745319240)　[出典2](https://conanmania.hatenablog.com/entry/hatumeihin)
+
+</details>
+
+### conan-464　耳飾りの形をした、阿笠博士が作った連絡用の道具は？
+
+`道具・発明品`　信頼度 **B**
+
+1. イヤリング型携帯電話
+2. ボタン型スピーカー
+3. チョーカー型変声機
+4. 腕時計型ライト
+
+<details><summary>答えを見る</summary>
+
+**正解：1. イヤリング型携帯電話**
+
+イヤリングに見せかけた小型の携帯電話。
+
+[出典1](https://www.animatetimes.com/news/details.php?id=1745319240)　[出典2](https://conanmania.hatenablog.com/entry/hatumeihin)
+
+</details>
+
+### conan-465　声を録音して別の声に変換できる、阿笠博士の発明品は？
+
+`道具・発明品`　信頼度 **B**
+
+1. 蝶ネクタイ型変声機
+2. ボイスレコチェンジャー
+3. ボタン型スピーカー
+4. マスク型変声機
+
+<details><summary>答えを見る</summary>
+
+**正解：2. ボイスレコチェンジャー**
+
+声を録音し、変換して再生できる装置。
+
+[出典1](https://www.animatetimes.com/news/details.php?id=1745319240)　[出典2](https://conanmania.hatenablog.com/entry/hatumeihin)
+
+</details>
+
+### conan-466　顔に着けて声を変えるタイプの、阿笠博士の変声アイテムは？
+
+`道具・発明品`　信頼度 **B**
+
+1. 蝶ネクタイ型変声機
+2. ボイスレコチェンジャー
+3. マスク型変声機
+4. ボタン型スピーカー
+
+<details><summary>答えを見る</summary>
+
+**正解：3. マスク型変声機**
+
+マスクの形をした変声機。蝶ネクタイ型とは別のバリエーション。
+
+[出典1](https://www.animatetimes.com/news/details.php?id=1745319240)　[出典2](https://conanmania.hatenablog.com/entry/hatumeihin)
+
+</details>
+
+### conan-467　高いところから落ちるときに使う、背負う形の発明品は？
+
+`道具・発明品`　信頼度 **B**
+
+1. ターボエンジン付きスケートボード
+2. 伸縮サスペンダー
+3. 小型酸素ボンベ
+4. リュックサック式パラグライダー
+
+<details><summary>答えを見る</summary>
+
+**正解：4. リュックサック式パラグライダー**
+
+リュックサックに見せかけたパラグライダー。空中からの落下時に開く。
+
+[出典1](https://www.animatetimes.com/news/details.php?id=1745319240)　[出典2](https://conanmania.hatenablog.com/entry/hatumeihin)
+
+</details>
+
+### conan-468　犯人追跡メガネが発信機を探知できる範囲は？
+
+`道具・発明品`　信頼度 **B**
+
+1. 半径20km以内
+2. 半径200m以内
+3. 半径2km以内
+4. 半径200km以内
+
+<details><summary>答えを見る</summary>
+
+**正解：1. 半径20km以内**
+
+半径20km以内にある発信機の位置を特定できる。盗聴機能も備えている。
+
+[出典1](https://www.animatetimes.com/news/details.php?id=1745319240)　[出典2](https://conanmania.hatenablog.com/entry/hatumeihin)
+
+</details>
+
+### conan-469　帝丹小学校1年B組の担任の先生は？
+
+`登場人物`　信頼度 **B**
+
+1. 若狭留美
+2. 小林澄子
+3. 妃英理
+4. 工藤有希子
+
+<details><summary>答えを見る</summary>
+
+**正解：2. 小林澄子**
+
+少年探偵団のクラスの担任。江戸川乱歩の大ファンでもある。
+
+[出典1](https://ja.wikipedia.org/wiki/名探偵コナンの登場人物)　[出典2](https://conan-guide.com/characters)
+
+</details>
+
+### conan-470　帝丹小学校の副担任として赴任してきた先生は？
+
+`登場人物`　信頼度 **B**
+
+1. 小林澄子
+2. 宮本由美
+3. 若狭留美
+4. 水無怜奈
+
+<details><summary>答えを見る</summary>
+
+**正解：3. 若狭留美**
+
+謎の多い新任教師。料理が得意。
+
+[出典1](https://ja.wikipedia.org/wiki/名探偵コナンの登場人物)　[出典2](https://conan-guide.com/characters)
+
+</details>
+
+### conan-471　帝丹高校の校医は？
+
+`登場人物`　信頼度 **B**
+
+1. 阿笠博士
+2. 工藤優作
+3. 服部平蔵
+4. 新出智明
+
+<details><summary>答えを見る</summary>
+
+**正解：4. 新出智明**
+
+帝丹高校の校医で、医師。
+
+[出典1](https://ja.wikipedia.org/wiki/名探偵コナンの登場人物)　[出典2](https://conan-guide.com/characters)
+
+</details>
+
+### conan-472　鈴木財閥の相談役で、怪盗キッドと何度も対決している人物は？
+
+`登場人物`　信頼度 **B**
+
+1. 鈴木次郎吉
+2. 鈴木史郎
+3. 大岡紅葉
+4. 工藤優作
+
+<details><summary>答えを見る</summary>
+
+**正解：1. 鈴木次郎吉**
+
+鈴木財閥の相談役。怪盗キッドへの挑戦を繰り返している。
+
+[出典1](https://ja.wikipedia.org/wiki/名探偵コナンの登場人物)　[出典2](https://conan-guide.com/characters)
+
+</details>
+
+### conan-473　京都泉心高校に通う、剣道の使い手の高校生は？
+
+`登場人物`　信頼度 **B**
+
+1. 京極真
+2. 沖田総司
+3. 服部平次
+4. 白馬探
+
+<details><summary>答えを見る</summary>
+
+**正解：2. 沖田総司**
+
+剣道部に所属する高校生剣士。服部平次のライバル。
+
+[出典1](https://ja.wikipedia.org/wiki/名探偵コナンの登場人物)　[出典2](https://conan-guide.com/characters)
+
+</details>
+
+### conan-474　鈴木園子の恋人・京極真が極めている武道は？
+
+`登場人物`　信頼度 **B**
+
+1. 剣道
+2. 合気道
+3. 空手
+4. 柔道
+
+<details><summary>答えを見る</summary>
+
+**正解：3. 空手**
+
+空手の達人。公式戦で無敗を誇る。
+
+[出典1](https://ja.wikipedia.org/wiki/名探偵コナンの登場人物)　[出典2](https://conan-guide.com/characters)
+
+</details>
+
+### conan-475　将棋で七冠を保持している、赤井秀一の弟は？
+
+`登場人物`　信頼度 **B**
+
+1. 沖矢昴
+2. 諸伏高明
+3. 本堂瑛祐
+4. 羽田秀吉
+
+<details><summary>答えを見る</summary>
+
+**正解：4. 羽田秀吉**
+
+将棋のタイトル七冠を持つ棋士。赤井家の次男。
+
+[出典1](https://ja.wikipedia.org/wiki/名探偵コナンの登場人物)　[出典2](https://conan-guide.com/characters)
+
+</details>
+
+### conan-476　鈴木財閥の会長で、鈴木園子の父は？
+
+`登場人物`　信頼度 **B**
+
+1. 鈴木史郎
+2. 鈴木次郎吉
+3. 鈴木朋子
+4. 大岡紅葉
+
+<details><summary>答えを見る</summary>
+
+**正解：1. 鈴木史郎**
+
+鈴木財閥の会長。園子と綾子の父。
+
+[出典1](https://ja.wikipedia.org/wiki/名探偵コナンの登場人物)　[出典2](https://conan-guide.com/characters)
+
+</details>
+
+### conan-477　鈴木園子の姉の名前は？
+
+`登場人物`　信頼度 **B**
+
+1. 鈴木朋子
+2. 鈴木綾子
+3. 遠山和葉
+4. 世良真純
+
+<details><summary>答えを見る</summary>
+
+**正解：2. 鈴木綾子**
+
+園子の姉。
+
+[出典1](https://ja.wikipedia.org/wiki/名探偵コナンの登場人物)　[出典2](https://conan-guide.com/characters)
+
+</details>
+
+### conan-478　服部平次の幼馴染・遠山和葉が習っている武道は？
+
+`登場人物`　信頼度 **B**
+
+1. 空手
+2. 剣道
+3. 合気道
+4. 柔道
+
+<details><summary>答えを見る</summary>
+
+**正解：3. 合気道**
+
+合気道部に所属している。幼馴染の服部平次は剣道。
+
+[出典1](https://ja.wikipedia.org/wiki/名探偵コナンの登場人物)　[出典2](https://conan-guide.com/characters)
+
+</details>
+
+### conan-479　劇場版第26作『黒鉄の魚影』の主な舞台となった場所は？
+
+`劇場版`　信頼度 **B**
+
+1. 函館
+2. 箱根
+3. 京都
+4. 八丈島とその近海
+
+<details><summary>答えを見る</summary>
+
+**正解：4. 八丈島とその近海**
+
+八丈島の近海に浮かぶ、インターポールの海洋施設「パシフィック・ブイ」が舞台。
+
+[出典1](https://ja.wikipedia.org/wiki/名探偵コナン_黒鉄の魚影)　[出典2](https://dengekionline.com/articles/184458/)
+
+</details>
+
+### conan-480　劇場版第29作『ハイウェイの堕天使』の主な舞台となった都県は？
+
+`劇場版`　信頼度 **B**
+
+1. 神奈川県
+2. 北海道
+3. 大阪府
+4. 沖縄県
+
+<details><summary>答えを見る</summary>
+
+**正解：1. 神奈川県**
+
+箱根・横浜など神奈川県が主な舞台。
+
+[出典1](https://ja.wikipedia.org/wiki/名探偵コナン_ハイウェイの堕天使)　[出典2](https://eiga.com/news/20260413/16/)
 
 </details>
 
