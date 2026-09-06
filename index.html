@@ -210,13 +210,17 @@ textarea{resize:vertical;min-height:86px;line-height:1.7}
   font-size:12.5px;line-height:1.9;color:var(--ink-3);display:flex;flex-direction:column;gap:9px}
 .disclaimer strong{color:var(--ink-2);font-weight:700}
 .disclaimer .repo{padding-top:4px}
+.chip-n{font-family:var(--mono);font-size:10.5px;margin-left:7px;opacity:.65;
+  font-variant-numeric:tabular-nums}
 .opt-note{font-weight:400;color:var(--ink-3);font-size:12px;margin-left:5px}
 .codeinput{max-width:190px;font-family:var(--mono);letter-spacing:.16em;
   text-transform:uppercase;font-size:15px}
 .sharebar{display:flex;align-items:center;gap:12px;flex-wrap:wrap;
   margin:24px 0 -8px;font-family:var(--mono);font-size:11.5px;color:var(--ink-3)}
 .sharebar b{color:var(--ink);letter-spacing:.16em;font-size:13px}
+.shareurl{flex:1;min-width:240px;font-family:var(--mono);font-size:11px}
 .rs-share{margin-top:16px}
+.rs-share-actions{justify-content:center;margin-top:12px}
 .rs-share b{font-family:var(--mono);letter-spacing:.16em;color:var(--accent)}
 dialog{margin:auto;border:1px solid var(--rule);border-radius:var(--radius);padding:0;
   background:var(--surface);color:var(--ink);box-shadow:var(--shadow);
@@ -284,6 +288,12 @@ dialog h2{font-size:18px}
         <div class="chips" id="pick-count"></div>
       </div>
       <label class="toggle">
+        <input type="checkbox" id="pick-balanced">
+        <span>選んだカテゴリから均等に出題する<br>
+          <span class="hint">オフにすると収録数に比例します。主題歌と劇場版で全体の約3分の2を占めるため、
+            オフだとこの2つに偏ります。</span></span>
+      </label>
+      <label class="toggle">
         <input type="checkbox" id="pick-volatile">
         <span>時点によって答えが変わる問題も含める<br>
           <span class="hint">興行収入ランキングなど。問題文に基準日が入ります。</span></span>
@@ -314,6 +324,8 @@ dialog h2{font-size:18px}
       <div class="sharebar" id="sharebar">
         <span>共有コード <b id="share-code"></b></span>
         <button class="btn ghost sm" type="button" id="share-copy">リンクをコピー</button>
+        <input type="text" id="share-url" class="shareurl" readonly hidden
+               aria-label="共有リンク">
       </div>
       <div class="card qcard">
         <div class="qmeta" id="qmeta"></div>
@@ -341,6 +353,10 @@ dialog h2{font-size:18px}
         <dl class="breakdown" id="rs-breakdown"></dl>
         <p class="hint rs-share">このセットの共有コードは <b id="rs-code"></b> です。
           同じコードと設定で、他の人も同じ問題に挑戦できます。</p>
+        <div class="row rs-share-actions">
+          <button class="btn ghost sm" type="button" id="rs-copy">リンクをコピー</button>
+          <input type="text" id="rs-url" class="shareurl" readonly hidden aria-label="共有リンク">
+        </div>
       </div>
       <div class="missed" id="rs-missed"></div>
       <div class="row" style="margin-top:24px">
@@ -524,7 +540,13 @@ function renderMeta() {
 }
 
 /* ---------- setup ---------- */
-const sel = { difficulty: "all", category: "all", count: 10, volatile: false };
+const sel = {
+  difficulty: "all",
+  categories: new Set(CATS.map(c => c.key)), // 既定は全カテゴリ
+  count: 10,
+  volatile: false,
+  balanced: true, // 既定でカテゴリから均等に出題する
+};
 
 function chipRow(host, items, key, onPick) {
   host.innerHTML = "";
@@ -537,12 +559,43 @@ function chipRow(host, items, key, onPick) {
   });
 }
 
+/** カテゴリは複数選べる。チップには収録数も出して偏りが見えるようにする。 */
+function categoryChips(onPick) {
+  const host = $("pick-category");
+  host.innerHTML = "";
+  const counts = DATA.meta.countsByCategory || {};
+  const all = CATS.every(c => sel.categories.has(c.key));
+
+  const allBtn = el("button", "chip", "すべて");
+  allBtn.type = "button";
+  allBtn.setAttribute("aria-pressed", String(all));
+  allBtn.onclick = () => {
+    if (all) sel.categories.clear();
+    else CATS.forEach(c => sel.categories.add(c.key));
+    onPick();
+  };
+  host.appendChild(allBtn);
+
+  CATS.forEach(c => {
+    const b = el("button", "chip");
+    b.type = "button";
+    b.append(document.createTextNode(c.label),
+             el("span", "chip-n", String(counts[c.key] ?? 0)));
+    b.setAttribute("aria-pressed", String(sel.categories.has(c.key)));
+    b.onclick = () => {
+      sel.categories.has(c.key) ? sel.categories.delete(c.key) : sel.categories.add(c.key);
+      onPick();
+    };
+    host.appendChild(b);
+  });
+}
+
 function pool() {
   // 共有コードで同じ問題を再現するため、並びを id で固定してから抽出する
   return [...questions].sort((a, b) => a.id.localeCompare(b.id)).filter(q =>
     !disabled.has(q.id) &&
     (sel.difficulty === "all" || q.difficulty === sel.difficulty) &&
-    (sel.category === "all" || q.category === sel.category) &&
+    sel.categories.has(q.category) &&
     (sel.volatile || !q.volatile) &&
     validate(q).length === 0);
 }
@@ -550,14 +603,22 @@ function pool() {
 function renderSetup() {
   chipRow($("pick-difficulty"),
     [{ key: "all", label: "すべて" }, ...DIFFS], "difficulty", renderSetup);
-  chipRow($("pick-category"),
-    [{ key: "all", label: "すべて" }, ...CATS], "category", renderSetup);
+  categoryChips(renderSetup);
   chipRow($("pick-count"),
     [5, 10, 20, 30, 50].map(n => ({ key: n, label: `${n}問` })), "count", renderSetup);
   $("pick-volatile").checked = sel.volatile;
-  const n = pool().length;
-  $("poolinfo").textContent =
-    `条件に合う問題：${n}問${n < sel.count ? `（${n}問すべて出題します）` : ""}`;
+  $("pick-balanced").checked = sel.balanced;
+  const rows = pool();
+  const n = rows.length;
+  const cats = new Set(rows.map(q => q.category));
+  let msg = `条件に合う問題：${n}問`;
+  if (n === 0) msg = "条件に合う問題がありません。カテゴリを選び直してください。";
+  else if (n < sel.count) msg += `（${n}問すべて出題します）`;
+  else if (sel.balanced && cats.size > 1) {
+    const per = Math.floor(sel.count / cats.size);
+    msg += ` ／ ${cats.size}カテゴリから均等に（1カテゴリあたり約${Math.max(per, 1)}問）`;
+  }
+  $("poolinfo").textContent = msg;
   $("start").disabled = n === 0;
   renderMeta();
 }
@@ -565,14 +626,44 @@ function renderSetup() {
 /* ---------- quiz ---------- */
 let run = null;
 
+/** 選んだカテゴリから1問ずつ順に取り、偏りをなくす。
+    足りないカテゴリは自動的に飛ばされ、残りが他のカテゴリで埋まる。 */
+function pickBalanced(rows, n, rnd) {
+  const byCat = new Map();
+  for (const q of rows) {
+    if (!byCat.has(q.category)) byCat.set(q.category, []);
+    byCat.get(q.category).push(q);
+  }
+  // カテゴリの順序を固定しないと共有コードで再現できない
+  const cats = [...byCat.keys()].sort();
+  const pools = new Map(cats.map(c => [c, shuffleWith(byCat.get(c), rnd)]));
+  const picked = [];
+  while (picked.length < n) {
+    let took = false;
+    for (const c of cats) {
+      if (picked.length >= n) break;
+      const p = pools.get(c);
+      if (p.length) { picked.push(p.pop()); took = true; }
+    }
+    if (!took) break; // すべて出し切った
+  }
+  // カテゴリが順番に並ばないよう、最後にもう一度混ぜる
+  return shuffleWith(picked, rnd);
+}
+
 function startQuiz() {
   const code = normalizeCode($("pick-code").value) || newCode();
   $("pick-code").value = code;
   // 設定もシードに混ぜる。設定が違えば同じコードでも別の問題セットになる
-  const rnd = makeRng(hashSeed(
-    [code, sel.difficulty, sel.category, sel.count, sel.volatile ? "v" : ""].join("|")));
+  const cats = [...sel.categories].sort().join(",");
+  const rnd = makeRng(hashSeed([code, sel.difficulty, cats, sel.count,
+    sel.volatile ? "v" : "", sel.balanced ? "b" : ""].join("|")));
 
-  const picked = shuffleWith(pool(), rnd).slice(0, sel.count).map(q => {
+  const rows = pool();
+  const chosen = sel.balanced
+    ? pickBalanced(rows, sel.count, rnd)
+    : shuffleWith(rows, rnd).slice(0, sel.count);
+  const picked = chosen.map(q => {
     const choices = shuffleWith(q.choices, rnd);
     return { ...q, choices, answerIndex: choices.indexOf(q.answer) };
   });
@@ -657,6 +748,8 @@ function showResult() {
     pct >= 50 ? "少年探偵団級。もう一歩。" : "まだ捜査中。";
   $("rs-sub").textContent = `正答率 ${pct}%`;
   $("rs-code").textContent = run.code;
+  $("rs-copy").textContent = "リンクをコピー";
+  $("rs-url").hidden = true;
 
   const bd = $("rs-breakdown"); bd.innerHTML = "";
   DIFFS.forEach(d => {
@@ -927,22 +1020,32 @@ function shareUrl() {
   u.hash = "";
   u.search = new URLSearchParams({
     code: run ? run.code : normalizeCode($("pick-code").value),
-    d: sel.difficulty, c: sel.category, n: String(sel.count),
+    d: sel.difficulty,
+    c: CATS.every(c => sel.categories.has(c.key))
+      ? "all" : [...sel.categories].sort().join(","),
+    n: String(sel.count),
     ...(sel.volatile ? { v: "1" } : {}),
+    ...(sel.balanced ? {} : { b: "0" }),
   }).toString();
   return u.toString();
 }
 
-async function copyShareUrl() {
-  const btn = $("share-copy");
+async function copyShareUrl(btnId, boxId) {
+  const btn = $(btnId);
+  const box = $(boxId);
   const url = shareUrl();
   try {
     await navigator.clipboard.writeText(url);
+    box.hidden = true;
     btn.textContent = "コピーしました";
   } catch (e) {
-    // クリップボードが使えない場合は選択できる形で見せる
-    window.prompt("このリンクを共有してください", url);
-    btn.textContent = "リンクをコピー";
+    // クリップボードが使えない環境では、選んでコピーできる欄に出す
+    // （prompt() は画面を止めてしまうので使わない）
+    box.value = url;
+    box.hidden = false;
+    box.focus();
+    box.select();
+    btn.textContent = "下の欄からコピーしてください";
     return;
   }
   setTimeout(() => { btn.textContent = "リンクをコピー"; }, 2500);
@@ -956,9 +1059,15 @@ function applyUrlParams() {
   $("pick-code").value = code;
   const d = p.get("d"), c = p.get("c"), n = parseInt(p.get("n"), 10);
   if (d && (d === "all" || DIFFS.some(x => x.key === d))) sel.difficulty = d;
-  if (c && (c === "all" || CATS.some(x => x.key === c))) sel.category = c;
+  if (c) {
+    // "all" と、カンマ区切りの複数指定に対応する（単独指定の旧リンクもそのまま動く）
+    const keys = c === "all" ? CATS.map(x => x.key)
+      : c.split(",").filter(k => CATS.some(x => x.key === k));
+    if (keys.length) sel.categories = new Set(keys);
+  }
   if ([5, 10, 20, 30, 50].includes(n)) sel.count = n;
   sel.volatile = p.get("v") === "1";
+  sel.balanced = p.get("b") !== "0";
   return true;
 }
 
@@ -1044,8 +1153,10 @@ $("lock-form").onsubmit = submitLock;
 $("lock-cancel").onclick = () => $("lock-dialog").close();
 $("relock").onclick = () => { setUnlocked(false); showTab("play"); };
 $("pick-volatile").onchange = e => { sel.volatile = e.target.checked; renderSetup(); };
+$("pick-balanced").onchange = e => { sel.balanced = e.target.checked; renderSetup(); };
 $("start").onclick = startQuiz;
-$("share-copy").onclick = copyShareUrl;
+$("share-copy").onclick = () => copyShareUrl("share-copy", "share-url");
+$("rs-copy").onclick = () => copyShareUrl("rs-copy", "rs-url");
 $("code-new").onclick = () => { $("pick-code").value = newCode(); };
 $("code-clear").onclick = () => { $("pick-code").value = ""; };
 $("pick-code").oninput = e => { e.target.value = normalizeCode(e.target.value); };
