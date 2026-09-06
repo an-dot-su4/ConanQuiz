@@ -1,20 +1,20 @@
 {
   "meta": {
     "title": "名探偵コナン クイズ問題データ",
-    "version": "2.4.0",
+    "version": "2.5.0",
     "updated": "2026-09-04",
-    "total": 480,
+    "total": 527,
     "countsByDifficulty": {
       "beginner": 76,
       "intermediate": 153,
-      "advanced": 251
+      "advanced": 298
     },
     "countsByCategory": {
       "basics": 11,
       "characters": 117,
       "gadgets": 16,
       "anime": 8,
-      "movies": 149,
+      "movies": 196,
       "organization": 14,
       "music": 158,
       "trivia": 7
@@ -74,7 +74,7 @@
       "情報源が食い違った事項は本データに含めない。詳細は docs/conan/UNVERIFIED.md を参照。"
     ],
     "countsByKnowledge": {
-      "production": 280,
+      "production": 327,
       "story": 200
     }
   },
@@ -11556,6 +11556,1135 @@
       "sources": [
         "https://ja.wikipedia.org/wiki/名探偵コナン_ハイウェイの堕天使",
         "https://eiga.com/news/20260413/16/"
+      ]
+    },
+    {
+      "id": "conan-481",
+      "difficulty": "advanced",
+      "difficultyLabel": "上級",
+      "category": "movies",
+      "categoryLabel": "劇場版",
+      "knowledge": "production",
+      "knowledgeLabel": "制作",
+      "question": "劇場版第1作『時計じかけの摩天楼』の興行収入は？",
+      "choices": [
+        "25.3億円",
+        "11.0億円",
+        "25.0億円",
+        "30.3億円"
+      ],
+      "answerIndex": 1,
+      "answer": "11.0億円",
+      "explanation": "11.0億円。シリーズ第1作。",
+      "confidence": "B",
+      "sources": [
+        "https://ja.wikipedia.org/wiki/劇場版名探偵コナン",
+        "https://castel.jp/p/10224"
+      ]
+    },
+    {
+      "id": "conan-482",
+      "difficulty": "advanced",
+      "difficultyLabel": "上級",
+      "category": "movies",
+      "categoryLabel": "劇場版",
+      "knowledge": "production",
+      "knowledgeLabel": "制作",
+      "question": "劇場版第2作『14番目の標的』の興行収入は？",
+      "choices": [
+        "21.5億円",
+        "25.0億円",
+        "18.5億円",
+        "63.3億円"
+      ],
+      "answerIndex": 2,
+      "answer": "18.5億円",
+      "explanation": "18.5億円。シリーズ第2作。",
+      "confidence": "B",
+      "sources": [
+        "https://ja.wikipedia.org/wiki/劇場版名探偵コナン",
+        "https://castel.jp/p/10224"
+      ]
+    },
+    {
+      "id": "conan-483",
+      "difficulty": "advanced",
+      "difficultyLabel": "上級",
+      "category": "movies",
+      "categoryLabel": "劇場版",
+      "knowledge": "production",
+      "knowledgeLabel": "制作",
+      "question": "劇場版第3作『世紀末の魔術師』の興行収入は？",
+      "choices": [
+        "32.9億円",
+        "30.3億円",
+        "25.3億円",
+        "26.0億円"
+      ],
+      "answerIndex": 3,
+      "answer": "26.0億円",
+      "explanation": "26.0億円。シリーズ第3作。",
+      "confidence": "B",
+      "sources": [
+        "https://ja.wikipedia.org/wiki/劇場版名探偵コナン",
+        "https://castel.jp/p/10224"
+      ]
+    },
+    {
+      "id": "conan-484",
+      "difficulty": "advanced",
+      "difficultyLabel": "上級",
+      "category": "movies",
+      "categoryLabel": "劇場版",
+      "knowledge": "production",
+      "knowledgeLabel": "制作",
+      "question": "劇場版第4作『瞳の中の暗殺者』の興行収入は？",
+      "choices": [
+        "25.0億円",
+        "11.0億円",
+        "21.5億円",
+        "34.0億円"
+      ],
+      "answerIndex": 0,
+      "answer": "25.0億円",
+      "explanation": "25.0億円。シリーズ第4作。",
+      "confidence": "B",
+      "sources": [
+        "https://ja.wikipedia.org/wiki/劇場版名探偵コナン",
+        "https://castel.jp/p/10224"
+      ]
+    },
+    {
+      "id": "conan-485",
+      "difficulty": "advanced",
+      "difficultyLabel": "上級",
+      "category": "movies",
+      "categoryLabel": "劇場版",
+      "knowledge": "production",
+      "knowledgeLabel": "制作",
+      "question": "劇場版第5作『天国へのカウントダウン』の興行収入は？",
+      "choices": [
+        "158.0億円",
+        "29.0億円",
+        "35.0億円",
+        "24.2億円"
+      ],
+      "answerIndex": 1,
+      "answer": "29.0億円",
+      "explanation": "29.0億円。シリーズ第5作。",
+      "confidence": "B",
+      "sources": [
+        "https://ja.wikipedia.org/wiki/劇場版名探偵コナン",
+        "https://castel.jp/p/10224"
+      ]
+    },
+    {
+      "id": "conan-486",
+      "difficulty": "advanced",
+      "difficultyLabel": "上級",
+      "category": "movies",
+      "categoryLabel": "劇場版",
+      "knowledge": "production",
+      "knowledgeLabel": "制作",
+      "question": "劇場版第6作『ベイカー街の亡霊』の興行収入は？",
+      "choices": [
+        "31.5億円",
+        "44.8億円",
+        "34.0億円",
+        "24.2億円"
+      ],
+      "answerIndex": 2,
+      "answer": "34.0億円",
+      "explanation": "34.0億円。シリーズ第6作。",
+      "confidence": "B",
+      "sources": [
+        "https://ja.wikipedia.org/wiki/劇場版名探偵コナン",
+        "https://castel.jp/p/10224"
+      ]
+    },
+    {
+      "id": "conan-487",
+      "difficulty": "advanced",
+      "difficultyLabel": "上級",
+      "category": "movies",
+      "categoryLabel": "劇場版",
+      "knowledge": "production",
+      "knowledgeLabel": "制作",
+      "question": "劇場版第7作『迷宮の十字路』の興行収入は？",
+      "choices": [
+        "25.0億円",
+        "93.7億円",
+        "31.5億円",
+        "32.0億円"
+      ],
+      "answerIndex": 3,
+      "answer": "32.0億円",
+      "explanation": "32.0億円。シリーズ第7作。",
+      "confidence": "B",
+      "sources": [
+        "https://ja.wikipedia.org/wiki/劇場版名探偵コナン",
+        "https://castel.jp/p/10224"
+      ]
+    },
+    {
+      "id": "conan-488",
+      "difficulty": "advanced",
+      "difficultyLabel": "上級",
+      "category": "movies",
+      "categoryLabel": "劇場版",
+      "knowledge": "production",
+      "knowledgeLabel": "制作",
+      "question": "劇場版第8作『銀翼の奇術師』の興行収入は？",
+      "choices": [
+        "28.0億円",
+        "76.5億円",
+        "32.0億円",
+        "25.3億円"
+      ],
+      "answerIndex": 0,
+      "answer": "28.0億円",
+      "explanation": "28.0億円。シリーズ第8作。",
+      "confidence": "B",
+      "sources": [
+        "https://ja.wikipedia.org/wiki/劇場版名探偵コナン",
+        "https://castel.jp/p/10224"
+      ]
+    },
+    {
+      "id": "conan-489",
+      "difficulty": "advanced",
+      "difficultyLabel": "上級",
+      "category": "movies",
+      "categoryLabel": "劇場版",
+      "knowledge": "production",
+      "knowledgeLabel": "制作",
+      "question": "劇場版第9作『水平線上の陰謀』の興行収入は？",
+      "choices": [
+        "31.5億円",
+        "21.5億円",
+        "147.4億円",
+        "138.8億円"
+      ],
+      "answerIndex": 1,
+      "answer": "21.5億円",
+      "explanation": "21.5億円。シリーズ第9作。",
+      "confidence": "B",
+      "sources": [
+        "https://ja.wikipedia.org/wiki/劇場版名探偵コナン",
+        "https://castel.jp/p/10224"
+      ]
+    },
+    {
+      "id": "conan-490",
+      "difficulty": "advanced",
+      "difficultyLabel": "上級",
+      "category": "movies",
+      "categoryLabel": "劇場版",
+      "knowledge": "production",
+      "knowledgeLabel": "制作",
+      "question": "劇場版第10作『探偵たちの鎮魂歌』の興行収入は？",
+      "choices": [
+        "91.8億円",
+        "32.0億円",
+        "30.3億円",
+        "147.4億円"
+      ],
+      "answerIndex": 2,
+      "answer": "30.3億円",
+      "explanation": "30.3億円。シリーズ第10作。",
+      "confidence": "B",
+      "sources": [
+        "https://ja.wikipedia.org/wiki/劇場版名探偵コナン",
+        "https://castel.jp/p/10224"
+      ]
+    },
+    {
+      "id": "conan-491",
+      "difficulty": "advanced",
+      "difficultyLabel": "上級",
+      "category": "movies",
+      "categoryLabel": "劇場版",
+      "knowledge": "production",
+      "knowledgeLabel": "制作",
+      "question": "劇場版第11作『紺碧の棺』の興行収入は？",
+      "choices": [
+        "26.0億円",
+        "34.0億円",
+        "21.5億円",
+        "25.3億円"
+      ],
+      "answerIndex": 3,
+      "answer": "25.3億円",
+      "explanation": "25.3億円。シリーズ第11作。",
+      "confidence": "B",
+      "sources": [
+        "https://ja.wikipedia.org/wiki/劇場版名探偵コナン",
+        "https://castel.jp/p/10224"
+      ]
+    },
+    {
+      "id": "conan-492",
+      "difficulty": "advanced",
+      "difficultyLabel": "上級",
+      "category": "movies",
+      "categoryLabel": "劇場版",
+      "knowledge": "production",
+      "knowledgeLabel": "制作",
+      "question": "劇場版第12作『戦慄の楽譜』の興行収入は？",
+      "choices": [
+        "24.2億円",
+        "35.0億円",
+        "26.0億円",
+        "138.8億円"
+      ],
+      "answerIndex": 0,
+      "answer": "24.2億円",
+      "explanation": "24.2億円。シリーズ第12作。",
+      "confidence": "B",
+      "sources": [
+        "https://ja.wikipedia.org/wiki/劇場版名探偵コナン",
+        "https://castel.jp/p/10224"
+      ]
+    },
+    {
+      "id": "conan-493",
+      "difficulty": "advanced",
+      "difficultyLabel": "上級",
+      "category": "movies",
+      "categoryLabel": "劇場版",
+      "knowledge": "production",
+      "knowledgeLabel": "制作",
+      "question": "劇場版第13作『漆黒の追跡者』の興行収入は？",
+      "choices": [
+        "147.4億円",
+        "35.0億円",
+        "158.0億円",
+        "24.2億円"
+      ],
+      "answerIndex": 1,
+      "answer": "35.0億円",
+      "explanation": "35.0億円。シリーズ第13作。",
+      "confidence": "B",
+      "sources": [
+        "https://ja.wikipedia.org/wiki/劇場版名探偵コナン",
+        "https://castel.jp/p/10224"
+      ]
+    },
+    {
+      "id": "conan-494",
+      "difficulty": "advanced",
+      "difficultyLabel": "上級",
+      "category": "movies",
+      "categoryLabel": "劇場版",
+      "knowledge": "production",
+      "knowledgeLabel": "制作",
+      "question": "劇場版第14作『天空の難破船』の興行収入は？",
+      "choices": [
+        "29.0億円",
+        "26.0億円",
+        "32.0億円",
+        "97.8億円"
+      ],
+      "answerIndex": 2,
+      "answer": "32.0億円",
+      "explanation": "32.0億円。シリーズ第14作。",
+      "confidence": "B",
+      "sources": [
+        "https://ja.wikipedia.org/wiki/劇場版名探偵コナン",
+        "https://castel.jp/p/10224"
+      ]
+    },
+    {
+      "id": "conan-495",
+      "difficulty": "advanced",
+      "difficultyLabel": "上級",
+      "category": "movies",
+      "categoryLabel": "劇場版",
+      "knowledge": "production",
+      "knowledgeLabel": "制作",
+      "question": "劇場版第15作『沈黙の15分』の興行収入は？",
+      "choices": [
+        "93.7億円",
+        "29.0億円",
+        "25.0億円",
+        "31.5億円"
+      ],
+      "answerIndex": 3,
+      "answer": "31.5億円",
+      "explanation": "31.5億円。シリーズ第15作。",
+      "confidence": "B",
+      "sources": [
+        "https://ja.wikipedia.org/wiki/劇場版名探偵コナン",
+        "https://castel.jp/p/10224"
+      ]
+    },
+    {
+      "id": "conan-496",
+      "difficulty": "advanced",
+      "difficultyLabel": "上級",
+      "category": "movies",
+      "categoryLabel": "劇場版",
+      "knowledge": "production",
+      "knowledgeLabel": "制作",
+      "question": "劇場版第16作『11人目のストライカー』の興行収入は？",
+      "choices": [
+        "32.9億円",
+        "147.4億円",
+        "29.0億円",
+        "93.7億円"
+      ],
+      "answerIndex": 0,
+      "answer": "32.9億円",
+      "explanation": "32.9億円。シリーズ第16作。",
+      "confidence": "B",
+      "sources": [
+        "https://ja.wikipedia.org/wiki/劇場版名探偵コナン",
+        "https://castel.jp/p/10224"
+      ]
+    },
+    {
+      "id": "conan-497",
+      "difficulty": "advanced",
+      "difficultyLabel": "上級",
+      "category": "movies",
+      "categoryLabel": "劇場版",
+      "knowledge": "production",
+      "knowledgeLabel": "制作",
+      "question": "劇場版第17作『絶海の探偵』の興行収入は？",
+      "choices": [
+        "34.0億円",
+        "36.3億円",
+        "28.0億円",
+        "93.7億円"
+      ],
+      "answerIndex": 1,
+      "answer": "36.3億円",
+      "explanation": "36.3億円。シリーズ第17作。",
+      "confidence": "B",
+      "sources": [
+        "https://ja.wikipedia.org/wiki/劇場版名探偵コナン",
+        "https://castel.jp/p/10224"
+      ]
+    },
+    {
+      "id": "conan-498",
+      "difficulty": "advanced",
+      "difficultyLabel": "上級",
+      "category": "movies",
+      "categoryLabel": "劇場版",
+      "knowledge": "production",
+      "knowledgeLabel": "制作",
+      "question": "劇場版第18作『異次元の狙撃手』の興行収入は？",
+      "choices": [
+        "28.0億円",
+        "29.0億円",
+        "41.1億円",
+        "11.0億円"
+      ],
+      "answerIndex": 2,
+      "answer": "41.1億円",
+      "explanation": "41.1億円。シリーズ第18作。",
+      "confidence": "B",
+      "sources": [
+        "https://ja.wikipedia.org/wiki/劇場版名探偵コナン",
+        "https://castel.jp/p/10224"
+      ]
+    },
+    {
+      "id": "conan-499",
+      "difficulty": "advanced",
+      "difficultyLabel": "上級",
+      "category": "movies",
+      "categoryLabel": "劇場版",
+      "knowledge": "production",
+      "knowledgeLabel": "制作",
+      "question": "劇場版第19作『業火の向日葵』の興行収入は？",
+      "choices": [
+        "158.0億円",
+        "24.2億円",
+        "21.5億円",
+        "44.8億円"
+      ],
+      "answerIndex": 3,
+      "answer": "44.8億円",
+      "explanation": "44.8億円。シリーズ第19作。",
+      "confidence": "B",
+      "sources": [
+        "https://ja.wikipedia.org/wiki/劇場版名探偵コナン",
+        "https://castel.jp/p/10224"
+      ]
+    },
+    {
+      "id": "conan-500",
+      "difficulty": "advanced",
+      "difficultyLabel": "上級",
+      "category": "movies",
+      "categoryLabel": "劇場版",
+      "knowledge": "production",
+      "knowledgeLabel": "制作",
+      "question": "劇場版第20作『純黒の悪夢』の興行収入は？",
+      "choices": [
+        "63.3億円",
+        "25.0億円",
+        "25.3億円",
+        "26.0億円"
+      ],
+      "answerIndex": 0,
+      "answer": "63.3億円",
+      "explanation": "63.3億円。シリーズ第20作。",
+      "confidence": "B",
+      "sources": [
+        "https://ja.wikipedia.org/wiki/劇場版名探偵コナン",
+        "https://castel.jp/p/10224"
+      ]
+    },
+    {
+      "id": "conan-501",
+      "difficulty": "advanced",
+      "difficultyLabel": "上級",
+      "category": "movies",
+      "categoryLabel": "劇場版",
+      "knowledge": "production",
+      "knowledgeLabel": "制作",
+      "question": "劇場版第21作『から紅の恋歌』の興行収入は？",
+      "choices": [
+        "91.8億円",
+        "68.9億円",
+        "138.8億円",
+        "32.0億円"
+      ],
+      "answerIndex": 1,
+      "answer": "68.9億円",
+      "explanation": "68.9億円。シリーズ第21作。",
+      "confidence": "B",
+      "sources": [
+        "https://ja.wikipedia.org/wiki/劇場版名探偵コナン",
+        "https://castel.jp/p/10224"
+      ]
+    },
+    {
+      "id": "conan-502",
+      "difficulty": "advanced",
+      "difficultyLabel": "上級",
+      "category": "movies",
+      "categoryLabel": "劇場版",
+      "knowledge": "production",
+      "knowledgeLabel": "制作",
+      "question": "劇場版第22作『ゼロの執行人』の興行収入は？",
+      "choices": [
+        "28.0億円",
+        "34.0億円",
+        "91.8億円",
+        "32.0億円"
+      ],
+      "answerIndex": 2,
+      "answer": "91.8億円",
+      "explanation": "91.8億円。シリーズ第22作。",
+      "confidence": "B",
+      "sources": [
+        "https://ja.wikipedia.org/wiki/劇場版名探偵コナン",
+        "https://castel.jp/p/10224"
+      ]
+    },
+    {
+      "id": "conan-503",
+      "difficulty": "advanced",
+      "difficultyLabel": "上級",
+      "category": "movies",
+      "categoryLabel": "劇場版",
+      "knowledge": "production",
+      "knowledgeLabel": "制作",
+      "question": "劇場版第23作『紺青の拳』の興行収入は？",
+      "choices": [
+        "26.0億円",
+        "41.1億円",
+        "32.9億円",
+        "93.7億円"
+      ],
+      "answerIndex": 3,
+      "answer": "93.7億円",
+      "explanation": "93.7億円。シリーズ第23作。",
+      "confidence": "B",
+      "sources": [
+        "https://ja.wikipedia.org/wiki/劇場版名探偵コナン",
+        "https://castel.jp/p/10224"
+      ]
+    },
+    {
+      "id": "conan-504",
+      "difficulty": "advanced",
+      "difficultyLabel": "上級",
+      "category": "movies",
+      "categoryLabel": "劇場版",
+      "knowledge": "production",
+      "knowledgeLabel": "制作",
+      "question": "劇場版第24作『緋色の弾丸』の興行収入は？",
+      "choices": [
+        "76.5億円",
+        "44.8億円",
+        "68.9億円",
+        "29.0億円"
+      ],
+      "answerIndex": 0,
+      "answer": "76.5億円",
+      "explanation": "76.5億円。シリーズ第24作。",
+      "confidence": "B",
+      "sources": [
+        "https://ja.wikipedia.org/wiki/劇場版名探偵コナン",
+        "https://castel.jp/p/10224"
+      ]
+    },
+    {
+      "id": "conan-505",
+      "difficulty": "advanced",
+      "difficultyLabel": "上級",
+      "category": "movies",
+      "categoryLabel": "劇場版",
+      "knowledge": "production",
+      "knowledgeLabel": "制作",
+      "question": "劇場版第25作『ハロウィンの花嫁』の興行収入は？",
+      "choices": [
+        "36.3億円",
+        "97.8億円",
+        "41.1億円",
+        "35.0億円"
+      ],
+      "answerIndex": 1,
+      "answer": "97.8億円",
+      "explanation": "97.8億円。シリーズ第25作。",
+      "confidence": "B",
+      "sources": [
+        "https://ja.wikipedia.org/wiki/劇場版名探偵コナン",
+        "https://castel.jp/p/10224"
+      ]
+    },
+    {
+      "id": "conan-506",
+      "difficulty": "advanced",
+      "difficultyLabel": "上級",
+      "category": "movies",
+      "categoryLabel": "劇場版",
+      "knowledge": "production",
+      "knowledgeLabel": "制作",
+      "question": "劇場版第26作『黒鉄の魚影』の興行収入は？",
+      "choices": [
+        "93.7億円",
+        "35.0億円",
+        "138.8億円",
+        "44.8億円"
+      ],
+      "answerIndex": 2,
+      "answer": "138.8億円",
+      "explanation": "138.8億円。シリーズ第26作。",
+      "confidence": "B",
+      "sources": [
+        "https://ja.wikipedia.org/wiki/劇場版名探偵コナン",
+        "https://castel.jp/p/10224"
+      ]
+    },
+    {
+      "id": "conan-507",
+      "difficulty": "advanced",
+      "difficultyLabel": "上級",
+      "category": "movies",
+      "categoryLabel": "劇場版",
+      "knowledge": "production",
+      "knowledgeLabel": "制作",
+      "question": "劇場版第27作『100万ドルの五稜星』の興行収入は？",
+      "choices": [
+        "41.1億円",
+        "32.0億円",
+        "25.0億円",
+        "158.0億円"
+      ],
+      "answerIndex": 3,
+      "answer": "158.0億円",
+      "explanation": "158.0億円。シリーズ第27作。castel.jp は 158.8億円と記載しているが、東宝の正式発表は158.0億円。",
+      "confidence": "B",
+      "sources": [
+        "https://ja.wikipedia.org/wiki/劇場版名探偵コナン",
+        "https://castel.jp/p/10224",
+        "https://cyzo.jp/culture/post_382830/"
+      ]
+    },
+    {
+      "id": "conan-508",
+      "difficulty": "advanced",
+      "difficultyLabel": "上級",
+      "category": "movies",
+      "categoryLabel": "劇場版",
+      "knowledge": "production",
+      "knowledgeLabel": "制作",
+      "question": "劇場版第28作『隻眼の残像』の興行収入は？",
+      "choices": [
+        "147.4億円",
+        "21.5億円",
+        "29.0億円",
+        "138.8億円"
+      ],
+      "answerIndex": 0,
+      "answer": "147.4億円",
+      "explanation": "147.4億円。シリーズ第28作。",
+      "confidence": "B",
+      "sources": [
+        "https://ja.wikipedia.org/wiki/劇場版名探偵コナン",
+        "https://castel.jp/p/10224"
+      ]
+    },
+    {
+      "id": "conan-509",
+      "difficulty": "advanced",
+      "difficultyLabel": "上級",
+      "category": "movies",
+      "categoryLabel": "劇場版",
+      "knowledge": "production",
+      "knowledgeLabel": "制作",
+      "question": "劇場版第2作『14番目の標的』にゲスト声優として出演したのは？",
+      "choices": [
+        "沢村一樹",
+        "海原やすよ・ともこ",
+        "天海祐希",
+        "上戸彩"
+      ],
+      "answerIndex": 1,
+      "answer": "海原やすよ・ともこ",
+      "explanation": "海原やすよ・ともこが第2作『14番目の標的』にゲスト声優として出演した。",
+      "confidence": "B",
+      "sources": [
+        "https://ja.wikipedia.org/wiki/劇場版名探偵コナン",
+        "https://conan-suiri.com/archives/57"
+      ]
+    },
+    {
+      "id": "conan-510",
+      "difficulty": "advanced",
+      "difficultyLabel": "上級",
+      "category": "movies",
+      "categoryLabel": "劇場版",
+      "knowledge": "production",
+      "knowledgeLabel": "制作",
+      "question": "劇場版第13作『漆黒の追跡者』にゲスト声優として出演したのは？",
+      "choices": [
+        "渡部陽一",
+        "山田孝之",
+        "DAIGO",
+        "大泉洋"
+      ],
+      "answerIndex": 2,
+      "answer": "DAIGO",
+      "explanation": "DAIGOが第13作『漆黒の追跡者』にゲスト声優として出演した。",
+      "confidence": "B",
+      "sources": [
+        "https://ja.wikipedia.org/wiki/劇場版名探偵コナン",
+        "https://conan-suiri.com/archives/57"
+      ]
+    },
+    {
+      "id": "conan-511",
+      "difficulty": "advanced",
+      "difficultyLabel": "上級",
+      "category": "movies",
+      "categoryLabel": "劇場版",
+      "knowledge": "production",
+      "knowledgeLabel": "制作",
+      "question": "劇場版第16作『11人目のストライカー』にゲスト声優として出演したのは？",
+      "choices": [
+        "横浜流星",
+        "浜辺美波",
+        "山里亮太",
+        "桐谷美玲"
+      ],
+      "answerIndex": 3,
+      "answer": "桐谷美玲",
+      "explanation": "桐谷美玲が第16作『11人目のストライカー』にゲスト声優として出演した。",
+      "confidence": "B",
+      "sources": [
+        "https://ja.wikipedia.org/wiki/劇場版名探偵コナン",
+        "https://conan-suiri.com/archives/57"
+      ]
+    },
+    {
+      "id": "conan-512",
+      "difficulty": "advanced",
+      "difficultyLabel": "上級",
+      "category": "movies",
+      "categoryLabel": "劇場版",
+      "knowledge": "production",
+      "knowledgeLabel": "制作",
+      "question": "劇場版第17作『絶海の探偵』にゲスト声優として出演したのは？",
+      "choices": [
+        "柴咲コウ",
+        "沢村一樹",
+        "大橋のぞみ",
+        "桐谷美玲"
+      ],
+      "answerIndex": 0,
+      "answer": "柴咲コウ",
+      "explanation": "柴咲コウが第17作『絶海の探偵』にゲスト声優として出演した。",
+      "confidence": "B",
+      "sources": [
+        "https://ja.wikipedia.org/wiki/劇場版名探偵コナン",
+        "https://conan-suiri.com/archives/57"
+      ]
+    },
+    {
+      "id": "conan-513",
+      "difficulty": "advanced",
+      "difficultyLabel": "上級",
+      "category": "movies",
+      "categoryLabel": "劇場版",
+      "knowledge": "production",
+      "knowledgeLabel": "制作",
+      "question": "劇場版第18作『異次元の狙撃手』にゲスト声優として出演したのは？",
+      "choices": [
+        "大泉洋",
+        "福士蒼汰",
+        "浜辺美波",
+        "白石麻衣"
+      ],
+      "answerIndex": 1,
+      "answer": "福士蒼汰",
+      "explanation": "福士蒼汰が第18作『異次元の狙撃手』にゲスト声優として出演した。",
+      "confidence": "B",
+      "sources": [
+        "https://ja.wikipedia.org/wiki/劇場版名探偵コナン",
+        "https://conan-suiri.com/archives/57"
+      ]
+    },
+    {
+      "id": "conan-514",
+      "difficulty": "advanced",
+      "difficultyLabel": "上級",
+      "category": "movies",
+      "categoryLabel": "劇場版",
+      "knowledge": "production",
+      "knowledgeLabel": "制作",
+      "question": "劇場版第20作『純黒の悪夢』にゲスト声優として出演したのは？",
+      "choices": [
+        "山田孝之",
+        "上戸彩",
+        "天海祐希",
+        "大泉洋"
+      ],
+      "answerIndex": 2,
+      "answer": "天海祐希",
+      "explanation": "天海祐希が第20作『純黒の悪夢』にゲスト声優として出演した。",
+      "confidence": "B",
+      "sources": [
+        "https://ja.wikipedia.org/wiki/劇場版名探偵コナン",
+        "https://conan-suiri.com/archives/57"
+      ]
+    },
+    {
+      "id": "conan-515",
+      "difficulty": "advanced",
+      "difficultyLabel": "上級",
+      "category": "movies",
+      "categoryLabel": "劇場版",
+      "knowledge": "production",
+      "knowledgeLabel": "制作",
+      "question": "劇場版第21作『から紅の恋歌』にゲスト声優として出演したのは？",
+      "choices": [
+        "DAIGO",
+        "桐谷美玲",
+        "浜辺美波",
+        "吉岡里帆"
+      ],
+      "answerIndex": 3,
+      "answer": "吉岡里帆",
+      "explanation": "吉岡里帆が第21作『から紅の恋歌』にゲスト声優として出演した。",
+      "confidence": "B",
+      "sources": [
+        "https://ja.wikipedia.org/wiki/劇場版名探偵コナン",
+        "https://conan-suiri.com/archives/57"
+      ]
+    },
+    {
+      "id": "conan-516",
+      "difficulty": "advanced",
+      "difficultyLabel": "上級",
+      "category": "movies",
+      "categoryLabel": "劇場版",
+      "knowledge": "production",
+      "knowledgeLabel": "制作",
+      "question": "劇場版第22作『ゼロの執行人』にゲスト声優として出演したのは？",
+      "choices": [
+        "上戸彩",
+        "福士蒼汰",
+        "柴咲コウ",
+        "大泉洋"
+      ],
+      "answerIndex": 0,
+      "answer": "上戸彩",
+      "explanation": "上戸彩が第22作『ゼロの執行人』にゲスト声優として出演した。",
+      "confidence": "B",
+      "sources": [
+        "https://ja.wikipedia.org/wiki/劇場版名探偵コナン",
+        "https://conan-suiri.com/archives/57"
+      ]
+    },
+    {
+      "id": "conan-517",
+      "difficulty": "advanced",
+      "difficultyLabel": "上級",
+      "category": "movies",
+      "categoryLabel": "劇場版",
+      "knowledge": "production",
+      "knowledgeLabel": "制作",
+      "question": "劇場版第23作『紺青の拳』にゲスト声優として出演したのは？",
+      "choices": [
+        "DAIGO",
+        "山崎育三郎",
+        "山田孝之",
+        "横浜流星"
+      ],
+      "answerIndex": 1,
+      "answer": "山崎育三郎",
+      "explanation": "山崎育三郎が第23作『紺青の拳』にゲスト声優として出演した。",
+      "confidence": "B",
+      "sources": [
+        "https://ja.wikipedia.org/wiki/劇場版名探偵コナン",
+        "https://conan-suiri.com/archives/57"
+      ]
+    },
+    {
+      "id": "conan-518",
+      "difficulty": "advanced",
+      "difficultyLabel": "上級",
+      "category": "movies",
+      "categoryLabel": "劇場版",
+      "knowledge": "production",
+      "knowledgeLabel": "制作",
+      "question": "劇場版第24作『緋色の弾丸』にゲスト声優として出演したのは？",
+      "choices": [
+        "大橋のぞみ",
+        "DAIGO",
+        "浜辺美波",
+        "上戸彩"
+      ],
+      "answerIndex": 2,
+      "answer": "浜辺美波",
+      "explanation": "浜辺美波が第24作『緋色の弾丸』にゲスト声優として出演した。",
+      "confidence": "B",
+      "sources": [
+        "https://ja.wikipedia.org/wiki/劇場版名探偵コナン",
+        "https://conan-suiri.com/archives/57"
+      ]
+    },
+    {
+      "id": "conan-519",
+      "difficulty": "advanced",
+      "difficultyLabel": "上級",
+      "category": "movies",
+      "categoryLabel": "劇場版",
+      "knowledge": "production",
+      "knowledgeLabel": "制作",
+      "question": "劇場版第25作『ハロウィンの花嫁』にゲスト声優として出演したのは？",
+      "choices": [
+        "大泉洋",
+        "浜辺美波",
+        "榮倉奈々",
+        "白石麻衣"
+      ],
+      "answerIndex": 3,
+      "answer": "白石麻衣",
+      "explanation": "白石麻衣が第25作『ハロウィンの花嫁』にゲスト声優として出演した。",
+      "confidence": "B",
+      "sources": [
+        "https://ja.wikipedia.org/wiki/劇場版名探偵コナン",
+        "https://conan-suiri.com/archives/57"
+      ]
+    },
+    {
+      "id": "conan-520",
+      "difficulty": "advanced",
+      "difficultyLabel": "上級",
+      "category": "movies",
+      "categoryLabel": "劇場版",
+      "knowledge": "production",
+      "knowledgeLabel": "制作",
+      "question": "劇場版第26作『黒鉄の魚影』にゲスト声優として出演したのは？",
+      "choices": [
+        "沢村一樹",
+        "浜辺美波",
+        "海原やすよ・ともこ",
+        "横浜流星"
+      ],
+      "answerIndex": 0,
+      "answer": "沢村一樹",
+      "explanation": "沢村一樹が第26作『黒鉄の魚影』にゲスト声優として出演した。",
+      "confidence": "B",
+      "sources": [
+        "https://ja.wikipedia.org/wiki/劇場版名探偵コナン",
+        "https://conan-suiri.com/archives/57"
+      ]
+    },
+    {
+      "id": "conan-521",
+      "difficulty": "advanced",
+      "difficultyLabel": "上級",
+      "category": "movies",
+      "categoryLabel": "劇場版",
+      "knowledge": "production",
+      "knowledgeLabel": "制作",
+      "question": "劇場版第27作『100万ドルの五稜星』にゲスト声優として出演したのは？",
+      "choices": [
+        "浜辺美波",
+        "大泉洋",
+        "山崎育三郎",
+        "上戸彩"
+      ],
+      "answerIndex": 1,
+      "answer": "大泉洋",
+      "explanation": "大泉洋が第27作『100万ドルの五稜星』にゲスト声優として出演した。",
+      "confidence": "B",
+      "sources": [
+        "https://ja.wikipedia.org/wiki/劇場版名探偵コナン",
+        "https://conan-suiri.com/archives/57"
+      ]
+    },
+    {
+      "id": "conan-522",
+      "difficulty": "advanced",
+      "difficultyLabel": "上級",
+      "category": "movies",
+      "categoryLabel": "劇場版",
+      "knowledge": "production",
+      "knowledgeLabel": "制作",
+      "question": "劇場版第28作『隻眼の残像』にゲスト声優として出演したのは？",
+      "choices": [
+        "横浜流星",
+        "山里亮太",
+        "山田孝之",
+        "上戸彩"
+      ],
+      "answerIndex": 2,
+      "answer": "山田孝之",
+      "explanation": "山田孝之が第28作『隻眼の残像』にゲスト声優として出演した。",
+      "confidence": "B",
+      "sources": [
+        "https://ja.wikipedia.org/wiki/劇場版名探偵コナン",
+        "https://conan-suiri.com/archives/57"
+      ]
+    },
+    {
+      "id": "conan-523",
+      "difficulty": "advanced",
+      "difficultyLabel": "上級",
+      "category": "movies",
+      "categoryLabel": "劇場版",
+      "knowledge": "production",
+      "knowledgeLabel": "制作",
+      "question": "劇場版第29作『ハイウェイの堕天使』にゲスト声優として出演したのは？",
+      "choices": [
+        "山崎育三郎",
+        "榮倉奈々",
+        "大泉洋",
+        "横浜流星"
+      ],
+      "answerIndex": 3,
+      "answer": "横浜流星",
+      "explanation": "横浜流星が第29作『ハイウェイの堕天使』にゲスト声優として出演した。",
+      "confidence": "B",
+      "sources": [
+        "https://ja.wikipedia.org/wiki/劇場版名探偵コナン",
+        "https://conan-suiri.com/archives/57"
+      ]
+    },
+    {
+      "id": "conan-524",
+      "difficulty": "advanced",
+      "difficultyLabel": "上級",
+      "category": "movies",
+      "categoryLabel": "劇場版",
+      "knowledge": "production",
+      "knowledgeLabel": "制作",
+      "question": "劇場版第14作『天空の難破船』にゲスト声優として出演したのは？",
+      "choices": [
+        "大橋のぞみ",
+        "吉岡里帆",
+        "沢村一樹",
+        "山田孝之"
+      ],
+      "answerIndex": 0,
+      "answer": "大橋のぞみ",
+      "explanation": "大橋のぞみが第14作『天空の難破船』にゲスト声優として出演した。",
+      "confidence": "B",
+      "sources": [
+        "https://ja.wikipedia.org/wiki/劇場版名探偵コナン",
+        "https://conan-suiri.com/archives/57"
+      ]
+    },
+    {
+      "id": "conan-525",
+      "difficulty": "advanced",
+      "difficultyLabel": "上級",
+      "category": "movies",
+      "categoryLabel": "劇場版",
+      "knowledge": "production",
+      "knowledgeLabel": "制作",
+      "question": "劇場版第15作『沈黙の15分』にゲスト声優として出演したのは？",
+      "choices": [
+        "海原やすよ・ともこ",
+        "渡部陽一",
+        "天海祐希",
+        "桐谷美玲"
+      ],
+      "answerIndex": 1,
+      "answer": "渡部陽一",
+      "explanation": "渡部陽一が第15作『沈黙の15分』にゲスト声優として出演した。",
+      "confidence": "B",
+      "sources": [
+        "https://ja.wikipedia.org/wiki/劇場版名探偵コナン",
+        "https://conan-suiri.com/archives/57"
+      ]
+    },
+    {
+      "id": "conan-526",
+      "difficulty": "advanced",
+      "difficultyLabel": "上級",
+      "category": "movies",
+      "categoryLabel": "劇場版",
+      "knowledge": "production",
+      "knowledgeLabel": "制作",
+      "question": "劇場版第19作『業火の向日葵』にゲスト声優として出演したのは？",
+      "choices": [
+        "横浜流星",
+        "山崎育三郎",
+        "榮倉奈々",
+        "山里亮太"
+      ],
+      "answerIndex": 2,
+      "answer": "榮倉奈々",
+      "explanation": "榮倉奈々が第19作『業火の向日葵』にゲスト声優として出演した。",
+      "confidence": "B",
+      "sources": [
+        "https://ja.wikipedia.org/wiki/劇場版名探偵コナン",
+        "https://conan-suiri.com/archives/57"
+      ]
+    },
+    {
+      "id": "conan-527",
+      "difficulty": "advanced",
+      "difficultyLabel": "上級",
+      "category": "movies",
+      "categoryLabel": "劇場版",
+      "knowledge": "production",
+      "knowledgeLabel": "制作",
+      "question": "劇場版第12作『戦慄の楽譜』にゲスト声優として出演したのは？",
+      "choices": [
+        "天海祐希",
+        "吉岡里帆",
+        "海原やすよ・ともこ",
+        "山里亮太"
+      ],
+      "answerIndex": 3,
+      "answer": "山里亮太",
+      "explanation": "山里亮太が第12作『戦慄の楽譜』にゲスト声優として出演した。",
+      "confidence": "B",
+      "sources": [
+        "https://ja.wikipedia.org/wiki/劇場版名探偵コナン",
+        "https://conan-suiri.com/archives/57"
       ]
     }
   ]
