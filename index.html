@@ -52,6 +52,14 @@ img{max-width:100%}
   --shadow:0 1px 2px rgba(0,0,0,.4),0 8px 24px rgba(0,0,0,.35);
 }
 *{box-sizing:border-box}
+.sprite{display:none}
+.sprite symbol{fill:none;stroke:currentColor;stroke-width:1.7;
+  stroke-linecap:round;stroke-linejoin:round}
+.ico{width:16px;height:16px;flex:none;fill:none;stroke:currentColor;stroke-width:1.6;
+  stroke-linecap:round;stroke-linejoin:round;vertical-align:-2px}
+.ico-sm{width:12px;height:12px;vertical-align:-1px;margin-right:4px}
+.brand{width:30px;height:30px;flex:none;fill:none;stroke:currentColor;stroke-width:1.6;
+  stroke-linecap:round;stroke-linejoin:round;color:var(--accent)}
 body{background:var(--paper);color:var(--ink);font-family:var(--body);
   font-size:15px;line-height:1.75;-webkit-font-smoothing:antialiased}
 h1,h2,h3{font-family:var(--display);font-weight:700;text-wrap:balance;margin:0;line-height:1.4}
@@ -64,7 +72,7 @@ a{color:var(--accent)}
 /* ---- file header ---- */
 .filehead{border-bottom:2px solid var(--ink);background:var(--surface)}
 .filehead .wrap{padding-top:18px;padding-bottom:0}
-.crest{display:flex;align-items:baseline;gap:12px;flex-wrap:wrap}
+.crest{display:flex;align-items:center;gap:11px;flex-wrap:wrap}
 .crest h1{font-size:26px;letter-spacing:.06em}
 .eyebrow{font-family:var(--mono);font-size:10.5px;letter-spacing:.18em;
   text-transform:uppercase;color:var(--ink-3)}
@@ -91,7 +99,8 @@ a{color:var(--accent)}
 .btn.sm{padding:6px 13px;font-size:13px;font-weight:500}
 .chips{display:flex;gap:7px;flex-wrap:wrap}
 .chip{border:1px solid var(--rule);background:var(--surface);border-radius:999px;
-  padding:6px 15px;font-size:13.5px;color:var(--ink-2)}
+  padding:6px 15px;font-size:13.5px;color:var(--ink-2);
+  display:inline-flex;align-items:center;gap:6px}
 .chip[aria-pressed="true"]{background:var(--accent);border-color:var(--accent);
   color:var(--accent-ink);font-weight:500}
 .tag{font-family:var(--mono);font-size:10.5px;letter-spacing:.08em;
@@ -234,9 +243,45 @@ dialog h2{font-size:18px}
 @media (prefers-reduced-motion:reduce){*{transition:none!important;animation:none!important}}
 </style></head>
 <body>
+<svg xmlns="http://www.w3.org/2000/svg" class="sprite" aria-hidden="true" focusable="false">
+  <symbol id="i-glasses" viewBox="0 0 24 24">
+    <circle cx="6" cy="14" r="4"/><circle cx="18" cy="14" r="4"/>
+    <path d="M10 14h4M2 12l1.5-3M22 12l-1.5-3"/>
+  </symbol>
+  <symbol id="i-capsule" viewBox="0 0 24 24">
+    <rect x="3" y="8.5" width="18" height="7" rx="3.5"/>
+    <path d="M12 8.5v7"/>
+  </symbol>
+  <symbol id="i-magnifier" viewBox="0 0 24 24">
+    <circle cx="10.5" cy="10.5" r="6"/><path d="M15 15l5 5"/>
+  </symbol>
+  <symbol id="i-bowtie" viewBox="0 0 24 24">
+    <path d="M10.3 12 3 6.5v11z"/><path d="M13.7 12 21 6.5v11z"/>
+    <circle cx="12" cy="12" r="1.6"/>
+  </symbol>
+  <symbol id="i-film" viewBox="0 0 24 24">
+    <rect x="2.5" y="5" width="19" height="14" rx="1.5"/>
+    <path d="M7 5v14M17 5v14"/>
+  </symbol>
+  <symbol id="i-music" viewBox="0 0 24 24">
+    <path d="M9 17V5l11-2v12"/><circle cx="6" cy="17" r="3"/><circle cx="17" cy="15" r="3"/>
+  </symbol>
+  <symbol id="i-person" viewBox="0 0 24 24">
+    <circle cx="12" cy="8" r="4"/><path d="M4.5 20a7.5 7.5 0 0 1 15 0"/>
+  </symbol>
+  <symbol id="i-tv" viewBox="0 0 24 24">
+    <rect x="2.5" y="8.5" width="19" height="12" rx="2"/><path d="M7 3l5 5.5L17 3"/>
+  </symbol>
+  <symbol id="i-book" viewBox="0 0 24 24">
+    <path d="M12 6.5C10 4.5 6.5 4.5 3.5 5.5v13c3-1 6.5-1 8.5 1 2-2 5.5-2 8.5-1v-13c-3-1-6.5-1-8.5 1z"/>
+    <path d="M12 6.5v13"/>
+  </symbol>
+</svg>
+
 <header class="filehead">
   <div class="wrap">
     <div class="crest">
+      <svg class="brand" aria-hidden="true"><use href="#i-glasses"/></svg>
       <h1>コナン捜査ファイル</h1>
       <span class="eyebrow">Case File / Quiz</span>
     </div>
@@ -301,10 +346,11 @@ dialog h2{font-size:18px}
       <div class="opt">
         <span>共有コード<span class="opt-note">（任意）</span></span>
         <p class="hint">同じコードと同じ設定なら、誰が挑戦しても<strong>まったく同じ問題・同じ選択肢の並び</strong>になります。
+          <strong>日本語でも記号でも、好きな文字を32文字まで</strong>使えます（大文字と小文字は区別しません）。
           空欄のままなら毎回ランダムです。</p>
         <div class="row">
-          <input type="text" id="pick-code" placeholder="例：K7M4PQ" maxlength="12"
-                 autocapitalize="characters" spellcheck="false" class="codeinput">
+          <input type="text" id="pick-code" placeholder="例：K7M4PQ／コナン／なんでも可"
+                 maxlength="32" spellcheck="false" class="codeinput">
           <button class="btn ghost sm" type="button" id="code-new">新しく作る</button>
           <button class="btn ghost sm" type="button" id="code-clear">クリア</button>
         </div>
@@ -443,6 +489,23 @@ const DIFFS = DATA.meta.difficulties;
 const CATS  = DATA.meta.categories;
 const labelOf = (list, key) => (list.find(x => x.key === key) || {}).label || key;
 
+/* カテゴリのアイコン。著作物は使わず、作品を連想させる図形を自前で描いている。
+   黒ずくめの組織＝APTX4869 のカプセル、道具＝蝶ネクタイ型変声機、といった対応。 */
+const CAT_ICON = {
+  basics: "i-book", characters: "i-person", anime: "i-tv", movies: "i-film",
+  music: "i-music", organization: "i-capsule", gadgets: "i-bowtie",
+  trivia: "i-magnifier",
+};
+function icon(name, cls) {
+  const svg = document.createElementNS("http://www.w3.org/2000/svg", "svg");
+  svg.setAttribute("class", cls || "ico");
+  svg.setAttribute("aria-hidden", "true");
+  const use = document.createElementNS("http://www.w3.org/2000/svg", "use");
+  use.setAttribute("href", "#" + name);
+  svg.appendChild(use);
+  return svg;
+}
+
 let questions = store.get(LS_KEY, null) || DATA.questions.map(q => ({ ...q }));
 let disabled  = new Set(store.get(LS_OFF, []));
 
@@ -499,8 +562,15 @@ function newCode() {
   return [...buf].map(n => CODE_CHARS[n % CODE_CHARS.length]).join("");
 }
 
+/** 共有コードを整える。文字種は制限せず、日本語や記号もそのまま使える。
+    全角を半角に揃え、前後と連続する空白だけ整理する（32文字まで）。 */
 function normalizeCode(text) {
-  return (text || "").toUpperCase().replace(/[^A-Z2-9]/g, "").slice(0, 12);
+  return (text || "").normalize("NFKC").trim().replace(/\s+/g, " ").slice(0, 32);
+}
+
+/** 乱数の種にするときは大文字小文字を無視する（「Conan」と「conan」を同じ扱いに）。 */
+function codeKey(code) {
+  return normalizeCode(code).toLowerCase();
 }
 
 /** 出題を止めるレベルの不備。ここが空でない問題は出題プールから外れる。 */
@@ -579,6 +649,7 @@ function categoryChips(onPick) {
   CATS.forEach(c => {
     const b = el("button", "chip");
     b.type = "button";
+    if (CAT_ICON[c.key]) b.append(icon(CAT_ICON[c.key]));
     b.append(document.createTextNode(c.label),
              el("span", "chip-n", String(counts[c.key] ?? 0)));
     b.setAttribute("aria-pressed", String(sel.categories.has(c.key)));
@@ -656,7 +727,7 @@ function startQuiz() {
   $("pick-code").value = code;
   // 設定もシードに混ぜる。設定が違えば同じコードでも別の問題セットになる
   const cats = [...sel.categories].sort().join(",");
-  const rnd = makeRng(hashSeed([code, sel.difficulty, cats, sel.count,
+  const rnd = makeRng(hashSeed([codeKey(code), sel.difficulty, cats, sel.count,
     sel.volatile ? "v" : "", sel.balanced ? "b" : ""].join("|")));
 
   const rows = pool();
@@ -681,9 +752,12 @@ function renderQuestion() {
   $("qbar").style.width = `${(run.i / run.list.length) * 100}%`;
 
   const meta = $("qmeta"); meta.innerHTML = "";
+  const catTag = el("span", "tag");
+  if (CAT_ICON[q.category]) catTag.append(icon(CAT_ICON[q.category], "ico ico-sm"));
+  catTag.append(document.createTextNode(q.categoryLabel));
   meta.append(
     el("span", "tag", q.difficultyLabel),
-    el("span", "tag", q.categoryLabel),
+    catTag,
     el("span", "tag", `信頼度 ${q.confidence}`));
   if (q.volatile) meta.append(el("span", "tag", `${q.asOf} 時点`));
 
@@ -1159,7 +1233,8 @@ $("share-copy").onclick = () => copyShareUrl("share-copy", "share-url");
 $("rs-copy").onclick = () => copyShareUrl("rs-copy", "rs-url");
 $("code-new").onclick = () => { $("pick-code").value = newCode(); };
 $("code-clear").onclick = () => { $("pick-code").value = ""; };
-$("pick-code").oninput = e => { e.target.value = normalizeCode(e.target.value); };
+// 入力中に整形すると空白が打てなくなるので、入力欄を離れたときだけ整える
+$("pick-code").onchange = e => { e.target.value = normalizeCode(e.target.value); };
 $("next").onclick = nextQuestion;
 $("abort").onclick = backToSetup;
 $("again").onclick = backToSetup;
