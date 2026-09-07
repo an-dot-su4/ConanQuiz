@@ -1,21 +1,21 @@
 {
   "meta": {
     "title": "名探偵コナン クイズ問題データ",
-    "version": "3.1.0",
+    "version": "3.2.0",
     "updated": "2026-09-04",
-    "total": 542,
+    "total": 552,
     "countsByDifficulty": {
       "beginner": 77,
-      "intermediate": 156,
-      "advanced": 309
+      "intermediate": 160,
+      "advanced": 315
     },
     "countsByCategory": {
       "basics": 11,
-      "characters": 127,
+      "characters": 134,
       "gadgets": 16,
       "anime": 8,
       "movies": 196,
-      "organization": 19,
+      "organization": 22,
       "music": 158,
       "trivia": 7
     },
@@ -74,12 +74,12 @@
       "情報源が食い違った事項は本データに含めない。詳細は docs/conan/UNVERIFIED.md を参照。"
     ],
     "countsByKnowledge": {
-      "production": 327,
-      "story": 215
+      "production": 328,
+      "story": 224
     },
     "countsByConfidence": {
       "A": 32,
-      "B": 505,
+      "B": 515,
       "C": 5
     }
   },
@@ -13050,6 +13050,246 @@
       "sources": [
         "https://ja.wikipedia.org/wiki/赤井秀一_(名探偵コナン)",
         "https://ciatr.jp/topics/166157"
+      ]
+    },
+    {
+      "id": "conan-543",
+      "difficulty": "advanced",
+      "difficultyLabel": "上級",
+      "category": "characters",
+      "categoryLabel": "登場人物",
+      "knowledge": "story",
+      "knowledgeLabel": "作中",
+      "question": "降谷零（安室透）と警察学校で同期だった5人は、まとめて何と呼ばれる？",
+      "choices": [
+        "公安ゼロ",
+        "捜査一課組",
+        "鬼塚教場会",
+        "警察学校組"
+      ],
+      "answerIndex": 3,
+      "answer": "警察学校組",
+      "explanation": "降谷零・松田陣平・萩原研二・伊達航・諸伏景光の5人。降谷以外の4人は殉職している。",
+      "confidence": "B",
+      "sources": [
+        "https://ja.wikipedia.org/wiki/安室透",
+        "https://www.animatetimes.com/news/details.php?id=1747820329"
+      ]
+    },
+    {
+      "id": "conan-544",
+      "difficulty": "advanced",
+      "difficultyLabel": "上級",
+      "category": "characters",
+      "categoryLabel": "登場人物",
+      "knowledge": "story",
+      "knowledgeLabel": "作中",
+      "question": "降谷零の部下にあたる、警視庁公安部の警部補は？",
+      "choices": [
+        "風見裕也",
+        "黒田兵衛",
+        "松田陣平",
+        "諸伏高明"
+      ],
+      "answerIndex": 0,
+      "answer": "風見裕也",
+      "explanation": "風見裕也警部補。降谷零の指示を受けて動く。",
+      "confidence": "B",
+      "sources": [
+        "https://ja.wikipedia.org/wiki/名探偵コナンの登場人物",
+        "https://www.animatetimes.com/news/details.php?id=1747820329"
+      ]
+    },
+    {
+      "id": "conan-545",
+      "difficulty": "advanced",
+      "difficultyLabel": "上級",
+      "category": "organization",
+      "categoryLabel": "黒ずくめの組織",
+      "knowledge": "story",
+      "knowledgeLabel": "作中",
+      "question": "降谷零が所属する警察庁警備局警備企画課の、通称は？",
+      "choices": [
+        "ワン",
+        "ゼロ",
+        "サクラ",
+        "コード"
+      ],
+      "answerIndex": 1,
+      "answer": "ゼロ",
+      "explanation": "警察庁警備局警備企画課、通称「ゼロ」。降谷零はここから黒ずくめの組織へ潜入している。",
+      "confidence": "B",
+      "sources": [
+        "https://ja.wikipedia.org/wiki/安室透",
+        "https://www.animatetimes.com/news/details.php?id=1747820329"
+      ]
+    },
+    {
+      "id": "conan-546",
+      "difficulty": "advanced",
+      "difficultyLabel": "上級",
+      "category": "organization",
+      "categoryLabel": "黒ずくめの組織",
+      "knowledge": "story",
+      "knowledgeLabel": "作中",
+      "question": "降谷零の警察学校時代の同期で、黒ずくめの組織に潜入し「スコッチ」と呼ばれていたのは？",
+      "choices": [
+        "松田陣平",
+        "伊達航",
+        "諸伏景光",
+        "萩原研二"
+      ],
+      "answerIndex": 2,
+      "answer": "諸伏景光",
+      "explanation": "諸伏景光。組織でのコードネームは「スコッチ」。",
+      "confidence": "B",
+      "sources": [
+        "https://ja.wikipedia.org/wiki/黒ずくめの組織",
+        "https://www.animatetimes.com/news/details.php?id=1747820329"
+      ]
+    },
+    {
+      "id": "conan-547",
+      "difficulty": "advanced",
+      "difficultyLabel": "上級",
+      "category": "characters",
+      "categoryLabel": "登場人物",
+      "knowledge": "story",
+      "knowledgeLabel": "作中",
+      "question": "次のうち、降谷零の警察学校の同期ではないのは？",
+      "choices": [
+        "松田陣平",
+        "萩原研二",
+        "伊達航",
+        "風見裕也"
+      ],
+      "answerIndex": 3,
+      "answer": "風見裕也",
+      "explanation": "風見裕也は降谷零の部下。同期は松田陣平・萩原研二・伊達航・諸伏景光の4人。",
+      "confidence": "B",
+      "sources": [
+        "https://ja.wikipedia.org/wiki/名探偵コナンの登場人物",
+        "https://www.animatetimes.com/news/details.php?id=1747820329"
+      ]
+    },
+    {
+      "id": "conan-548",
+      "difficulty": "advanced",
+      "difficultyLabel": "上級",
+      "category": "characters",
+      "categoryLabel": "登場人物",
+      "knowledge": "production",
+      "knowledgeLabel": "制作",
+      "question": "服部平次がテレビアニメに初登場した回のサブタイトルは？",
+      "choices": [
+        "外交官殺人事件",
+        "ジェットコースター殺人事件",
+        "西の名探偵",
+        "コナンVS怪盗キッド"
+      ],
+      "answerIndex": 0,
+      "answer": "外交官殺人事件",
+      "explanation": "アニメ第48話「外交官殺人事件（前編）」で初登場した。原作では単行本10巻。",
+      "confidence": "B",
+      "sources": [
+        "https://ja.wikipedia.org/wiki/服部平次",
+        "https://www.animatetimes.com/news/details.php?id=1712641997"
+      ]
+    },
+    {
+      "id": "conan-549",
+      "difficulty": "intermediate",
+      "difficultyLabel": "中級",
+      "category": "organization",
+      "categoryLabel": "黒ずくめの組織",
+      "knowledge": "story",
+      "knowledgeLabel": "作中",
+      "question": "灰原哀（宮野志保）が黒ずくめの組織で務めていた役割は？",
+      "choices": [
+        "諜報員",
+        "科学者",
+        "スナイパー",
+        "運転手"
+      ],
+      "answerIndex": 1,
+      "answer": "科学者",
+      "explanation": "組織の研究者として APTX4869 の開発に携わっていた。両親も組織の科学者。",
+      "confidence": "B",
+      "sources": [
+        "https://ja.wikipedia.org/wiki/灰原哀",
+        "https://castel.jp/p/8317"
+      ]
+    },
+    {
+      "id": "conan-550",
+      "difficulty": "intermediate",
+      "difficultyLabel": "中級",
+      "category": "characters",
+      "categoryLabel": "登場人物",
+      "knowledge": "story",
+      "knowledgeLabel": "作中",
+      "question": "世良真純が使う格闘技は？",
+      "choices": [
+        "空手",
+        "合気道",
+        "截拳道",
+        "剣道"
+      ],
+      "answerIndex": 2,
+      "answer": "截拳道",
+      "explanation": "截拳道（ジークンドー）。兄の赤井秀一に憧れて習い、空手の達人である蘭とほぼ互角に渡り合う。",
+      "confidence": "B",
+      "sources": [
+        "https://ja.wikipedia.org/wiki/世良真純",
+        "https://www.animatetimes.com/news/details.php?id=1764555966"
+      ]
+    },
+    {
+      "id": "conan-551",
+      "difficulty": "intermediate",
+      "difficultyLabel": "中級",
+      "category": "characters",
+      "categoryLabel": "登場人物",
+      "knowledge": "story",
+      "knowledgeLabel": "作中",
+      "question": "世良真純が編入してきた高校は？",
+      "choices": [
+        "杯戸高校",
+        "改方学園高等部",
+        "京都泉心高校",
+        "帝丹高校"
+      ],
+      "answerIndex": 3,
+      "answer": "帝丹高校",
+      "explanation": "帝丹高校2年B組に編入。毛利蘭・工藤新一と同じクラス。",
+      "confidence": "B",
+      "sources": [
+        "https://ja.wikipedia.org/wiki/世良真純",
+        "https://www.animatetimes.com/news/details.php?id=1764555966"
+      ]
+    },
+    {
+      "id": "conan-552",
+      "difficulty": "intermediate",
+      "difficultyLabel": "中級",
+      "category": "characters",
+      "categoryLabel": "登場人物",
+      "knowledge": "story",
+      "knowledgeLabel": "作中",
+      "question": "世良真純の職業は？",
+      "choices": [
+        "女子高生探偵",
+        "女子高生マジシャン",
+        "女子大生記者",
+        "新人刑事"
+      ],
+      "answerIndex": 0,
+      "answer": "女子高生探偵",
+      "explanation": "女子高生探偵。赤井秀一と羽田秀吉の妹にあたる。",
+      "confidence": "B",
+      "sources": [
+        "https://ja.wikipedia.org/wiki/世良真純",
+        "https://www.animatetimes.com/news/details.php?id=1764555966"
       ]
     }
   ]
