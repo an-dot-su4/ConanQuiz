@@ -44,8 +44,8 @@
 | `answerIndex` | number | `choices` 内の正解の位置（0始まり） |
 | `answer` | string | 正解の文字列（`choices[answerIndex]` と必ず一致） |
 | `explanation` | string | 解説。出題後に表示する用 |
-| `confidence` | string | `A`＝公式で確認／`B`＝Wikipedia＋独立メディアで一致。**C以下は収録しない** |
-| `sources` | string[] | 出典URL（**conan-121 以降は2件以上が必須**。現在527問中472問が2件以上） |
+| `confidence` | string | `A`＝公式／`B`＝Wikipedia＋独立メディア／`C`＝Wikipedia＋ファンサイト（既定では出題されない） |
+| `sources` | string[] | 出典URL（**conan-121 以降は2件以上が必須**。現在532問中477問が2件以上） |
 | `volatile` | boolean? | `true` なら時間経過で答えが変わりうる問題 |
 | `asOf` | string? | `volatile` が `true` のときの基準日 |
 

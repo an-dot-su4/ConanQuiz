@@ -12,7 +12,8 @@ Web アクセスは行わない。ここで分かるのは「データが自己�
   - choices がちょうど4つで重複がないか
   - answerIndex が範囲内で、choices[answerIndex] == answer か
   - difficulty / category が meta の定義と一致するか
-  - confidence が A / B のみか（C 以下はクイズに使わない方針）
+  - confidence が A / B / C のいずれかか
+    （C＝Wikipedia とファンサイトで一致。アプリでは既定で出題されない）
   - sources が1件以上あり http(s) URL か
     （SOURCE_GATE_FROM 以降の問題は2件必須＝ERROR。それ以前の既存分は WARN）
   - meta の集計（total / countsByDifficulty / countsByCategory）が実データと一致するか
@@ -43,7 +44,7 @@ DATA_PATH = REPO_ROOT / "data" / "questions.json"
 
 ID_RE = re.compile(r"^conan-\d{3}$")
 URL_RE = re.compile(r"^https?://")
-ALLOWED_CONFIDENCE = {"A", "B"}
+ALLOWED_CONFIDENCE = {"A", "B", "C"}
 CHOICE_COUNT = 4
 # この番号以降に追加した問題は、出典URL 2件以上を必須とする。
 # それ以前の問題は、事実の照合はしたものの URL を1件しか記録できていないものが
@@ -146,7 +147,7 @@ def check_question(q: dict, idx: int, diffs: set[str], cats: set[str],
     if conf not in ALLOWED_CONFIDENCE:
         issues.append(Issue("ERROR", qid, "confidence",
                             f"confidence は {sorted(ALLOWED_CONFIDENCE)} のみ許可されます"
-                            f"（現在 {conf!r}）。C 以下は UNVERIFIED.md へ。"))
+                            f"（現在 {conf!r}）。"))
 
     sources = q.get("sources")
     if not isinstance(sources, list) or not sources:
@@ -295,6 +296,9 @@ def main(argv: list[str] | None = None) -> int:
         if questions:
             multi = sum(1 for q in questions if len(q.get("sources") or []) >= 2)
             print(f"出典URL 2件以上: {multi} / {len(questions)} 問")
+            conf_counts = Counter(q.get("confidence") for q in questions)
+            print("信頼度: " + " / ".join(f"{k} {conf_counts[k]}問"
+                                        for k in sorted(conf_counts)))
         print(f"ERROR {len(errors)} 件、WARN {len(warns)} 件")
         if not errors and not warns:
             print("問題なし。")
