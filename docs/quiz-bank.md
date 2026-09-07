@@ -1,4 +1,4 @@
-# 名探偵コナン クイズ問題集（全552問）
+# 名探偵コナン クイズ問題集（全651問）
 
 > ⚠️ **このファイルは自動生成です。直接編集しないでください。**
 > 正本は [`questions.json`](../data/questions.json) です。編集後は
@@ -7,8 +7,8 @@
 掲載しているのはすべて **2系統以上の独立した情報源で照合済み**（信頼度 A / B）の問題です。
 情報源が食い違ったものは [`UNVERIFIED.md`](./UNVERIFIED.md) に隔離してあり、ここには含まれません。
 
-- **総数：552問**（初級 77問／中級 160問／上級 315問）
-- 最終更新：2026-09-04
+- **総数：651問**（初級 81問／中級 209問／上級 361問）
+- 最終更新：2026-09-07
 
 ---
 
@@ -19,7 +19,7 @@
 
 ---
 
-## 【初級】77問
+## 【初級】81問
 
 ### conan-001　『名探偵コナン』の作者は誰？
 
@@ -1484,7 +1484,83 @@ APTX4869（アポトキシン4869）。黒ずくめの組織が開発した毒�
 
 </details>
 
-## 【中級】160問
+### conan-553　阿笠博士の声を担当している声優は？
+
+`登場人物`　信頼度 **A**
+
+1. 緒方賢一
+2. 梶裕貴
+3. 置鮎龍太郎
+4. 茶風林
+
+<details><summary>答えを見る</summary>
+
+**正解：1. 緒方賢一**
+
+緒方賢一。第1話から一貫して担当している。
+
+[出典1](https://www.ytv.co.jp/conan/character/)　[出典2](https://ja.wikipedia.org/wiki/名探偵コナン_(アニメ))
+
+</details>
+
+### conan-554　服部平次の声を担当している声優は？
+
+`登場人物`　信頼度 **A**
+
+1. 山路和弘
+2. 堀川りょう
+3. 岡本信彦
+4. 山口勝平
+
+<details><summary>答えを見る</summary>
+
+**正解：2. 堀川りょう**
+
+堀川りょう。関西弁のキャラクターに大阪府出身の声優を起用した例。
+
+[出典1](https://www.ytv.co.jp/conan/character/)　[出典2](https://ja.wikipedia.org/wiki/名探偵コナン_(アニメ))
+
+</details>
+
+### conan-555　赤井秀一の声を担当している声優は？
+
+`登場人物`　信頼度 **A**
+
+1. 岸野幸正
+2. てらそままさき
+3. 池田秀一
+4. 乃村健次
+
+<details><summary>答えを見る</summary>
+
+**正解：3. 池田秀一**
+
+池田秀一。少年期は梶裕貴が担当している。
+
+[出典1](https://www.ytv.co.jp/conan/character/)　[出典2](https://ja.wikipedia.org/wiki/名探偵コナン_(アニメ))
+
+</details>
+
+### conan-556　怪盗キッド（黒羽快斗）の声を担当している声優は？
+
+`登場人物`　信頼度 **A**
+
+1. 田中秀幸
+2. 千葉繁
+3. 立木文彦
+4. 山口勝平
+
+<details><summary>答えを見る</summary>
+
+**正解：4. 山口勝平**
+
+山口勝平。工藤新一と兼任している。
+
+[出典1](https://www.ytv.co.jp/conan/character/)　[出典2](https://ja.wikipedia.org/wiki/名探偵コナン_(アニメ))
+
+</details>
+
+## 【中級】209問
 
 ### conan-041　原作漫画の第1話のタイトルは？
 
@@ -4526,7 +4602,938 @@ King Gnuの「TWILIGHT!!!」（2025年）。
 
 </details>
 
-## 【上級】315問
+### conan-557　沖矢昴の声を担当している声優は？
+
+`登場人物`　信頼度 **A**
+
+1. 置鮎龍太郎
+2. 加藤精三
+3. 森川智之
+4. 飛田展男
+
+<details><summary>答えを見る</summary>
+
+**正解：1. 置鮎龍太郎**
+
+置鮎龍太郎。赤井秀一本人の声（池田秀一）とは別に当てられている。
+
+[出典1](https://www.ytv.co.jp/conan/character/)　[出典2](https://ja.wikipedia.org/wiki/名探偵コナン_(アニメ))
+
+</details>
+
+### conan-558　世良真純の声を担当している声優は？
+
+`登場人物`　信頼度 **A**
+
+1. 高島雅羅
+2. 日髙のり子
+3. 甲斐田ゆき
+4. 本田貴子
+
+<details><summary>答えを見る</summary>
+
+**正解：2. 日髙のり子**
+
+日髙のり子。
+
+[出典1](https://www.ytv.co.jp/conan/character/)　[出典2](https://ja.wikipedia.org/wiki/名探偵コナンの登場人物)
+
+</details>
+
+### conan-559　京極真の声を担当している声優は？
+
+`登場人物`　信頼度 **A**
+
+1. 小野大輔
+2. 佐藤正治
+3. 檜山修之
+4. 富田耕生
+
+<details><summary>答えを見る</summary>
+
+**正解：3. 檜山修之**
+
+檜山修之。幼少時代は瀧本富士子が担当。
+
+[出典1](https://www.ytv.co.jp/conan/character/)　[出典2](https://ja.wikipedia.org/wiki/名探偵コナンの登場人物)
+
+</details>
+
+### conan-560　水無怜奈（キール）の声を担当している声優は？
+
+`登場人物`　信頼度 **A**
+
+1. 松井菜桜子
+2. 林原めぐみ
+3. 本田貴子
+4. 三石琴乃
+
+<details><summary>答えを見る</summary>
+
+**正解：4. 三石琴乃**
+
+三石琴乃。
+
+[出典1](https://www.ytv.co.jp/conan/character/)　[出典2](https://ja.wikipedia.org/wiki/名探偵コナン_(アニメ))
+
+</details>
+
+### conan-561　松田陣平の声を担当している声優は？
+
+`登場人物`　信頼度 **A**
+
+1. 神奈延年
+2. 岡本信彦
+3. 置鮎龍太郎
+4. 堀之紀
+
+<details><summary>答えを見る</summary>
+
+**正解：1. 神奈延年**
+
+神奈延年。
+
+[出典1](https://www.ytv.co.jp/conan/character/)　[出典2](https://ja.wikipedia.org/wiki/名探偵コナンの登場人物)
+
+</details>
+
+### conan-562　萩原研二の声を担当している声優は？
+
+`登場人物`　信頼度 **A**
+
+1. てらそままさき
+2. 三木眞一郎
+3. 堀川りょう
+4. 加藤精三
+
+<details><summary>答えを見る</summary>
+
+**正解：2. 三木眞一郎**
+
+三木眞一郎。
+
+[出典1](https://www.ytv.co.jp/conan/character/)　[出典2](https://ja.wikipedia.org/wiki/名探偵コナンの登場人物)
+
+</details>
+
+### conan-563　諸伏景光（スコッチ）の声を担当している声優は？
+
+`登場人物`　信頼度 **A**
+
+1. 田中秀幸
+2. 茶風林
+3. 緑川光
+4. 井上和彦
+
+<details><summary>答えを見る</summary>
+
+**正解：3. 緑川光**
+
+緑川光。幼少時代は金元寿子が担当。
+
+[出典1](https://www.ytv.co.jp/conan/character/)　[出典2](https://ja.wikipedia.org/wiki/名探偵コナンの登場人物)
+
+</details>
+
+### conan-565　黒田兵衛の声を担当している声優は？
+
+`登場人物`　信頼度 **A**
+
+1. 岸野幸正
+2. 緑川光
+3. 高田裕司
+4. 小山力也
+
+<details><summary>答えを見る</summary>
+
+**正解：1. 岸野幸正**
+
+岸野幸正。
+
+[出典1](https://www.ytv.co.jp/conan/character/)　[出典2](https://ja.wikipedia.org/wiki/名探偵コナンの登場人物)
+
+</details>
+
+### conan-566　風見裕也の声を担当している声優は？
+
+`登場人物`　信頼度 **A**
+
+1. 千葉繁
+2. 飛田展男
+3. 堀秀行
+4. 小野坂昌也
+
+<details><summary>答えを見る</summary>
+
+**正解：2. 飛田展男**
+
+飛田展男。
+
+[出典1](https://www.ytv.co.jp/conan/character/)　[出典2](https://ja.wikipedia.org/wiki/名探偵コナンの登場人物)
+
+</details>
+
+### conan-570　大阪府警の大滝悟郎の声を担当している声優は？
+
+`登場人物`　信頼度 **A**
+
+1. 神奈延年
+2. 若本規夫
+3. 千葉一伸
+4. 佐藤正治
+
+<details><summary>答えを見る</summary>
+
+**正解：2. 若本規夫**
+
+若本規夫。少年時代は小野坂昌也が担当。
+
+[出典1](https://www.ytv.co.jp/conan/character/)　[出典2](https://ja.wikipedia.org/wiki/名探偵コナンの登場人物)
+
+</details>
+
+### conan-573　長野県警の大和敢助の声を担当している声優は？
+
+`登場人物`　信頼度 **A**
+
+1. 高田裕司
+2. 神奈延年
+3. 草尾毅
+4. 置鮎龍太郎
+
+<details><summary>答えを見る</summary>
+
+**正解：1. 高田裕司**
+
+高田裕司。
+
+[出典1](https://www.ytv.co.jp/conan/character/)　[出典2](https://ja.wikipedia.org/wiki/名探偵コナンの登場人物)
+
+</details>
+
+### conan-574　長野県警の上原由衣の声を担当している声優は？
+
+`登場人物`　信頼度 **A**
+
+1. 田中理恵
+2. 小清水亜美
+3. 沢城みゆき
+4. 井上喜久子
+
+<details><summary>答えを見る</summary>
+
+**正解：2. 小清水亜美**
+
+小清水亜美。
+
+[出典1](https://www.ytv.co.jp/conan/character/)　[出典2](https://ja.wikipedia.org/wiki/名探偵コナンの登場人物)
+
+</details>
+
+### conan-575　長野県警の諸伏高明の声を担当している声優は？
+
+`登場人物`　信頼度 **A**
+
+1. 池田秀一
+2. 神奈延年
+3. 速水奨
+4. 梶裕貴
+
+<details><summary>答えを見る</summary>
+
+**正解：3. 速水奨**
+
+速水奨。幼少時代は岡本信彦が担当。
+
+[出典1](https://www.ytv.co.jp/conan/character/)　[出典2](https://ja.wikipedia.org/wiki/名探偵コナンの登場人物)
+
+</details>
+
+### conan-576　群馬県警の山村ミサオの声を担当している声優は？
+
+`登場人物`　信頼度 **A**
+
+1. 千葉繁
+2. 堀川りょう
+3. 大塚明夫
+4. 古川登志夫
+
+<details><summary>答えを見る</summary>
+
+**正解：4. 古川登志夫**
+
+古川登志夫。幼少時代は村瀬迪与が担当。
+
+[出典1](https://www.ytv.co.jp/conan/character/)　[出典2](https://ja.wikipedia.org/wiki/名探偵コナンの登場人物)
+
+</details>
+
+### conan-579　宮野明美の声を担当している声優は？
+
+`登場人物`　信頼度 **A**
+
+1. 一城みゆ希
+2. 村瀬迪与
+3. 玉川砂記子
+4. 冬馬由美
+
+<details><summary>答えを見る</summary>
+
+**正解：3. 玉川砂記子**
+
+玉川砂記子。
+
+[出典1](https://www.ytv.co.jp/conan/character/)　[出典2](https://ja.wikipedia.org/wiki/名探偵コナンの登場人物)
+
+</details>
+
+### conan-582　帝丹小学校1年B組担任・小林澄子の声を担当している声優は？
+
+`登場人物`　信頼度 **A**
+
+1. 小山茉美
+2. 加藤有生子
+3. 高山みなみ
+4. 瀧本富士子
+
+<details><summary>答えを見る</summary>
+
+**正解：2. 加藤有生子**
+
+加藤有生子。
+
+[出典1](https://www.ytv.co.jp/conan/character/)　[出典2](https://ja.wikipedia.org/wiki/名探偵コナンの登場人物)
+
+</details>
+
+### conan-583　帝丹小学校1年B組副担任・若狭留美の声を担当している声優は？
+
+`登場人物`　信頼度 **A**
+
+1. 高島雅羅
+2. 小清水亜美
+3. 平野文
+4. 金元寿子
+
+<details><summary>答えを見る</summary>
+
+**正解：3. 平野文**
+
+平野文。
+
+[出典1](https://www.ytv.co.jp/conan/character/)　[出典2](https://ja.wikipedia.org/wiki/名探偵コナンの登場人物)
+
+</details>
+
+### conan-588　大岡紅葉の声を担当している声優は？
+
+`登場人物`　信頼度 **A**
+
+1. 井上喜久子
+2. 村瀬迪与
+3. 高島雅羅
+4. ゆきのさつき
+
+<details><summary>答えを見る</summary>
+
+**正解：4. ゆきのさつき**
+
+ゆきのさつき。
+
+[出典1](https://www.ytv.co.jp/conan/character/)　[出典2](https://ja.wikipedia.org/wiki/名探偵コナンの登場人物)
+
+</details>
+
+### conan-591　羽田秀吉の声を担当している声優は？
+
+`登場人物`　信頼度 **A**
+
+1. 堀之紀
+2. 小野坂昌也
+3. 森川智之
+4. 小川真司
+
+<details><summary>答えを見る</summary>
+
+**正解：3. 森川智之**
+
+森川智之。少年時代は甲斐田ゆきが担当。
+
+[出典1](https://www.ytv.co.jp/conan/character/)　[出典2](https://ja.wikipedia.org/wiki/名探偵コナンの登場人物)
+
+</details>
+
+### conan-593　赤井務武の声を担当している声優は？
+
+`登場人物`　信頼度 **A**
+
+1. 山寺宏一
+2. 加藤精三
+3. 山口勝平
+4. 藤原啓治
+
+<details><summary>答えを見る</summary>
+
+**正解：1. 山寺宏一**
+
+山寺宏一。原作者の指名によるキャスティング。
+
+[出典1](https://www.ytv.co.jp/conan/character/)　[出典2](https://ja.wikipedia.org/wiki/名探偵コナンの登場人物)
+
+</details>
+
+### conan-594　黒ずくめの組織の女性スナイパー・キャンティの声を担当している声優は？
+
+`登場人物`　信頼度 **A**
+
+1. 冬馬由美
+2. 井上喜久子
+3. 岩居由希子
+4. ゆきのさつき
+
+<details><summary>答えを見る</summary>
+
+**正解：2. 井上喜久子**
+
+井上喜久子。
+
+[出典1](https://www.ytv.co.jp/conan/character/)　[出典2](https://ja.wikipedia.org/wiki/黒ずくめの組織)
+
+</details>
+
+### conan-595　黒ずくめの組織の男性スナイパー・コルンの声を担当している声優は？
+
+`登場人物`　信頼度 **A**
+
+1. 山寺宏一
+2. 井上和彦
+3. 木下浩之
+4. 三木眞一郎
+
+<details><summary>答えを見る</summary>
+
+**正解：3. 木下浩之**
+
+木下浩之。
+
+[出典1](https://www.ytv.co.jp/conan/character/)　[出典2](https://ja.wikipedia.org/wiki/黒ずくめの組織)
+
+</details>
+
+### conan-596　ラム（脇田兼則）の声を担当している声優は？
+
+`登場人物`　信頼度 **A**
+
+1. 速水奨
+2. 岸野幸正
+3. 木下浩之
+4. 千葉繁
+
+<details><summary>答えを見る</summary>
+
+**正解：4. 千葉繁**
+
+千葉繁。
+
+[出典1](https://www.ytv.co.jp/conan/character/)　[出典2](https://ja.wikipedia.org/wiki/黒ずくめの組織)
+
+</details>
+
+### conan-598　FBI捜査官ジョディ・スターリングの声を担当している声優は？
+
+`登場人物`　信頼度 **A**
+
+1. 田中理恵
+2. 一城みゆ希
+3. 加藤有生子
+4. 宮村優子
+
+<details><summary>答えを見る</summary>
+
+**正解：2. 一城みゆ希**
+
+一城みゆ希。少女時代は冬馬由美が担当。
+
+[出典1](https://www.ytv.co.jp/conan/character/)　[出典2](https://ja.wikipedia.org/wiki/FBI_(名探偵コナン))
+
+</details>
+
+### conan-601　ジンの愛車の車種は？
+
+`黒ずくめの組織`　信頼度 **B**
+
+1. ポルシェ356A
+2. フォード・マスタングGT500
+3. マツダ・RX-7
+4. シボレーC-1500
+
+<details><summary>答えを見る</summary>
+
+**正解：1. ポルシェ356A**
+
+ポルシェ356A。ジン自身は「ドイツの雨ガエル」と呼んで気に入っている。
+
+[出典1](https://ja.wikipedia.org/wiki/黒ずくめの組織)　[出典2](https://www.animatetimes.com/news/details.php?id=1770341803)
+
+</details>
+
+### conan-602　ベルモットの座右の銘とされる英語のフレーズは？
+
+`黒ずくめの組織`　信頼度 **B**
+
+1. Truth is always only one
+2. A secret makes a woman woman
+3. The game is afoot
+4. A woman never forgets
+
+<details><summary>答えを見る</summary>
+
+**正解：2. A secret makes a woman woman**
+
+「A secret makes a woman woman.（女は秘密を着飾って美しくなる）」。
+
+[出典1](https://ja.wikipedia.org/wiki/黒ずくめの組織)　[出典2](https://www.animatetimes.com/news/details.php?id=1779664645)
+
+</details>
+
+### conan-603　キャンティが左目の周りに入れているタトゥーの図柄は？
+
+`黒ずくめの組織`　信頼度 **B**
+
+1. バラ
+2. クモ
+3. アゲハチョウ
+4. ヘビ
+
+<details><summary>答えを見る</summary>
+
+**正解：3. アゲハチョウ**
+
+左目周りにアゲハチョウをあしらったタトゥーを入れている。
+
+[出典1](https://ja.wikipedia.org/wiki/黒ずくめの組織)　[出典2](https://www.animatetimes.com/news/details.php?id=1779930833)
+
+</details>
+
+### conan-607　ラムの左目はどうなっている？
+
+`黒ずくめの組織`　信頼度 **B**
+
+1. 眼帯で覆っているだけ
+2. 色が変わっている
+3. 義眼
+4. 傷跡が残っている
+
+<details><summary>答えを見る</summary>
+
+**正解：3. 義眼**
+
+現在は義眼になっている。脇田兼則としては眼帯で隠している。
+
+[出典1](https://ja.wikipedia.org/wiki/黒ずくめの組織)　[出典2](https://www.animatetimes.com/news/details.php?id=1778497573)
+
+</details>
+
+### conan-608　ラムの正体・脇田兼則の表の職業は？
+
+`黒ずくめの組織`　信頼度 **B**
+
+1. タクシー運転手
+2. バーのマスター
+3. 古書店の店主
+4. 寿司職人
+
+<details><summary>答えを見る</summary>
+
+**正解：4. 寿司職人**
+
+「米花いろは寿司」の板前をしている。
+
+[出典1](https://ja.wikipedia.org/wiki/黒ずくめの組織)　[出典2](https://www.animatetimes.com/news/details.php?id=1778497573)
+
+</details>
+
+### conan-611　長野県警の大和敢助の年齢は？
+
+`登場人物`　信頼度 **B**
+
+1. 29歳
+2. 32歳
+3. 35歳
+4. 41歳
+
+<details><summary>答えを見る</summary>
+
+**正解：3. 35歳**
+
+35歳。同い年の諸伏高明とは小学校からの同級生でライバル。
+
+[出典1](https://ja.wikipedia.org/wiki/名探偵コナンの登場人物)　[出典2](https://www.animatetimes.com/news/details.php?id=1746586497)
+
+</details>
+
+### conan-612　諸伏高明が小学校時代から呼ばれているあだ名は？
+
+`登場人物`　信頼度 **B**
+
+1. タカさん
+2. ショウ
+3. モロさん
+4. コウメイ
+
+<details><summary>答えを見る</summary>
+
+**正解：4. コウメイ**
+
+名前の「高明」を音読みにした「コウメイ」。『三国志』の故事を好んで引用する。
+
+[出典1](https://ja.wikipedia.org/wiki/名探偵コナンの登場人物)　[出典2](https://www.animatetimes.com/news/details.php?id=1746586497)
+
+</details>
+
+### conan-613　長野県警の諸伏高明の弟にあたる人物は？
+
+`登場人物`　信頼度 **B**
+
+1. 諸伏景光
+2. 降谷零
+3. 松田陣平
+4. 伊達航
+
+<details><summary>答えを見る</summary>
+
+**正解：1. 諸伏景光**
+
+黒ずくめの組織に潜入し「スコッチ」と呼ばれていた諸伏景光が実の弟。
+
+[出典1](https://ja.wikipedia.org/wiki/名探偵コナンの登場人物)　[出典2](https://www.animatetimes.com/news/details.php?id=1746586497)
+
+</details>
+
+### conan-616　横溝参悟と横溝重悟の関係は？
+
+`登場人物`　信頼度 **A**
+
+1. いとこ同士
+2. 親子
+3. 他人の空似
+4. 双子の兄弟
+
+<details><summary>答えを見る</summary>
+
+**正解：4. 双子の兄弟**
+
+静岡県警の参悟が兄、神奈川県警の重悟が弟の双子。
+
+[出典1](https://www.ytv.co.jp/conan/character/)　[出典2](https://ja.wikipedia.org/wiki/名探偵コナンの登場人物)
+
+</details>
+
+### conan-618　山村ミサオが刑事を目指すきっかけになったのは？
+
+`登場人物`　信頼度 **A**
+
+1. 父親が刑事だったこと
+2. 工藤有希子が主演した刑事ドラマ
+3. 毛利小五郎に憧れたこと
+4. 少年時代に事件に巻き込まれたこと
+
+<details><summary>答えを見る</summary>
+
+**正解：2. 工藤有希子が主演した刑事ドラマ**
+
+有希子（藤峰有希子）の大ファンで、彼女が主演した刑事ドラマを見て刑事を目指した。
+
+[出典1](https://www.ytv.co.jp/conan/character/)　[出典2](https://ja.wikipedia.org/wiki/名探偵コナンの登場人物)
+
+</details>
+
+### conan-620　風見裕也が所属している部署は？
+
+`登場人物`　信頼度 **A**
+
+1. 警察庁警備局
+2. 警視庁捜査一課
+3. 神奈川県警捜査一課
+4. 警視庁公安部
+
+<details><summary>答えを見る</summary>
+
+**正解：4. 警視庁公安部**
+
+警視庁公安部の警部補。警察庁所属の降谷零を上司と仰いでいる。
+
+[出典1](https://www.ytv.co.jp/conan/character/)　[出典2](https://ja.wikipedia.org/wiki/名探偵コナンの登場人物)
+
+</details>
+
+### conan-621　萩原研二の姉にあたる人物は？
+
+`登場人物`　信頼度 **A**
+
+1. 萩原千速
+2. 宮本由美
+3. 三池苗子
+4. 佐藤美和子
+
+<details><summary>答えを見る</summary>
+
+**正解：1. 萩原千速**
+
+神奈川県警の白バイ小隊長・萩原千速が実姉。
+
+[出典1](https://www.ytv.co.jp/conan/character/)　[出典2](https://ja.wikipedia.org/wiki/名探偵コナンの登場人物)
+
+</details>
+
+### conan-627　小林澄子が大ファンだと公言している作家は？
+
+`登場人物`　信頼度 **A**
+
+1. アーサー・コナン・ドイル
+2. アガサ・クリスティ
+3. 江戸川乱歩
+4. モーリス・ルブラン
+
+<details><summary>答えを見る</summary>
+
+**正解：3. 江戸川乱歩**
+
+ミステリー好きで江戸川乱歩の大ファン。少年探偵団の「顧問」を自称している。
+
+[出典1](https://www.ytv.co.jp/conan/character/)　[出典2](https://ja.wikipedia.org/wiki/名探偵コナンの登場人物)
+
+</details>
+
+### conan-630　本堂瑛祐の姉にあたる人物は？
+
+`登場人物`　信頼度 **A**
+
+1. ジョディ・スターリング
+2. 水無怜奈（本堂瑛海）
+3. 宮野明美
+4. メアリー・世良
+
+<details><summary>答えを見る</summary>
+
+**正解：2. 水無怜奈（本堂瑛海）**
+
+CIA諜報員の本堂瑛海（偽名・水無怜奈）が実姉。
+
+[出典1](https://www.ytv.co.jp/conan/character/)　[出典2](https://ja.wikipedia.org/wiki/名探偵コナンの登場人物)
+
+</details>
+
+### conan-631　榎本梓が働いている店は？
+
+`登場人物`　信頼度 **A**
+
+1. いろは寿司
+2. ラーメン小倉
+3. 喫茶ポアロ
+4. 喫茶ブルーパロット
+
+<details><summary>答えを見る</summary>
+
+**正解：3. 喫茶ポアロ**
+
+毛利探偵事務所の階下にある喫茶ポアロの店員。
+
+[出典1](https://www.ytv.co.jp/conan/character/)　[出典2](https://ja.wikipedia.org/wiki/名探偵コナンの登場人物)
+
+</details>
+
+### conan-634　大岡紅葉が高校生チャンピオンになっている競技は？
+
+`登場人物`　信頼度 **A**
+
+1. 剣道
+2. 競技かるた
+3. なぎなた
+4. 弓道
+
+<details><summary>答えを見る</summary>
+
+**正解：2. 競技かるた**
+
+百人一首（競技かるた）の高校生チャンピオン。
+
+[出典1](https://www.ytv.co.jp/conan/character/)　[出典2](https://ja.wikipedia.org/wiki/名探偵コナンの登場人物)
+
+</details>
+
+### conan-635　大岡紅葉が服部平次を呼ぶときの呼び方は？
+
+`登場人物`　信頼度 **A**
+
+1. 平次はん
+2. うちの探偵さん
+3. 未来の旦那さん
+4. 西の名探偵
+
+<details><summary>答えを見る</summary>
+
+**正解：3. 未来の旦那さん**
+
+一途な恋心から「未来の旦那さん」と呼んでいる。
+
+[出典1](https://www.ytv.co.jp/conan/character/)　[出典2](https://ja.wikipedia.org/wiki/名探偵コナンの登場人物)
+
+</details>
+
+### conan-638　羽田秀吉が持つ棋士の称号は？
+
+`登場人物`　信頼度 **A**
+
+1. 竜王
+2. 太閤名人
+3. 天鳳位
+4. 王将
+
+<details><summary>答えを見る</summary>
+
+**正解：2. 太閤名人**
+
+名前が羽柴秀吉に似ていることから「太閤名人」と呼ばれる。
+
+[出典1](https://www.ytv.co.jp/conan/character/)　[出典2](https://ja.wikipedia.org/wiki/名探偵コナンの登場人物)
+
+</details>
+
+### conan-639　メアリー・世良がコナンに伝えるよう世良真純に指示した自称は？
+
+`登場人物`　信頼度 **A**
+
+1. 名も無き姉
+2. 組織の外の目撃者
+3. 領域外の妹
+4. もうひとりの被験者
+
+<details><summary>答えを見る</summary>
+
+**正解：3. 領域外の妹**
+
+素性を聞かれた場合に「領域外の妹」と告げるよう指示していた。
+
+[出典1](https://www.ytv.co.jp/conan/character/)　[出典2](https://ja.wikipedia.org/wiki/名探偵コナンの登場人物)
+
+</details>
+
+### conan-640　赤井務武が所属していた組織は？
+
+`登場人物`　信頼度 **A**
+
+1. FBI
+2. CIA
+3. インターポール
+4. MI6
+
+<details><summary>答えを見る</summary>
+
+**正解：4. MI6**
+
+イギリスの秘密情報部MI6の諜報員。17年前に消息を絶った。
+
+[出典1](https://www.ytv.co.jp/conan/character/)　[出典2](https://ja.wikipedia.org/wiki/名探偵コナンの登場人物)
+
+</details>
+
+### conan-641　ジョディ・スターリングが潜入捜査中に就いていた職業は？
+
+`登場人物`　信頼度 **A**
+
+1. 帝丹高校の英語教師
+2. 帝丹小学校の副担任
+3. 日売テレビのアナウンサー
+4. 喫茶ポアロの店員
+
+<details><summary>答えを見る</summary>
+
+**正解：1. 帝丹高校の英語教師**
+
+「ジョディ・サンテミリオン」の偽名で帝丹高校の英語教師として赴任していた。
+
+[出典1](https://www.ytv.co.jp/conan/character/)　[出典2](https://ja.wikipedia.org/wiki/名探偵コナンの登場人物)
+
+</details>
+
+### conan-645　沖矢昴が表向きに名乗っている身分は？
+
+`登場人物`　信頼度 **A**
+
+1. 東都大学の大学院生
+2. 帝丹高校の非常勤講師
+3. 米花大学の助教
+4. フリーのカメラマン
+
+<details><summary>答えを見る</summary>
+
+**正解：1. 東都大学の大学院生**
+
+東都大学大学院工学部博士課程の27歳、というのが表向きの素性。
+
+[出典1](https://www.ytv.co.jp/conan/character/)　[出典2](https://ja.wikipedia.org/wiki/FBI_(名探偵コナン))
+
+</details>
+
+### conan-646　水無怜奈の表の顔（職業）は？
+
+`登場人物`　信頼度 **A**
+
+1. 帝丹高校の英語教師
+2. 日売テレビのアナウンサー
+3. 雑誌記者
+4. モデル
+
+<details><summary>答えを見る</summary>
+
+**正解：2. 日売テレビのアナウンサー**
+
+日売テレビの人気女性アナウンサーというのが表の顔だった。
+
+[出典1](https://www.ytv.co.jp/conan/character/)　[出典2](https://ja.wikipedia.org/wiki/名探偵コナンの登場人物)
+
+</details>
+
+### conan-648　京極真の異名として知られるのは？
+
+`登場人物`　信頼度 **A**
+
+1. 孤高の剣聖
+2. 無双の格闘王
+3. 不動の防人
+4. 蹴撃の貴公子
+
+<details><summary>答えを見る</summary>
+
+**正解：4. 蹴撃の貴公子**
+
+得意の蹴り技から「蹴撃の貴公子」と呼ばれる。
+
+[出典1](https://www.ytv.co.jp/conan/character/)　[出典2](https://ja.wikipedia.org/wiki/名探偵コナンの登場人物)
+
+</details>
+
+### conan-651　宮野エレーナが黒ずくめの組織内で呼ばれていた異名は？
+
+`登場人物`　信頼度 **B**
+
+1. シルバー・ウィッチ
+2. ドクター・シェリー
+3. ヘル・エンジェル
+4. ナイト・ローズ
+
+<details><summary>答えを見る</summary>
+
+**正解：3. ヘル・エンジェル**
+
+組織内では「ヘル・エンジェル」の異名を持つ科学者だった。
+
+[出典1](https://ja.wikipedia.org/wiki/名探偵コナンの登場人物)　[出典2](https://ja.wikipedia.org/wiki/黒ずくめの組織)
+
+</details>
+
+## 【上級】361問
 
 ### conan-081　黒ずくめの組織のボスの名前は？
 
@@ -10510,6 +11517,880 @@ DAIGOが第13作『漆黒の追跡者』にゲスト声優として出演した�
 アニメ第48話「外交官殺人事件（前編）」で初登場した。原作では単行本10巻。
 
 [出典1](https://ja.wikipedia.org/wiki/服部平次)　[出典2](https://www.animatetimes.com/news/details.php?id=1712641997)
+
+</details>
+
+### conan-564　伊達航の声を第1029話以降担当している声優は？
+
+`登場人物`　信頼度 **A**
+
+1. 永井一郎
+2. 古川登志夫
+3. 小川真司
+4. 東地宏樹
+
+<details><summary>答えを見る</summary>
+
+**正解：4. 東地宏樹**
+
+東地宏樹。第682・683話では藤原啓治が担当していた。
+
+[出典1](https://www.ytv.co.jp/conan/character/)　[出典2](https://ja.wikipedia.org/wiki/名探偵コナンの登場人物)
+
+</details>
+
+### conan-567　松本清長の声を第18話から第683話まで担当した声優は？
+
+`登場人物`　信頼度 **A**
+
+1. 佐藤正治
+2. 森川智之
+3. 加藤精三
+4. 東地宏樹
+
+<details><summary>答えを見る</summary>
+
+**正解：3. 加藤精三**
+
+加藤精三。
+
+[出典1](https://www.ytv.co.jp/conan/character/)　[出典2](https://ja.wikipedia.org/wiki/名探偵コナンの登場人物)
+
+</details>
+
+### conan-568　服部平蔵の声を第966話以降担当している声優は？
+
+`登場人物`　信頼度 **A**
+
+1. 草尾毅
+2. 木下浩之
+3. 堀秀行
+4. 山路和弘
+
+<details><summary>答えを見る</summary>
+
+**正解：4. 山路和弘**
+
+山路和弘。第77話から第712話までは小山武宏が担当していた。
+
+[出典1](https://www.ytv.co.jp/conan/character/)　[出典2](https://ja.wikipedia.org/wiki/名探偵コナンの登場人物)
+
+</details>
+
+### conan-569　遠山銀司郎の声を第966話以降担当している声優は？
+
+`登場人物`　信頼度 **A**
+
+1. てらそままさき
+2. 高木渉
+3. 立木文彦
+4. 富田耕生
+
+<details><summary>答えを見る</summary>
+
+**正解：1. てらそままさき**
+
+てらそままさき。以前は佐古正人・小川真司が担当していた。
+
+[出典1](https://www.ytv.co.jp/conan/character/)　[出典2](https://ja.wikipedia.org/wiki/名探偵コナンの登場人物)
+
+</details>
+
+### conan-571　京都府警の綾小路文麿の声を担当している声優は？
+
+`登場人物`　信頼度 **A**
+
+1. 森川智之
+2. 梁田清之
+3. 置鮎龍太郎
+4. 檜山修之
+
+<details><summary>答えを見る</summary>
+
+**正解：3. 置鮎龍太郎**
+
+置鮎龍太郎。沖矢昴と兼任している。
+
+[出典1](https://www.ytv.co.jp/conan/character/)　[出典2](https://ja.wikipedia.org/wiki/名探偵コナンの登場人物)
+
+</details>
+
+### conan-572　横溝参悟と横溝重悟、双子の兄弟をひとりで演じている声優は？
+
+`登場人物`　信頼度 **A**
+
+1. 山路和弘
+2. 若本規夫
+3. 堀秀行
+4. 大塚明夫
+
+<details><summary>答えを見る</summary>
+
+**正解：4. 大塚明夫**
+
+大塚明夫。静岡県警の参悟と神奈川県警の重悟を兼任している。
+
+[出典1](https://www.ytv.co.jp/conan/character/)　[出典2](https://ja.wikipedia.org/wiki/名探偵コナンの登場人物)
+
+</details>
+
+### conan-577　交通課の婦警・宮本由美の声を担当している声優は？
+
+`登場人物`　信頼度 **A**
+
+1. 杉本ゆう
+2. 井上喜久子
+3. 金元寿子
+4. 林原めぐみ
+
+<details><summary>答えを見る</summary>
+
+**正解：1. 杉本ゆう**
+
+杉本ゆう。
+
+[出典1](https://www.ytv.co.jp/conan/character/)　[出典2](https://ja.wikipedia.org/wiki/名探偵コナンの登場人物)
+
+</details>
+
+### conan-578　交通課の婦警・三池苗子の声を担当している声優は？
+
+`登場人物`　信頼度 **A**
+
+1. 榎本充希子
+2. 田中理恵
+3. 田中敦子
+4. 玉川砂記子
+
+<details><summary>答えを見る</summary>
+
+**正解：2. 田中理恵**
+
+田中理恵。
+
+[出典1](https://www.ytv.co.jp/conan/character/)　[出典2](https://ja.wikipedia.org/wiki/名探偵コナンの登場人物)
+
+</details>
+
+### conan-580　宮野エレーナの声を第953話以降担当している声優は？
+
+`登場人物`　信頼度 **A**
+
+1. 三石琴乃
+2. 勝生真沙子
+3. 高山みなみ
+4. 林原めぐみ
+
+<details><summary>答えを見る</summary>
+
+**正解：4. 林原めぐみ**
+
+林原めぐみ。娘の灰原哀（宮野志保）と兼任。第341話から第771話までは鈴木弘子が担当していた。
+
+[出典1](https://www.ytv.co.jp/conan/character/)　[出典2](https://ja.wikipedia.org/wiki/名探偵コナンの登場人物)
+
+</details>
+
+### conan-581　宮野厚司の声を担当している声優は？
+
+`登場人物`　信頼度 **A**
+
+1. 中村悠一
+2. 石井康嗣
+3. 堀秀行
+4. 梶裕貴
+
+<details><summary>答えを見る</summary>
+
+**正解：1. 中村悠一**
+
+中村悠一。
+
+[出典1](https://www.ytv.co.jp/conan/character/)　[出典2](https://ja.wikipedia.org/wiki/名探偵コナンの登場人物)
+
+</details>
+
+### conan-584　本堂瑛祐の声を担当している声優は？
+
+`登場人物`　信頼度 **A**
+
+1. 杉本ゆう
+2. 田中敦子
+3. 林原めぐみ
+4. 野田順子
+
+<details><summary>答えを見る</summary>
+
+**正解：4. 野田順子**
+
+野田順子。
+
+[出典1](https://www.ytv.co.jp/conan/character/)　[出典2](https://ja.wikipedia.org/wiki/名探偵コナンの登場人物)
+
+</details>
+
+### conan-585　喫茶ポアロの店員・榎本梓の声を担当している声優は？
+
+`登場人物`　信頼度 **A**
+
+1. 榎本充希子
+2. 岡村明美
+3. 湯屋敦子
+4. 加藤有生子
+
+<details><summary>答えを見る</summary>
+
+**正解：1. 榎本充希子**
+
+榎本充希子。キャラクター名は担当声優の名前が由来。
+
+[出典1](https://www.ytv.co.jp/conan/character/)　[出典2](https://ja.wikipedia.org/wiki/名探偵コナンの登場人物)
+
+</details>
+
+### conan-586　鈴木次郎吉の声を第1105話以降担当している声優は？
+
+`登場人物`　信頼度 **A**
+
+1. 速水奨
+2. 佐藤正治
+3. 堀川りょう
+4. 檜山修之
+
+<details><summary>答えを見る</summary>
+
+**正解：2. 佐藤正治**
+
+佐藤正治。以前は永井一郎・富田耕生が担当していた。
+
+[出典1](https://www.ytv.co.jp/conan/character/)　[出典2](https://ja.wikipedia.org/wiki/名探偵コナンの登場人物)
+
+</details>
+
+### conan-587　服部平次の母・服部静華の声を担当している声優は？
+
+`登場人物`　信頼度 **A**
+
+1. 岩居由希子
+2. 島本須美
+3. 勝生真沙子
+4. ゆきのさつき
+
+<details><summary>答えを見る</summary>
+
+**正解：3. 勝生真沙子**
+
+勝生真沙子。
+
+[出典1](https://www.ytv.co.jp/conan/character/)　[出典2](https://ja.wikipedia.org/wiki/名探偵コナンの登場人物)
+
+</details>
+
+### conan-589　大岡家の執事・伊織無我の声を担当している声優は？
+
+`登場人物`　信頼度 **A**
+
+1. 小野大輔
+2. 梶裕貴
+3. 森川智之
+4. 山路和弘
+
+<details><summary>答えを見る</summary>
+
+**正解：1. 小野大輔**
+
+小野大輔。
+
+[出典1](https://www.ytv.co.jp/conan/character/)　[出典2](https://ja.wikipedia.org/wiki/名探偵コナンの登場人物)
+
+</details>
+
+### conan-590　沖田総司の声を担当している声優は？
+
+`登場人物`　信頼度 **A**
+
+1. 飛田展男
+2. 遊佐浩二
+3. てらそままさき
+4. 小山力也
+
+<details><summary>答えを見る</summary>
+
+**正解：2. 遊佐浩二**
+
+遊佐浩二。
+
+[出典1](https://www.ytv.co.jp/conan/character/)　[出典2](https://ja.wikipedia.org/wiki/名探偵コナンの登場人物)
+
+</details>
+
+### conan-592　メアリー・世良の声を第1144話以降担当している声優は？
+
+`登場人物`　信頼度 **A**
+
+1. 小山茉美
+2. 日髙のり子
+3. 島本須美
+4. 本田貴子
+
+<details><summary>答えを見る</summary>
+
+**正解：4. 本田貴子**
+
+本田貴子。第760話から第1046話までは田中敦子が担当していた。
+
+[出典1](https://www.ytv.co.jp/conan/character/)　[出典2](https://ja.wikipedia.org/wiki/名探偵コナンの登場人物)
+
+</details>
+
+### conan-597　黒ずくめの組織の幹部・ピスコの声を担当した声優は？
+
+`登場人物`　信頼度 **A**
+
+1. 村松康雄
+2. 岸野幸正
+3. 木下浩之
+4. 田中秀幸
+
+<details><summary>答えを見る</summary>
+
+**正解：1. 村松康雄**
+
+村松康雄。
+
+[出典1](https://www.ytv.co.jp/conan/character/)　[出典2](https://ja.wikipedia.org/wiki/黒ずくめの組織)
+
+</details>
+
+### conan-599　FBI捜査官ジェイムズ・ブラックの声を第1077話以降担当している声優は？
+
+`登場人物`　信頼度 **A**
+
+1. 大塚明夫
+2. 岸野幸正
+3. 土師孝也
+4. 梶裕貴
+
+<details><summary>答えを見る</summary>
+
+**正解：3. 土師孝也**
+
+土師孝也。第258話から第783話までは家弓家正が担当していた。
+
+[出典1](https://www.ytv.co.jp/conan/character/)　[出典2](https://ja.wikipedia.org/wiki/FBI_(名探偵コナン))
+
+</details>
+
+### conan-600　FBI捜査官アンドレ・キャメルの声を第1072話以降担当している声優は？
+
+`登場人物`　信頼度 **A**
+
+1. 佐藤正治
+2. 茶風林
+3. 梶裕貴
+4. 乃村健次
+
+<details><summary>答えを見る</summary>
+
+**正解：4. 乃村健次**
+
+乃村健次。第497話から第861話までは梁田清之が担当していた。
+
+[出典1](https://www.ytv.co.jp/conan/character/)　[出典2](https://ja.wikipedia.org/wiki/FBI_(名探偵コナン))
+
+</details>
+
+### conan-604　コルンが素顔を隠すために常に身に着けているものは？
+
+`黒ずくめの組織`　信頼度 **B**
+
+1. 黒いフードとマスク
+2. 眼帯とニット帽
+3. ハンチング帽とマフラー
+4. 黒い野球帽とサングラス
+
+<details><summary>答えを見る</summary>
+
+**正解：4. 黒い野球帽とサングラス**
+
+常に黒い野球帽を被りサングラスをかけているため素顔が見えない。
+
+[出典1](https://ja.wikipedia.org/wiki/黒ずくめの組織)　[出典2](https://www.animatetimes.com/news/details.php?id=1779930833)
+
+</details>
+
+### conan-605　黒ずくめの組織の幹部・ピスコの本名は？
+
+`黒ずくめの組織`　信頼度 **B**
+
+1. 枡山憲三
+2. 呑口重彦
+3. 楠田陸道
+4. 板倉卓
+
+<details><summary>答えを見る</summary>
+
+**正解：1. 枡山憲三**
+
+枡山憲三。表の顔は自動車メーカーの会長だった。
+
+[出典1](https://ja.wikipedia.org/wiki/黒ずくめの組織)　[出典2](https://www.animatetimes.com/news/details.php?id=1717487335)
+
+</details>
+
+### conan-606　ピスコの表の顔（職業）は？
+
+`黒ずくめの組織`　信頼度 **B**
+
+1. 大手証券会社の社長
+2. 自動車メーカーの会長
+3. 製薬会社の研究所長
+4. 国会議員
+
+<details><summary>答えを見る</summary>
+
+**正解：2. 自動車メーカーの会長**
+
+自動車メーカーの会長で、コナンからは「経済界の大物」と評された。
+
+[出典1](https://ja.wikipedia.org/wiki/黒ずくめの組織)　[出典2](https://www.animatetimes.com/news/details.php?id=1717487335)
+
+</details>
+
+### conan-609　劇場版第20作『純黒の悪夢』に登場したキュラソーの目の特徴は？
+
+`黒ずくめの組織`　信頼度 **B**
+
+1. オッドアイ
+2. 両目とも赤い
+3. 右目が義眼
+4. 色覚に異常がある
+
+<details><summary>答えを見る</summary>
+
+**正解：1. オッドアイ**
+
+左右で色の異なるオッドアイの持ち主として描かれている。
+
+[出典1](https://ja.wikipedia.org/wiki/黒ずくめの組織)　[出典2](https://www.animatetimes.com/news/details.php?id=1780477182)
+
+</details>
+
+### conan-610　宮野明美が組織で使っていた偽名は？
+
+`黒ずくめの組織`　信頼度 **B**
+
+1. 浅香玲子
+2. 広田雅美
+3. 水無怜奈
+4. 本堂瑛海
+
+<details><summary>答えを見る</summary>
+
+**正解：2. 広田雅美**
+
+広田雅美。コードネームは与えられていなかった。
+
+[出典1](https://ja.wikipedia.org/wiki/黒ずくめの組織)　[出典2](https://www.animatetimes.com/news/details.php?id=1787114757)
+
+</details>
+
+### conan-614　上原由衣が大和敢助を呼ぶときの呼び方は？
+
+`登場人物`　信頼度 **B**
+
+1. ヤマトさん
+2. 敢ちゃん
+3. カンちゃん
+4. 敢助くん
+
+<details><summary>答えを見る</summary>
+
+**正解：2. 敢ちゃん**
+
+幼なじみで、幼少時から「敢ちゃん」と呼んでいる。
+
+[出典1](https://ja.wikipedia.org/wiki/名探偵コナンの登場人物)　[出典2](https://www.animatetimes.com/news/details.php?id=1746586497)
+
+</details>
+
+### conan-615　大和敢助・諸伏高明・上原由衣の3人が所属する警察は？
+
+`登場人物`　信頼度 **B**
+
+1. 群馬県警
+2. 新潟県警
+3. 長野県警
+4. 山梨県警
+
+<details><summary>答えを見る</summary>
+
+**正解：3. 長野県警**
+
+3人とも長野県警の刑事部捜査一課に所属している。
+
+[出典1](https://ja.wikipedia.org/wiki/名探偵コナンの登場人物)　[出典2](https://www.animatetimes.com/news/details.php?id=1746586497)
+
+</details>
+
+### conan-617　横溝重悟が毛利小五郎を呼ぶときの、言い間違えた呼び名は？
+
+`登場人物`　信頼度 **A**
+
+1. 煙の小五郎
+2. 眠りの小五郎
+3. 迷いの小五郎
+4. 居眠り探偵
+
+<details><summary>答えを見る</summary>
+
+**正解：1. 煙の小五郎**
+
+「眠りの小五郎」を「煙の小五郎」と呼び間違えている。
+
+[出典1](https://www.ytv.co.jp/conan/character/)　[出典2](https://ja.wikipedia.org/wiki/名探偵コナンの登場人物)
+
+</details>
+
+### conan-619　黒田兵衛の右目はどうなっている？
+
+`登場人物`　信頼度 **A**
+
+1. 視力を失っている
+2. 眼帯で覆っている
+3. 義眼
+4. 色が変わっている
+
+<details><summary>答えを見る</summary>
+
+**正解：3. 義眼**
+
+大柄で右目が義眼という特徴を持つ。
+
+[出典1](https://www.ytv.co.jp/conan/character/)　[出典2](https://ja.wikipedia.org/wiki/名探偵コナンの登場人物)
+
+</details>
+
+### conan-622　萩原千速の職務は？
+
+`登場人物`　信頼度 **A**
+
+1. 鑑識官
+2. 白バイ小隊長
+3. 交通課の婦警
+4. 捜査一課の刑事
+
+<details><summary>答えを見る</summary>
+
+**正解：2. 白バイ小隊長**
+
+神奈川県警交通部の白バイ隊員で小隊長を務めている。
+
+[出典1](https://www.ytv.co.jp/conan/character/)　[出典2](https://ja.wikipedia.org/wiki/名探偵コナンの登場人物)
+
+</details>
+
+### conan-623　諸伏景光と降谷零がお互いを呼び合うあだ名は？
+
+`登場人物`　信頼度 **A**
+
+1. コウとレイ
+2. スコッチとバーボン
+3. ヒロとゼロ
+4. ケイとトオル
+
+<details><summary>答えを見る</summary>
+
+**正解：3. ヒロとゼロ**
+
+幼なじみで「ヒロ」「ゼロ」と呼び合う仲だった。
+
+[出典1](https://www.ytv.co.jp/conan/character/)　[出典2](https://ja.wikipedia.org/wiki/名探偵コナンの登場人物)
+
+</details>
+
+### conan-624　伊達航が高木渉と自分たちを指して名乗っていた呼び名は？
+
+`登場人物`　信頼度 **A**
+
+1. ダテ・アンド・タカギ
+2. 捜査一課の兄弟
+3. ダブル・ワタル
+4. ワタル・ブラザーズ
+
+<details><summary>答えを見る</summary>
+
+**正解：4. ワタル・ブラザーズ**
+
+下の名前の読みが同じ「わたる」であることから「ワタル・ブラザーズ」と触れ回っていた。
+
+[出典1](https://www.ytv.co.jp/conan/character/)　[出典2](https://ja.wikipedia.org/wiki/名探偵コナンの登場人物)
+
+</details>
+
+### conan-625　宮本由美の恋人は？
+
+`登場人物`　信頼度 **A**
+
+1. 羽田秀吉
+2. 白鳥任三郎
+3. 千葉和伸
+4. 伊達航
+
+<details><summary>答えを見る</summary>
+
+**正解：1. 羽田秀吉**
+
+棋士の羽田秀吉と「由美タン」「チュウ吉」と呼び合う仲。
+
+[出典1](https://www.ytv.co.jp/conan/character/)　[出典2](https://ja.wikipedia.org/wiki/名探偵コナンの登場人物)
+
+</details>
+
+### conan-626　三池苗子と千葉和伸の関係は？
+
+`登場人物`　信頼度 **A**
+
+1. 警察学校の同期
+2. 帝丹小学校の同級生
+3. いとこ同士
+4. 高校の先輩と後輩
+
+<details><summary>答えを見る</summary>
+
+**正解：2. 帝丹小学校の同級生**
+
+帝丹小学校時代の同級生で、再会後に恋人同士となった。
+
+[出典1](https://www.ytv.co.jp/conan/character/)　[出典2](https://ja.wikipedia.org/wiki/名探偵コナンの登場人物)
+
+</details>
+
+### conan-628　若狭留美が見えなくなっている目は？
+
+`登場人物`　信頼度 **A**
+
+1. 左目
+2. 両目とも一時的に
+3. 視野の一部だけ
+4. 右目
+
+<details><summary>答えを見る</summary>
+
+**正解：4. 右目**
+
+一過性の黒内障を患っており、時折右目が見えなくなる。
+
+[出典1](https://www.ytv.co.jp/conan/character/)　[出典2](https://ja.wikipedia.org/wiki/名探偵コナンの登場人物)
+
+</details>
+
+### conan-629　若狭留美の正体とされる人物は？
+
+`登場人物`　信頼度 **B**
+
+1. レイチェル・浅香
+2. シャロン・ヴィンヤード
+3. メアリー・世良
+4. 宮野エレーナ
+
+<details><summary>答えを見る</summary>
+
+**正解：1. レイチェル・浅香**
+
+17年前までアマンダ・ヒューズのボディガードを務めていたレイチェル・浅香。
+
+[出典1](https://ja.wikipedia.org/wiki/名探偵コナンの登場人物)　[出典2](https://ja.wikipedia.org/wiki/黒ずくめの組織)
+
+</details>
+
+### conan-632　鈴木次郎吉が飼っている犬の名前は？
+
+`登場人物`　信頼度 **A**
+
+1. キッド
+2. ホームズ
+3. ワトソン
+4. ルパン
+
+<details><summary>答えを見る</summary>
+
+**正解：4. ルパン**
+
+愛犬のルパンを連れて行動することが多い。
+
+[出典1](https://www.ytv.co.jp/conan/character/)　[出典2](https://ja.wikipedia.org/wiki/名探偵コナンの登場人物)
+
+</details>
+
+### conan-633　鈴木次郎吉が執念を燃やして捕まえようとしている相手は？
+
+`登場人物`　信頼度 **A**
+
+1. 怪盗キッド
+2. 黒ずくめの組織
+3. ベルモット
+4. 毛利小五郎
+
+<details><summary>答えを見る</summary>
+
+**正解：1. 怪盗キッド**
+
+人力飛行機世界一周の記事を新聞一面から追いやられたことがきっかけで敵対心を抱いている。
+
+[出典1](https://www.ytv.co.jp/conan/character/)　[出典2](https://ja.wikipedia.org/wiki/名探偵コナンの登場人物)
+
+</details>
+
+### conan-636　大岡紅葉が遠山和葉に付けたあだ名は？
+
+`登場人物`　信頼度 **A**
+
+1. 和葉はん
+2. かずちゃん
+3. 葉月ちゃん
+4. 葉っぱちゃん
+
+<details><summary>答えを見る</summary>
+
+**正解：4. 葉っぱちゃん**
+
+恋のライバルである和葉を「葉っぱちゃん」と呼んでいる。
+
+[出典1](https://www.ytv.co.jp/conan/character/)　[出典2](https://ja.wikipedia.org/wiki/名探偵コナンの登場人物)
+
+</details>
+
+### conan-637　伊織無我の職業は？
+
+`登場人物`　信頼度 **A**
+
+1. 大岡家の執事
+2. 京都府警の刑事
+3. 泉心高校の教師
+4. 大岡コンツェルンの社長
+
+<details><summary>答えを見る</summary>
+
+**正解：1. 大岡家の執事**
+
+大岡紅葉に仕える執事。
+
+[出典1](https://www.ytv.co.jp/conan/character/)　[出典2](https://ja.wikipedia.org/wiki/名探偵コナンの登場人物)
+
+</details>
+
+### conan-642　ジョディ・スターリングが教師時代に名乗っていた偽名は？
+
+`登場人物`　信頼度 **B**
+
+1. ジョディ・シャルドネ
+2. ジョディ・サンテミリオン
+3. ジョディ・グラス
+4. ジョディ・ホークス
+
+<details><summary>答えを見る</summary>
+
+**正解：2. ジョディ・サンテミリオン**
+
+帝丹高校では「ジョディ・サンテミリオン」を名乗っていた。
+
+[出典1](https://ja.wikipedia.org/wiki/名探偵コナンの登場人物)　[出典2](https://ja.wikipedia.org/wiki/FBI_(名探偵コナン))
+
+</details>
+
+### conan-643　ジェイムズ・ブラックの立場は？
+
+`登場人物`　信頼度 **A**
+
+1. CIAの東京支局長
+2. MI6の日本担当官
+3. 来日中のFBI捜査官チームのボス
+4. インターポールの日本代表
+
+<details><summary>答えを見る</summary>
+
+**正解：3. 来日中のFBI捜査官チームのボス**
+
+ジョディや赤井らの上司として捜査を指揮している。
+
+[出典1](https://www.ytv.co.jp/conan/character/)　[出典2](https://ja.wikipedia.org/wiki/FBI_(名探偵コナン))
+
+</details>
+
+### conan-644　FBI捜査官アンドレ・キャメルの趣味は？
+
+`登場人物`　信頼度 **A**
+
+1. ジャズ鑑賞
+2. 釣り
+3. カメラ
+4. 筋トレ
+
+<details><summary>答えを見る</summary>
+
+**正解：4. 筋トレ**
+
+筋骨隆々の体格で、趣味は筋トレ。27歳の独身。
+
+[出典1](https://www.ytv.co.jp/conan/character/)　[出典2](https://ja.wikipedia.org/wiki/FBI_(名探偵コナン))
+
+</details>
+
+### conan-647　服部静華が中学時代に大会で準優勝した武道は？
+
+`登場人物`　信頼度 **A**
+
+1. 空手
+2. 合気道
+3. 剣道
+4. なぎなた
+
+<details><summary>答えを見る</summary>
+
+**正解：3. 剣道**
+
+剣道が得意で、中学時代に大会で準優勝している。
+
+[出典1](https://www.ytv.co.jp/conan/character/)　[出典2](https://ja.wikipedia.org/wiki/名探偵コナンの登場人物)
+
+</details>
+
+### conan-649　松本清長の顔にある傷は、何年前の事件で負ったもの？
+
+`登場人物`　信頼度 **A**
+
+1. 20年前
+2. 10年前
+3. 15年前
+4. 30年前
+
+<details><summary>答えを見る</summary>
+
+**正解：1. 20年前**
+
+20年前の事件で顔に傷を負っている。
+
+[出典1](https://www.ytv.co.jp/conan/character/)　[出典2](https://ja.wikipedia.org/wiki/名探偵コナンの登場人物)
+
+</details>
+
+### conan-650　中森銀三が所属している課は？
+
+`登場人物`　信頼度 **A**
+
+1. 捜査一課
+2. 捜査二課
+3. 捜査三課
+4. 公安部
+
+<details><summary>答えを見る</summary>
+
+**正解：2. 捜査二課**
+
+怪盗キッドを追う警視庁捜査二課の警部。
+
+[出典1](https://www.ytv.co.jp/conan/character/)　[出典2](https://ja.wikipedia.org/wiki/名探偵コナンの登場人物)
 
 </details>
 

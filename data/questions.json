@@ -1,22 +1,22 @@
 {
   "meta": {
     "title": "名探偵コナン クイズ問題データ",
-    "version": "3.2.0",
-    "updated": "2026-09-04",
-    "total": 552,
+    "version": "3.3.0",
+    "updated": "2026-09-07",
+    "total": 651,
     "countsByDifficulty": {
-      "beginner": 77,
-      "intermediate": 160,
-      "advanced": 315
+      "beginner": 81,
+      "intermediate": 209,
+      "advanced": 361
     },
     "countsByCategory": {
       "basics": 11,
-      "characters": 134,
-      "gadgets": 16,
+      "characters": 223,
       "anime": 8,
       "movies": 196,
-      "organization": 22,
       "music": 158,
+      "organization": 32,
+      "gadgets": 16,
       "trivia": 7
     },
     "difficulties": [
@@ -74,12 +74,12 @@
       "情報源が食い違った事項は本データに含めない。詳細は docs/conan/UNVERIFIED.md を参照。"
     ],
     "countsByKnowledge": {
-      "production": 328,
-      "story": 224
+      "story": 272,
+      "production": 379
     },
     "countsByConfidence": {
-      "A": 32,
-      "B": 515,
+      "A": 113,
+      "B": 533,
       "C": 5
     }
   },
@@ -1874,8 +1874,8 @@
         "https://ja.wikipedia.org/wiki/名探偵コナン_(アニメ)",
         "https://animeanime.jp/article/2026/05/15/98949.html"
       ],
-      "knowledge": "story",
-      "knowledgeLabel": "作中"
+      "knowledge": "production",
+      "knowledgeLabel": "制作"
     },
     {
       "id": "conan-077",
@@ -1898,8 +1898,8 @@
         "https://ja.wikipedia.org/wiki/毛利小五郎",
         "https://ja.wikipedia.org/wiki/名探偵コナン_(アニメ)"
       ],
-      "knowledge": "story",
-      "knowledgeLabel": "作中"
+      "knowledge": "production",
+      "knowledgeLabel": "制作"
     },
     {
       "id": "conan-078",
@@ -2367,8 +2367,8 @@
         "https://animeanime.jp/article/2025/01/18/88834.html",
         "https://ja.wikipedia.org/wiki/安室透"
       ],
-      "knowledge": "story",
-      "knowledgeLabel": "作中"
+      "knowledge": "production",
+      "knowledgeLabel": "制作"
     },
     {
       "id": "conan-098",
@@ -13290,6 +13290,2382 @@
       "sources": [
         "https://ja.wikipedia.org/wiki/世良真純",
         "https://www.animatetimes.com/news/details.php?id=1764555966"
+      ]
+    },
+    {
+      "id": "conan-553",
+      "difficulty": "beginner",
+      "difficultyLabel": "初級",
+      "category": "characters",
+      "categoryLabel": "登場人物",
+      "knowledge": "production",
+      "knowledgeLabel": "制作",
+      "question": "阿笠博士の声を担当している声優は？",
+      "choices": [
+        "緒方賢一",
+        "梶裕貴",
+        "置鮎龍太郎",
+        "茶風林"
+      ],
+      "answerIndex": 0,
+      "answer": "緒方賢一",
+      "explanation": "緒方賢一。第1話から一貫して担当している。",
+      "confidence": "A",
+      "sources": [
+        "https://www.ytv.co.jp/conan/character/",
+        "https://ja.wikipedia.org/wiki/名探偵コナン_(アニメ)"
+      ]
+    },
+    {
+      "id": "conan-554",
+      "difficulty": "beginner",
+      "difficultyLabel": "初級",
+      "category": "characters",
+      "categoryLabel": "登場人物",
+      "knowledge": "production",
+      "knowledgeLabel": "制作",
+      "question": "服部平次の声を担当している声優は？",
+      "choices": [
+        "山路和弘",
+        "堀川りょう",
+        "岡本信彦",
+        "山口勝平"
+      ],
+      "answerIndex": 1,
+      "answer": "堀川りょう",
+      "explanation": "堀川りょう。関西弁のキャラクターに大阪府出身の声優を起用した例。",
+      "confidence": "A",
+      "sources": [
+        "https://www.ytv.co.jp/conan/character/",
+        "https://ja.wikipedia.org/wiki/名探偵コナン_(アニメ)"
+      ]
+    },
+    {
+      "id": "conan-555",
+      "difficulty": "beginner",
+      "difficultyLabel": "初級",
+      "category": "characters",
+      "categoryLabel": "登場人物",
+      "knowledge": "production",
+      "knowledgeLabel": "制作",
+      "question": "赤井秀一の声を担当している声優は？",
+      "choices": [
+        "岸野幸正",
+        "てらそままさき",
+        "池田秀一",
+        "乃村健次"
+      ],
+      "answerIndex": 2,
+      "answer": "池田秀一",
+      "explanation": "池田秀一。少年期は梶裕貴が担当している。",
+      "confidence": "A",
+      "sources": [
+        "https://www.ytv.co.jp/conan/character/",
+        "https://ja.wikipedia.org/wiki/名探偵コナン_(アニメ)"
+      ]
+    },
+    {
+      "id": "conan-556",
+      "difficulty": "beginner",
+      "difficultyLabel": "初級",
+      "category": "characters",
+      "categoryLabel": "登場人物",
+      "knowledge": "production",
+      "knowledgeLabel": "制作",
+      "question": "怪盗キッド（黒羽快斗）の声を担当している声優は？",
+      "choices": [
+        "田中秀幸",
+        "千葉繁",
+        "立木文彦",
+        "山口勝平"
+      ],
+      "answerIndex": 3,
+      "answer": "山口勝平",
+      "explanation": "山口勝平。工藤新一と兼任している。",
+      "confidence": "A",
+      "sources": [
+        "https://www.ytv.co.jp/conan/character/",
+        "https://ja.wikipedia.org/wiki/名探偵コナン_(アニメ)"
+      ]
+    },
+    {
+      "id": "conan-557",
+      "difficulty": "intermediate",
+      "difficultyLabel": "中級",
+      "category": "characters",
+      "categoryLabel": "登場人物",
+      "knowledge": "production",
+      "knowledgeLabel": "制作",
+      "question": "沖矢昴の声を担当している声優は？",
+      "choices": [
+        "置鮎龍太郎",
+        "加藤精三",
+        "森川智之",
+        "飛田展男"
+      ],
+      "answerIndex": 0,
+      "answer": "置鮎龍太郎",
+      "explanation": "置鮎龍太郎。赤井秀一本人の声（池田秀一）とは別に当てられている。",
+      "confidence": "A",
+      "sources": [
+        "https://www.ytv.co.jp/conan/character/",
+        "https://ja.wikipedia.org/wiki/名探偵コナン_(アニメ)"
+      ]
+    },
+    {
+      "id": "conan-558",
+      "difficulty": "intermediate",
+      "difficultyLabel": "中級",
+      "category": "characters",
+      "categoryLabel": "登場人物",
+      "knowledge": "production",
+      "knowledgeLabel": "制作",
+      "question": "世良真純の声を担当している声優は？",
+      "choices": [
+        "高島雅羅",
+        "日髙のり子",
+        "甲斐田ゆき",
+        "本田貴子"
+      ],
+      "answerIndex": 1,
+      "answer": "日髙のり子",
+      "explanation": "日髙のり子。",
+      "confidence": "A",
+      "sources": [
+        "https://www.ytv.co.jp/conan/character/",
+        "https://ja.wikipedia.org/wiki/名探偵コナンの登場人物"
+      ]
+    },
+    {
+      "id": "conan-559",
+      "difficulty": "intermediate",
+      "difficultyLabel": "中級",
+      "category": "characters",
+      "categoryLabel": "登場人物",
+      "knowledge": "production",
+      "knowledgeLabel": "制作",
+      "question": "京極真の声を担当している声優は？",
+      "choices": [
+        "小野大輔",
+        "佐藤正治",
+        "檜山修之",
+        "富田耕生"
+      ],
+      "answerIndex": 2,
+      "answer": "檜山修之",
+      "explanation": "檜山修之。幼少時代は瀧本富士子が担当。",
+      "confidence": "A",
+      "sources": [
+        "https://www.ytv.co.jp/conan/character/",
+        "https://ja.wikipedia.org/wiki/名探偵コナンの登場人物"
+      ]
+    },
+    {
+      "id": "conan-560",
+      "difficulty": "intermediate",
+      "difficultyLabel": "中級",
+      "category": "characters",
+      "categoryLabel": "登場人物",
+      "knowledge": "production",
+      "knowledgeLabel": "制作",
+      "question": "水無怜奈（キール）の声を担当している声優は？",
+      "choices": [
+        "松井菜桜子",
+        "林原めぐみ",
+        "本田貴子",
+        "三石琴乃"
+      ],
+      "answerIndex": 3,
+      "answer": "三石琴乃",
+      "explanation": "三石琴乃。",
+      "confidence": "A",
+      "sources": [
+        "https://www.ytv.co.jp/conan/character/",
+        "https://ja.wikipedia.org/wiki/名探偵コナン_(アニメ)"
+      ]
+    },
+    {
+      "id": "conan-561",
+      "difficulty": "intermediate",
+      "difficultyLabel": "中級",
+      "category": "characters",
+      "categoryLabel": "登場人物",
+      "knowledge": "production",
+      "knowledgeLabel": "制作",
+      "question": "松田陣平の声を担当している声優は？",
+      "choices": [
+        "神奈延年",
+        "岡本信彦",
+        "置鮎龍太郎",
+        "堀之紀"
+      ],
+      "answerIndex": 0,
+      "answer": "神奈延年",
+      "explanation": "神奈延年。",
+      "confidence": "A",
+      "sources": [
+        "https://www.ytv.co.jp/conan/character/",
+        "https://ja.wikipedia.org/wiki/名探偵コナンの登場人物"
+      ]
+    },
+    {
+      "id": "conan-562",
+      "difficulty": "intermediate",
+      "difficultyLabel": "中級",
+      "category": "characters",
+      "categoryLabel": "登場人物",
+      "knowledge": "production",
+      "knowledgeLabel": "制作",
+      "question": "萩原研二の声を担当している声優は？",
+      "choices": [
+        "てらそままさき",
+        "三木眞一郎",
+        "堀川りょう",
+        "加藤精三"
+      ],
+      "answerIndex": 1,
+      "answer": "三木眞一郎",
+      "explanation": "三木眞一郎。",
+      "confidence": "A",
+      "sources": [
+        "https://www.ytv.co.jp/conan/character/",
+        "https://ja.wikipedia.org/wiki/名探偵コナンの登場人物"
+      ]
+    },
+    {
+      "id": "conan-563",
+      "difficulty": "intermediate",
+      "difficultyLabel": "中級",
+      "category": "characters",
+      "categoryLabel": "登場人物",
+      "knowledge": "production",
+      "knowledgeLabel": "制作",
+      "question": "諸伏景光（スコッチ）の声を担当している声優は？",
+      "choices": [
+        "田中秀幸",
+        "茶風林",
+        "緑川光",
+        "井上和彦"
+      ],
+      "answerIndex": 2,
+      "answer": "緑川光",
+      "explanation": "緑川光。幼少時代は金元寿子が担当。",
+      "confidence": "A",
+      "sources": [
+        "https://www.ytv.co.jp/conan/character/",
+        "https://ja.wikipedia.org/wiki/名探偵コナンの登場人物"
+      ]
+    },
+    {
+      "id": "conan-564",
+      "difficulty": "advanced",
+      "difficultyLabel": "上級",
+      "category": "characters",
+      "categoryLabel": "登場人物",
+      "knowledge": "production",
+      "knowledgeLabel": "制作",
+      "question": "伊達航の声を第1029話以降担当している声優は？",
+      "choices": [
+        "永井一郎",
+        "古川登志夫",
+        "小川真司",
+        "東地宏樹"
+      ],
+      "answerIndex": 3,
+      "answer": "東地宏樹",
+      "explanation": "東地宏樹。第682・683話では藤原啓治が担当していた。",
+      "confidence": "A",
+      "sources": [
+        "https://www.ytv.co.jp/conan/character/",
+        "https://ja.wikipedia.org/wiki/名探偵コナンの登場人物"
+      ]
+    },
+    {
+      "id": "conan-565",
+      "difficulty": "intermediate",
+      "difficultyLabel": "中級",
+      "category": "characters",
+      "categoryLabel": "登場人物",
+      "knowledge": "production",
+      "knowledgeLabel": "制作",
+      "question": "黒田兵衛の声を担当している声優は？",
+      "choices": [
+        "岸野幸正",
+        "緑川光",
+        "高田裕司",
+        "小山力也"
+      ],
+      "answerIndex": 0,
+      "answer": "岸野幸正",
+      "explanation": "岸野幸正。",
+      "confidence": "A",
+      "sources": [
+        "https://www.ytv.co.jp/conan/character/",
+        "https://ja.wikipedia.org/wiki/名探偵コナンの登場人物"
+      ]
+    },
+    {
+      "id": "conan-566",
+      "difficulty": "intermediate",
+      "difficultyLabel": "中級",
+      "category": "characters",
+      "categoryLabel": "登場人物",
+      "knowledge": "production",
+      "knowledgeLabel": "制作",
+      "question": "風見裕也の声を担当している声優は？",
+      "choices": [
+        "千葉繁",
+        "飛田展男",
+        "堀秀行",
+        "小野坂昌也"
+      ],
+      "answerIndex": 1,
+      "answer": "飛田展男",
+      "explanation": "飛田展男。",
+      "confidence": "A",
+      "sources": [
+        "https://www.ytv.co.jp/conan/character/",
+        "https://ja.wikipedia.org/wiki/名探偵コナンの登場人物"
+      ]
+    },
+    {
+      "id": "conan-567",
+      "difficulty": "advanced",
+      "difficultyLabel": "上級",
+      "category": "characters",
+      "categoryLabel": "登場人物",
+      "knowledge": "production",
+      "knowledgeLabel": "制作",
+      "question": "松本清長の声を第18話から第683話まで担当した声優は？",
+      "choices": [
+        "佐藤正治",
+        "森川智之",
+        "加藤精三",
+        "東地宏樹"
+      ],
+      "answerIndex": 2,
+      "answer": "加藤精三",
+      "explanation": "加藤精三。",
+      "confidence": "A",
+      "sources": [
+        "https://www.ytv.co.jp/conan/character/",
+        "https://ja.wikipedia.org/wiki/名探偵コナンの登場人物"
+      ]
+    },
+    {
+      "id": "conan-568",
+      "difficulty": "advanced",
+      "difficultyLabel": "上級",
+      "category": "characters",
+      "categoryLabel": "登場人物",
+      "knowledge": "production",
+      "knowledgeLabel": "制作",
+      "question": "服部平蔵の声を第966話以降担当している声優は？",
+      "choices": [
+        "草尾毅",
+        "木下浩之",
+        "堀秀行",
+        "山路和弘"
+      ],
+      "answerIndex": 3,
+      "answer": "山路和弘",
+      "explanation": "山路和弘。第77話から第712話までは小山武宏が担当していた。",
+      "confidence": "A",
+      "sources": [
+        "https://www.ytv.co.jp/conan/character/",
+        "https://ja.wikipedia.org/wiki/名探偵コナンの登場人物"
+      ]
+    },
+    {
+      "id": "conan-569",
+      "difficulty": "advanced",
+      "difficultyLabel": "上級",
+      "category": "characters",
+      "categoryLabel": "登場人物",
+      "knowledge": "production",
+      "knowledgeLabel": "制作",
+      "question": "遠山銀司郎の声を第966話以降担当している声優は？",
+      "choices": [
+        "てらそままさき",
+        "高木渉",
+        "立木文彦",
+        "富田耕生"
+      ],
+      "answerIndex": 0,
+      "answer": "てらそままさき",
+      "explanation": "てらそままさき。以前は佐古正人・小川真司が担当していた。",
+      "confidence": "A",
+      "sources": [
+        "https://www.ytv.co.jp/conan/character/",
+        "https://ja.wikipedia.org/wiki/名探偵コナンの登場人物"
+      ]
+    },
+    {
+      "id": "conan-570",
+      "difficulty": "intermediate",
+      "difficultyLabel": "中級",
+      "category": "characters",
+      "categoryLabel": "登場人物",
+      "knowledge": "production",
+      "knowledgeLabel": "制作",
+      "question": "大阪府警の大滝悟郎の声を担当している声優は？",
+      "choices": [
+        "神奈延年",
+        "若本規夫",
+        "千葉一伸",
+        "佐藤正治"
+      ],
+      "answerIndex": 1,
+      "answer": "若本規夫",
+      "explanation": "若本規夫。少年時代は小野坂昌也が担当。",
+      "confidence": "A",
+      "sources": [
+        "https://www.ytv.co.jp/conan/character/",
+        "https://ja.wikipedia.org/wiki/名探偵コナンの登場人物"
+      ]
+    },
+    {
+      "id": "conan-571",
+      "difficulty": "advanced",
+      "difficultyLabel": "上級",
+      "category": "characters",
+      "categoryLabel": "登場人物",
+      "knowledge": "production",
+      "knowledgeLabel": "制作",
+      "question": "京都府警の綾小路文麿の声を担当している声優は？",
+      "choices": [
+        "森川智之",
+        "梁田清之",
+        "置鮎龍太郎",
+        "檜山修之"
+      ],
+      "answerIndex": 2,
+      "answer": "置鮎龍太郎",
+      "explanation": "置鮎龍太郎。沖矢昴と兼任している。",
+      "confidence": "A",
+      "sources": [
+        "https://www.ytv.co.jp/conan/character/",
+        "https://ja.wikipedia.org/wiki/名探偵コナンの登場人物"
+      ]
+    },
+    {
+      "id": "conan-572",
+      "difficulty": "advanced",
+      "difficultyLabel": "上級",
+      "category": "characters",
+      "categoryLabel": "登場人物",
+      "knowledge": "production",
+      "knowledgeLabel": "制作",
+      "question": "横溝参悟と横溝重悟、双子の兄弟をひとりで演じている声優は？",
+      "choices": [
+        "山路和弘",
+        "若本規夫",
+        "堀秀行",
+        "大塚明夫"
+      ],
+      "answerIndex": 3,
+      "answer": "大塚明夫",
+      "explanation": "大塚明夫。静岡県警の参悟と神奈川県警の重悟を兼任している。",
+      "confidence": "A",
+      "sources": [
+        "https://www.ytv.co.jp/conan/character/",
+        "https://ja.wikipedia.org/wiki/名探偵コナンの登場人物"
+      ]
+    },
+    {
+      "id": "conan-573",
+      "difficulty": "intermediate",
+      "difficultyLabel": "中級",
+      "category": "characters",
+      "categoryLabel": "登場人物",
+      "knowledge": "production",
+      "knowledgeLabel": "制作",
+      "question": "長野県警の大和敢助の声を担当している声優は？",
+      "choices": [
+        "高田裕司",
+        "神奈延年",
+        "草尾毅",
+        "置鮎龍太郎"
+      ],
+      "answerIndex": 0,
+      "answer": "高田裕司",
+      "explanation": "高田裕司。",
+      "confidence": "A",
+      "sources": [
+        "https://www.ytv.co.jp/conan/character/",
+        "https://ja.wikipedia.org/wiki/名探偵コナンの登場人物"
+      ]
+    },
+    {
+      "id": "conan-574",
+      "difficulty": "intermediate",
+      "difficultyLabel": "中級",
+      "category": "characters",
+      "categoryLabel": "登場人物",
+      "knowledge": "production",
+      "knowledgeLabel": "制作",
+      "question": "長野県警の上原由衣の声を担当している声優は？",
+      "choices": [
+        "田中理恵",
+        "小清水亜美",
+        "沢城みゆき",
+        "井上喜久子"
+      ],
+      "answerIndex": 1,
+      "answer": "小清水亜美",
+      "explanation": "小清水亜美。",
+      "confidence": "A",
+      "sources": [
+        "https://www.ytv.co.jp/conan/character/",
+        "https://ja.wikipedia.org/wiki/名探偵コナンの登場人物"
+      ]
+    },
+    {
+      "id": "conan-575",
+      "difficulty": "intermediate",
+      "difficultyLabel": "中級",
+      "category": "characters",
+      "categoryLabel": "登場人物",
+      "knowledge": "production",
+      "knowledgeLabel": "制作",
+      "question": "長野県警の諸伏高明の声を担当している声優は？",
+      "choices": [
+        "池田秀一",
+        "神奈延年",
+        "速水奨",
+        "梶裕貴"
+      ],
+      "answerIndex": 2,
+      "answer": "速水奨",
+      "explanation": "速水奨。幼少時代は岡本信彦が担当。",
+      "confidence": "A",
+      "sources": [
+        "https://www.ytv.co.jp/conan/character/",
+        "https://ja.wikipedia.org/wiki/名探偵コナンの登場人物"
+      ]
+    },
+    {
+      "id": "conan-576",
+      "difficulty": "intermediate",
+      "difficultyLabel": "中級",
+      "category": "characters",
+      "categoryLabel": "登場人物",
+      "knowledge": "production",
+      "knowledgeLabel": "制作",
+      "question": "群馬県警の山村ミサオの声を担当している声優は？",
+      "choices": [
+        "千葉繁",
+        "堀川りょう",
+        "大塚明夫",
+        "古川登志夫"
+      ],
+      "answerIndex": 3,
+      "answer": "古川登志夫",
+      "explanation": "古川登志夫。幼少時代は村瀬迪与が担当。",
+      "confidence": "A",
+      "sources": [
+        "https://www.ytv.co.jp/conan/character/",
+        "https://ja.wikipedia.org/wiki/名探偵コナンの登場人物"
+      ]
+    },
+    {
+      "id": "conan-577",
+      "difficulty": "advanced",
+      "difficultyLabel": "上級",
+      "category": "characters",
+      "categoryLabel": "登場人物",
+      "knowledge": "production",
+      "knowledgeLabel": "制作",
+      "question": "交通課の婦警・宮本由美の声を担当している声優は？",
+      "choices": [
+        "杉本ゆう",
+        "井上喜久子",
+        "金元寿子",
+        "林原めぐみ"
+      ],
+      "answerIndex": 0,
+      "answer": "杉本ゆう",
+      "explanation": "杉本ゆう。",
+      "confidence": "A",
+      "sources": [
+        "https://www.ytv.co.jp/conan/character/",
+        "https://ja.wikipedia.org/wiki/名探偵コナンの登場人物"
+      ]
+    },
+    {
+      "id": "conan-578",
+      "difficulty": "advanced",
+      "difficultyLabel": "上級",
+      "category": "characters",
+      "categoryLabel": "登場人物",
+      "knowledge": "production",
+      "knowledgeLabel": "制作",
+      "question": "交通課の婦警・三池苗子の声を担当している声優は？",
+      "choices": [
+        "榎本充希子",
+        "田中理恵",
+        "田中敦子",
+        "玉川砂記子"
+      ],
+      "answerIndex": 1,
+      "answer": "田中理恵",
+      "explanation": "田中理恵。",
+      "confidence": "A",
+      "sources": [
+        "https://www.ytv.co.jp/conan/character/",
+        "https://ja.wikipedia.org/wiki/名探偵コナンの登場人物"
+      ]
+    },
+    {
+      "id": "conan-579",
+      "difficulty": "intermediate",
+      "difficultyLabel": "中級",
+      "category": "characters",
+      "categoryLabel": "登場人物",
+      "knowledge": "production",
+      "knowledgeLabel": "制作",
+      "question": "宮野明美の声を担当している声優は？",
+      "choices": [
+        "一城みゆ希",
+        "村瀬迪与",
+        "玉川砂記子",
+        "冬馬由美"
+      ],
+      "answerIndex": 2,
+      "answer": "玉川砂記子",
+      "explanation": "玉川砂記子。",
+      "confidence": "A",
+      "sources": [
+        "https://www.ytv.co.jp/conan/character/",
+        "https://ja.wikipedia.org/wiki/名探偵コナンの登場人物"
+      ]
+    },
+    {
+      "id": "conan-580",
+      "difficulty": "advanced",
+      "difficultyLabel": "上級",
+      "category": "characters",
+      "categoryLabel": "登場人物",
+      "knowledge": "production",
+      "knowledgeLabel": "制作",
+      "question": "宮野エレーナの声を第953話以降担当している声優は？",
+      "choices": [
+        "三石琴乃",
+        "勝生真沙子",
+        "高山みなみ",
+        "林原めぐみ"
+      ],
+      "answerIndex": 3,
+      "answer": "林原めぐみ",
+      "explanation": "林原めぐみ。娘の灰原哀（宮野志保）と兼任。第341話から第771話までは鈴木弘子が担当していた。",
+      "confidence": "A",
+      "sources": [
+        "https://www.ytv.co.jp/conan/character/",
+        "https://ja.wikipedia.org/wiki/名探偵コナンの登場人物"
+      ]
+    },
+    {
+      "id": "conan-581",
+      "difficulty": "advanced",
+      "difficultyLabel": "上級",
+      "category": "characters",
+      "categoryLabel": "登場人物",
+      "knowledge": "production",
+      "knowledgeLabel": "制作",
+      "question": "宮野厚司の声を担当している声優は？",
+      "choices": [
+        "中村悠一",
+        "石井康嗣",
+        "堀秀行",
+        "梶裕貴"
+      ],
+      "answerIndex": 0,
+      "answer": "中村悠一",
+      "explanation": "中村悠一。",
+      "confidence": "A",
+      "sources": [
+        "https://www.ytv.co.jp/conan/character/",
+        "https://ja.wikipedia.org/wiki/名探偵コナンの登場人物"
+      ]
+    },
+    {
+      "id": "conan-582",
+      "difficulty": "intermediate",
+      "difficultyLabel": "中級",
+      "category": "characters",
+      "categoryLabel": "登場人物",
+      "knowledge": "production",
+      "knowledgeLabel": "制作",
+      "question": "帝丹小学校1年B組担任・小林澄子の声を担当している声優は？",
+      "choices": [
+        "小山茉美",
+        "加藤有生子",
+        "高山みなみ",
+        "瀧本富士子"
+      ],
+      "answerIndex": 1,
+      "answer": "加藤有生子",
+      "explanation": "加藤有生子。",
+      "confidence": "A",
+      "sources": [
+        "https://www.ytv.co.jp/conan/character/",
+        "https://ja.wikipedia.org/wiki/名探偵コナンの登場人物"
+      ]
+    },
+    {
+      "id": "conan-583",
+      "difficulty": "intermediate",
+      "difficultyLabel": "中級",
+      "category": "characters",
+      "categoryLabel": "登場人物",
+      "knowledge": "production",
+      "knowledgeLabel": "制作",
+      "question": "帝丹小学校1年B組副担任・若狭留美の声を担当している声優は？",
+      "choices": [
+        "高島雅羅",
+        "小清水亜美",
+        "平野文",
+        "金元寿子"
+      ],
+      "answerIndex": 2,
+      "answer": "平野文",
+      "explanation": "平野文。",
+      "confidence": "A",
+      "sources": [
+        "https://www.ytv.co.jp/conan/character/",
+        "https://ja.wikipedia.org/wiki/名探偵コナンの登場人物"
+      ]
+    },
+    {
+      "id": "conan-584",
+      "difficulty": "advanced",
+      "difficultyLabel": "上級",
+      "category": "characters",
+      "categoryLabel": "登場人物",
+      "knowledge": "production",
+      "knowledgeLabel": "制作",
+      "question": "本堂瑛祐の声を担当している声優は？",
+      "choices": [
+        "杉本ゆう",
+        "田中敦子",
+        "林原めぐみ",
+        "野田順子"
+      ],
+      "answerIndex": 3,
+      "answer": "野田順子",
+      "explanation": "野田順子。",
+      "confidence": "A",
+      "sources": [
+        "https://www.ytv.co.jp/conan/character/",
+        "https://ja.wikipedia.org/wiki/名探偵コナンの登場人物"
+      ]
+    },
+    {
+      "id": "conan-585",
+      "difficulty": "advanced",
+      "difficultyLabel": "上級",
+      "category": "characters",
+      "categoryLabel": "登場人物",
+      "knowledge": "production",
+      "knowledgeLabel": "制作",
+      "question": "喫茶ポアロの店員・榎本梓の声を担当している声優は？",
+      "choices": [
+        "榎本充希子",
+        "岡村明美",
+        "湯屋敦子",
+        "加藤有生子"
+      ],
+      "answerIndex": 0,
+      "answer": "榎本充希子",
+      "explanation": "榎本充希子。キャラクター名は担当声優の名前が由来。",
+      "confidence": "A",
+      "sources": [
+        "https://www.ytv.co.jp/conan/character/",
+        "https://ja.wikipedia.org/wiki/名探偵コナンの登場人物"
+      ]
+    },
+    {
+      "id": "conan-586",
+      "difficulty": "advanced",
+      "difficultyLabel": "上級",
+      "category": "characters",
+      "categoryLabel": "登場人物",
+      "knowledge": "production",
+      "knowledgeLabel": "制作",
+      "question": "鈴木次郎吉の声を第1105話以降担当している声優は？",
+      "choices": [
+        "速水奨",
+        "佐藤正治",
+        "堀川りょう",
+        "檜山修之"
+      ],
+      "answerIndex": 1,
+      "answer": "佐藤正治",
+      "explanation": "佐藤正治。以前は永井一郎・富田耕生が担当していた。",
+      "confidence": "A",
+      "sources": [
+        "https://www.ytv.co.jp/conan/character/",
+        "https://ja.wikipedia.org/wiki/名探偵コナンの登場人物"
+      ]
+    },
+    {
+      "id": "conan-587",
+      "difficulty": "advanced",
+      "difficultyLabel": "上級",
+      "category": "characters",
+      "categoryLabel": "登場人物",
+      "knowledge": "production",
+      "knowledgeLabel": "制作",
+      "question": "服部平次の母・服部静華の声を担当している声優は？",
+      "choices": [
+        "岩居由希子",
+        "島本須美",
+        "勝生真沙子",
+        "ゆきのさつき"
+      ],
+      "answerIndex": 2,
+      "answer": "勝生真沙子",
+      "explanation": "勝生真沙子。",
+      "confidence": "A",
+      "sources": [
+        "https://www.ytv.co.jp/conan/character/",
+        "https://ja.wikipedia.org/wiki/名探偵コナンの登場人物"
+      ]
+    },
+    {
+      "id": "conan-588",
+      "difficulty": "intermediate",
+      "difficultyLabel": "中級",
+      "category": "characters",
+      "categoryLabel": "登場人物",
+      "knowledge": "production",
+      "knowledgeLabel": "制作",
+      "question": "大岡紅葉の声を担当している声優は？",
+      "choices": [
+        "井上喜久子",
+        "村瀬迪与",
+        "高島雅羅",
+        "ゆきのさつき"
+      ],
+      "answerIndex": 3,
+      "answer": "ゆきのさつき",
+      "explanation": "ゆきのさつき。",
+      "confidence": "A",
+      "sources": [
+        "https://www.ytv.co.jp/conan/character/",
+        "https://ja.wikipedia.org/wiki/名探偵コナンの登場人物"
+      ]
+    },
+    {
+      "id": "conan-589",
+      "difficulty": "advanced",
+      "difficultyLabel": "上級",
+      "category": "characters",
+      "categoryLabel": "登場人物",
+      "knowledge": "production",
+      "knowledgeLabel": "制作",
+      "question": "大岡家の執事・伊織無我の声を担当している声優は？",
+      "choices": [
+        "小野大輔",
+        "梶裕貴",
+        "森川智之",
+        "山路和弘"
+      ],
+      "answerIndex": 0,
+      "answer": "小野大輔",
+      "explanation": "小野大輔。",
+      "confidence": "A",
+      "sources": [
+        "https://www.ytv.co.jp/conan/character/",
+        "https://ja.wikipedia.org/wiki/名探偵コナンの登場人物"
+      ]
+    },
+    {
+      "id": "conan-590",
+      "difficulty": "advanced",
+      "difficultyLabel": "上級",
+      "category": "characters",
+      "categoryLabel": "登場人物",
+      "knowledge": "production",
+      "knowledgeLabel": "制作",
+      "question": "沖田総司の声を担当している声優は？",
+      "choices": [
+        "飛田展男",
+        "遊佐浩二",
+        "てらそままさき",
+        "小山力也"
+      ],
+      "answerIndex": 1,
+      "answer": "遊佐浩二",
+      "explanation": "遊佐浩二。",
+      "confidence": "A",
+      "sources": [
+        "https://www.ytv.co.jp/conan/character/",
+        "https://ja.wikipedia.org/wiki/名探偵コナンの登場人物"
+      ]
+    },
+    {
+      "id": "conan-591",
+      "difficulty": "intermediate",
+      "difficultyLabel": "中級",
+      "category": "characters",
+      "categoryLabel": "登場人物",
+      "knowledge": "production",
+      "knowledgeLabel": "制作",
+      "question": "羽田秀吉の声を担当している声優は？",
+      "choices": [
+        "堀之紀",
+        "小野坂昌也",
+        "森川智之",
+        "小川真司"
+      ],
+      "answerIndex": 2,
+      "answer": "森川智之",
+      "explanation": "森川智之。少年時代は甲斐田ゆきが担当。",
+      "confidence": "A",
+      "sources": [
+        "https://www.ytv.co.jp/conan/character/",
+        "https://ja.wikipedia.org/wiki/名探偵コナンの登場人物"
+      ]
+    },
+    {
+      "id": "conan-592",
+      "difficulty": "advanced",
+      "difficultyLabel": "上級",
+      "category": "characters",
+      "categoryLabel": "登場人物",
+      "knowledge": "production",
+      "knowledgeLabel": "制作",
+      "question": "メアリー・世良の声を第1144話以降担当している声優は？",
+      "choices": [
+        "小山茉美",
+        "日髙のり子",
+        "島本須美",
+        "本田貴子"
+      ],
+      "answerIndex": 3,
+      "answer": "本田貴子",
+      "explanation": "本田貴子。第760話から第1046話までは田中敦子が担当していた。",
+      "confidence": "A",
+      "sources": [
+        "https://www.ytv.co.jp/conan/character/",
+        "https://ja.wikipedia.org/wiki/名探偵コナンの登場人物"
+      ]
+    },
+    {
+      "id": "conan-593",
+      "difficulty": "intermediate",
+      "difficultyLabel": "中級",
+      "category": "characters",
+      "categoryLabel": "登場人物",
+      "knowledge": "production",
+      "knowledgeLabel": "制作",
+      "question": "赤井務武の声を担当している声優は？",
+      "choices": [
+        "山寺宏一",
+        "加藤精三",
+        "山口勝平",
+        "藤原啓治"
+      ],
+      "answerIndex": 0,
+      "answer": "山寺宏一",
+      "explanation": "山寺宏一。原作者の指名によるキャスティング。",
+      "confidence": "A",
+      "sources": [
+        "https://www.ytv.co.jp/conan/character/",
+        "https://ja.wikipedia.org/wiki/名探偵コナンの登場人物"
+      ]
+    },
+    {
+      "id": "conan-594",
+      "difficulty": "intermediate",
+      "difficultyLabel": "中級",
+      "category": "characters",
+      "categoryLabel": "登場人物",
+      "knowledge": "production",
+      "knowledgeLabel": "制作",
+      "question": "黒ずくめの組織の女性スナイパー・キャンティの声を担当している声優は？",
+      "choices": [
+        "冬馬由美",
+        "井上喜久子",
+        "岩居由希子",
+        "ゆきのさつき"
+      ],
+      "answerIndex": 1,
+      "answer": "井上喜久子",
+      "explanation": "井上喜久子。",
+      "confidence": "A",
+      "sources": [
+        "https://www.ytv.co.jp/conan/character/",
+        "https://ja.wikipedia.org/wiki/黒ずくめの組織"
+      ]
+    },
+    {
+      "id": "conan-595",
+      "difficulty": "intermediate",
+      "difficultyLabel": "中級",
+      "category": "characters",
+      "categoryLabel": "登場人物",
+      "knowledge": "production",
+      "knowledgeLabel": "制作",
+      "question": "黒ずくめの組織の男性スナイパー・コルンの声を担当している声優は？",
+      "choices": [
+        "山寺宏一",
+        "井上和彦",
+        "木下浩之",
+        "三木眞一郎"
+      ],
+      "answerIndex": 2,
+      "answer": "木下浩之",
+      "explanation": "木下浩之。",
+      "confidence": "A",
+      "sources": [
+        "https://www.ytv.co.jp/conan/character/",
+        "https://ja.wikipedia.org/wiki/黒ずくめの組織"
+      ]
+    },
+    {
+      "id": "conan-596",
+      "difficulty": "intermediate",
+      "difficultyLabel": "中級",
+      "category": "characters",
+      "categoryLabel": "登場人物",
+      "knowledge": "production",
+      "knowledgeLabel": "制作",
+      "question": "ラム（脇田兼則）の声を担当している声優は？",
+      "choices": [
+        "速水奨",
+        "岸野幸正",
+        "木下浩之",
+        "千葉繁"
+      ],
+      "answerIndex": 3,
+      "answer": "千葉繁",
+      "explanation": "千葉繁。",
+      "confidence": "A",
+      "sources": [
+        "https://www.ytv.co.jp/conan/character/",
+        "https://ja.wikipedia.org/wiki/黒ずくめの組織"
+      ]
+    },
+    {
+      "id": "conan-597",
+      "difficulty": "advanced",
+      "difficultyLabel": "上級",
+      "category": "characters",
+      "categoryLabel": "登場人物",
+      "knowledge": "production",
+      "knowledgeLabel": "制作",
+      "question": "黒ずくめの組織の幹部・ピスコの声を担当した声優は？",
+      "choices": [
+        "村松康雄",
+        "岸野幸正",
+        "木下浩之",
+        "田中秀幸"
+      ],
+      "answerIndex": 0,
+      "answer": "村松康雄",
+      "explanation": "村松康雄。",
+      "confidence": "A",
+      "sources": [
+        "https://www.ytv.co.jp/conan/character/",
+        "https://ja.wikipedia.org/wiki/黒ずくめの組織"
+      ]
+    },
+    {
+      "id": "conan-598",
+      "difficulty": "intermediate",
+      "difficultyLabel": "中級",
+      "category": "characters",
+      "categoryLabel": "登場人物",
+      "knowledge": "production",
+      "knowledgeLabel": "制作",
+      "question": "FBI捜査官ジョディ・スターリングの声を担当している声優は？",
+      "choices": [
+        "田中理恵",
+        "一城みゆ希",
+        "加藤有生子",
+        "宮村優子"
+      ],
+      "answerIndex": 1,
+      "answer": "一城みゆ希",
+      "explanation": "一城みゆ希。少女時代は冬馬由美が担当。",
+      "confidence": "A",
+      "sources": [
+        "https://www.ytv.co.jp/conan/character/",
+        "https://ja.wikipedia.org/wiki/FBI_(名探偵コナン)"
+      ]
+    },
+    {
+      "id": "conan-599",
+      "difficulty": "advanced",
+      "difficultyLabel": "上級",
+      "category": "characters",
+      "categoryLabel": "登場人物",
+      "knowledge": "production",
+      "knowledgeLabel": "制作",
+      "question": "FBI捜査官ジェイムズ・ブラックの声を第1077話以降担当している声優は？",
+      "choices": [
+        "大塚明夫",
+        "岸野幸正",
+        "土師孝也",
+        "梶裕貴"
+      ],
+      "answerIndex": 2,
+      "answer": "土師孝也",
+      "explanation": "土師孝也。第258話から第783話までは家弓家正が担当していた。",
+      "confidence": "A",
+      "sources": [
+        "https://www.ytv.co.jp/conan/character/",
+        "https://ja.wikipedia.org/wiki/FBI_(名探偵コナン)"
+      ]
+    },
+    {
+      "id": "conan-600",
+      "difficulty": "advanced",
+      "difficultyLabel": "上級",
+      "category": "characters",
+      "categoryLabel": "登場人物",
+      "knowledge": "production",
+      "knowledgeLabel": "制作",
+      "question": "FBI捜査官アンドレ・キャメルの声を第1072話以降担当している声優は？",
+      "choices": [
+        "佐藤正治",
+        "茶風林",
+        "梶裕貴",
+        "乃村健次"
+      ],
+      "answerIndex": 3,
+      "answer": "乃村健次",
+      "explanation": "乃村健次。第497話から第861話までは梁田清之が担当していた。",
+      "confidence": "A",
+      "sources": [
+        "https://www.ytv.co.jp/conan/character/",
+        "https://ja.wikipedia.org/wiki/FBI_(名探偵コナン)"
+      ]
+    },
+    {
+      "id": "conan-601",
+      "difficulty": "intermediate",
+      "difficultyLabel": "中級",
+      "category": "organization",
+      "categoryLabel": "黒ずくめの組織",
+      "knowledge": "story",
+      "knowledgeLabel": "作中",
+      "question": "ジンの愛車の車種は？",
+      "choices": [
+        "ポルシェ356A",
+        "フォード・マスタングGT500",
+        "マツダ・RX-7",
+        "シボレーC-1500"
+      ],
+      "answerIndex": 0,
+      "answer": "ポルシェ356A",
+      "explanation": "ポルシェ356A。ジン自身は「ドイツの雨ガエル」と呼んで気に入っている。",
+      "confidence": "B",
+      "sources": [
+        "https://ja.wikipedia.org/wiki/黒ずくめの組織",
+        "https://www.animatetimes.com/news/details.php?id=1770341803"
+      ]
+    },
+    {
+      "id": "conan-602",
+      "difficulty": "intermediate",
+      "difficultyLabel": "中級",
+      "category": "organization",
+      "categoryLabel": "黒ずくめの組織",
+      "knowledge": "story",
+      "knowledgeLabel": "作中",
+      "question": "ベルモットの座右の銘とされる英語のフレーズは？",
+      "choices": [
+        "Truth is always only one",
+        "A secret makes a woman woman",
+        "The game is afoot",
+        "A woman never forgets"
+      ],
+      "answerIndex": 1,
+      "answer": "A secret makes a woman woman",
+      "explanation": "「A secret makes a woman woman.（女は秘密を着飾って美しくなる）」。",
+      "confidence": "B",
+      "sources": [
+        "https://ja.wikipedia.org/wiki/黒ずくめの組織",
+        "https://www.animatetimes.com/news/details.php?id=1779664645"
+      ]
+    },
+    {
+      "id": "conan-603",
+      "difficulty": "intermediate",
+      "difficultyLabel": "中級",
+      "category": "organization",
+      "categoryLabel": "黒ずくめの組織",
+      "knowledge": "story",
+      "knowledgeLabel": "作中",
+      "question": "キャンティが左目の周りに入れているタトゥーの図柄は？",
+      "choices": [
+        "バラ",
+        "クモ",
+        "アゲハチョウ",
+        "ヘビ"
+      ],
+      "answerIndex": 2,
+      "answer": "アゲハチョウ",
+      "explanation": "左目周りにアゲハチョウをあしらったタトゥーを入れている。",
+      "confidence": "B",
+      "sources": [
+        "https://ja.wikipedia.org/wiki/黒ずくめの組織",
+        "https://www.animatetimes.com/news/details.php?id=1779930833"
+      ]
+    },
+    {
+      "id": "conan-604",
+      "difficulty": "advanced",
+      "difficultyLabel": "上級",
+      "category": "organization",
+      "categoryLabel": "黒ずくめの組織",
+      "knowledge": "story",
+      "knowledgeLabel": "作中",
+      "question": "コルンが素顔を隠すために常に身に着けているものは？",
+      "choices": [
+        "黒いフードとマスク",
+        "眼帯とニット帽",
+        "ハンチング帽とマフラー",
+        "黒い野球帽とサングラス"
+      ],
+      "answerIndex": 3,
+      "answer": "黒い野球帽とサングラス",
+      "explanation": "常に黒い野球帽を被りサングラスをかけているため素顔が見えない。",
+      "confidence": "B",
+      "sources": [
+        "https://ja.wikipedia.org/wiki/黒ずくめの組織",
+        "https://www.animatetimes.com/news/details.php?id=1779930833"
+      ]
+    },
+    {
+      "id": "conan-605",
+      "difficulty": "advanced",
+      "difficultyLabel": "上級",
+      "category": "organization",
+      "categoryLabel": "黒ずくめの組織",
+      "knowledge": "story",
+      "knowledgeLabel": "作中",
+      "question": "黒ずくめの組織の幹部・ピスコの本名は？",
+      "choices": [
+        "枡山憲三",
+        "呑口重彦",
+        "楠田陸道",
+        "板倉卓"
+      ],
+      "answerIndex": 0,
+      "answer": "枡山憲三",
+      "explanation": "枡山憲三。表の顔は自動車メーカーの会長だった。",
+      "confidence": "B",
+      "sources": [
+        "https://ja.wikipedia.org/wiki/黒ずくめの組織",
+        "https://www.animatetimes.com/news/details.php?id=1717487335"
+      ]
+    },
+    {
+      "id": "conan-606",
+      "difficulty": "advanced",
+      "difficultyLabel": "上級",
+      "category": "organization",
+      "categoryLabel": "黒ずくめの組織",
+      "knowledge": "story",
+      "knowledgeLabel": "作中",
+      "question": "ピスコの表の顔（職業）は？",
+      "choices": [
+        "大手証券会社の社長",
+        "自動車メーカーの会長",
+        "製薬会社の研究所長",
+        "国会議員"
+      ],
+      "answerIndex": 1,
+      "answer": "自動車メーカーの会長",
+      "explanation": "自動車メーカーの会長で、コナンからは「経済界の大物」と評された。",
+      "confidence": "B",
+      "sources": [
+        "https://ja.wikipedia.org/wiki/黒ずくめの組織",
+        "https://www.animatetimes.com/news/details.php?id=1717487335"
+      ]
+    },
+    {
+      "id": "conan-607",
+      "difficulty": "intermediate",
+      "difficultyLabel": "中級",
+      "category": "organization",
+      "categoryLabel": "黒ずくめの組織",
+      "knowledge": "story",
+      "knowledgeLabel": "作中",
+      "question": "ラムの左目はどうなっている？",
+      "choices": [
+        "眼帯で覆っているだけ",
+        "色が変わっている",
+        "義眼",
+        "傷跡が残っている"
+      ],
+      "answerIndex": 2,
+      "answer": "義眼",
+      "explanation": "現在は義眼になっている。脇田兼則としては眼帯で隠している。",
+      "confidence": "B",
+      "sources": [
+        "https://ja.wikipedia.org/wiki/黒ずくめの組織",
+        "https://www.animatetimes.com/news/details.php?id=1778497573"
+      ]
+    },
+    {
+      "id": "conan-608",
+      "difficulty": "intermediate",
+      "difficultyLabel": "中級",
+      "category": "organization",
+      "categoryLabel": "黒ずくめの組織",
+      "knowledge": "story",
+      "knowledgeLabel": "作中",
+      "question": "ラムの正体・脇田兼則の表の職業は？",
+      "choices": [
+        "タクシー運転手",
+        "バーのマスター",
+        "古書店の店主",
+        "寿司職人"
+      ],
+      "answerIndex": 3,
+      "answer": "寿司職人",
+      "explanation": "「米花いろは寿司」の板前をしている。",
+      "confidence": "B",
+      "sources": [
+        "https://ja.wikipedia.org/wiki/黒ずくめの組織",
+        "https://www.animatetimes.com/news/details.php?id=1778497573"
+      ]
+    },
+    {
+      "id": "conan-609",
+      "difficulty": "advanced",
+      "difficultyLabel": "上級",
+      "category": "organization",
+      "categoryLabel": "黒ずくめの組織",
+      "knowledge": "story",
+      "knowledgeLabel": "作中",
+      "question": "劇場版第20作『純黒の悪夢』に登場したキュラソーの目の特徴は？",
+      "choices": [
+        "オッドアイ",
+        "両目とも赤い",
+        "右目が義眼",
+        "色覚に異常がある"
+      ],
+      "answerIndex": 0,
+      "answer": "オッドアイ",
+      "explanation": "左右で色の異なるオッドアイの持ち主として描かれている。",
+      "confidence": "B",
+      "sources": [
+        "https://ja.wikipedia.org/wiki/黒ずくめの組織",
+        "https://www.animatetimes.com/news/details.php?id=1780477182"
+      ]
+    },
+    {
+      "id": "conan-610",
+      "difficulty": "advanced",
+      "difficultyLabel": "上級",
+      "category": "organization",
+      "categoryLabel": "黒ずくめの組織",
+      "knowledge": "story",
+      "knowledgeLabel": "作中",
+      "question": "宮野明美が組織で使っていた偽名は？",
+      "choices": [
+        "浅香玲子",
+        "広田雅美",
+        "水無怜奈",
+        "本堂瑛海"
+      ],
+      "answerIndex": 1,
+      "answer": "広田雅美",
+      "explanation": "広田雅美。コードネームは与えられていなかった。",
+      "confidence": "B",
+      "sources": [
+        "https://ja.wikipedia.org/wiki/黒ずくめの組織",
+        "https://www.animatetimes.com/news/details.php?id=1787114757"
+      ]
+    },
+    {
+      "id": "conan-611",
+      "difficulty": "intermediate",
+      "difficultyLabel": "中級",
+      "category": "characters",
+      "categoryLabel": "登場人物",
+      "knowledge": "story",
+      "knowledgeLabel": "作中",
+      "question": "長野県警の大和敢助の年齢は？",
+      "choices": [
+        "29歳",
+        "32歳",
+        "35歳",
+        "41歳"
+      ],
+      "answerIndex": 2,
+      "answer": "35歳",
+      "explanation": "35歳。同い年の諸伏高明とは小学校からの同級生でライバル。",
+      "confidence": "B",
+      "sources": [
+        "https://ja.wikipedia.org/wiki/名探偵コナンの登場人物",
+        "https://www.animatetimes.com/news/details.php?id=1746586497"
+      ]
+    },
+    {
+      "id": "conan-612",
+      "difficulty": "intermediate",
+      "difficultyLabel": "中級",
+      "category": "characters",
+      "categoryLabel": "登場人物",
+      "knowledge": "story",
+      "knowledgeLabel": "作中",
+      "question": "諸伏高明が小学校時代から呼ばれているあだ名は？",
+      "choices": [
+        "タカさん",
+        "ショウ",
+        "モロさん",
+        "コウメイ"
+      ],
+      "answerIndex": 3,
+      "answer": "コウメイ",
+      "explanation": "名前の「高明」を音読みにした「コウメイ」。『三国志』の故事を好んで引用する。",
+      "confidence": "B",
+      "sources": [
+        "https://ja.wikipedia.org/wiki/名探偵コナンの登場人物",
+        "https://www.animatetimes.com/news/details.php?id=1746586497"
+      ]
+    },
+    {
+      "id": "conan-613",
+      "difficulty": "intermediate",
+      "difficultyLabel": "中級",
+      "category": "characters",
+      "categoryLabel": "登場人物",
+      "knowledge": "story",
+      "knowledgeLabel": "作中",
+      "question": "長野県警の諸伏高明の弟にあたる人物は？",
+      "choices": [
+        "諸伏景光",
+        "降谷零",
+        "松田陣平",
+        "伊達航"
+      ],
+      "answerIndex": 0,
+      "answer": "諸伏景光",
+      "explanation": "黒ずくめの組織に潜入し「スコッチ」と呼ばれていた諸伏景光が実の弟。",
+      "confidence": "B",
+      "sources": [
+        "https://ja.wikipedia.org/wiki/名探偵コナンの登場人物",
+        "https://www.animatetimes.com/news/details.php?id=1746586497"
+      ]
+    },
+    {
+      "id": "conan-614",
+      "difficulty": "advanced",
+      "difficultyLabel": "上級",
+      "category": "characters",
+      "categoryLabel": "登場人物",
+      "knowledge": "story",
+      "knowledgeLabel": "作中",
+      "question": "上原由衣が大和敢助を呼ぶときの呼び方は？",
+      "choices": [
+        "ヤマトさん",
+        "敢ちゃん",
+        "カンちゃん",
+        "敢助くん"
+      ],
+      "answerIndex": 1,
+      "answer": "敢ちゃん",
+      "explanation": "幼なじみで、幼少時から「敢ちゃん」と呼んでいる。",
+      "confidence": "B",
+      "sources": [
+        "https://ja.wikipedia.org/wiki/名探偵コナンの登場人物",
+        "https://www.animatetimes.com/news/details.php?id=1746586497"
+      ]
+    },
+    {
+      "id": "conan-615",
+      "difficulty": "advanced",
+      "difficultyLabel": "上級",
+      "category": "characters",
+      "categoryLabel": "登場人物",
+      "knowledge": "story",
+      "knowledgeLabel": "作中",
+      "question": "大和敢助・諸伏高明・上原由衣の3人が所属する警察は？",
+      "choices": [
+        "群馬県警",
+        "新潟県警",
+        "長野県警",
+        "山梨県警"
+      ],
+      "answerIndex": 2,
+      "answer": "長野県警",
+      "explanation": "3人とも長野県警の刑事部捜査一課に所属している。",
+      "confidence": "B",
+      "sources": [
+        "https://ja.wikipedia.org/wiki/名探偵コナンの登場人物",
+        "https://www.animatetimes.com/news/details.php?id=1746586497"
+      ]
+    },
+    {
+      "id": "conan-616",
+      "difficulty": "intermediate",
+      "difficultyLabel": "中級",
+      "category": "characters",
+      "categoryLabel": "登場人物",
+      "knowledge": "story",
+      "knowledgeLabel": "作中",
+      "question": "横溝参悟と横溝重悟の関係は？",
+      "choices": [
+        "いとこ同士",
+        "親子",
+        "他人の空似",
+        "双子の兄弟"
+      ],
+      "answerIndex": 3,
+      "answer": "双子の兄弟",
+      "explanation": "静岡県警の参悟が兄、神奈川県警の重悟が弟の双子。",
+      "confidence": "A",
+      "sources": [
+        "https://www.ytv.co.jp/conan/character/",
+        "https://ja.wikipedia.org/wiki/名探偵コナンの登場人物"
+      ]
+    },
+    {
+      "id": "conan-617",
+      "difficulty": "advanced",
+      "difficultyLabel": "上級",
+      "category": "characters",
+      "categoryLabel": "登場人物",
+      "knowledge": "story",
+      "knowledgeLabel": "作中",
+      "question": "横溝重悟が毛利小五郎を呼ぶときの、言い間違えた呼び名は？",
+      "choices": [
+        "煙の小五郎",
+        "眠りの小五郎",
+        "迷いの小五郎",
+        "居眠り探偵"
+      ],
+      "answerIndex": 0,
+      "answer": "煙の小五郎",
+      "explanation": "「眠りの小五郎」を「煙の小五郎」と呼び間違えている。",
+      "confidence": "A",
+      "sources": [
+        "https://www.ytv.co.jp/conan/character/",
+        "https://ja.wikipedia.org/wiki/名探偵コナンの登場人物"
+      ]
+    },
+    {
+      "id": "conan-618",
+      "difficulty": "intermediate",
+      "difficultyLabel": "中級",
+      "category": "characters",
+      "categoryLabel": "登場人物",
+      "knowledge": "story",
+      "knowledgeLabel": "作中",
+      "question": "山村ミサオが刑事を目指すきっかけになったのは？",
+      "choices": [
+        "父親が刑事だったこと",
+        "工藤有希子が主演した刑事ドラマ",
+        "毛利小五郎に憧れたこと",
+        "少年時代に事件に巻き込まれたこと"
+      ],
+      "answerIndex": 1,
+      "answer": "工藤有希子が主演した刑事ドラマ",
+      "explanation": "有希子（藤峰有希子）の大ファンで、彼女が主演した刑事ドラマを見て刑事を目指した。",
+      "confidence": "A",
+      "sources": [
+        "https://www.ytv.co.jp/conan/character/",
+        "https://ja.wikipedia.org/wiki/名探偵コナンの登場人物"
+      ]
+    },
+    {
+      "id": "conan-619",
+      "difficulty": "advanced",
+      "difficultyLabel": "上級",
+      "category": "characters",
+      "categoryLabel": "登場人物",
+      "knowledge": "story",
+      "knowledgeLabel": "作中",
+      "question": "黒田兵衛の右目はどうなっている？",
+      "choices": [
+        "視力を失っている",
+        "眼帯で覆っている",
+        "義眼",
+        "色が変わっている"
+      ],
+      "answerIndex": 2,
+      "answer": "義眼",
+      "explanation": "大柄で右目が義眼という特徴を持つ。",
+      "confidence": "A",
+      "sources": [
+        "https://www.ytv.co.jp/conan/character/",
+        "https://ja.wikipedia.org/wiki/名探偵コナンの登場人物"
+      ]
+    },
+    {
+      "id": "conan-620",
+      "difficulty": "intermediate",
+      "difficultyLabel": "中級",
+      "category": "characters",
+      "categoryLabel": "登場人物",
+      "knowledge": "story",
+      "knowledgeLabel": "作中",
+      "question": "風見裕也が所属している部署は？",
+      "choices": [
+        "警察庁警備局",
+        "警視庁捜査一課",
+        "神奈川県警捜査一課",
+        "警視庁公安部"
+      ],
+      "answerIndex": 3,
+      "answer": "警視庁公安部",
+      "explanation": "警視庁公安部の警部補。警察庁所属の降谷零を上司と仰いでいる。",
+      "confidence": "A",
+      "sources": [
+        "https://www.ytv.co.jp/conan/character/",
+        "https://ja.wikipedia.org/wiki/名探偵コナンの登場人物"
+      ]
+    },
+    {
+      "id": "conan-621",
+      "difficulty": "intermediate",
+      "difficultyLabel": "中級",
+      "category": "characters",
+      "categoryLabel": "登場人物",
+      "knowledge": "story",
+      "knowledgeLabel": "作中",
+      "question": "萩原研二の姉にあたる人物は？",
+      "choices": [
+        "萩原千速",
+        "宮本由美",
+        "三池苗子",
+        "佐藤美和子"
+      ],
+      "answerIndex": 0,
+      "answer": "萩原千速",
+      "explanation": "神奈川県警の白バイ小隊長・萩原千速が実姉。",
+      "confidence": "A",
+      "sources": [
+        "https://www.ytv.co.jp/conan/character/",
+        "https://ja.wikipedia.org/wiki/名探偵コナンの登場人物"
+      ]
+    },
+    {
+      "id": "conan-622",
+      "difficulty": "advanced",
+      "difficultyLabel": "上級",
+      "category": "characters",
+      "categoryLabel": "登場人物",
+      "knowledge": "story",
+      "knowledgeLabel": "作中",
+      "question": "萩原千速の職務は？",
+      "choices": [
+        "鑑識官",
+        "白バイ小隊長",
+        "交通課の婦警",
+        "捜査一課の刑事"
+      ],
+      "answerIndex": 1,
+      "answer": "白バイ小隊長",
+      "explanation": "神奈川県警交通部の白バイ隊員で小隊長を務めている。",
+      "confidence": "A",
+      "sources": [
+        "https://www.ytv.co.jp/conan/character/",
+        "https://ja.wikipedia.org/wiki/名探偵コナンの登場人物"
+      ]
+    },
+    {
+      "id": "conan-623",
+      "difficulty": "advanced",
+      "difficultyLabel": "上級",
+      "category": "characters",
+      "categoryLabel": "登場人物",
+      "knowledge": "story",
+      "knowledgeLabel": "作中",
+      "question": "諸伏景光と降谷零がお互いを呼び合うあだ名は？",
+      "choices": [
+        "コウとレイ",
+        "スコッチとバーボン",
+        "ヒロとゼロ",
+        "ケイとトオル"
+      ],
+      "answerIndex": 2,
+      "answer": "ヒロとゼロ",
+      "explanation": "幼なじみで「ヒロ」「ゼロ」と呼び合う仲だった。",
+      "confidence": "A",
+      "sources": [
+        "https://www.ytv.co.jp/conan/character/",
+        "https://ja.wikipedia.org/wiki/名探偵コナンの登場人物"
+      ]
+    },
+    {
+      "id": "conan-624",
+      "difficulty": "advanced",
+      "difficultyLabel": "上級",
+      "category": "characters",
+      "categoryLabel": "登場人物",
+      "knowledge": "story",
+      "knowledgeLabel": "作中",
+      "question": "伊達航が高木渉と自分たちを指して名乗っていた呼び名は？",
+      "choices": [
+        "ダテ・アンド・タカギ",
+        "捜査一課の兄弟",
+        "ダブル・ワタル",
+        "ワタル・ブラザーズ"
+      ],
+      "answerIndex": 3,
+      "answer": "ワタル・ブラザーズ",
+      "explanation": "下の名前の読みが同じ「わたる」であることから「ワタル・ブラザーズ」と触れ回っていた。",
+      "confidence": "A",
+      "sources": [
+        "https://www.ytv.co.jp/conan/character/",
+        "https://ja.wikipedia.org/wiki/名探偵コナンの登場人物"
+      ]
+    },
+    {
+      "id": "conan-625",
+      "difficulty": "advanced",
+      "difficultyLabel": "上級",
+      "category": "characters",
+      "categoryLabel": "登場人物",
+      "knowledge": "story",
+      "knowledgeLabel": "作中",
+      "question": "宮本由美の恋人は？",
+      "choices": [
+        "羽田秀吉",
+        "白鳥任三郎",
+        "千葉和伸",
+        "伊達航"
+      ],
+      "answerIndex": 0,
+      "answer": "羽田秀吉",
+      "explanation": "棋士の羽田秀吉と「由美タン」「チュウ吉」と呼び合う仲。",
+      "confidence": "A",
+      "sources": [
+        "https://www.ytv.co.jp/conan/character/",
+        "https://ja.wikipedia.org/wiki/名探偵コナンの登場人物"
+      ]
+    },
+    {
+      "id": "conan-626",
+      "difficulty": "advanced",
+      "difficultyLabel": "上級",
+      "category": "characters",
+      "categoryLabel": "登場人物",
+      "knowledge": "story",
+      "knowledgeLabel": "作中",
+      "question": "三池苗子と千葉和伸の関係は？",
+      "choices": [
+        "警察学校の同期",
+        "帝丹小学校の同級生",
+        "いとこ同士",
+        "高校の先輩と後輩"
+      ],
+      "answerIndex": 1,
+      "answer": "帝丹小学校の同級生",
+      "explanation": "帝丹小学校時代の同級生で、再会後に恋人同士となった。",
+      "confidence": "A",
+      "sources": [
+        "https://www.ytv.co.jp/conan/character/",
+        "https://ja.wikipedia.org/wiki/名探偵コナンの登場人物"
+      ]
+    },
+    {
+      "id": "conan-627",
+      "difficulty": "intermediate",
+      "difficultyLabel": "中級",
+      "category": "characters",
+      "categoryLabel": "登場人物",
+      "knowledge": "story",
+      "knowledgeLabel": "作中",
+      "question": "小林澄子が大ファンだと公言している作家は？",
+      "choices": [
+        "アーサー・コナン・ドイル",
+        "アガサ・クリスティ",
+        "江戸川乱歩",
+        "モーリス・ルブラン"
+      ],
+      "answerIndex": 2,
+      "answer": "江戸川乱歩",
+      "explanation": "ミステリー好きで江戸川乱歩の大ファン。少年探偵団の「顧問」を自称している。",
+      "confidence": "A",
+      "sources": [
+        "https://www.ytv.co.jp/conan/character/",
+        "https://ja.wikipedia.org/wiki/名探偵コナンの登場人物"
+      ]
+    },
+    {
+      "id": "conan-628",
+      "difficulty": "advanced",
+      "difficultyLabel": "上級",
+      "category": "characters",
+      "categoryLabel": "登場人物",
+      "knowledge": "story",
+      "knowledgeLabel": "作中",
+      "question": "若狭留美が見えなくなっている目は？",
+      "choices": [
+        "左目",
+        "両目とも一時的に",
+        "視野の一部だけ",
+        "右目"
+      ],
+      "answerIndex": 3,
+      "answer": "右目",
+      "explanation": "一過性の黒内障を患っており、時折右目が見えなくなる。",
+      "confidence": "A",
+      "sources": [
+        "https://www.ytv.co.jp/conan/character/",
+        "https://ja.wikipedia.org/wiki/名探偵コナンの登場人物"
+      ]
+    },
+    {
+      "id": "conan-629",
+      "difficulty": "advanced",
+      "difficultyLabel": "上級",
+      "category": "characters",
+      "categoryLabel": "登場人物",
+      "knowledge": "story",
+      "knowledgeLabel": "作中",
+      "question": "若狭留美の正体とされる人物は？",
+      "choices": [
+        "レイチェル・浅香",
+        "シャロン・ヴィンヤード",
+        "メアリー・世良",
+        "宮野エレーナ"
+      ],
+      "answerIndex": 0,
+      "answer": "レイチェル・浅香",
+      "explanation": "17年前までアマンダ・ヒューズのボディガードを務めていたレイチェル・浅香。",
+      "confidence": "B",
+      "sources": [
+        "https://ja.wikipedia.org/wiki/名探偵コナンの登場人物",
+        "https://ja.wikipedia.org/wiki/黒ずくめの組織"
+      ]
+    },
+    {
+      "id": "conan-630",
+      "difficulty": "intermediate",
+      "difficultyLabel": "中級",
+      "category": "characters",
+      "categoryLabel": "登場人物",
+      "knowledge": "story",
+      "knowledgeLabel": "作中",
+      "question": "本堂瑛祐の姉にあたる人物は？",
+      "choices": [
+        "ジョディ・スターリング",
+        "水無怜奈（本堂瑛海）",
+        "宮野明美",
+        "メアリー・世良"
+      ],
+      "answerIndex": 1,
+      "answer": "水無怜奈（本堂瑛海）",
+      "explanation": "CIA諜報員の本堂瑛海（偽名・水無怜奈）が実姉。",
+      "confidence": "A",
+      "sources": [
+        "https://www.ytv.co.jp/conan/character/",
+        "https://ja.wikipedia.org/wiki/名探偵コナンの登場人物"
+      ]
+    },
+    {
+      "id": "conan-631",
+      "difficulty": "intermediate",
+      "difficultyLabel": "中級",
+      "category": "characters",
+      "categoryLabel": "登場人物",
+      "knowledge": "story",
+      "knowledgeLabel": "作中",
+      "question": "榎本梓が働いている店は？",
+      "choices": [
+        "いろは寿司",
+        "ラーメン小倉",
+        "喫茶ポアロ",
+        "喫茶ブルーパロット"
+      ],
+      "answerIndex": 2,
+      "answer": "喫茶ポアロ",
+      "explanation": "毛利探偵事務所の階下にある喫茶ポアロの店員。",
+      "confidence": "A",
+      "sources": [
+        "https://www.ytv.co.jp/conan/character/",
+        "https://ja.wikipedia.org/wiki/名探偵コナンの登場人物"
+      ]
+    },
+    {
+      "id": "conan-632",
+      "difficulty": "advanced",
+      "difficultyLabel": "上級",
+      "category": "characters",
+      "categoryLabel": "登場人物",
+      "knowledge": "story",
+      "knowledgeLabel": "作中",
+      "question": "鈴木次郎吉が飼っている犬の名前は？",
+      "choices": [
+        "キッド",
+        "ホームズ",
+        "ワトソン",
+        "ルパン"
+      ],
+      "answerIndex": 3,
+      "answer": "ルパン",
+      "explanation": "愛犬のルパンを連れて行動することが多い。",
+      "confidence": "A",
+      "sources": [
+        "https://www.ytv.co.jp/conan/character/",
+        "https://ja.wikipedia.org/wiki/名探偵コナンの登場人物"
+      ]
+    },
+    {
+      "id": "conan-633",
+      "difficulty": "advanced",
+      "difficultyLabel": "上級",
+      "category": "characters",
+      "categoryLabel": "登場人物",
+      "knowledge": "story",
+      "knowledgeLabel": "作中",
+      "question": "鈴木次郎吉が執念を燃やして捕まえようとしている相手は？",
+      "choices": [
+        "怪盗キッド",
+        "黒ずくめの組織",
+        "ベルモット",
+        "毛利小五郎"
+      ],
+      "answerIndex": 0,
+      "answer": "怪盗キッド",
+      "explanation": "人力飛行機世界一周の記事を新聞一面から追いやられたことがきっかけで敵対心を抱いている。",
+      "confidence": "A",
+      "sources": [
+        "https://www.ytv.co.jp/conan/character/",
+        "https://ja.wikipedia.org/wiki/名探偵コナンの登場人物"
+      ]
+    },
+    {
+      "id": "conan-634",
+      "difficulty": "intermediate",
+      "difficultyLabel": "中級",
+      "category": "characters",
+      "categoryLabel": "登場人物",
+      "knowledge": "story",
+      "knowledgeLabel": "作中",
+      "question": "大岡紅葉が高校生チャンピオンになっている競技は？",
+      "choices": [
+        "剣道",
+        "競技かるた",
+        "なぎなた",
+        "弓道"
+      ],
+      "answerIndex": 1,
+      "answer": "競技かるた",
+      "explanation": "百人一首（競技かるた）の高校生チャンピオン。",
+      "confidence": "A",
+      "sources": [
+        "https://www.ytv.co.jp/conan/character/",
+        "https://ja.wikipedia.org/wiki/名探偵コナンの登場人物"
+      ]
+    },
+    {
+      "id": "conan-635",
+      "difficulty": "intermediate",
+      "difficultyLabel": "中級",
+      "category": "characters",
+      "categoryLabel": "登場人物",
+      "knowledge": "story",
+      "knowledgeLabel": "作中",
+      "question": "大岡紅葉が服部平次を呼ぶときの呼び方は？",
+      "choices": [
+        "平次はん",
+        "うちの探偵さん",
+        "未来の旦那さん",
+        "西の名探偵"
+      ],
+      "answerIndex": 2,
+      "answer": "未来の旦那さん",
+      "explanation": "一途な恋心から「未来の旦那さん」と呼んでいる。",
+      "confidence": "A",
+      "sources": [
+        "https://www.ytv.co.jp/conan/character/",
+        "https://ja.wikipedia.org/wiki/名探偵コナンの登場人物"
+      ]
+    },
+    {
+      "id": "conan-636",
+      "difficulty": "advanced",
+      "difficultyLabel": "上級",
+      "category": "characters",
+      "categoryLabel": "登場人物",
+      "knowledge": "story",
+      "knowledgeLabel": "作中",
+      "question": "大岡紅葉が遠山和葉に付けたあだ名は？",
+      "choices": [
+        "和葉はん",
+        "かずちゃん",
+        "葉月ちゃん",
+        "葉っぱちゃん"
+      ],
+      "answerIndex": 3,
+      "answer": "葉っぱちゃん",
+      "explanation": "恋のライバルである和葉を「葉っぱちゃん」と呼んでいる。",
+      "confidence": "A",
+      "sources": [
+        "https://www.ytv.co.jp/conan/character/",
+        "https://ja.wikipedia.org/wiki/名探偵コナンの登場人物"
+      ]
+    },
+    {
+      "id": "conan-637",
+      "difficulty": "advanced",
+      "difficultyLabel": "上級",
+      "category": "characters",
+      "categoryLabel": "登場人物",
+      "knowledge": "story",
+      "knowledgeLabel": "作中",
+      "question": "伊織無我の職業は？",
+      "choices": [
+        "大岡家の執事",
+        "京都府警の刑事",
+        "泉心高校の教師",
+        "大岡コンツェルンの社長"
+      ],
+      "answerIndex": 0,
+      "answer": "大岡家の執事",
+      "explanation": "大岡紅葉に仕える執事。",
+      "confidence": "A",
+      "sources": [
+        "https://www.ytv.co.jp/conan/character/",
+        "https://ja.wikipedia.org/wiki/名探偵コナンの登場人物"
+      ]
+    },
+    {
+      "id": "conan-638",
+      "difficulty": "intermediate",
+      "difficultyLabel": "中級",
+      "category": "characters",
+      "categoryLabel": "登場人物",
+      "knowledge": "story",
+      "knowledgeLabel": "作中",
+      "question": "羽田秀吉が持つ棋士の称号は？",
+      "choices": [
+        "竜王",
+        "太閤名人",
+        "天鳳位",
+        "王将"
+      ],
+      "answerIndex": 1,
+      "answer": "太閤名人",
+      "explanation": "名前が羽柴秀吉に似ていることから「太閤名人」と呼ばれる。",
+      "confidence": "A",
+      "sources": [
+        "https://www.ytv.co.jp/conan/character/",
+        "https://ja.wikipedia.org/wiki/名探偵コナンの登場人物"
+      ]
+    },
+    {
+      "id": "conan-639",
+      "difficulty": "intermediate",
+      "difficultyLabel": "中級",
+      "category": "characters",
+      "categoryLabel": "登場人物",
+      "knowledge": "story",
+      "knowledgeLabel": "作中",
+      "question": "メアリー・世良がコナンに伝えるよう世良真純に指示した自称は？",
+      "choices": [
+        "名も無き姉",
+        "組織の外の目撃者",
+        "領域外の妹",
+        "もうひとりの被験者"
+      ],
+      "answerIndex": 2,
+      "answer": "領域外の妹",
+      "explanation": "素性を聞かれた場合に「領域外の妹」と告げるよう指示していた。",
+      "confidence": "A",
+      "sources": [
+        "https://www.ytv.co.jp/conan/character/",
+        "https://ja.wikipedia.org/wiki/名探偵コナンの登場人物"
+      ]
+    },
+    {
+      "id": "conan-640",
+      "difficulty": "intermediate",
+      "difficultyLabel": "中級",
+      "category": "characters",
+      "categoryLabel": "登場人物",
+      "knowledge": "story",
+      "knowledgeLabel": "作中",
+      "question": "赤井務武が所属していた組織は？",
+      "choices": [
+        "FBI",
+        "CIA",
+        "インターポール",
+        "MI6"
+      ],
+      "answerIndex": 3,
+      "answer": "MI6",
+      "explanation": "イギリスの秘密情報部MI6の諜報員。17年前に消息を絶った。",
+      "confidence": "A",
+      "sources": [
+        "https://www.ytv.co.jp/conan/character/",
+        "https://ja.wikipedia.org/wiki/名探偵コナンの登場人物"
+      ]
+    },
+    {
+      "id": "conan-641",
+      "difficulty": "intermediate",
+      "difficultyLabel": "中級",
+      "category": "characters",
+      "categoryLabel": "登場人物",
+      "knowledge": "story",
+      "knowledgeLabel": "作中",
+      "question": "ジョディ・スターリングが潜入捜査中に就いていた職業は？",
+      "choices": [
+        "帝丹高校の英語教師",
+        "帝丹小学校の副担任",
+        "日売テレビのアナウンサー",
+        "喫茶ポアロの店員"
+      ],
+      "answerIndex": 0,
+      "answer": "帝丹高校の英語教師",
+      "explanation": "「ジョディ・サンテミリオン」の偽名で帝丹高校の英語教師として赴任していた。",
+      "confidence": "A",
+      "sources": [
+        "https://www.ytv.co.jp/conan/character/",
+        "https://ja.wikipedia.org/wiki/名探偵コナンの登場人物"
+      ]
+    },
+    {
+      "id": "conan-642",
+      "difficulty": "advanced",
+      "difficultyLabel": "上級",
+      "category": "characters",
+      "categoryLabel": "登場人物",
+      "knowledge": "story",
+      "knowledgeLabel": "作中",
+      "question": "ジョディ・スターリングが教師時代に名乗っていた偽名は？",
+      "choices": [
+        "ジョディ・シャルドネ",
+        "ジョディ・サンテミリオン",
+        "ジョディ・グラス",
+        "ジョディ・ホークス"
+      ],
+      "answerIndex": 1,
+      "answer": "ジョディ・サンテミリオン",
+      "explanation": "帝丹高校では「ジョディ・サンテミリオン」を名乗っていた。",
+      "confidence": "B",
+      "sources": [
+        "https://ja.wikipedia.org/wiki/名探偵コナンの登場人物",
+        "https://ja.wikipedia.org/wiki/FBI_(名探偵コナン)"
+      ]
+    },
+    {
+      "id": "conan-643",
+      "difficulty": "advanced",
+      "difficultyLabel": "上級",
+      "category": "characters",
+      "categoryLabel": "登場人物",
+      "knowledge": "story",
+      "knowledgeLabel": "作中",
+      "question": "ジェイムズ・ブラックの立場は？",
+      "choices": [
+        "CIAの東京支局長",
+        "MI6の日本担当官",
+        "来日中のFBI捜査官チームのボス",
+        "インターポールの日本代表"
+      ],
+      "answerIndex": 2,
+      "answer": "来日中のFBI捜査官チームのボス",
+      "explanation": "ジョディや赤井らの上司として捜査を指揮している。",
+      "confidence": "A",
+      "sources": [
+        "https://www.ytv.co.jp/conan/character/",
+        "https://ja.wikipedia.org/wiki/FBI_(名探偵コナン)"
+      ]
+    },
+    {
+      "id": "conan-644",
+      "difficulty": "advanced",
+      "difficultyLabel": "上級",
+      "category": "characters",
+      "categoryLabel": "登場人物",
+      "knowledge": "story",
+      "knowledgeLabel": "作中",
+      "question": "FBI捜査官アンドレ・キャメルの趣味は？",
+      "choices": [
+        "ジャズ鑑賞",
+        "釣り",
+        "カメラ",
+        "筋トレ"
+      ],
+      "answerIndex": 3,
+      "answer": "筋トレ",
+      "explanation": "筋骨隆々の体格で、趣味は筋トレ。27歳の独身。",
+      "confidence": "A",
+      "sources": [
+        "https://www.ytv.co.jp/conan/character/",
+        "https://ja.wikipedia.org/wiki/FBI_(名探偵コナン)"
+      ]
+    },
+    {
+      "id": "conan-645",
+      "difficulty": "intermediate",
+      "difficultyLabel": "中級",
+      "category": "characters",
+      "categoryLabel": "登場人物",
+      "knowledge": "story",
+      "knowledgeLabel": "作中",
+      "question": "沖矢昴が表向きに名乗っている身分は？",
+      "choices": [
+        "東都大学の大学院生",
+        "帝丹高校の非常勤講師",
+        "米花大学の助教",
+        "フリーのカメラマン"
+      ],
+      "answerIndex": 0,
+      "answer": "東都大学の大学院生",
+      "explanation": "東都大学大学院工学部博士課程の27歳、というのが表向きの素性。",
+      "confidence": "A",
+      "sources": [
+        "https://www.ytv.co.jp/conan/character/",
+        "https://ja.wikipedia.org/wiki/FBI_(名探偵コナン)"
+      ]
+    },
+    {
+      "id": "conan-646",
+      "difficulty": "intermediate",
+      "difficultyLabel": "中級",
+      "category": "characters",
+      "categoryLabel": "登場人物",
+      "knowledge": "story",
+      "knowledgeLabel": "作中",
+      "question": "水無怜奈の表の顔（職業）は？",
+      "choices": [
+        "帝丹高校の英語教師",
+        "日売テレビのアナウンサー",
+        "雑誌記者",
+        "モデル"
+      ],
+      "answerIndex": 1,
+      "answer": "日売テレビのアナウンサー",
+      "explanation": "日売テレビの人気女性アナウンサーというのが表の顔だった。",
+      "confidence": "A",
+      "sources": [
+        "https://www.ytv.co.jp/conan/character/",
+        "https://ja.wikipedia.org/wiki/名探偵コナンの登場人物"
+      ]
+    },
+    {
+      "id": "conan-647",
+      "difficulty": "advanced",
+      "difficultyLabel": "上級",
+      "category": "characters",
+      "categoryLabel": "登場人物",
+      "knowledge": "story",
+      "knowledgeLabel": "作中",
+      "question": "服部静華が中学時代に大会で準優勝した武道は？",
+      "choices": [
+        "空手",
+        "合気道",
+        "剣道",
+        "なぎなた"
+      ],
+      "answerIndex": 2,
+      "answer": "剣道",
+      "explanation": "剣道が得意で、中学時代に大会で準優勝している。",
+      "confidence": "A",
+      "sources": [
+        "https://www.ytv.co.jp/conan/character/",
+        "https://ja.wikipedia.org/wiki/名探偵コナンの登場人物"
+      ]
+    },
+    {
+      "id": "conan-648",
+      "difficulty": "intermediate",
+      "difficultyLabel": "中級",
+      "category": "characters",
+      "categoryLabel": "登場人物",
+      "knowledge": "story",
+      "knowledgeLabel": "作中",
+      "question": "京極真の異名として知られるのは？",
+      "choices": [
+        "孤高の剣聖",
+        "無双の格闘王",
+        "不動の防人",
+        "蹴撃の貴公子"
+      ],
+      "answerIndex": 3,
+      "answer": "蹴撃の貴公子",
+      "explanation": "得意の蹴り技から「蹴撃の貴公子」と呼ばれる。",
+      "confidence": "A",
+      "sources": [
+        "https://www.ytv.co.jp/conan/character/",
+        "https://ja.wikipedia.org/wiki/名探偵コナンの登場人物"
+      ]
+    },
+    {
+      "id": "conan-649",
+      "difficulty": "advanced",
+      "difficultyLabel": "上級",
+      "category": "characters",
+      "categoryLabel": "登場人物",
+      "knowledge": "story",
+      "knowledgeLabel": "作中",
+      "question": "松本清長の顔にある傷は、何年前の事件で負ったもの？",
+      "choices": [
+        "20年前",
+        "10年前",
+        "15年前",
+        "30年前"
+      ],
+      "answerIndex": 0,
+      "answer": "20年前",
+      "explanation": "20年前の事件で顔に傷を負っている。",
+      "confidence": "A",
+      "sources": [
+        "https://www.ytv.co.jp/conan/character/",
+        "https://ja.wikipedia.org/wiki/名探偵コナンの登場人物"
+      ]
+    },
+    {
+      "id": "conan-650",
+      "difficulty": "advanced",
+      "difficultyLabel": "上級",
+      "category": "characters",
+      "categoryLabel": "登場人物",
+      "knowledge": "story",
+      "knowledgeLabel": "作中",
+      "question": "中森銀三が所属している課は？",
+      "choices": [
+        "捜査一課",
+        "捜査二課",
+        "捜査三課",
+        "公安部"
+      ],
+      "answerIndex": 1,
+      "answer": "捜査二課",
+      "explanation": "怪盗キッドを追う警視庁捜査二課の警部。",
+      "confidence": "A",
+      "sources": [
+        "https://www.ytv.co.jp/conan/character/",
+        "https://ja.wikipedia.org/wiki/名探偵コナンの登場人物"
+      ]
+    },
+    {
+      "id": "conan-651",
+      "difficulty": "intermediate",
+      "difficultyLabel": "中級",
+      "category": "characters",
+      "categoryLabel": "登場人物",
+      "knowledge": "story",
+      "knowledgeLabel": "作中",
+      "question": "宮野エレーナが黒ずくめの組織内で呼ばれていた異名は？",
+      "choices": [
+        "シルバー・ウィッチ",
+        "ドクター・シェリー",
+        "ヘル・エンジェル",
+        "ナイト・ローズ"
+      ],
+      "answerIndex": 2,
+      "answer": "ヘル・エンジェル",
+      "explanation": "組織内では「ヘル・エンジェル」の異名を持つ科学者だった。",
+      "confidence": "B",
+      "sources": [
+        "https://ja.wikipedia.org/wiki/名探偵コナンの登場人物",
+        "https://ja.wikipedia.org/wiki/黒ずくめの組織"
       ]
     }
   ]
