@@ -1,21 +1,21 @@
 {
   "meta": {
     "title": "名探偵コナン クイズ問題データ",
-    "version": "2.5.0",
+    "version": "3.0.0",
     "updated": "2026-09-04",
-    "total": 527,
+    "total": 532,
     "countsByDifficulty": {
       "beginner": 76,
       "intermediate": 153,
-      "advanced": 298
+      "advanced": 303
     },
     "countsByCategory": {
       "basics": 11,
-      "characters": 117,
+      "characters": 119,
       "gadgets": 16,
       "anime": 8,
       "movies": 196,
-      "organization": 14,
+      "organization": 17,
       "music": 158,
       "trivia": 7
     },
@@ -75,7 +75,12 @@
     ],
     "countsByKnowledge": {
       "production": 327,
-      "story": 200
+      "story": 205
+    },
+    "countsByConfidence": {
+      "A": 32,
+      "B": 495,
+      "C": 5
     }
   },
   "questions": [
@@ -12685,6 +12690,126 @@
       "sources": [
         "https://ja.wikipedia.org/wiki/劇場版名探偵コナン",
         "https://conan-suiri.com/archives/57"
+      ]
+    },
+    {
+      "id": "conan-528",
+      "difficulty": "advanced",
+      "difficultyLabel": "上級",
+      "category": "organization",
+      "categoryLabel": "黒ずくめの組織",
+      "knowledge": "story",
+      "knowledgeLabel": "作中",
+      "question": "「アポトキシン」という名称の語源になっている生物学の用語は？",
+      "choices": [
+        "アポトーシス",
+        "ネクローシス",
+        "オートファジー",
+        "メタボリズム"
+      ],
+      "answerIndex": 0,
+      "answer": "アポトーシス",
+      "explanation": "細胞が自ら死ぬ仕組み「アポトーシス（プログラムされた細胞死）」に由来する。",
+      "confidence": "C",
+      "sources": [
+        "https://www.weblio.jp/content/APTX4869",
+        "https://castel.jp/p/8317"
+      ]
+    },
+    {
+      "id": "conan-529",
+      "difficulty": "advanced",
+      "difficultyLabel": "上級",
+      "category": "organization",
+      "categoryLabel": "黒ずくめの組織",
+      "knowledge": "story",
+      "knowledgeLabel": "作中",
+      "question": "APTX4869 の「4869」は、ある人物の名前の語呂合わせとされる。その名前は？",
+      "choices": [
+        "ジェームズ",
+        "シャーロック",
+        "アルセーヌ",
+        "エルキュール"
+      ],
+      "answerIndex": 1,
+      "answer": "シャーロック",
+      "explanation": "4（シ）8（ャー）6（ロ）9（ク）でシャーロック。シャーロック・ホームズのファーストネーム。",
+      "confidence": "C",
+      "sources": [
+        "https://www.weblio.jp/content/APTX4869",
+        "https://castel.jp/p/8317"
+      ]
+    },
+    {
+      "id": "conan-530",
+      "difficulty": "advanced",
+      "difficultyLabel": "上級",
+      "category": "characters",
+      "categoryLabel": "登場人物",
+      "knowledge": "story",
+      "knowledgeLabel": "作中",
+      "question": "鈴木園子の恋人・京極真が通っている高校は？",
+      "choices": [
+        "帝丹高校",
+        "江古田高校",
+        "杯戸高校",
+        "京都泉心高校"
+      ],
+      "answerIndex": 2,
+      "answer": "杯戸高校",
+      "explanation": "杯戸高校の空手部主将。",
+      "confidence": "C",
+      "sources": [
+        "https://ja.wikipedia.org/wiki/名探偵コナンの登場人物",
+        "https://ciatr.jp/topics/290030"
+      ]
+    },
+    {
+      "id": "conan-531",
+      "difficulty": "advanced",
+      "difficultyLabel": "上級",
+      "category": "characters",
+      "categoryLabel": "登場人物",
+      "knowledge": "story",
+      "knowledgeLabel": "作中",
+      "question": "京極真の空手の公式戦での戦績として語られているのは？",
+      "choices": [
+        "100戦無敗",
+        "200戦無敗",
+        "1000戦無敗",
+        "400戦無敗"
+      ],
+      "answerIndex": 3,
+      "answer": "400戦無敗",
+      "explanation": "公式戦で400戦無敗と紹介されている。",
+      "confidence": "C",
+      "sources": [
+        "https://ja.wikipedia.org/wiki/名探偵コナンの登場人物",
+        "https://ciatr.jp/topics/290030"
+      ]
+    },
+    {
+      "id": "conan-532",
+      "difficulty": "advanced",
+      "difficultyLabel": "上級",
+      "category": "organization",
+      "categoryLabel": "黒ずくめの組織",
+      "knowledge": "story",
+      "knowledgeLabel": "作中",
+      "question": "灰原哀（宮野志保）の父の名前は？",
+      "choices": [
+        "宮野厚司",
+        "宮野エレーナ",
+        "赤井務武",
+        "工藤優作"
+      ],
+      "answerIndex": 0,
+      "answer": "宮野厚司",
+      "explanation": "組織の科学者だった宮野厚司。妻のエレーナとともに研究に携わっていた。",
+      "confidence": "C",
+      "sources": [
+        "https://ja.wikipedia.org/wiki/灰原哀",
+        "https://castel.jp/p/8317"
       ]
     }
   ]

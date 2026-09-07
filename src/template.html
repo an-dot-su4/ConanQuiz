@@ -329,6 +329,12 @@ dialog h2{font-size:18px}
             オフだとこの2つに偏ります。</span></span>
       </label>
       <label class="toggle">
+        <input type="checkbox" id="pick-uncertain">
+        <span>裏付けがやや弱い問題（信頼度C）も含める<br>
+          <span class="hint">Wikipedia とファンサイトで一致は取れているものの、公式や報道での
+            裏取りができていない問題です。<strong>誤りが含まれる可能性が既定より高くなります。</strong></span></span>
+      </label>
+      <label class="toggle">
         <input type="checkbox" id="pick-volatile">
         <span>時点によって答えが変わる問題も含める<br>
           <span class="hint">興行収入ランキングなど。問題文に基準日が入ります。</span></span>
@@ -573,8 +579,8 @@ function validate(q) {
   if (ch.some(c => !c || !c.trim())) errs.push("空の選択肢があります。");
   if (new Set(ch).size !== ch.length) errs.push("選択肢が重複しています。");
   if (!ch.includes(q.answer)) errs.push("正解が選択肢の中にありません。");
-  if (!["A", "B"].includes(q.confidence))
-    errs.push("信頼度は A か B のみです（C以下は UNVERIFIED.md へ）。");
+  if (!["A", "B", "C"].includes(q.confidence))
+    errs.push("信頼度は A / B / C のいずれかです。");
   if (!["story", "production"].includes(q.knowledge))
     errs.push("問題のタイプ（作中／制作）を選んでください。");
   if (!(q.sources || []).some(s => /^https?:\/\//.test(s)))
@@ -608,6 +614,7 @@ const sel = {
   count: 10,
   knowledge: "all", // all / story（作中の知識）/ production（制作の知識）
   volatile: false,
+  uncertain: false, // 信頼度Cの問題を含めるか
   balanced: true, // 既定でカテゴリから均等に出題する
 };
 
@@ -634,6 +641,7 @@ function categoryChips(onPick) {
     if (sel.difficulty !== "all" && q.difficulty !== sel.difficulty) continue;
     if (sel.knowledge !== "all" && q.knowledge !== sel.knowledge) continue;
     if (!sel.volatile && q.volatile) continue;
+    if (!sel.uncertain && q.confidence === "C") continue;
     if (validate(q).length) continue;
     counts[q.category] = (counts[q.category] || 0) + 1;
   }
@@ -672,6 +680,7 @@ function pool() {
     (sel.difficulty === "all" || q.difficulty === sel.difficulty) &&
     sel.categories.has(q.category) &&
     (sel.knowledge === "all" || q.knowledge === sel.knowledge) &&
+    (sel.uncertain || q.confidence !== "C") &&
     (sel.volatile || !q.volatile) &&
     validate(q).length === 0);
 }
@@ -688,6 +697,7 @@ function renderSetup() {
     [5, 10, 20, 30, 50].map(n => ({ key: n, label: `${n}問` })), "count", renderSetup);
   $("pick-volatile").checked = sel.volatile;
   $("pick-balanced").checked = sel.balanced;
+  $("pick-uncertain").checked = sel.uncertain;
   const rows = pool();
   const n = rows.length;
   const cats = new Set(rows.map(q => q.category));
@@ -737,7 +747,8 @@ function startQuiz() {
   // 設定もシードに混ぜる。設定が違えば同じコードでも別の問題セットになる
   const cats = [...sel.categories].sort().join(",");
   const rnd = makeRng(hashSeed([codeKey(code), sel.difficulty, cats, sel.knowledge, sel.count,
-    sel.volatile ? "v" : "", sel.balanced ? "b" : ""].join("|")));
+    sel.volatile ? "v" : "", sel.uncertain ? "u" : "",
+    sel.balanced ? "b" : ""].join("|")));
 
   const rows = pool();
   const chosen = sel.balanced
@@ -800,7 +811,10 @@ function answer(picked) {
   v.append(el("span", "stamp", ok ? "正解" : "不正解"),
            el("span", null, ok ? "お見事。" : `正解は「${q.answer}」`));
 
-  $("qexpl").textContent = q.explanation;
+  $("qexpl").textContent = q.explanation
+    + (q.confidence === "C"
+       ? "　※この問題は Wikipedia とファンサイトで一致を確認したもので、公式や報道での裏取りはできていません。"
+       : "");
   const s = $("qsrcs"); s.innerHTML = "";
   q.sources.forEach((url, i) => {
     const a = el("a", null, `出典${i + 1}`);
@@ -988,7 +1002,8 @@ function renderForm() {
 
   const g2 = el("div", "grid2");
   g2.append(mkSelect("信頼度", [{ key: "A", label: "A（公式で確認）" },
-                                { key: "B", label: "B（2系統で一致）" }],
+                                { key: "B", label: "B（2系統で一致）" },
+                                { key: "C", label: "C（ファンサイト込みで一致）" }],
     q.confidence, v => { q.confidence = v; renderForm(); }));
   const tw = el("div", "field");
   tw.append(el("label", null, "この端末での出題"));
@@ -1122,6 +1137,7 @@ function shareUrl() {
     n: String(sel.count),
     ...(sel.knowledge === "all" ? {} : { k: sel.knowledge }),
     ...(sel.volatile ? { v: "1" } : {}),
+    ...(sel.uncertain ? { u: "1" } : {}),
     ...(sel.balanced ? {} : { b: "0" }),
   }).toString();
   return u.toString();
@@ -1166,6 +1182,7 @@ function applyUrlParams() {
   const k = p.get("k");
   if (["story", "production"].includes(k)) sel.knowledge = k;
   sel.volatile = p.get("v") === "1";
+  sel.uncertain = p.get("u") === "1";
   sel.balanced = p.get("b") !== "0";
   return true;
 }
@@ -1253,6 +1270,7 @@ $("lock-cancel").onclick = () => $("lock-dialog").close();
 $("relock").onclick = () => { setUnlocked(false); showTab("play"); };
 $("pick-volatile").onchange = e => { sel.volatile = e.target.checked; renderSetup(); };
 $("pick-balanced").onchange = e => { sel.balanced = e.target.checked; renderSetup(); };
+$("pick-uncertain").onchange = e => { sel.uncertain = e.target.checked; renderSetup(); };
 $("start").onclick = startQuiz;
 $("share-copy").onclick = () => copyShareUrl("share-copy", "share-url");
 $("rs-copy").onclick = () => copyShareUrl("rs-copy", "rs-url");
