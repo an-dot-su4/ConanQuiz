@@ -1,4 +1,4 @@
-# 名探偵コナン クイズ問題集（全542問）
+# 名探偵コナン クイズ問題集（全552問）
 
 > ⚠️ **このファイルは自動生成です。直接編集しないでください。**
 > 正本は [`questions.json`](../data/questions.json) です。編集後は
@@ -7,7 +7,7 @@
 掲載しているのはすべて **2系統以上の独立した情報源で照合済み**（信頼度 A / B）の問題です。
 情報源が食い違ったものは [`UNVERIFIED.md`](./UNVERIFIED.md) に隔離してあり、ここには含まれません。
 
-- **総数：542問**（初級 77問／中級 156問／上級 309問）
+- **総数：552問**（初級 77問／中級 160問／上級 315問）
 - 最終更新：2026-09-04
 
 ---
@@ -1484,7 +1484,7 @@ APTX4869（アポトキシン4869）。黒ずくめの組織が開発した毒�
 
 </details>
 
-## 【中級】156問
+## 【中級】160問
 
 ### conan-041　原作漫画の第1話のタイトルは？
 
@@ -4450,7 +4450,83 @@ King Gnuの「TWILIGHT!!!」（2025年）。
 
 </details>
 
-## 【上級】309問
+### conan-549　灰原哀（宮野志保）が黒ずくめの組織で務めていた役割は？
+
+`黒ずくめの組織`　信頼度 **B**
+
+1. 諜報員
+2. 科学者
+3. スナイパー
+4. 運転手
+
+<details><summary>答えを見る</summary>
+
+**正解：2. 科学者**
+
+組織の研究者として APTX4869 の開発に携わっていた。両親も組織の科学者。
+
+[出典1](https://ja.wikipedia.org/wiki/灰原哀)　[出典2](https://castel.jp/p/8317)
+
+</details>
+
+### conan-550　世良真純が使う格闘技は？
+
+`登場人物`　信頼度 **B**
+
+1. 空手
+2. 合気道
+3. 截拳道
+4. 剣道
+
+<details><summary>答えを見る</summary>
+
+**正解：3. 截拳道**
+
+截拳道（ジークンドー）。兄の赤井秀一に憧れて習い、空手の達人である蘭とほぼ互角に渡り合う。
+
+[出典1](https://ja.wikipedia.org/wiki/世良真純)　[出典2](https://www.animatetimes.com/news/details.php?id=1764555966)
+
+</details>
+
+### conan-551　世良真純が編入してきた高校は？
+
+`登場人物`　信頼度 **B**
+
+1. 杯戸高校
+2. 改方学園高等部
+3. 京都泉心高校
+4. 帝丹高校
+
+<details><summary>答えを見る</summary>
+
+**正解：4. 帝丹高校**
+
+帝丹高校2年B組に編入。毛利蘭・工藤新一と同じクラス。
+
+[出典1](https://ja.wikipedia.org/wiki/世良真純)　[出典2](https://www.animatetimes.com/news/details.php?id=1764555966)
+
+</details>
+
+### conan-552　世良真純の職業は？
+
+`登場人物`　信頼度 **B**
+
+1. 女子高生探偵
+2. 女子高生マジシャン
+3. 女子大生記者
+4. 新人刑事
+
+<details><summary>答えを見る</summary>
+
+**正解：1. 女子高生探偵**
+
+女子高生探偵。赤井秀一と羽田秀吉の妹にあたる。
+
+[出典1](https://ja.wikipedia.org/wiki/世良真純)　[出典2](https://www.animatetimes.com/news/details.php?id=1764555966)
+
+</details>
+
+## 【上級】315問
 
 ### conan-081　黒ずくめの組織のボスの名前は？
 
@@ -10320,6 +10396,120 @@ DAIGOが第13作『漆黒の追跡者』にゲスト声優として出演した�
 宮野明美。灰原哀（宮野志保）の姉にあたる。
 
 [出典1](https://ja.wikipedia.org/wiki/赤井秀一_(名探偵コナン))　[出典2](https://ciatr.jp/topics/166157)
+
+</details>
+
+### conan-543　降谷零（安室透）と警察学校で同期だった5人は、まとめて何と呼ばれる？
+
+`登場人物`　信頼度 **B**
+
+1. 公安ゼロ
+2. 捜査一課組
+3. 鬼塚教場会
+4. 警察学校組
+
+<details><summary>答えを見る</summary>
+
+**正解：4. 警察学校組**
+
+降谷零・松田陣平・萩原研二・伊達航・諸伏景光の5人。降谷以外の4人は殉職している。
+
+[出典1](https://ja.wikipedia.org/wiki/安室透)　[出典2](https://www.animatetimes.com/news/details.php?id=1747820329)
+
+</details>
+
+### conan-544　降谷零の部下にあたる、警視庁公安部の警部補は？
+
+`登場人物`　信頼度 **B**
+
+1. 風見裕也
+2. 黒田兵衛
+3. 松田陣平
+4. 諸伏高明
+
+<details><summary>答えを見る</summary>
+
+**正解：1. 風見裕也**
+
+風見裕也警部補。降谷零の指示を受けて動く。
+
+[出典1](https://ja.wikipedia.org/wiki/名探偵コナンの登場人物)　[出典2](https://www.animatetimes.com/news/details.php?id=1747820329)
+
+</details>
+
+### conan-545　降谷零が所属する警察庁警備局警備企画課の、通称は？
+
+`黒ずくめの組織`　信頼度 **B**
+
+1. ワン
+2. ゼロ
+3. サクラ
+4. コード
+
+<details><summary>答えを見る</summary>
+
+**正解：2. ゼロ**
+
+警察庁警備局警備企画課、通称「ゼロ」。降谷零はここから黒ずくめの組織へ潜入している。
+
+[出典1](https://ja.wikipedia.org/wiki/安室透)　[出典2](https://www.animatetimes.com/news/details.php?id=1747820329)
+
+</details>
+
+### conan-546　降谷零の警察学校時代の同期で、黒ずくめの組織に潜入し「スコッチ」と呼ばれていたのは？
+
+`黒ずくめの組織`　信頼度 **B**
+
+1. 松田陣平
+2. 伊達航
+3. 諸伏景光
+4. 萩原研二
+
+<details><summary>答えを見る</summary>
+
+**正解：3. 諸伏景光**
+
+諸伏景光。組織でのコードネームは「スコッチ」。
+
+[出典1](https://ja.wikipedia.org/wiki/黒ずくめの組織)　[出典2](https://www.animatetimes.com/news/details.php?id=1747820329)
+
+</details>
+
+### conan-547　次のうち、降谷零の警察学校の同期ではないのは？
+
+`登場人物`　信頼度 **B**
+
+1. 松田陣平
+2. 萩原研二
+3. 伊達航
+4. 風見裕也
+
+<details><summary>答えを見る</summary>
+
+**正解：4. 風見裕也**
+
+風見裕也は降谷零の部下。同期は松田陣平・萩原研二・伊達航・諸伏景光の4人。
+
+[出典1](https://ja.wikipedia.org/wiki/名探偵コナンの登場人物)　[出典2](https://www.animatetimes.com/news/details.php?id=1747820329)
+
+</details>
+
+### conan-548　服部平次がテレビアニメに初登場した回のサブタイトルは？
+
+`登場人物`　信頼度 **B**
+
+1. 外交官殺人事件
+2. ジェットコースター殺人事件
+3. 西の名探偵
+4. コナンVS怪盗キッド
+
+<details><summary>答えを見る</summary>
+
+**正解：1. 外交官殺人事件**
+
+アニメ第48話「外交官殺人事件（前編）」で初登場した。原作では単行本10巻。
+
+[出典1](https://ja.wikipedia.org/wiki/服部平次)　[出典2](https://www.animatetimes.com/news/details.php?id=1712641997)
 
 </details>
 
