@@ -1,21 +1,21 @@
 {
   "meta": {
     "title": "名探偵コナン クイズ問題データ",
-    "version": "3.0.0",
+    "version": "3.1.0",
     "updated": "2026-09-04",
-    "total": 532,
+    "total": 542,
     "countsByDifficulty": {
-      "beginner": 76,
-      "intermediate": 153,
-      "advanced": 303
+      "beginner": 77,
+      "intermediate": 156,
+      "advanced": 309
     },
     "countsByCategory": {
       "basics": 11,
-      "characters": 119,
+      "characters": 127,
       "gadgets": 16,
       "anime": 8,
       "movies": 196,
-      "organization": 17,
+      "organization": 19,
       "music": 158,
       "trivia": 7
     },
@@ -75,11 +75,11 @@
     ],
     "countsByKnowledge": {
       "production": 327,
-      "story": 205
+      "story": 215
     },
     "countsByConfidence": {
       "A": 32,
-      "B": 495,
+      "B": 505,
       "C": 5
     }
   },
@@ -12810,6 +12810,246 @@
       "sources": [
         "https://ja.wikipedia.org/wiki/灰原哀",
         "https://castel.jp/p/8317"
+      ]
+    },
+    {
+      "id": "conan-533",
+      "difficulty": "intermediate",
+      "difficultyLabel": "中級",
+      "category": "characters",
+      "categoryLabel": "登場人物",
+      "knowledge": "story",
+      "knowledgeLabel": "作中",
+      "question": "怪盗キッドこと黒羽快斗の、小学校からの幼馴染は？",
+      "choices": [
+        "遠山和葉",
+        "中森青子",
+        "鈴木園子",
+        "小泉紅子"
+      ],
+      "answerIndex": 1,
+      "answer": "中森青子",
+      "explanation": "中森青子。快斗は高校でも青子にいたずらを仕掛けている。",
+      "confidence": "B",
+      "sources": [
+        "https://ja.wikipedia.org/wiki/怪盗キッド",
+        "https://ciatr.jp/topics/163804"
+      ]
+    },
+    {
+      "id": "conan-534",
+      "difficulty": "advanced",
+      "difficultyLabel": "上級",
+      "category": "characters",
+      "categoryLabel": "登場人物",
+      "knowledge": "story",
+      "knowledgeLabel": "作中",
+      "question": "怪盗キッドの母・黒羽千影が、女怪盗として名乗っていた通称は？",
+      "choices": [
+        "ミス・マジック",
+        "レディ・シルク",
+        "ファントム・レディ",
+        "ブラック・ローズ"
+      ],
+      "answerIndex": 2,
+      "answer": "ファントム・レディ",
+      "explanation": "「昭和の女二十面相」と呼ばれた女怪盗ファントム・レディ。",
+      "confidence": "B",
+      "sources": [
+        "https://ja.wikipedia.org/wiki/怪盗キッド",
+        "https://ciatr.jp/topics/163804"
+      ]
+    },
+    {
+      "id": "conan-535",
+      "difficulty": "intermediate",
+      "difficultyLabel": "中級",
+      "category": "characters",
+      "categoryLabel": "登場人物",
+      "knowledge": "story",
+      "knowledgeLabel": "作中",
+      "question": "怪盗キッドが逃走するとき、マントを変形させて使うものは？",
+      "choices": [
+        "パラシュート",
+        "ジェットパック",
+        "気球",
+        "ハンググライダー"
+      ],
+      "answerIndex": 3,
+      "answer": "ハンググライダー",
+      "explanation": "マントを翼に変形させたハンググライダーで逃走する。",
+      "confidence": "B",
+      "sources": [
+        "https://ja.wikipedia.org/wiki/怪盗キッド",
+        "https://ciatr.jp/topics/163804"
+      ]
+    },
+    {
+      "id": "conan-536",
+      "difficulty": "intermediate",
+      "difficultyLabel": "中級",
+      "category": "characters",
+      "categoryLabel": "登場人物",
+      "knowledge": "story",
+      "knowledgeLabel": "作中",
+      "question": "怪盗キッドが右目に着けているものは？",
+      "choices": [
+        "モノクル",
+        "アイパッチ",
+        "サングラス",
+        "ゴーグル"
+      ],
+      "answerIndex": 0,
+      "answer": "モノクル",
+      "explanation": "白いシルクハットとタキシード、マントに加え、右目のモノクルがトレードマーク。",
+      "confidence": "B",
+      "sources": [
+        "https://ja.wikipedia.org/wiki/怪盗キッド",
+        "https://ciatr.jp/topics/163804"
+      ]
+    },
+    {
+      "id": "conan-537",
+      "difficulty": "advanced",
+      "difficultyLabel": "上級",
+      "category": "characters",
+      "categoryLabel": "登場人物",
+      "knowledge": "story",
+      "knowledgeLabel": "作中",
+      "question": "怪盗キッドが大きな宝石を狙う目的である、不老不死の力を持つとされる石の名は？",
+      "choices": [
+        "エンジェルズ・テア",
+        "パンドラ",
+        "ブルー・ワンダー",
+        "スターサファイア"
+      ],
+      "answerIndex": 1,
+      "answer": "パンドラ",
+      "explanation": "ビッグジュエルのいずれかに眠るとされる「命の石」パンドラ。父の死の真相とともに追っている。",
+      "confidence": "B",
+      "sources": [
+        "https://ja.wikipedia.org/wiki/怪盗キッド",
+        "https://www.animatetimes.com/news/details.php?id=1761437986"
+      ]
+    },
+    {
+      "id": "conan-538",
+      "difficulty": "beginner",
+      "difficultyLabel": "初級",
+      "category": "characters",
+      "categoryLabel": "登場人物",
+      "knowledge": "story",
+      "knowledgeLabel": "作中",
+      "question": "怪盗キッドの衣装の色は？",
+      "choices": [
+        "黒",
+        "赤",
+        "白",
+        "紺"
+      ],
+      "answerIndex": 2,
+      "answer": "白",
+      "explanation": "全身白のシルクハットとタキシード、マント。ネクタイだけが赤系の色。",
+      "confidence": "B",
+      "sources": [
+        "https://ja.wikipedia.org/wiki/怪盗キッド",
+        "https://www.animatetimes.com/news/details.php?id=1761437986"
+      ]
+    },
+    {
+      "id": "conan-539",
+      "difficulty": "advanced",
+      "difficultyLabel": "上級",
+      "category": "organization",
+      "categoryLabel": "黒ずくめの組織",
+      "knowledge": "story",
+      "knowledgeLabel": "作中",
+      "question": "赤井秀一が黒ずくめの組織に潜入していたときに名乗っていた偽名は？",
+      "choices": [
+        "沖矢昴",
+        "羽田秀吉",
+        "本堂瑛祐",
+        "諸星大"
+      ],
+      "answerIndex": 3,
+      "answer": "諸星大",
+      "explanation": "諸星大（もろぼし だい）として潜入し、コードネーム「ライ」を与えられた。",
+      "confidence": "B",
+      "sources": [
+        "https://ja.wikipedia.org/wiki/赤井秀一_(名探偵コナン)",
+        "https://ciatr.jp/topics/166157"
+      ]
+    },
+    {
+      "id": "conan-540",
+      "difficulty": "advanced",
+      "difficultyLabel": "上級",
+      "category": "characters",
+      "categoryLabel": "登場人物",
+      "knowledge": "story",
+      "knowledgeLabel": "作中",
+      "question": "赤井秀一が使う格闘技は？",
+      "choices": [
+        "截拳道",
+        "空手",
+        "合気道",
+        "柔道"
+      ],
+      "answerIndex": 0,
+      "answer": "截拳道",
+      "explanation": "截拳道（ジークンドー）の使い手。狙撃の名手でもある。",
+      "confidence": "B",
+      "sources": [
+        "https://ja.wikipedia.org/wiki/赤井秀一_(名探偵コナン)",
+        "https://ciatr.jp/topics/166157"
+      ]
+    },
+    {
+      "id": "conan-541",
+      "difficulty": "advanced",
+      "difficultyLabel": "上級",
+      "category": "characters",
+      "categoryLabel": "登場人物",
+      "knowledge": "story",
+      "knowledgeLabel": "作中",
+      "question": "赤井秀一の父の名前は？",
+      "choices": [
+        "羽田秀吉",
+        "赤井務武",
+        "宮野厚司",
+        "黒羽盗一"
+      ],
+      "answerIndex": 1,
+      "answer": "赤井務武",
+      "explanation": "赤井務武。母はメアリー・世良。",
+      "confidence": "B",
+      "sources": [
+        "https://ja.wikipedia.org/wiki/赤井秀一_(名探偵コナン)",
+        "https://ciatr.jp/topics/166157"
+      ]
+    },
+    {
+      "id": "conan-542",
+      "difficulty": "advanced",
+      "difficultyLabel": "上級",
+      "category": "organization",
+      "categoryLabel": "黒ずくめの組織",
+      "knowledge": "story",
+      "knowledgeLabel": "作中",
+      "question": "赤井秀一が黒ずくめの組織に潜入していたときの恋人は？",
+      "choices": [
+        "ジョディ・スターリング",
+        "水無怜奈",
+        "宮野明美",
+        "ベルモット"
+      ],
+      "answerIndex": 2,
+      "answer": "宮野明美",
+      "explanation": "宮野明美。灰原哀（宮野志保）の姉にあたる。",
+      "confidence": "B",
+      "sources": [
+        "https://ja.wikipedia.org/wiki/赤井秀一_(名探偵コナン)",
+        "https://ciatr.jp/topics/166157"
       ]
     }
   ]
