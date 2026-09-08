@@ -1,17 +1,17 @@
 {
   "meta": {
     "title": "名探偵コナン クイズ問題データ",
-    "version": "3.3.0",
-    "updated": "2026-09-07",
-    "total": 651,
+    "version": "3.3.1",
+    "updated": "2026-09-08",
+    "total": 653,
     "countsByDifficulty": {
       "beginner": 81,
-      "intermediate": 209,
+      "intermediate": 211,
       "advanced": 361
     },
     "countsByCategory": {
       "basics": 11,
-      "characters": 223,
+      "characters": 225,
       "anime": 8,
       "movies": 196,
       "music": 158,
@@ -75,11 +75,11 @@
     ],
     "countsByKnowledge": {
       "story": 272,
-      "production": 379
+      "production": 381
     },
     "countsByConfidence": {
       "A": 113,
-      "B": 533,
+      "B": 535,
       "C": 5
     }
   },
@@ -15666,6 +15666,54 @@
       "sources": [
         "https://ja.wikipedia.org/wiki/名探偵コナンの登場人物",
         "https://ja.wikipedia.org/wiki/黒ずくめの組織"
+      ]
+    },
+    {
+      "id": "conan-652",
+      "difficulty": "intermediate",
+      "difficultyLabel": "中級",
+      "category": "characters",
+      "categoryLabel": "登場人物",
+      "knowledge": "production",
+      "knowledgeLabel": "制作",
+      "question": "田中敦子の後任として萩原千速役を引き継いだ声優は？",
+      "choices": [
+        "田中理恵",
+        "沢城みゆき",
+        "湯屋敦子",
+        "本田貴子"
+      ],
+      "answerIndex": 1,
+      "answer": "沢城みゆき",
+      "explanation": "沢城みゆき。2024年8月に亡くなった田中敦子の後任として、2025年8月31日に発表された。第1184話と劇場版第29作『ハイウェイの堕天使』から担当している。",
+      "confidence": "B",
+      "sources": [
+        "https://ja.wikipedia.org/wiki/名探偵コナンの登場人物",
+        "https://www.oricon.co.jp/news/2404081/full/"
+      ]
+    },
+    {
+      "id": "conan-653",
+      "difficulty": "intermediate",
+      "difficultyLabel": "中級",
+      "category": "characters",
+      "categoryLabel": "登場人物",
+      "knowledge": "production",
+      "knowledgeLabel": "制作",
+      "question": "山崎和佳奈の後任として毛利蘭役を引き継いだ声優は？",
+      "choices": [
+        "高山みなみ",
+        "松井菜桜子",
+        "岡村明美",
+        "日髙のり子"
+      ],
+      "answerIndex": 2,
+      "answer": "岡村明美",
+      "explanation": "岡村明美。山崎和佳奈の療養にともない2026年3月14日放送分から代役を務め、山崎の逝去後は正式に引き継いでいる。",
+      "confidence": "B",
+      "sources": [
+        "https://ja.wikipedia.org/wiki/名探偵コナン_(アニメ)",
+        "https://animeanime.jp/article/2026/05/15/98949.html"
       ]
     }
   ]
