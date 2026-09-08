@@ -1,19 +1,19 @@
 {
   "meta": {
     "title": "名探偵コナン クイズ問題データ",
-    "version": "3.3.2",
+    "version": "3.3.3",
     "updated": "2026-09-08",
-    "total": 659,
+    "total": 663,
     "countsByDifficulty": {
       "beginner": 81,
       "intermediate": 212,
-      "advanced": 366
+      "advanced": 370
     },
     "countsByCategory": {
       "basics": 11,
-      "characters": 231,
+      "characters": 233,
       "anime": 8,
-      "movies": 196,
+      "movies": 198,
       "music": 158,
       "organization": 32,
       "gadgets": 16,
@@ -74,12 +74,12 @@
       "情報源が食い違った事項は本データに含めない。詳細は docs/conan/UNVERIFIED.md を参照。"
     ],
     "countsByKnowledge": {
-      "story": 275,
+      "story": 279,
       "production": 384
     },
     "countsByConfidence": {
-      "A": 119,
-      "B": 535,
+      "A": 120,
+      "B": 538,
       "C": 5
     }
   },
@@ -15858,6 +15858,102 @@
       "sources": [
         "https://www.ytv.co.jp/conan/character/",
         "https://ja.wikipedia.org/wiki/名探偵コナンの登場人物"
+      ]
+    },
+    {
+      "id": "conan-660",
+      "difficulty": "advanced",
+      "difficultyLabel": "上級",
+      "category": "characters",
+      "categoryLabel": "登場人物",
+      "knowledge": "story",
+      "knowledgeLabel": "作中",
+      "question": "赤井秀一が来葉峠で爆破されるまで乗っていた愛車は？",
+      "choices": [
+        "ポルシェ356A",
+        "マツダ・RX-7",
+        "スバル360",
+        "シボレーC-1500"
+      ],
+      "answerIndex": 3,
+      "answer": "シボレーC-1500",
+      "explanation": "黒のシボレーC-1500。死を偽装する際、水無怜奈によって来葉峠で爆破された。",
+      "confidence": "B",
+      "sources": [
+        "https://ja.wikipedia.org/wiki/FBI_(名探偵コナン)",
+        "https://www.animatetimes.com/news/details.php?id=1763625360"
+      ]
+    },
+    {
+      "id": "conan-661",
+      "difficulty": "advanced",
+      "difficultyLabel": "上級",
+      "category": "characters",
+      "categoryLabel": "登場人物",
+      "knowledge": "story",
+      "knowledgeLabel": "作中",
+      "question": "赤井秀一が沖矢昴として乗っている車は？",
+      "choices": [
+        "スバル360",
+        "シボレーC-1500",
+        "ポルシェ356A",
+        "ジャガー・Eタイプ"
+      ],
+      "answerIndex": 0,
+      "answer": "スバル360",
+      "explanation": "赤いスバル360。赤井秀一本人としての愛車とは別に、沖矢昴の姿ではこの車に乗る。",
+      "confidence": "A",
+      "sources": [
+        "https://www.ytv.co.jp/conan/character/",
+        "https://ja.wikipedia.org/wiki/FBI_(名探偵コナン)"
+      ]
+    },
+    {
+      "id": "conan-662",
+      "difficulty": "advanced",
+      "difficultyLabel": "上級",
+      "category": "movies",
+      "categoryLabel": "劇場版",
+      "knowledge": "story",
+      "knowledgeLabel": "作中",
+      "question": "劇場版第20作『純黒の悪夢』で赤井秀一が乗っている車は？",
+      "choices": [
+        "シボレーC-1500",
+        "シェルビーGT-500",
+        "ポルシェ356A",
+        "スバル360"
+      ],
+      "answerIndex": 1,
+      "answer": "シェルビーGT-500",
+      "explanation": "赤のシェルビーGT-500（フォード・マスタング）。来葉峠でシボレーC-1500を失った後の時系列にあたるため、車が変わっている。",
+      "confidence": "B",
+      "sources": [
+        "https://ja.wikipedia.org/wiki/FBI_(名探偵コナン)",
+        "https://www.animatetimes.com/news/details.php?id=1763625360"
+      ]
+    },
+    {
+      "id": "conan-663",
+      "difficulty": "advanced",
+      "difficultyLabel": "上級",
+      "category": "movies",
+      "categoryLabel": "劇場版",
+      "knowledge": "story",
+      "knowledgeLabel": "作中",
+      "question": "劇場版第20作『純黒の悪夢』の終盤で、キュラソーが観覧車を止めるために使ったものは？",
+      "choices": [
+        "消防車",
+        "ヘリコプター",
+        "工事現場の重機",
+        "組織のオスプレイ"
+      ],
+      "answerIndex": 2,
+      "answer": "工事現場の重機",
+      "explanation": "付近の工事現場から重機を操縦して観覧車に特攻し、停止させた。",
+      "confidence": "B",
+      "sources": [
+        "https://ja.wikipedia.org/wiki/黒ずくめの組織",
+        "https://www.animatetimes.com/news/details.php?id=1780477182"
       ]
     }
   ]
