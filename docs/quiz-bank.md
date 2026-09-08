@@ -1,4 +1,4 @@
-# 名探偵コナン クイズ問題集（全663問）
+# 名探偵コナン クイズ問題集（全701問）
 
 > ⚠️ **このファイルは自動生成です。直接編集しないでください。**
 > 正本は [`questions.json`](../data/questions.json) です。編集後は
@@ -7,7 +7,7 @@
 掲載しているのはすべて **2系統以上の独立した情報源で照合済み**（信頼度 A / B）の問題です。
 情報源が食い違ったものは [`UNVERIFIED.md`](./UNVERIFIED.md) に隔離してあり、ここには含まれません。
 
-- **総数：663問**（初級 81問／中級 212問／上級 370問）
+- **総数：701問**（初級 86問／中級 226問／上級 389問）
 - 最終更新：2026-09-08
 
 ---
@@ -19,7 +19,7 @@
 
 ---
 
-## 【初級】81問
+## 【初級】86問
 
 ### conan-001　『名探偵コナン』の作者は誰？
 
@@ -1560,7 +1560,102 @@ APTX4869（アポトキシン4869）。黒ずくめの組織が開発した毒�
 
 </details>
 
-## 【中級】212問
+### conan-664　少年探偵団の5人が所属しているクラスは？
+
+`登場人物`　信頼度 **A**
+
+1. 帝丹小学校2年A組
+2. 杯戸小学校1年B組
+3. 米花小学校1年A組
+4. 帝丹小学校1年B組
+
+<details><summary>答えを見る</summary>
+
+**正解：4. 帝丹小学校1年B組**
+
+コナン・灰原・歩美・元太・光彦の5人とも帝丹小学校1年B組の児童。
+
+[出典1](https://www.ytv.co.jp/conan/character/)　[出典2](https://ja.wikipedia.org/wiki/少年探偵団_(名探偵コナン))
+
+</details>
+
+### conan-667　少年探偵団の「団長」を自称しているのは？
+
+`登場人物`　信頼度 **A**
+
+1. 円谷光彦
+2. 吉田歩美
+3. 小嶋元太
+4. 江戸川コナン
+
+<details><summary>答えを見る</summary>
+
+**正解：3. 小嶋元太**
+
+小嶋元太。ただし他のメンバーは承認しておらず、実質的に指揮を執るのはコナン。
+
+[出典1](https://www.ytv.co.jp/conan/character/)　[出典2](https://ja.wikipedia.org/wiki/少年探偵団_(名探偵コナン))
+
+</details>
+
+### conan-671　小嶋元太の大好物は？
+
+`登場人物`　信頼度 **A**
+
+1. カツ丼
+2. 天ぷらそば
+3. うな重
+4. 焼きそばパン
+
+<details><summary>答えを見る</summary>
+
+**正解：3. うな重**
+
+うな重に目がない。食欲が旺盛で、なんでもよく食べる。
+
+[出典1](https://www.ytv.co.jp/conan/character/)　[出典2](https://ja.wikipedia.org/wiki/少年探偵団_(名探偵コナン))
+
+</details>
+
+### conan-676　吉田歩美が恋心を寄せている相手は？
+
+`登場人物`　信頼度 **A**
+
+1. 小嶋元太
+2. 円谷光彦
+3. 円谷朝美
+4. 江戸川コナン
+
+<details><summary>答えを見る</summary>
+
+**正解：4. 江戸川コナン**
+
+江戸川コナン。小学生とは思えない積極的な言動でアピールしている。
+
+[出典1](https://www.ytv.co.jp/conan/character/)　[出典2](https://ja.wikipedia.org/wiki/少年探偵団_(名探偵コナン))
+
+</details>
+
+### conan-683　工藤新一が黒ずくめの組織に毒薬を飲まされた遊園地の名前は？
+
+`登場人物`　信頼度 **B**
+
+1. ミステリーランド
+2. 東都ドリームランド
+3. トロピカルランド
+4. 米花シーパラダイス
+
+<details><summary>答えを見る</summary>
+
+**正解：3. トロピカルランド**
+
+トロピカルランド。毛利蘭とのデート中に組織の裏取引を目撃してしまった。
+
+[出典1](https://ja.wikipedia.org/wiki/江戸川コナン)　[出典2](https://www.animatetimes.com/news/details.php?id=1767955097)
+
+</details>
+
+## 【中級】226問
 
 ### conan-041　原作漫画の第1話のタイトルは？
 
@@ -5590,7 +5685,273 @@ CIA諜報員の本堂瑛海（偽名・水無怜奈）が実姉。
 
 </details>
 
-## 【上級】370問
+### conan-665　少年探偵団の「顧問」を自称している人物は？
+
+`登場人物`　信頼度 **A**
+
+1. 小林澄子
+2. 若狭留美
+3. 毛利蘭
+4. 阿笠博士
+
+<details><summary>答えを見る</summary>
+
+**正解：1. 小林澄子**
+
+1年B組担任の小林澄子先生。江戸川乱歩の大ファンで、探偵団の活動に興味津々。
+
+[出典1](https://www.ytv.co.jp/conan/character/)　[出典2](https://ja.wikipedia.org/wiki/少年探偵団_(名探偵コナン))
+
+</details>
+
+### conan-666　コナンと灰原哀を少年探偵団に誘った張本人は？
+
+`登場人物`　信頼度 **A**
+
+1. 小嶋元太
+2. 吉田歩美
+3. 円谷光彦
+4. 阿笠博士
+
+<details><summary>答えを見る</summary>
+
+**正解：2. 吉田歩美**
+
+吉田歩美。灰原が加入するまでは探偵団の紅一点だった。
+
+[出典1](https://www.ytv.co.jp/conan/character/)　[出典2](https://ja.wikipedia.org/wiki/少年探偵団_(名探偵コナン))
+
+</details>
+
+### conan-673　円谷光彦の両親の職業は？
+
+`登場人物`　信頼度 **A**
+
+1. 教師
+2. 医師
+3. 警察官
+4. 新聞記者
+
+<details><summary>答えを見る</summary>
+
+**正解：1. 教師**
+
+両親とも教師。そのため言葉遣いや礼儀作法に厳しく、光彦は同級生にも敬語を使う。
+
+[出典1](https://www.ytv.co.jp/conan/character/)　[出典2](https://ja.wikipedia.org/wiki/少年探偵団_(名探偵コナン))
+
+</details>
+
+### conan-675　円谷光彦の顔の特徴は？
+
+`登場人物`　信頼度 **A**
+
+1. えくぼ
+2. 目の下の泣きぼくろ
+3. そばかす
+4. 右頬の傷跡
+
+<details><summary>答えを見る</summary>
+
+**正解：3. そばかす**
+
+そばかすと真ん中分けの前髪が特徴。
+
+[出典1](https://www.ytv.co.jp/conan/character/)　[出典2](https://ja.wikipedia.org/wiki/少年探偵団_(名探偵コナン))
+
+</details>
+
+### conan-677　小嶋元太と円谷光彦がそろって好意を寄せている相手は？
+
+`登場人物`　信頼度 **A**
+
+1. 吉田歩美
+2. 灰原哀
+3. 毛利蘭
+4. 小林澄子
+
+<details><summary>答えを見る</summary>
+
+**正解：1. 吉田歩美**
+
+連載初期から2人とも吉田歩美に好意を寄せている。
+
+[出典1](https://www.ytv.co.jp/conan/character/)　[出典2](https://ja.wikipedia.org/wiki/少年探偵団_(名探偵コナン))
+
+</details>
+
+### conan-678　コナンと灰原哀を除くと、少年探偵団で最も知識が豊富なのは？
+
+`登場人物`　信頼度 **A**
+
+1. 吉田歩美
+2. 円谷光彦
+3. 小嶋元太
+4. 阿笠博士
+
+<details><summary>答えを見る</summary>
+
+**正解：2. 円谷光彦**
+
+円谷光彦。小学1年生とは思えない豊富な知識を持ち、解説役を担うことも多い。
+
+[出典1](https://www.ytv.co.jp/conan/character/)　[出典2](https://ja.wikipedia.org/wiki/少年探偵団_(名探偵コナン))
+
+</details>
+
+### conan-679　少年探偵団で一番の力持ちは？
+
+`登場人物`　信頼度 **A**
+
+1. 円谷光彦
+2. 吉田歩美
+3. 小嶋元太
+4. 灰原哀
+
+<details><summary>答えを見る</summary>
+
+**正解：3. 小嶋元太**
+
+小嶋元太。死のうとした灰原を片手で持ち上げて連れ戻したこともある。
+
+[出典1](https://www.ytv.co.jp/conan/character/)　[出典2](https://ja.wikipedia.org/wiki/少年探偵団_(名探偵コナン))
+
+</details>
+
+### conan-680　吉田歩美が頭に着けているものは？
+
+`登場人物`　信頼度 **A**
+
+1. リボン
+2. ニット帽
+3. ヘアバンド
+4. カチューシャ
+
+<details><summary>答えを見る</summary>
+
+**正解：4. カチューシャ**
+
+おかっぱ（ボブ）の髪にカチューシャを着けているのが特徴。
+
+[出典1](https://www.ytv.co.jp/conan/character/)　[出典2](https://ja.wikipedia.org/wiki/少年探偵団_(名探偵コナン))
+
+</details>
+
+### conan-682　少年探偵団がキャンプなどで遠出するとき、主に引率役を務めるのは？
+
+`登場人物`　信頼度 **A**
+
+1. 毛利小五郎
+2. 阿笠博士
+3. 小林澄子
+4. 妃英理
+
+<details><summary>答えを見る</summary>
+
+**正解：2. 阿笠博士**
+
+阿笠博士。博士が同行できないときは毛利蘭や小五郎が引率することもある。
+
+[出典1](https://www.ytv.co.jp/conan/character/)　[出典2](https://ja.wikipedia.org/wiki/少年探偵団_(名探偵コナン))
+
+</details>
+
+### conan-684　工藤新一にAPTX4869を飲ませた黒ずくめの組織のメンバーは？
+
+`黒ずくめの組織`　信頼度 **B**
+
+1. ピスコ
+2. テキーラ
+3. コルン
+4. ジン
+
+<details><summary>答えを見る</summary>
+
+**正解：4. ジン**
+
+ジン。相棒のウォッカとともに裏取引を行っていた。
+
+[出典1](https://ja.wikipedia.org/wiki/黒ずくめの組織)　[出典2](https://www.animatetimes.com/news/details.php?id=1767955097)
+
+</details>
+
+### conan-686　宮野明美が組織を抜ける条件として押しつけられた仕事は？
+
+`黒ずくめの組織`　信頼度 **A**
+
+1. 政治家の暗殺
+2. 10億円強奪
+3. 研究データの奪取
+4. 銀行の乗っ取り
+
+<details><summary>答えを見る</summary>
+
+**正解：2. 10億円強奪**
+
+10億円強奪。実行したものの、直後にジンに撃たれて命を落とした。
+
+[出典1](https://www.ytv.co.jp/conan/character/)　[出典2](https://www.animatetimes.com/news/details.php?id=1787114757)
+
+</details>
+
+### conan-687　宮野明美を撃ったのは？
+
+`黒ずくめの組織`　信頼度 **A**
+
+1. ウォッカ
+2. ベルモット
+3. ジン
+4. ピスコ
+
+<details><summary>答えを見る</summary>
+
+**正解：3. ジン**
+
+ジン。灰原哀（宮野志保）が組織を抜ける決意をした直接のきっかけになった。
+
+[出典1](https://www.ytv.co.jp/conan/character/)　[出典2](https://www.animatetimes.com/news/details.php?id=1787114757)
+
+</details>
+
+### conan-698　灰原哀がテレビアニメに初登場したのは第何話？
+
+`テレビアニメ`　信頼度 **B**
+
+1. 第76話
+2. 第129話
+3. 第219話
+4. 第345話
+
+<details><summary>答えを見る</summary>
+
+**正解：2. 第129話**
+
+第129話「黒の組織から来た女 大学教授殺人事件」。
+
+[出典1](https://ja.wikipedia.org/wiki/江戸川コナン)　[出典2](https://www.animatetimes.com/news/details.php?id=1782188336)
+
+</details>
+
+### conan-701　灰原哀が初めて登場した劇場版は？
+
+`劇場版`　信頼度 **B**
+
+1. 第3作『世紀末の魔術師』
+2. 第1作『時計じかけの摩天楼』
+3. 第2作『14番目の標的』
+4. 第4作『瞳の中の暗殺者』
+
+<details><summary>答えを見る</summary>
+
+**正解：1. 第3作『世紀末の魔術師』**
+
+アニメ初登場の後、劇場版第3作『世紀末の魔術師』から全作品に登場している。
+
+[出典1](https://ja.wikipedia.org/wiki/灰原哀)　[出典2](https://www.animatetimes.com/news/details.php?id=1782188336)
+
+</details>
+
+## 【上級】389問
 
 ### conan-081　黒ずくめの組織のボスの名前は？
 
@@ -12619,6 +12980,367 @@ DAIGOが第13作『漆黒の追跡者』にゲスト声優として出演した�
 付近の工事現場から重機を操縦して観覧車に特攻し、停止させた。
 
 [出典1](https://ja.wikipedia.org/wiki/黒ずくめの組織)　[出典2](https://www.animatetimes.com/news/details.php?id=1780477182)
+
+</details>
+
+### conan-668　吉田歩美の体重は？
+
+`登場人物`　信頼度 **A**
+
+1. 10キログラム
+2. 25キログラム
+3. 30キログラム
+4. 15キログラム
+
+<details><summary>答えを見る</summary>
+
+**正解：4. 15キログラム**
+
+15キログラム。少年探偵団の3人はいずれも体重が明示されている。
+
+[出典1](https://www.ytv.co.jp/conan/character/)　[出典2](https://ja.wikipedia.org/wiki/少年探偵団_(名探偵コナン))
+
+</details>
+
+### conan-669　小嶋元太の体重は？
+
+`登場人物`　信頼度 **A**
+
+1. 40キログラム
+2. 20キログラム
+3. 25キログラム
+4. 33キログラム
+
+<details><summary>答えを見る</summary>
+
+**正解：1. 40キログラム**
+
+40キログラム。小学1年生としては規格外の体格で、探偵団随一の力持ち。
+
+[出典1](https://www.ytv.co.jp/conan/character/)　[出典2](https://ja.wikipedia.org/wiki/少年探偵団_(名探偵コナン))
+
+</details>
+
+### conan-670　円谷光彦の体重は？
+
+`登場人物`　信頼度 **A**
+
+1. 12キログラム
+2. 20キログラム
+3. 28キログラム
+4. 35キログラム
+
+<details><summary>答えを見る</summary>
+
+**正解：2. 20キログラム**
+
+20キログラム。
+
+[出典1](https://www.ytv.co.jp/conan/character/)　[出典2](https://ja.wikipedia.org/wiki/少年探偵団_(名探偵コナン))
+
+</details>
+
+### conan-672　小嶋元太の頭にある特徴は？
+
+`登場人物`　信頼度 **A**
+
+1. 寝ぐせ
+2. 大きなほくろ
+3. 三日月形の傷
+4. 10円ハゲ
+
+<details><summary>答えを見る</summary>
+
+**正解：4. 10円ハゲ**
+
+坊主頭の左側頭部に10円ハゲがある。頭の形はおにぎり（三角）状。
+
+[出典1](https://www.ytv.co.jp/conan/character/)　[出典2](https://ja.wikipedia.org/wiki/少年探偵団_(名探偵コナン))
+
+</details>
+
+### conan-674　円谷光彦の姉の名前は？
+
+`登場人物`　信頼度 **A**
+
+1. 円谷夏美
+2. 円谷朝美
+3. 円谷志乃
+4. 円谷茜
+
+<details><summary>答えを見る</summary>
+
+**正解：2. 円谷朝美**
+
+中学生の姉・円谷朝美。姉弟とも名前の由来は浅見光彦。
+
+[出典1](https://www.ytv.co.jp/conan/character/)　[出典2](https://ja.wikipedia.org/wiki/少年探偵団_(名探偵コナン))
+
+</details>
+
+### conan-681　円谷光彦の話し方の特徴は？
+
+`登場人物`　信頼度 **A**
+
+1. 誰に対しても敬語を使う
+2. 語尾に「なのだ」を付ける
+3. 関西弁で話す
+4. 一人称が「オイラ」
+
+<details><summary>答えを見る</summary>
+
+**正解：1. 誰に対しても敬語を使う**
+
+両親が教師で礼儀に厳しいため、同級生に対しても常に敬語を使う。
+
+[出典1](https://www.ytv.co.jp/conan/character/)　[出典2](https://ja.wikipedia.org/wiki/少年探偵団_(名探偵コナン))
+
+</details>
+
+### conan-685　『名探偵コナン エピソード“ONE” 小さくなった名探偵』は何を記念して制作された？
+
+`テレビアニメ`　信頼度 **B**
+
+1. テレビアニメ放送20周年
+2. 原作連載20周年
+3. 劇場版20作目
+4. テレビアニメ放送30周年
+
+<details><summary>答えを見る</summary>
+
+**正解：1. テレビアニメ放送20周年**
+
+テレビアニメ放送20周年記念。2016年12月に『金曜ロードSHOW!』枠で放送され、原作者・青山剛昌が監修した。
+
+[出典1](https://ja.wikipedia.org/wiki/名探偵コナン_(アニメ))　[出典2](https://www.animatetimes.com/news/details.php?id=1767955097)
+
+</details>
+
+### conan-688　赤井秀一が自らの死を偽装した場所は？
+
+`黒ずくめの組織`　信頼度 **A**
+
+1. 米花町の大黒ビル
+2. 東都水族館
+3. 杯戸中央病院
+4. 来葉峠
+
+<details><summary>答えを見る</summary>
+
+**正解：4. 来葉峠**
+
+来葉峠。愛車のシボレーC-1500ごと爆破し、組織に死亡と誤認させた。
+
+[出典1](https://www.ytv.co.jp/conan/character/)　[出典2](https://ja.wikipedia.org/wiki/FBI_(名探偵コナン))
+
+</details>
+
+### conan-689　来葉峠で赤井秀一を撃った（ように見せかけた）のは？
+
+`黒ずくめの組織`　信頼度 **A**
+
+1. キール
+2. ベルモット
+3. ジン
+4. バーボン
+
+<details><summary>答えを見る</summary>
+
+**正解：1. キール**
+
+キール（水無怜奈）。この工作で組織内のスパイ疑惑を払拭した。
+
+[出典1](https://www.ytv.co.jp/conan/character/)　[出典2](https://ja.wikipedia.org/wiki/FBI_(名探偵コナン))
+
+</details>
+
+### conan-690　赤井秀一の正体が組織に露見する原因を作ったFBI捜査官は？
+
+`登場人物`　信頼度 **A**
+
+1. ジョディ・スターリング
+2. アンドレ・キャメル
+3. ジェイムズ・ブラック
+4. イーサン・本堂
+
+<details><summary>答えを見る</summary>
+
+**正解：2. アンドレ・キャメル**
+
+アンドレ・キャメル。自身のミスを気に病み、赤井に報いるために来日した。
+
+[出典1](https://www.ytv.co.jp/conan/character/)　[出典2](https://ja.wikipedia.org/wiki/FBI_(名探偵コナン))
+
+</details>
+
+### conan-691　松田陣平が捜査一課に来る前に所属していた部署は？
+
+`登場人物`　信頼度 **A**
+
+1. 公安部外事課
+2. 交通部第三交通機動隊
+3. 警備部機動隊の爆発物処理班
+4. 刑事部鑑識課
+
+<details><summary>答えを見る</summary>
+
+**正解：3. 警備部機動隊の爆発物処理班**
+
+警備部機動隊の爆発物処理班。親友の萩原研二とともに所属していた。
+
+[出典1](https://www.ytv.co.jp/conan/character/)　[出典2](https://ja.wikipedia.org/wiki/名探偵コナンの登場人物)
+
+</details>
+
+### conan-692　萩原研二が殉職した原因は？
+
+`登場人物`　信頼度 **A**
+
+1. 銃で撃たれた
+2. 車にはねられた
+3. 建物の倒壊に巻き込まれた
+4. 爆弾の解体が間に合わなかった
+
+<details><summary>答えを見る</summary>
+
+**正解：4. 爆弾の解体が間に合わなかった**
+
+松田陣平とともに別々の場所の爆弾処理を担当し、解体が間に合わず爆発に巻き込まれた。
+
+[出典1](https://www.ytv.co.jp/conan/character/)　[出典2](https://ja.wikipedia.org/wiki/名探偵コナンの登場人物)
+
+</details>
+
+### conan-693　伊達航の死因は？
+
+`登場人物`　信頼度 **A**
+
+1. 居眠り運転の車にはねられた
+2. 爆発に巻き込まれた
+3. 銃で撃たれた
+4. 高所からの転落
+
+<details><summary>答えを見る</summary>
+
+**正解：1. 居眠り運転の車にはねられた**
+
+詐欺師を逮捕した直後、高木刑事の目の前で居眠り運転の車にはねられて死亡した。
+
+[出典1](https://www.ytv.co.jp/conan/character/)　[出典2](https://ja.wikipedia.org/wiki/名探偵コナンの登場人物)
+
+</details>
+
+### conan-694　高木渉が普段使っている黒い手帳は、誰の遺品？
+
+`登場人物`　信頼度 **A**
+
+1. 松田陣平
+2. 伊達航
+3. 萩原研二
+4. 諸伏景光
+
+<details><summary>答えを見る</summary>
+
+**正解：2. 伊達航**
+
+教育係だった伊達航の遺品。高木は伊達を深く尊敬している。
+
+[出典1](https://www.ytv.co.jp/conan/character/)　[出典2](https://ja.wikipedia.org/wiki/名探偵コナンの登場人物)
+
+</details>
+
+### conan-695　諸伏景光（スコッチ）が自殺に使った拳銃は、もともと誰のものだった？
+
+`黒ずくめの組織`　信頼度 **A**
+
+1. 安室透
+2. ジン
+3. 赤井秀一
+4. 諸伏景光自身
+
+<details><summary>答えを見る</summary>
+
+**正解：3. 赤井秀一**
+
+赤井秀一の拳銃。公安の情報を守るため、赤井から奪った銃で自ら命を絶った。
+
+[出典1](https://www.ytv.co.jp/conan/character/)　[出典2](https://ja.wikipedia.org/wiki/名探偵コナンの登場人物)
+
+</details>
+
+### conan-696　諸伏景光が中学生時代の世良真純に弾き方を教えた楽器は？
+
+`登場人物`　信頼度 **A**
+
+1. ギター
+2. ドラム
+3. ピアノ
+4. ベース
+
+<details><summary>答えを見る</summary>
+
+**正解：4. ベース**
+
+ベース。ライ（赤井秀一）と行動していた時期の出来事。
+
+[出典1](https://www.ytv.co.jp/conan/character/)　[出典2](https://ja.wikipedia.org/wiki/名探偵コナンの登場人物)
+
+</details>
+
+### conan-697　ピスコを射殺したのは？
+
+`黒ずくめの組織`　信頼度 **B**
+
+1. ジン
+2. ウォッカ
+3. ベルモット
+4. キャンティ
+
+<details><summary>答えを見る</summary>
+
+**正解：1. ジン**
+
+失態を犯したピスコは、「あの方」直々の命令を受けたジンに射殺された。
+
+[出典1](https://ja.wikipedia.org/wiki/黒ずくめの組織)　[出典2](https://www.animatetimes.com/news/details.php?id=1717487335)
+
+</details>
+
+### conan-699　灰原哀が初登場した回のサブタイトルに含まれる言葉は？
+
+`テレビアニメ`　信頼度 **B**
+
+1. 黒の組織との接触
+2. 黒ずくめの追跡者
+3. 黒の組織から来た女
+4. 組織から来た転校生
+
+<details><summary>答えを見る</summary>
+
+**正解：3. 黒の組織から来た女**
+
+第129話「黒の組織から来た女 大学教授殺人事件」。
+
+[出典1](https://ja.wikipedia.org/wiki/江戸川コナン)　[出典2](https://www.animatetimes.com/news/details.php?id=1782188336)
+
+</details>
+
+### conan-700　灰原哀が原作漫画に初登場した単行本は第何巻？
+
+`作品の基本`　信頼度 **B**
+
+1. 10巻
+2. 24巻
+3. 31巻
+4. 18巻
+
+<details><summary>答えを見る</summary>
+
+**正解：4. 18巻**
+
+単行本18巻 FILE.6「転校生は…」。
+
+[出典1](https://ja.wikipedia.org/wiki/江戸川コナン)　[出典2](https://www.animatetimes.com/news/details.php?id=1782188336)
 
 </details>
 
