@@ -1,21 +1,21 @@
 {
   "meta": {
     "title": "名探偵コナン クイズ問題データ",
-    "version": "3.4.0",
+    "version": "3.4.1",
     "updated": "2026-09-08",
-    "total": 701,
+    "total": 710,
     "countsByDifficulty": {
       "beginner": 86,
-      "intermediate": 226,
-      "advanced": 389
+      "intermediate": 229,
+      "advanced": 395
     },
     "countsByCategory": {
-      "basics": 12,
+      "basics": 13,
       "characters": 259,
-      "anime": 11,
+      "anime": 13,
       "movies": 199,
       "music": 158,
-      "organization": 39,
+      "organization": 45,
       "gadgets": 16,
       "trivia": 7
     },
@@ -74,12 +74,12 @@
       "情報源が食い違った事項は本データに含めない。詳細は docs/conan/UNVERIFIED.md を参照。"
     ],
     "countsByKnowledge": {
-      "story": 312,
-      "production": 389
+      "story": 318,
+      "production": 392
     },
     "countsByConfidence": {
-      "A": 150,
-      "B": 546,
+      "A": 152,
+      "B": 553,
       "C": 5
     }
   },
@@ -16865,6 +16865,222 @@
       "confidence": "B",
       "sources": [
         "https://ja.wikipedia.org/wiki/灰原哀",
+        "https://www.animatetimes.com/news/details.php?id=1782188336"
+      ]
+    },
+    {
+      "id": "conan-702",
+      "difficulty": "intermediate",
+      "difficultyLabel": "中級",
+      "category": "anime",
+      "categoryLabel": "テレビアニメ",
+      "knowledge": "production",
+      "knowledgeLabel": "制作",
+      "question": "「漆黒の特急（ミステリートレイン）」が放送されたテレビアニメの話数は？",
+      "choices": [
+        "第501話〜第504話",
+        "第701話〜第704話",
+        "第601話〜第604話",
+        "第801話〜第804話"
+      ],
+      "answerIndex": 1,
+      "answer": "第701話〜第704話",
+      "explanation": "第701話〜第704話「漆黒の特急（ミステリートレイン）」。灰原哀にとっての重要エピソードのひとつ。",
+      "confidence": "B",
+      "sources": [
+        "https://ja.wikipedia.org/wiki/名探偵コナンの登場人物",
+        "https://www.animatetimes.com/news/details.php?id=1779664645"
+      ]
+    },
+    {
+      "id": "conan-703",
+      "difficulty": "advanced",
+      "difficultyLabel": "上級",
+      "category": "basics",
+      "categoryLabel": "作品の基本",
+      "knowledge": "production",
+      "knowledgeLabel": "制作",
+      "question": "「ミステリートレイン」のエピソードが収録されている原作の単行本は第何巻？",
+      "choices": [
+        "58巻",
+        "68巻",
+        "78巻",
+        "88巻"
+      ],
+      "answerIndex": 2,
+      "answer": "78巻",
+      "explanation": "単行本78巻 File.1〜File.7「ミステリートレイン」。アニメでは第701話〜第704話「漆黒の特急」。",
+      "confidence": "B",
+      "sources": [
+        "https://ja.wikipedia.org/wiki/名探偵コナンの登場人物",
+        "https://www.animatetimes.com/news/details.php?id=1779664645"
+      ]
+    },
+    {
+      "id": "conan-704",
+      "difficulty": "intermediate",
+      "difficultyLabel": "中級",
+      "category": "organization",
+      "categoryLabel": "黒ずくめの組織",
+      "knowledge": "story",
+      "knowledgeLabel": "作中",
+      "question": "「漆黒の特急（ミステリートレイン）」でベルモットが命を狙ったのは？",
+      "choices": [
+        "毛利蘭",
+        "安室透",
+        "世良真純",
+        "灰原哀（シェリー）"
+      ],
+      "answerIndex": 3,
+      "answer": "灰原哀（シェリー）",
+      "explanation": "組織を裏切ったシェリー（灰原哀）の抹殺を狙ったが、コナンたちの作戦によって暗殺は失敗した。",
+      "confidence": "B",
+      "sources": [
+        "https://ja.wikipedia.org/wiki/黒ずくめの組織",
+        "https://www.animatetimes.com/news/details.php?id=1779664645"
+      ]
+    },
+    {
+      "id": "conan-705",
+      "difficulty": "advanced",
+      "difficultyLabel": "上級",
+      "category": "organization",
+      "categoryLabel": "黒ずくめの組織",
+      "knowledge": "story",
+      "knowledgeLabel": "作中",
+      "question": "「漆黒の特急（ミステリートレイン）」でのベルモットによる暗殺計画の結末は？",
+      "choices": [
+        "失敗したが、ベルモットは成功したと思い込んだ",
+        "成功し、標的は死亡した",
+        "途中でジンに中止させられた",
+        "標的が自ら組織に投降した"
+      ],
+      "answerIndex": 0,
+      "answer": "失敗したが、ベルモットは成功したと思い込んだ",
+      "explanation": "コナンが多くの協力者を得て仕組んだ作戦により暗殺は失敗したが、ベルモットは「シェリーを抹殺した」と誤認した。",
+      "confidence": "B",
+      "sources": [
+        "https://ja.wikipedia.org/wiki/黒ずくめの組織",
+        "https://www.animatetimes.com/news/details.php?id=1779664645"
+      ]
+    },
+    {
+      "id": "conan-706",
+      "difficulty": "intermediate",
+      "difficultyLabel": "中級",
+      "category": "organization",
+      "categoryLabel": "黒ずくめの組織",
+      "knowledge": "story",
+      "knowledgeLabel": "作中",
+      "question": "ベルモットの異名として知られるのは？",
+      "choices": [
+        "銀の弾丸",
+        "千の顔を持つ魔女",
+        "地獄の天使",
+        "月下の奇術師"
+      ],
+      "answerIndex": 1,
+      "answer": "千の顔を持つ魔女",
+      "explanation": "変装の名手であることから「千の顔を持つ魔女」と呼ばれる。",
+      "confidence": "A",
+      "sources": [
+        "https://www.ytv.co.jp/conan/character/",
+        "https://ja.wikipedia.org/wiki/黒ずくめの組織"
+      ]
+    },
+    {
+      "id": "conan-707",
+      "difficulty": "advanced",
+      "difficultyLabel": "上級",
+      "category": "organization",
+      "categoryLabel": "黒ずくめの組織",
+      "knowledge": "story",
+      "knowledgeLabel": "作中",
+      "question": "ベルモットが毛利蘭を呼ぶときの呼び名は？",
+      "choices": [
+        "プリンセス",
+        "リトルレディ",
+        "エンジェル",
+        "クールガイ"
+      ],
+      "answerIndex": 2,
+      "answer": "エンジェル",
+      "explanation": "蘭を \"Angel\"（エンジェル）と呼ぶ。この呼び方から変装を見破られたこともある。",
+      "confidence": "B",
+      "sources": [
+        "https://ja.wikipedia.org/wiki/黒ずくめの組織",
+        "https://www.animatetimes.com/news/details.php?id=1779664645"
+      ]
+    },
+    {
+      "id": "conan-708",
+      "difficulty": "advanced",
+      "difficultyLabel": "上級",
+      "category": "organization",
+      "categoryLabel": "黒ずくめの組織",
+      "knowledge": "story",
+      "knowledgeLabel": "作中",
+      "question": "ベルモットが江戸川コナン（工藤新一）を呼ぶときの呼び名は？",
+      "choices": [
+        "エンジェル",
+        "ボウヤ",
+        "シルバーブレット",
+        "クールガイ"
+      ],
+      "answerIndex": 3,
+      "answer": "クールガイ",
+      "explanation": "新一（コナン）を \"Cool Guy\"（クールガイ）と呼ぶ。ジョディはこの呼び方に違和感を持った。",
+      "confidence": "A",
+      "sources": [
+        "https://www.ytv.co.jp/conan/character/",
+        "https://ja.wikipedia.org/wiki/黒ずくめの組織"
+      ]
+    },
+    {
+      "id": "conan-709",
+      "difficulty": "advanced",
+      "difficultyLabel": "上級",
+      "category": "organization",
+      "categoryLabel": "黒ずくめの組織",
+      "knowledge": "story",
+      "knowledgeLabel": "作中",
+      "question": "ベルモットが「シャロン・ヴィンヤードの娘」として活動している名前は？",
+      "choices": [
+        "クリス・ヴィンヤード",
+        "ジョディ・サンテミリオン",
+        "レイチェル・浅香",
+        "メアリー・世良"
+      ],
+      "answerIndex": 0,
+      "answer": "クリス・ヴィンヤード",
+      "explanation": "1年前にシャロンの死を偽装し、以降は二世女優クリス・ヴィンヤードとして活動している。",
+      "confidence": "B",
+      "sources": [
+        "https://ja.wikipedia.org/wiki/黒ずくめの組織",
+        "https://www.animatetimes.com/news/details.php?id=1779664645"
+      ]
+    },
+    {
+      "id": "conan-710",
+      "difficulty": "advanced",
+      "difficultyLabel": "上級",
+      "category": "anime",
+      "categoryLabel": "テレビアニメ",
+      "knowledge": "production",
+      "knowledgeLabel": "制作",
+      "question": "灰原哀にとっての重要エピソード「漆黒の特急」の、もうひとつの呼び名は？",
+      "choices": [
+        "ブラックエクスプレス",
+        "ミステリートレイン",
+        "ダークトレイン",
+        "シャドウレイル"
+      ],
+      "answerIndex": 1,
+      "answer": "ミステリートレイン",
+      "explanation": "アニメの副題は「漆黒の特急（ミステリートレイン）」。原作でのタイトルは「ミステリートレイン」。",
+      "confidence": "B",
+      "sources": [
+        "https://ja.wikipedia.org/wiki/名探偵コナンの登場人物",
         "https://www.animatetimes.com/news/details.php?id=1782188336"
       ]
     }
