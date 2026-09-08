@@ -1,17 +1,17 @@
 {
   "meta": {
     "title": "名探偵コナン クイズ問題データ",
-    "version": "3.3.1",
+    "version": "3.3.2",
     "updated": "2026-09-08",
-    "total": 653,
+    "total": 659,
     "countsByDifficulty": {
       "beginner": 81,
-      "intermediate": 211,
-      "advanced": 361
+      "intermediate": 212,
+      "advanced": 366
     },
     "countsByCategory": {
       "basics": 11,
-      "characters": 225,
+      "characters": 231,
       "anime": 8,
       "movies": 196,
       "music": 158,
@@ -74,11 +74,11 @@
       "情報源が食い違った事項は本データに含めない。詳細は docs/conan/UNVERIFIED.md を参照。"
     ],
     "countsByKnowledge": {
-      "story": 272,
-      "production": 381
+      "story": 275,
+      "production": 384
     },
     "countsByConfidence": {
-      "A": 113,
+      "A": 119,
       "B": 535,
       "C": 5
     }
@@ -15714,6 +15714,150 @@
       "sources": [
         "https://ja.wikipedia.org/wiki/名探偵コナン_(アニメ)",
         "https://animeanime.jp/article/2026/05/15/98949.html"
+      ]
+    },
+    {
+      "id": "conan-654",
+      "difficulty": "advanced",
+      "difficultyLabel": "上級",
+      "category": "characters",
+      "categoryLabel": "登場人物",
+      "knowledge": "production",
+      "knowledgeLabel": "制作",
+      "question": "中森銀三の声を第983話以降担当している声優は？",
+      "choices": [
+        "石塚運昇",
+        "石井康嗣",
+        "茶風林",
+        "若本規夫"
+      ],
+      "answerIndex": 1,
+      "answer": "石井康嗣",
+      "explanation": "石井康嗣。第76話から第888話までは石塚運昇が担当していた。",
+      "confidence": "A",
+      "sources": [
+        "https://www.ytv.co.jp/conan/character/",
+        "https://ja.wikipedia.org/wiki/まじっく快斗"
+      ]
+    },
+    {
+      "id": "conan-655",
+      "difficulty": "advanced",
+      "difficultyLabel": "上級",
+      "category": "characters",
+      "categoryLabel": "登場人物",
+      "knowledge": "story",
+      "knowledgeLabel": "作中",
+      "question": "怪盗キッドを追い続けている中森銀三の年齢は？",
+      "choices": [
+        "35歳",
+        "48歳",
+        "41歳",
+        "54歳"
+      ],
+      "answerIndex": 2,
+      "answer": "41歳",
+      "explanation": "41歳。18年前から先代を含めた怪盗キッドを追い続けている。",
+      "confidence": "A",
+      "sources": [
+        "https://www.ytv.co.jp/conan/character/",
+        "https://ja.wikipedia.org/wiki/まじっく快斗"
+      ]
+    },
+    {
+      "id": "conan-656",
+      "difficulty": "intermediate",
+      "difficultyLabel": "中級",
+      "category": "characters",
+      "categoryLabel": "登場人物",
+      "knowledge": "story",
+      "knowledgeLabel": "作中",
+      "question": "中森銀三警部の娘は？",
+      "choices": [
+        "鈴木綾子",
+        "遠山和葉",
+        "澁谷夏子",
+        "中森青子"
+      ],
+      "answerIndex": 3,
+      "answer": "中森青子",
+      "explanation": "中森青子。怪盗キッドの正体・黒羽快斗の幼馴染にあたる。",
+      "confidence": "A",
+      "sources": [
+        "https://www.ytv.co.jp/conan/character/",
+        "https://ja.wikipedia.org/wiki/まじっく快斗"
+      ]
+    },
+    {
+      "id": "conan-657",
+      "difficulty": "advanced",
+      "difficultyLabel": "上級",
+      "category": "characters",
+      "categoryLabel": "登場人物",
+      "knowledge": "production",
+      "knowledgeLabel": "制作",
+      "question": "鑑識課の「トメさん」の声を第48話から第654話まで担当した声優は？",
+      "choices": [
+        "中嶋聡彦",
+        "塩屋浩三",
+        "布目貞雄",
+        "岸野幸正"
+      ],
+      "answerIndex": 0,
+      "answer": "中嶋聡彦",
+      "explanation": "中嶋聡彦。",
+      "confidence": "A",
+      "sources": [
+        "https://www.ytv.co.jp/conan/character/",
+        "https://ja.wikipedia.org/wiki/名探偵コナンの登場人物"
+      ]
+    },
+    {
+      "id": "conan-658",
+      "difficulty": "advanced",
+      "difficultyLabel": "上級",
+      "category": "characters",
+      "categoryLabel": "登場人物",
+      "knowledge": "story",
+      "knowledgeLabel": "作中",
+      "question": "「トメさん」の愛称で呼ばれている人物の職務は？",
+      "choices": [
+        "交通課の白バイ隊員",
+        "刑事部鑑識課の鑑識官",
+        "捜査三課の警部",
+        "警視庁の検視官"
+      ],
+      "answerIndex": 1,
+      "answer": "刑事部鑑識課の鑑識官",
+      "explanation": "刑事部鑑識課の鑑識官。本名も年齢も明かされていない。",
+      "confidence": "A",
+      "sources": [
+        "https://www.ytv.co.jp/conan/character/",
+        "https://ja.wikipedia.org/wiki/名探偵コナンの登場人物"
+      ]
+    },
+    {
+      "id": "conan-659",
+      "difficulty": "advanced",
+      "difficultyLabel": "上級",
+      "category": "characters",
+      "categoryLabel": "登場人物",
+      "knowledge": "production",
+      "knowledgeLabel": "制作",
+      "question": "アニメから生まれたキャラクターのうち、今も原作漫画に登場していないのは？",
+      "choices": [
+        "千葉和伸",
+        "榎本梓",
+        "トメさん",
+        "白鳥任三郎"
+      ],
+      "answerIndex": 2,
+      "answer": "トメさん",
+      "explanation": "トメさん。千葉和伸・榎本梓・白鳥任三郎はいずれもアニメ発だが、後に原作にも登場している。",
+      "confidence": "A",
+      "sources": [
+        "https://www.ytv.co.jp/conan/character/",
+        "https://ja.wikipedia.org/wiki/名探偵コナンの登場人物"
       ]
     }
   ]
