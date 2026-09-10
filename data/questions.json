@@ -1,21 +1,21 @@
 {
   "meta": {
     "title": "名探偵コナン クイズ問題データ",
-    "version": "3.3.3",
+    "version": "3.4.1",
     "updated": "2026-09-08",
-    "total": 663,
+    "total": 710,
     "countsByDifficulty": {
-      "beginner": 81,
-      "intermediate": 212,
-      "advanced": 370
+      "beginner": 86,
+      "intermediate": 229,
+      "advanced": 395
     },
     "countsByCategory": {
-      "basics": 11,
-      "characters": 233,
-      "anime": 8,
-      "movies": 198,
+      "basics": 13,
+      "characters": 259,
+      "anime": 13,
+      "movies": 199,
       "music": 158,
-      "organization": 32,
+      "organization": 45,
       "gadgets": 16,
       "trivia": 7
     },
@@ -74,12 +74,12 @@
       "情報源が食い違った事項は本データに含めない。詳細は docs/conan/UNVERIFIED.md を参照。"
     ],
     "countsByKnowledge": {
-      "story": 279,
-      "production": 384
+      "story": 318,
+      "production": 392
     },
     "countsByConfidence": {
-      "A": 120,
-      "B": 538,
+      "A": 152,
+      "B": 553,
       "C": 5
     }
   },
@@ -15954,6 +15954,1134 @@
       "sources": [
         "https://ja.wikipedia.org/wiki/黒ずくめの組織",
         "https://www.animatetimes.com/news/details.php?id=1780477182"
+      ]
+    },
+    {
+      "id": "conan-664",
+      "difficulty": "beginner",
+      "difficultyLabel": "初級",
+      "category": "characters",
+      "categoryLabel": "登場人物",
+      "knowledge": "story",
+      "knowledgeLabel": "作中",
+      "question": "少年探偵団の5人が所属しているクラスは？",
+      "choices": [
+        "帝丹小学校2年A組",
+        "杯戸小学校1年B組",
+        "米花小学校1年A組",
+        "帝丹小学校1年B組"
+      ],
+      "answerIndex": 3,
+      "answer": "帝丹小学校1年B組",
+      "explanation": "コナン・灰原・歩美・元太・光彦の5人とも帝丹小学校1年B組の児童。",
+      "confidence": "A",
+      "sources": [
+        "https://www.ytv.co.jp/conan/character/",
+        "https://ja.wikipedia.org/wiki/少年探偵団_(名探偵コナン)"
+      ]
+    },
+    {
+      "id": "conan-665",
+      "difficulty": "intermediate",
+      "difficultyLabel": "中級",
+      "category": "characters",
+      "categoryLabel": "登場人物",
+      "knowledge": "story",
+      "knowledgeLabel": "作中",
+      "question": "少年探偵団の「顧問」を自称している人物は？",
+      "choices": [
+        "小林澄子",
+        "若狭留美",
+        "毛利蘭",
+        "阿笠博士"
+      ],
+      "answerIndex": 0,
+      "answer": "小林澄子",
+      "explanation": "1年B組担任の小林澄子先生。江戸川乱歩の大ファンで、探偵団の活動に興味津々。",
+      "confidence": "A",
+      "sources": [
+        "https://www.ytv.co.jp/conan/character/",
+        "https://ja.wikipedia.org/wiki/少年探偵団_(名探偵コナン)"
+      ]
+    },
+    {
+      "id": "conan-666",
+      "difficulty": "intermediate",
+      "difficultyLabel": "中級",
+      "category": "characters",
+      "categoryLabel": "登場人物",
+      "knowledge": "story",
+      "knowledgeLabel": "作中",
+      "question": "コナンと灰原哀を少年探偵団に誘った張本人は？",
+      "choices": [
+        "小嶋元太",
+        "吉田歩美",
+        "円谷光彦",
+        "阿笠博士"
+      ],
+      "answerIndex": 1,
+      "answer": "吉田歩美",
+      "explanation": "吉田歩美。灰原が加入するまでは探偵団の紅一点だった。",
+      "confidence": "A",
+      "sources": [
+        "https://www.ytv.co.jp/conan/character/",
+        "https://ja.wikipedia.org/wiki/少年探偵団_(名探偵コナン)"
+      ]
+    },
+    {
+      "id": "conan-667",
+      "difficulty": "beginner",
+      "difficultyLabel": "初級",
+      "category": "characters",
+      "categoryLabel": "登場人物",
+      "knowledge": "story",
+      "knowledgeLabel": "作中",
+      "question": "少年探偵団の「団長」を自称しているのは？",
+      "choices": [
+        "円谷光彦",
+        "吉田歩美",
+        "小嶋元太",
+        "江戸川コナン"
+      ],
+      "answerIndex": 2,
+      "answer": "小嶋元太",
+      "explanation": "小嶋元太。ただし他のメンバーは承認しておらず、実質的に指揮を執るのはコナン。",
+      "confidence": "A",
+      "sources": [
+        "https://www.ytv.co.jp/conan/character/",
+        "https://ja.wikipedia.org/wiki/少年探偵団_(名探偵コナン)"
+      ]
+    },
+    {
+      "id": "conan-668",
+      "difficulty": "advanced",
+      "difficultyLabel": "上級",
+      "category": "characters",
+      "categoryLabel": "登場人物",
+      "knowledge": "story",
+      "knowledgeLabel": "作中",
+      "question": "吉田歩美の体重は？",
+      "choices": [
+        "10キログラム",
+        "25キログラム",
+        "30キログラム",
+        "15キログラム"
+      ],
+      "answerIndex": 3,
+      "answer": "15キログラム",
+      "explanation": "15キログラム。少年探偵団の3人はいずれも体重が明示されている。",
+      "confidence": "A",
+      "sources": [
+        "https://www.ytv.co.jp/conan/character/",
+        "https://ja.wikipedia.org/wiki/少年探偵団_(名探偵コナン)"
+      ]
+    },
+    {
+      "id": "conan-669",
+      "difficulty": "advanced",
+      "difficultyLabel": "上級",
+      "category": "characters",
+      "categoryLabel": "登場人物",
+      "knowledge": "story",
+      "knowledgeLabel": "作中",
+      "question": "小嶋元太の体重は？",
+      "choices": [
+        "40キログラム",
+        "20キログラム",
+        "25キログラム",
+        "33キログラム"
+      ],
+      "answerIndex": 0,
+      "answer": "40キログラム",
+      "explanation": "40キログラム。小学1年生としては規格外の体格で、探偵団随一の力持ち。",
+      "confidence": "A",
+      "sources": [
+        "https://www.ytv.co.jp/conan/character/",
+        "https://ja.wikipedia.org/wiki/少年探偵団_(名探偵コナン)"
+      ]
+    },
+    {
+      "id": "conan-670",
+      "difficulty": "advanced",
+      "difficultyLabel": "上級",
+      "category": "characters",
+      "categoryLabel": "登場人物",
+      "knowledge": "story",
+      "knowledgeLabel": "作中",
+      "question": "円谷光彦の体重は？",
+      "choices": [
+        "12キログラム",
+        "20キログラム",
+        "28キログラム",
+        "35キログラム"
+      ],
+      "answerIndex": 1,
+      "answer": "20キログラム",
+      "explanation": "20キログラム。",
+      "confidence": "A",
+      "sources": [
+        "https://www.ytv.co.jp/conan/character/",
+        "https://ja.wikipedia.org/wiki/少年探偵団_(名探偵コナン)"
+      ]
+    },
+    {
+      "id": "conan-671",
+      "difficulty": "beginner",
+      "difficultyLabel": "初級",
+      "category": "characters",
+      "categoryLabel": "登場人物",
+      "knowledge": "story",
+      "knowledgeLabel": "作中",
+      "question": "小嶋元太の大好物は？",
+      "choices": [
+        "カツ丼",
+        "天ぷらそば",
+        "うな重",
+        "焼きそばパン"
+      ],
+      "answerIndex": 2,
+      "answer": "うな重",
+      "explanation": "うな重に目がない。食欲が旺盛で、なんでもよく食べる。",
+      "confidence": "A",
+      "sources": [
+        "https://www.ytv.co.jp/conan/character/",
+        "https://ja.wikipedia.org/wiki/少年探偵団_(名探偵コナン)"
+      ]
+    },
+    {
+      "id": "conan-672",
+      "difficulty": "advanced",
+      "difficultyLabel": "上級",
+      "category": "characters",
+      "categoryLabel": "登場人物",
+      "knowledge": "story",
+      "knowledgeLabel": "作中",
+      "question": "小嶋元太の頭にある特徴は？",
+      "choices": [
+        "寝ぐせ",
+        "大きなほくろ",
+        "三日月形の傷",
+        "10円ハゲ"
+      ],
+      "answerIndex": 3,
+      "answer": "10円ハゲ",
+      "explanation": "坊主頭の左側頭部に10円ハゲがある。頭の形はおにぎり（三角）状。",
+      "confidence": "A",
+      "sources": [
+        "https://www.ytv.co.jp/conan/character/",
+        "https://ja.wikipedia.org/wiki/少年探偵団_(名探偵コナン)"
+      ]
+    },
+    {
+      "id": "conan-673",
+      "difficulty": "intermediate",
+      "difficultyLabel": "中級",
+      "category": "characters",
+      "categoryLabel": "登場人物",
+      "knowledge": "story",
+      "knowledgeLabel": "作中",
+      "question": "円谷光彦の両親の職業は？",
+      "choices": [
+        "教師",
+        "医師",
+        "警察官",
+        "新聞記者"
+      ],
+      "answerIndex": 0,
+      "answer": "教師",
+      "explanation": "両親とも教師。そのため言葉遣いや礼儀作法に厳しく、光彦は同級生にも敬語を使う。",
+      "confidence": "A",
+      "sources": [
+        "https://www.ytv.co.jp/conan/character/",
+        "https://ja.wikipedia.org/wiki/少年探偵団_(名探偵コナン)"
+      ]
+    },
+    {
+      "id": "conan-674",
+      "difficulty": "advanced",
+      "difficultyLabel": "上級",
+      "category": "characters",
+      "categoryLabel": "登場人物",
+      "knowledge": "story",
+      "knowledgeLabel": "作中",
+      "question": "円谷光彦の姉の名前は？",
+      "choices": [
+        "円谷夏美",
+        "円谷朝美",
+        "円谷志乃",
+        "円谷茜"
+      ],
+      "answerIndex": 1,
+      "answer": "円谷朝美",
+      "explanation": "中学生の姉・円谷朝美。姉弟とも名前の由来は浅見光彦。",
+      "confidence": "A",
+      "sources": [
+        "https://www.ytv.co.jp/conan/character/",
+        "https://ja.wikipedia.org/wiki/少年探偵団_(名探偵コナン)"
+      ]
+    },
+    {
+      "id": "conan-675",
+      "difficulty": "intermediate",
+      "difficultyLabel": "中級",
+      "category": "characters",
+      "categoryLabel": "登場人物",
+      "knowledge": "story",
+      "knowledgeLabel": "作中",
+      "question": "円谷光彦の顔の特徴は？",
+      "choices": [
+        "えくぼ",
+        "目の下の泣きぼくろ",
+        "そばかす",
+        "右頬の傷跡"
+      ],
+      "answerIndex": 2,
+      "answer": "そばかす",
+      "explanation": "そばかすと真ん中分けの前髪が特徴。",
+      "confidence": "A",
+      "sources": [
+        "https://www.ytv.co.jp/conan/character/",
+        "https://ja.wikipedia.org/wiki/少年探偵団_(名探偵コナン)"
+      ]
+    },
+    {
+      "id": "conan-676",
+      "difficulty": "beginner",
+      "difficultyLabel": "初級",
+      "category": "characters",
+      "categoryLabel": "登場人物",
+      "knowledge": "story",
+      "knowledgeLabel": "作中",
+      "question": "吉田歩美が恋心を寄せている相手は？",
+      "choices": [
+        "小嶋元太",
+        "円谷光彦",
+        "円谷朝美",
+        "江戸川コナン"
+      ],
+      "answerIndex": 3,
+      "answer": "江戸川コナン",
+      "explanation": "江戸川コナン。小学生とは思えない積極的な言動でアピールしている。",
+      "confidence": "A",
+      "sources": [
+        "https://www.ytv.co.jp/conan/character/",
+        "https://ja.wikipedia.org/wiki/少年探偵団_(名探偵コナン)"
+      ]
+    },
+    {
+      "id": "conan-677",
+      "difficulty": "intermediate",
+      "difficultyLabel": "中級",
+      "category": "characters",
+      "categoryLabel": "登場人物",
+      "knowledge": "story",
+      "knowledgeLabel": "作中",
+      "question": "小嶋元太と円谷光彦がそろって好意を寄せている相手は？",
+      "choices": [
+        "吉田歩美",
+        "灰原哀",
+        "毛利蘭",
+        "小林澄子"
+      ],
+      "answerIndex": 0,
+      "answer": "吉田歩美",
+      "explanation": "連載初期から2人とも吉田歩美に好意を寄せている。",
+      "confidence": "A",
+      "sources": [
+        "https://www.ytv.co.jp/conan/character/",
+        "https://ja.wikipedia.org/wiki/少年探偵団_(名探偵コナン)"
+      ]
+    },
+    {
+      "id": "conan-678",
+      "difficulty": "intermediate",
+      "difficultyLabel": "中級",
+      "category": "characters",
+      "categoryLabel": "登場人物",
+      "knowledge": "story",
+      "knowledgeLabel": "作中",
+      "question": "コナンと灰原哀を除くと、少年探偵団で最も知識が豊富なのは？",
+      "choices": [
+        "吉田歩美",
+        "円谷光彦",
+        "小嶋元太",
+        "阿笠博士"
+      ],
+      "answerIndex": 1,
+      "answer": "円谷光彦",
+      "explanation": "円谷光彦。小学1年生とは思えない豊富な知識を持ち、解説役を担うことも多い。",
+      "confidence": "A",
+      "sources": [
+        "https://www.ytv.co.jp/conan/character/",
+        "https://ja.wikipedia.org/wiki/少年探偵団_(名探偵コナン)"
+      ]
+    },
+    {
+      "id": "conan-679",
+      "difficulty": "intermediate",
+      "difficultyLabel": "中級",
+      "category": "characters",
+      "categoryLabel": "登場人物",
+      "knowledge": "story",
+      "knowledgeLabel": "作中",
+      "question": "少年探偵団で一番の力持ちは？",
+      "choices": [
+        "円谷光彦",
+        "吉田歩美",
+        "小嶋元太",
+        "灰原哀"
+      ],
+      "answerIndex": 2,
+      "answer": "小嶋元太",
+      "explanation": "小嶋元太。死のうとした灰原を片手で持ち上げて連れ戻したこともある。",
+      "confidence": "A",
+      "sources": [
+        "https://www.ytv.co.jp/conan/character/",
+        "https://ja.wikipedia.org/wiki/少年探偵団_(名探偵コナン)"
+      ]
+    },
+    {
+      "id": "conan-680",
+      "difficulty": "intermediate",
+      "difficultyLabel": "中級",
+      "category": "characters",
+      "categoryLabel": "登場人物",
+      "knowledge": "story",
+      "knowledgeLabel": "作中",
+      "question": "吉田歩美が頭に着けているものは？",
+      "choices": [
+        "リボン",
+        "ニット帽",
+        "ヘアバンド",
+        "カチューシャ"
+      ],
+      "answerIndex": 3,
+      "answer": "カチューシャ",
+      "explanation": "おかっぱ（ボブ）の髪にカチューシャを着けているのが特徴。",
+      "confidence": "A",
+      "sources": [
+        "https://www.ytv.co.jp/conan/character/",
+        "https://ja.wikipedia.org/wiki/少年探偵団_(名探偵コナン)"
+      ]
+    },
+    {
+      "id": "conan-681",
+      "difficulty": "advanced",
+      "difficultyLabel": "上級",
+      "category": "characters",
+      "categoryLabel": "登場人物",
+      "knowledge": "story",
+      "knowledgeLabel": "作中",
+      "question": "円谷光彦の話し方の特徴は？",
+      "choices": [
+        "誰に対しても敬語を使う",
+        "語尾に「なのだ」を付ける",
+        "関西弁で話す",
+        "一人称が「オイラ」"
+      ],
+      "answerIndex": 0,
+      "answer": "誰に対しても敬語を使う",
+      "explanation": "両親が教師で礼儀に厳しいため、同級生に対しても常に敬語を使う。",
+      "confidence": "A",
+      "sources": [
+        "https://www.ytv.co.jp/conan/character/",
+        "https://ja.wikipedia.org/wiki/少年探偵団_(名探偵コナン)"
+      ]
+    },
+    {
+      "id": "conan-682",
+      "difficulty": "intermediate",
+      "difficultyLabel": "中級",
+      "category": "characters",
+      "categoryLabel": "登場人物",
+      "knowledge": "story",
+      "knowledgeLabel": "作中",
+      "question": "少年探偵団がキャンプなどで遠出するとき、主に引率役を務めるのは？",
+      "choices": [
+        "毛利小五郎",
+        "阿笠博士",
+        "小林澄子",
+        "妃英理"
+      ],
+      "answerIndex": 1,
+      "answer": "阿笠博士",
+      "explanation": "阿笠博士。博士が同行できないときは毛利蘭や小五郎が引率することもある。",
+      "confidence": "A",
+      "sources": [
+        "https://www.ytv.co.jp/conan/character/",
+        "https://ja.wikipedia.org/wiki/少年探偵団_(名探偵コナン)"
+      ]
+    },
+    {
+      "id": "conan-683",
+      "difficulty": "beginner",
+      "difficultyLabel": "初級",
+      "category": "characters",
+      "categoryLabel": "登場人物",
+      "knowledge": "story",
+      "knowledgeLabel": "作中",
+      "question": "工藤新一が黒ずくめの組織に毒薬を飲まされた遊園地の名前は？",
+      "choices": [
+        "ミステリーランド",
+        "東都ドリームランド",
+        "トロピカルランド",
+        "米花シーパラダイス"
+      ],
+      "answerIndex": 2,
+      "answer": "トロピカルランド",
+      "explanation": "トロピカルランド。毛利蘭とのデート中に組織の裏取引を目撃してしまった。",
+      "confidence": "B",
+      "sources": [
+        "https://ja.wikipedia.org/wiki/江戸川コナン",
+        "https://www.animatetimes.com/news/details.php?id=1767955097"
+      ]
+    },
+    {
+      "id": "conan-684",
+      "difficulty": "intermediate",
+      "difficultyLabel": "中級",
+      "category": "organization",
+      "categoryLabel": "黒ずくめの組織",
+      "knowledge": "story",
+      "knowledgeLabel": "作中",
+      "question": "工藤新一にAPTX4869を飲ませた黒ずくめの組織のメンバーは？",
+      "choices": [
+        "ピスコ",
+        "テキーラ",
+        "コルン",
+        "ジン"
+      ],
+      "answerIndex": 3,
+      "answer": "ジン",
+      "explanation": "ジン。相棒のウォッカとともに裏取引を行っていた。",
+      "confidence": "B",
+      "sources": [
+        "https://ja.wikipedia.org/wiki/黒ずくめの組織",
+        "https://www.animatetimes.com/news/details.php?id=1767955097"
+      ]
+    },
+    {
+      "id": "conan-685",
+      "difficulty": "advanced",
+      "difficultyLabel": "上級",
+      "category": "anime",
+      "categoryLabel": "テレビアニメ",
+      "knowledge": "production",
+      "knowledgeLabel": "制作",
+      "question": "『名探偵コナン エピソード“ONE” 小さくなった名探偵』は何を記念して制作された？",
+      "choices": [
+        "テレビアニメ放送20周年",
+        "原作連載20周年",
+        "劇場版20作目",
+        "テレビアニメ放送30周年"
+      ],
+      "answerIndex": 0,
+      "answer": "テレビアニメ放送20周年",
+      "explanation": "テレビアニメ放送20周年記念。2016年12月に『金曜ロードSHOW!』枠で放送され、原作者・青山剛昌が監修した。",
+      "confidence": "B",
+      "sources": [
+        "https://ja.wikipedia.org/wiki/名探偵コナン_(アニメ)",
+        "https://www.animatetimes.com/news/details.php?id=1767955097"
+      ]
+    },
+    {
+      "id": "conan-686",
+      "difficulty": "intermediate",
+      "difficultyLabel": "中級",
+      "category": "organization",
+      "categoryLabel": "黒ずくめの組織",
+      "knowledge": "story",
+      "knowledgeLabel": "作中",
+      "question": "宮野明美が組織を抜ける条件として押しつけられた仕事は？",
+      "choices": [
+        "政治家の暗殺",
+        "10億円強奪",
+        "研究データの奪取",
+        "銀行の乗っ取り"
+      ],
+      "answerIndex": 1,
+      "answer": "10億円強奪",
+      "explanation": "10億円強奪。実行したものの、直後にジンに撃たれて命を落とした。",
+      "confidence": "A",
+      "sources": [
+        "https://www.ytv.co.jp/conan/character/",
+        "https://www.animatetimes.com/news/details.php?id=1787114757"
+      ]
+    },
+    {
+      "id": "conan-687",
+      "difficulty": "intermediate",
+      "difficultyLabel": "中級",
+      "category": "organization",
+      "categoryLabel": "黒ずくめの組織",
+      "knowledge": "story",
+      "knowledgeLabel": "作中",
+      "question": "宮野明美を撃ったのは？",
+      "choices": [
+        "ウォッカ",
+        "ベルモット",
+        "ジン",
+        "ピスコ"
+      ],
+      "answerIndex": 2,
+      "answer": "ジン",
+      "explanation": "ジン。灰原哀（宮野志保）が組織を抜ける決意をした直接のきっかけになった。",
+      "confidence": "A",
+      "sources": [
+        "https://www.ytv.co.jp/conan/character/",
+        "https://www.animatetimes.com/news/details.php?id=1787114757"
+      ]
+    },
+    {
+      "id": "conan-688",
+      "difficulty": "advanced",
+      "difficultyLabel": "上級",
+      "category": "organization",
+      "categoryLabel": "黒ずくめの組織",
+      "knowledge": "story",
+      "knowledgeLabel": "作中",
+      "question": "赤井秀一が自らの死を偽装した場所は？",
+      "choices": [
+        "米花町の大黒ビル",
+        "東都水族館",
+        "杯戸中央病院",
+        "来葉峠"
+      ],
+      "answerIndex": 3,
+      "answer": "来葉峠",
+      "explanation": "来葉峠。愛車のシボレーC-1500ごと爆破し、組織に死亡と誤認させた。",
+      "confidence": "A",
+      "sources": [
+        "https://www.ytv.co.jp/conan/character/",
+        "https://ja.wikipedia.org/wiki/FBI_(名探偵コナン)"
+      ]
+    },
+    {
+      "id": "conan-689",
+      "difficulty": "advanced",
+      "difficultyLabel": "上級",
+      "category": "organization",
+      "categoryLabel": "黒ずくめの組織",
+      "knowledge": "story",
+      "knowledgeLabel": "作中",
+      "question": "来葉峠で赤井秀一を撃った（ように見せかけた）のは？",
+      "choices": [
+        "キール",
+        "ベルモット",
+        "ジン",
+        "バーボン"
+      ],
+      "answerIndex": 0,
+      "answer": "キール",
+      "explanation": "キール（水無怜奈）。この工作で組織内のスパイ疑惑を払拭した。",
+      "confidence": "A",
+      "sources": [
+        "https://www.ytv.co.jp/conan/character/",
+        "https://ja.wikipedia.org/wiki/FBI_(名探偵コナン)"
+      ]
+    },
+    {
+      "id": "conan-690",
+      "difficulty": "advanced",
+      "difficultyLabel": "上級",
+      "category": "characters",
+      "categoryLabel": "登場人物",
+      "knowledge": "story",
+      "knowledgeLabel": "作中",
+      "question": "赤井秀一の正体が組織に露見する原因を作ったFBI捜査官は？",
+      "choices": [
+        "ジョディ・スターリング",
+        "アンドレ・キャメル",
+        "ジェイムズ・ブラック",
+        "イーサン・本堂"
+      ],
+      "answerIndex": 1,
+      "answer": "アンドレ・キャメル",
+      "explanation": "アンドレ・キャメル。自身のミスを気に病み、赤井に報いるために来日した。",
+      "confidence": "A",
+      "sources": [
+        "https://www.ytv.co.jp/conan/character/",
+        "https://ja.wikipedia.org/wiki/FBI_(名探偵コナン)"
+      ]
+    },
+    {
+      "id": "conan-691",
+      "difficulty": "advanced",
+      "difficultyLabel": "上級",
+      "category": "characters",
+      "categoryLabel": "登場人物",
+      "knowledge": "story",
+      "knowledgeLabel": "作中",
+      "question": "松田陣平が捜査一課に来る前に所属していた部署は？",
+      "choices": [
+        "公安部外事課",
+        "交通部第三交通機動隊",
+        "警備部機動隊の爆発物処理班",
+        "刑事部鑑識課"
+      ],
+      "answerIndex": 2,
+      "answer": "警備部機動隊の爆発物処理班",
+      "explanation": "警備部機動隊の爆発物処理班。親友の萩原研二とともに所属していた。",
+      "confidence": "A",
+      "sources": [
+        "https://www.ytv.co.jp/conan/character/",
+        "https://ja.wikipedia.org/wiki/名探偵コナンの登場人物"
+      ]
+    },
+    {
+      "id": "conan-692",
+      "difficulty": "advanced",
+      "difficultyLabel": "上級",
+      "category": "characters",
+      "categoryLabel": "登場人物",
+      "knowledge": "story",
+      "knowledgeLabel": "作中",
+      "question": "萩原研二が殉職した原因は？",
+      "choices": [
+        "銃で撃たれた",
+        "車にはねられた",
+        "建物の倒壊に巻き込まれた",
+        "爆弾の解体が間に合わなかった"
+      ],
+      "answerIndex": 3,
+      "answer": "爆弾の解体が間に合わなかった",
+      "explanation": "松田陣平とともに別々の場所の爆弾処理を担当し、解体が間に合わず爆発に巻き込まれた。",
+      "confidence": "A",
+      "sources": [
+        "https://www.ytv.co.jp/conan/character/",
+        "https://ja.wikipedia.org/wiki/名探偵コナンの登場人物"
+      ]
+    },
+    {
+      "id": "conan-693",
+      "difficulty": "advanced",
+      "difficultyLabel": "上級",
+      "category": "characters",
+      "categoryLabel": "登場人物",
+      "knowledge": "story",
+      "knowledgeLabel": "作中",
+      "question": "伊達航の死因は？",
+      "choices": [
+        "居眠り運転の車にはねられた",
+        "爆発に巻き込まれた",
+        "銃で撃たれた",
+        "高所からの転落"
+      ],
+      "answerIndex": 0,
+      "answer": "居眠り運転の車にはねられた",
+      "explanation": "詐欺師を逮捕した直後、高木刑事の目の前で居眠り運転の車にはねられて死亡した。",
+      "confidence": "A",
+      "sources": [
+        "https://www.ytv.co.jp/conan/character/",
+        "https://ja.wikipedia.org/wiki/名探偵コナンの登場人物"
+      ]
+    },
+    {
+      "id": "conan-694",
+      "difficulty": "advanced",
+      "difficultyLabel": "上級",
+      "category": "characters",
+      "categoryLabel": "登場人物",
+      "knowledge": "story",
+      "knowledgeLabel": "作中",
+      "question": "高木渉が普段使っている黒い手帳は、誰の遺品？",
+      "choices": [
+        "松田陣平",
+        "伊達航",
+        "萩原研二",
+        "諸伏景光"
+      ],
+      "answerIndex": 1,
+      "answer": "伊達航",
+      "explanation": "教育係だった伊達航の遺品。高木は伊達を深く尊敬している。",
+      "confidence": "A",
+      "sources": [
+        "https://www.ytv.co.jp/conan/character/",
+        "https://ja.wikipedia.org/wiki/名探偵コナンの登場人物"
+      ]
+    },
+    {
+      "id": "conan-695",
+      "difficulty": "advanced",
+      "difficultyLabel": "上級",
+      "category": "organization",
+      "categoryLabel": "黒ずくめの組織",
+      "knowledge": "story",
+      "knowledgeLabel": "作中",
+      "question": "諸伏景光（スコッチ）が自殺に使った拳銃は、もともと誰のものだった？",
+      "choices": [
+        "安室透",
+        "ジン",
+        "赤井秀一",
+        "諸伏景光自身"
+      ],
+      "answerIndex": 2,
+      "answer": "赤井秀一",
+      "explanation": "赤井秀一の拳銃。公安の情報を守るため、赤井から奪った銃で自ら命を絶った。",
+      "confidence": "A",
+      "sources": [
+        "https://www.ytv.co.jp/conan/character/",
+        "https://ja.wikipedia.org/wiki/名探偵コナンの登場人物"
+      ]
+    },
+    {
+      "id": "conan-696",
+      "difficulty": "advanced",
+      "difficultyLabel": "上級",
+      "category": "characters",
+      "categoryLabel": "登場人物",
+      "knowledge": "story",
+      "knowledgeLabel": "作中",
+      "question": "諸伏景光が中学生時代の世良真純に弾き方を教えた楽器は？",
+      "choices": [
+        "ギター",
+        "ドラム",
+        "ピアノ",
+        "ベース"
+      ],
+      "answerIndex": 3,
+      "answer": "ベース",
+      "explanation": "ベース。ライ（赤井秀一）と行動していた時期の出来事。",
+      "confidence": "A",
+      "sources": [
+        "https://www.ytv.co.jp/conan/character/",
+        "https://ja.wikipedia.org/wiki/名探偵コナンの登場人物"
+      ]
+    },
+    {
+      "id": "conan-697",
+      "difficulty": "advanced",
+      "difficultyLabel": "上級",
+      "category": "organization",
+      "categoryLabel": "黒ずくめの組織",
+      "knowledge": "story",
+      "knowledgeLabel": "作中",
+      "question": "ピスコを射殺したのは？",
+      "choices": [
+        "ジン",
+        "ウォッカ",
+        "ベルモット",
+        "キャンティ"
+      ],
+      "answerIndex": 0,
+      "answer": "ジン",
+      "explanation": "失態を犯したピスコは、「あの方」直々の命令を受けたジンに射殺された。",
+      "confidence": "B",
+      "sources": [
+        "https://ja.wikipedia.org/wiki/黒ずくめの組織",
+        "https://www.animatetimes.com/news/details.php?id=1717487335"
+      ]
+    },
+    {
+      "id": "conan-698",
+      "difficulty": "intermediate",
+      "difficultyLabel": "中級",
+      "category": "anime",
+      "categoryLabel": "テレビアニメ",
+      "knowledge": "production",
+      "knowledgeLabel": "制作",
+      "question": "灰原哀がテレビアニメに初登場したのは第何話？",
+      "choices": [
+        "第76話",
+        "第129話",
+        "第219話",
+        "第345話"
+      ],
+      "answerIndex": 1,
+      "answer": "第129話",
+      "explanation": "第129話「黒の組織から来た女 大学教授殺人事件」。",
+      "confidence": "B",
+      "sources": [
+        "https://ja.wikipedia.org/wiki/江戸川コナン",
+        "https://www.animatetimes.com/news/details.php?id=1782188336"
+      ]
+    },
+    {
+      "id": "conan-699",
+      "difficulty": "advanced",
+      "difficultyLabel": "上級",
+      "category": "anime",
+      "categoryLabel": "テレビアニメ",
+      "knowledge": "production",
+      "knowledgeLabel": "制作",
+      "question": "灰原哀が初登場した回のサブタイトルに含まれる言葉は？",
+      "choices": [
+        "黒の組織との接触",
+        "黒ずくめの追跡者",
+        "黒の組織から来た女",
+        "組織から来た転校生"
+      ],
+      "answerIndex": 2,
+      "answer": "黒の組織から来た女",
+      "explanation": "第129話「黒の組織から来た女 大学教授殺人事件」。",
+      "confidence": "B",
+      "sources": [
+        "https://ja.wikipedia.org/wiki/江戸川コナン",
+        "https://www.animatetimes.com/news/details.php?id=1782188336"
+      ]
+    },
+    {
+      "id": "conan-700",
+      "difficulty": "advanced",
+      "difficultyLabel": "上級",
+      "category": "basics",
+      "categoryLabel": "作品の基本",
+      "knowledge": "production",
+      "knowledgeLabel": "制作",
+      "question": "灰原哀が原作漫画に初登場した単行本は第何巻？",
+      "choices": [
+        "10巻",
+        "24巻",
+        "31巻",
+        "18巻"
+      ],
+      "answerIndex": 3,
+      "answer": "18巻",
+      "explanation": "単行本18巻 FILE.6「転校生は…」。",
+      "confidence": "B",
+      "sources": [
+        "https://ja.wikipedia.org/wiki/江戸川コナン",
+        "https://www.animatetimes.com/news/details.php?id=1782188336"
+      ]
+    },
+    {
+      "id": "conan-701",
+      "difficulty": "intermediate",
+      "difficultyLabel": "中級",
+      "category": "movies",
+      "categoryLabel": "劇場版",
+      "knowledge": "production",
+      "knowledgeLabel": "制作",
+      "question": "灰原哀が初めて登場した劇場版は？",
+      "choices": [
+        "第3作『世紀末の魔術師』",
+        "第1作『時計じかけの摩天楼』",
+        "第2作『14番目の標的』",
+        "第4作『瞳の中の暗殺者』"
+      ],
+      "answerIndex": 0,
+      "answer": "第3作『世紀末の魔術師』",
+      "explanation": "アニメ初登場の後、劇場版第3作『世紀末の魔術師』から全作品に登場している。",
+      "confidence": "B",
+      "sources": [
+        "https://ja.wikipedia.org/wiki/灰原哀",
+        "https://www.animatetimes.com/news/details.php?id=1782188336"
+      ]
+    },
+    {
+      "id": "conan-702",
+      "difficulty": "intermediate",
+      "difficultyLabel": "中級",
+      "category": "anime",
+      "categoryLabel": "テレビアニメ",
+      "knowledge": "production",
+      "knowledgeLabel": "制作",
+      "question": "「漆黒の特急（ミステリートレイン）」が放送されたテレビアニメの話数は？",
+      "choices": [
+        "第501話〜第504話",
+        "第701話〜第704話",
+        "第601話〜第604話",
+        "第801話〜第804話"
+      ],
+      "answerIndex": 1,
+      "answer": "第701話〜第704話",
+      "explanation": "第701話〜第704話「漆黒の特急（ミステリートレイン）」。灰原哀にとっての重要エピソードのひとつ。",
+      "confidence": "B",
+      "sources": [
+        "https://ja.wikipedia.org/wiki/名探偵コナンの登場人物",
+        "https://www.animatetimes.com/news/details.php?id=1779664645"
+      ]
+    },
+    {
+      "id": "conan-703",
+      "difficulty": "advanced",
+      "difficultyLabel": "上級",
+      "category": "basics",
+      "categoryLabel": "作品の基本",
+      "knowledge": "production",
+      "knowledgeLabel": "制作",
+      "question": "「ミステリートレイン」のエピソードが収録されている原作の単行本は第何巻？",
+      "choices": [
+        "58巻",
+        "68巻",
+        "78巻",
+        "88巻"
+      ],
+      "answerIndex": 2,
+      "answer": "78巻",
+      "explanation": "単行本78巻 File.1〜File.7「ミステリートレイン」。アニメでは第701話〜第704話「漆黒の特急」。",
+      "confidence": "B",
+      "sources": [
+        "https://ja.wikipedia.org/wiki/名探偵コナンの登場人物",
+        "https://www.animatetimes.com/news/details.php?id=1779664645"
+      ]
+    },
+    {
+      "id": "conan-704",
+      "difficulty": "intermediate",
+      "difficultyLabel": "中級",
+      "category": "organization",
+      "categoryLabel": "黒ずくめの組織",
+      "knowledge": "story",
+      "knowledgeLabel": "作中",
+      "question": "「漆黒の特急（ミステリートレイン）」でベルモットが命を狙ったのは？",
+      "choices": [
+        "毛利蘭",
+        "安室透",
+        "世良真純",
+        "灰原哀（シェリー）"
+      ],
+      "answerIndex": 3,
+      "answer": "灰原哀（シェリー）",
+      "explanation": "組織を裏切ったシェリー（灰原哀）の抹殺を狙ったが、コナンたちの作戦によって暗殺は失敗した。",
+      "confidence": "B",
+      "sources": [
+        "https://ja.wikipedia.org/wiki/黒ずくめの組織",
+        "https://www.animatetimes.com/news/details.php?id=1779664645"
+      ]
+    },
+    {
+      "id": "conan-705",
+      "difficulty": "advanced",
+      "difficultyLabel": "上級",
+      "category": "organization",
+      "categoryLabel": "黒ずくめの組織",
+      "knowledge": "story",
+      "knowledgeLabel": "作中",
+      "question": "「漆黒の特急（ミステリートレイン）」でのベルモットによる暗殺計画の結末は？",
+      "choices": [
+        "失敗したが、ベルモットは成功したと思い込んだ",
+        "成功し、標的は死亡した",
+        "途中でジンに中止させられた",
+        "標的が自ら組織に投降した"
+      ],
+      "answerIndex": 0,
+      "answer": "失敗したが、ベルモットは成功したと思い込んだ",
+      "explanation": "コナンが多くの協力者を得て仕組んだ作戦により暗殺は失敗したが、ベルモットは「シェリーを抹殺した」と誤認した。",
+      "confidence": "B",
+      "sources": [
+        "https://ja.wikipedia.org/wiki/黒ずくめの組織",
+        "https://www.animatetimes.com/news/details.php?id=1779664645"
+      ]
+    },
+    {
+      "id": "conan-706",
+      "difficulty": "intermediate",
+      "difficultyLabel": "中級",
+      "category": "organization",
+      "categoryLabel": "黒ずくめの組織",
+      "knowledge": "story",
+      "knowledgeLabel": "作中",
+      "question": "ベルモットの異名として知られるのは？",
+      "choices": [
+        "銀の弾丸",
+        "千の顔を持つ魔女",
+        "地獄の天使",
+        "月下の奇術師"
+      ],
+      "answerIndex": 1,
+      "answer": "千の顔を持つ魔女",
+      "explanation": "変装の名手であることから「千の顔を持つ魔女」と呼ばれる。",
+      "confidence": "A",
+      "sources": [
+        "https://www.ytv.co.jp/conan/character/",
+        "https://ja.wikipedia.org/wiki/黒ずくめの組織"
+      ]
+    },
+    {
+      "id": "conan-707",
+      "difficulty": "advanced",
+      "difficultyLabel": "上級",
+      "category": "organization",
+      "categoryLabel": "黒ずくめの組織",
+      "knowledge": "story",
+      "knowledgeLabel": "作中",
+      "question": "ベルモットが毛利蘭を呼ぶときの呼び名は？",
+      "choices": [
+        "プリンセス",
+        "リトルレディ",
+        "エンジェル",
+        "クールガイ"
+      ],
+      "answerIndex": 2,
+      "answer": "エンジェル",
+      "explanation": "蘭を \"Angel\"（エンジェル）と呼ぶ。この呼び方から変装を見破られたこともある。",
+      "confidence": "B",
+      "sources": [
+        "https://ja.wikipedia.org/wiki/黒ずくめの組織",
+        "https://www.animatetimes.com/news/details.php?id=1779664645"
+      ]
+    },
+    {
+      "id": "conan-708",
+      "difficulty": "advanced",
+      "difficultyLabel": "上級",
+      "category": "organization",
+      "categoryLabel": "黒ずくめの組織",
+      "knowledge": "story",
+      "knowledgeLabel": "作中",
+      "question": "ベルモットが江戸川コナン（工藤新一）を呼ぶときの呼び名は？",
+      "choices": [
+        "エンジェル",
+        "ボウヤ",
+        "シルバーブレット",
+        "クールガイ"
+      ],
+      "answerIndex": 3,
+      "answer": "クールガイ",
+      "explanation": "新一（コナン）を \"Cool Guy\"（クールガイ）と呼ぶ。ジョディはこの呼び方に違和感を持った。",
+      "confidence": "A",
+      "sources": [
+        "https://www.ytv.co.jp/conan/character/",
+        "https://ja.wikipedia.org/wiki/黒ずくめの組織"
+      ]
+    },
+    {
+      "id": "conan-709",
+      "difficulty": "advanced",
+      "difficultyLabel": "上級",
+      "category": "organization",
+      "categoryLabel": "黒ずくめの組織",
+      "knowledge": "story",
+      "knowledgeLabel": "作中",
+      "question": "ベルモットが「シャロン・ヴィンヤードの娘」として活動している名前は？",
+      "choices": [
+        "クリス・ヴィンヤード",
+        "ジョディ・サンテミリオン",
+        "レイチェル・浅香",
+        "メアリー・世良"
+      ],
+      "answerIndex": 0,
+      "answer": "クリス・ヴィンヤード",
+      "explanation": "1年前にシャロンの死を偽装し、以降は二世女優クリス・ヴィンヤードとして活動している。",
+      "confidence": "B",
+      "sources": [
+        "https://ja.wikipedia.org/wiki/黒ずくめの組織",
+        "https://www.animatetimes.com/news/details.php?id=1779664645"
+      ]
+    },
+    {
+      "id": "conan-710",
+      "difficulty": "advanced",
+      "difficultyLabel": "上級",
+      "category": "anime",
+      "categoryLabel": "テレビアニメ",
+      "knowledge": "production",
+      "knowledgeLabel": "制作",
+      "question": "灰原哀にとっての重要エピソード「漆黒の特急」の、もうひとつの呼び名は？",
+      "choices": [
+        "ブラックエクスプレス",
+        "ミステリートレイン",
+        "ダークトレイン",
+        "シャドウレイル"
+      ],
+      "answerIndex": 1,
+      "answer": "ミステリートレイン",
+      "explanation": "アニメの副題は「漆黒の特急（ミステリートレイン）」。原作でのタイトルは「ミステリートレイン」。",
+      "confidence": "B",
+      "sources": [
+        "https://ja.wikipedia.org/wiki/名探偵コナンの登場人物",
+        "https://www.animatetimes.com/news/details.php?id=1782188336"
       ]
     }
   ]
